@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Bible Study App — Interactive Demo</title>
+<style>
+  :root {
+    --bg1:#f4ead7; --bg2:#ebdfc4; --card:#fbf5e7; --cardsoft:#f7eed9;
+    --ink:#2a2218; --inksoft:#6b5d4a; --burg:#6b1f2e; --burgdeep:#52162a; --burgsoft:#8b3243;
+    --border:#d4c4a3; --bordersoft:#e3d5b5; --script:#fdf8ed; --term:#f5ecd6; --gold:#9a7b3f; --cream:#f5e9c8;
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:linear-gradient(180deg,var(--bg1),var(--bg2)) fixed; color:var(--ink);
+         font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text",system-ui,sans-serif; }
+  .wrap { max-width:720px; margin:0 auto; padding:0 16px 60px; }
+  .demo-banner { background:var(--burgdeep); color:var(--cream); text-align:center; font-size:12.5px;
+                 padding:8px 14px; letter-spacing:.02em; }
+  header { display:flex; justify-content:space-between; align-items:center; padding:18px 4px 14px;
+           border-bottom:1px solid var(--bordersoft); }
+  .brand { display:flex; align-items:center; gap:10px; }
+  .mark { width:34px; height:34px; border-radius:9px; background:var(--burg); display:flex; align-items:center;
+          justify-content:center; box-shadow:0 1px 3px rgba(82,22,42,.25); }
+  .mark svg { width:19px; height:19px; }
+  .title { font-family:Georgia,serif; font-size:17px; font-weight:600; color:var(--burgdeep); line-height:1.1; }
+  .tag { font-size:9.5px; color:var(--inksoft); letter-spacing:.09em; margin-top:3px; }
+  .pills { display:flex; gap:6px; margin:16px 0 14px; }
+  .pill { flex:1; display:flex; align-items:center; justify-content:center; gap:6px; padding:9px 8px;
+          background:transparent; border:1px solid var(--bordersoft); color:var(--inksoft); border-radius:10px;
+          font-size:13px; font-weight:600; cursor:pointer; font-family:inherit; transition:all .15s; }
+  .pill.active { background:var(--card); border-color:var(--border); color:var(--burgdeep);
+                 box-shadow:0 1px 2px rgba(74,50,30,.06); }
+  .bar { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:16px;
+         box-shadow:0 1px 2px rgba(74,50,30,.06),0 4px 12px rgba(74,50,30,.04); }
+  .bar input { width:100%; border:none; outline:none; background:transparent; font-size:16px; color:var(--ink);
+               font-family:inherit; }
+  .bar input::placeholder { color:var(--inksoft); opacity:.7; font-style:italic; font-family:Georgia,serif; }
+  .bar-foot { display:flex; justify-content:space-between; align-items:center; margin-top:10px; padding-top:10px;
+              border-top:1px solid var(--bordersoft); }
+  .tx { display:flex; gap:5px; align-items:center; }
+  .txchip { font-size:11px; font-weight:600; padding:3px 8px; border-radius:4px; }
+  .txchip.primary { background:var(--burg); color:var(--cream); }
+  .txchip.other { border:1px solid var(--border); color:var(--inksoft); }
+  .go { display:flex; align-items:center; gap:6px; background:var(--burg); color:var(--cream); border:none;
+        padding:8px 14px; border-radius:8px; font-size:14px; font-weight:600; cursor:pointer; font-family:inherit; }
+  .examples-h { font-size:11px; font-weight:600; color:var(--inksoft); letter-spacing:.08em; text-transform:uppercase;
+                margin:22px 0 10px; }
+  .example { width:100%; text-align:left; background:var(--cardsoft); border:1px solid var(--bordersoft);
+             padding:12px 14px; border-radius:10px; cursor:pointer; font-family:Georgia,serif; font-style:italic;
+             color:var(--ink); font-size:14px; display:flex; align-items:center; gap:10px; margin-bottom:6px; }
+  .example:hover { background:#f0e4ca; }
+  .example .arrow { color:var(--burgsoft); font-style:normal; }
+  .thread { margin-top:18px; }
+  .q-line { display:flex; gap:8px; margin-bottom:10px; align-items:flex-start; }
+  .q-icon { width:26px; height:26px; border-radius:7px; background:var(--burg); color:var(--cream); display:flex;
+            align-items:center; justify-content:center; font-size:12px; flex-shrink:0; }
+  .q-label { font-size:10px; font-weight:700; color:var(--burg); letter-spacing:.08em; text-transform:uppercase;
+             margin-bottom:3px; }
+  .q-text { font-family:Georgia,serif; font-style:italic; font-size:15px; }
+  .card-r { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:18px 20px;
+            box-shadow:0 1px 2px rgba(74,50,30,.06),0 4px 12px rgba(74,50,30,.04); margin-bottom:26px; }
+  .badge { font-size:11px; font-weight:600; color:var(--gold); letter-spacing:.1em; text-transform:uppercase;
+           margin-bottom:12px; display:flex; align-items:center; gap:5px; }
+  .block { opacity:0; transform:translateY(4px); transition:opacity .5s,transform .5s; }
+  .block.show { opacity:1; transform:none; }
+  .h2 { display:flex; align-items:center; gap:10px; border-bottom:1px solid var(--bordersoft); padding-bottom:8px;
+        margin:22px 0 10px; }
+  .h2:first-child { margin-top:0; }
+  .h2 .dot { width:6px; height:6px; border-radius:50%; background:var(--burg); }
+  .h2 h2 { font-family:Georgia,serif; font-size:17px; font-weight:600; color:var(--burgdeep); margin:0; }
+  .p { margin:10px 0; line-height:1.7; font-size:15px; }
+  .quote { background:var(--script); border-left:3px solid var(--burg); padding:14px 18px; margin:12px 0;
+           border-radius:4px 8px 8px 4px; font-family:Georgia,serif; font-size:16px; line-height:1.65; }
+  .h3card { font-family:Georgia,serif; font-size:19px; font-weight:600; color:var(--burgdeep); margin:18px 0 8px;
+            padding:10px 14px; background:var(--term); border-radius:8px; border-left:3px solid var(--burg); }
+  table.lang { width:100%; border-collapse:collapse; font-size:13px; background:var(--script);
+               border:1px solid var(--bordersoft); border-radius:8px; overflow:hidden; margin:4px 0 12px; }
+  table.lang td { padding:8px 12px; vertical-align:top; border-bottom:1px solid var(--bordersoft); }
+  table.lang tr:last-child td { border-bottom:none; }
+  table.lang td:first-child { font-weight:600; color:var(--burgdeep); font-size:11px; letter-spacing:.04em;
+                              text-transform:uppercase; width:30%; background:var(--cardsoft); }
+  table.lang td:last-child { font-family:Georgia,serif; font-size:14px; line-height:1.5; }
+  .checkline { margin-top:8px; }
+  .checkline summary { font-size:12px; color:var(--inksoft); cursor:pointer; }
+  .checkpanel { background:var(--script); border-left:3px solid var(--burg); border-radius:6px; padding:10px 14px;
+                margin-top:6px; font-family:Georgia,serif; font-size:14px; }
+  .checkpanel .ref { font-size:10px; letter-spacing:.08em; text-transform:uppercase; color:var(--gold);
+                     font-family:-apple-system,sans-serif; font-weight:600; margin-bottom:6px; }
+  .vnum { color:var(--gold); font-size:11px; vertical-align:super; margin-right:2px; font-family:-apple-system,sans-serif; }
+  .sit { font-weight:700; color:var(--burgdeep); }
+  .footer-note { margin-top:16px; padding-top:12px; border-top:1px solid var(--bordersoft); font-size:11px;
+                 color:var(--inksoft); font-style:italic; }
+  .followup { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:14px 16px; }
+  .fu-label { font-size:11px; font-weight:600; color:var(--gold); letter-spacing:.08em; text-transform:uppercase;
+              margin-bottom:8px; }
+  .fu-chip { display:block; width:100%; text-align:left; background:var(--cardsoft); border:1px solid var(--bordersoft);
+             padding:10px 12px; border-radius:8px; cursor:pointer; font-family:Georgia,serif; font-style:italic;
+             font-size:13.5px; color:var(--ink); }
+  .toast { position:fixed; bottom:24px; left:50%; transform:translateX(-50%); background:var(--burgdeep);
+           color:var(--cream); padding:10px 18px; border-radius:10px; font-size:13px; opacity:0; transition:opacity .3s;
+           pointer-events:none; max-width:90%; text-align:center; }
+  .toast.show { opacity:1; }
+  .cta { margin-top:34px; text-align:center; }
+  .cta a { color:var(--burg); font-weight:600; font-size:13px; }
+  .cursor { display:inline-block; width:8px; height:15px; background:var(--burg); opacity:.7;
+            animation:blink 1s ease-in-out infinite; vertical-align:text-bottom; margin-left:2px; }
+  @keyframes blink { 50% { opacity:0; } }
+  .stage { display:flex; align-items:center; gap:10px; font-family:Georgia,serif; font-style:italic; font-size:14px;
+           color:var(--burgdeep); padding:6px 0; }
+  .spin { width:14px; height:14px; border:2px solid var(--burg); border-top-color:transparent; border-radius:50%;
+          animation:rot 1s linear infinite; }
+  @keyframes rot { to { transform:rotate(360deg); } }
+</style>
+</head>
+<body>
+<div class="demo-banner">Interactive demo · sample content only — the real app generates live, sourced studies for anything you bring it</div>
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <div class="mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#f5e9c8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/></svg>
+      </div>
+      <div>
+        <div class="title">The Bible Study App</div>
+        <div class="tag">ACCURACY · CONTEXT · SOURCE</div>
+      </div>
+    </div>
+  </header>
+
+  <div class="pills">
+    <button class="pill" data-mode="quick" onclick="setMode('quick')">⚡ Quick</button>
+    <button class="pill" data-mode="deep" onclick="setMode('deep')">📚 Deep</button>
+    <button class="pill active" data-mode="devotional" onclick="setMode('devotional')">☀️ Devotional</button>
+  </div>
+
+  <div class="bar">
+    <input id="input" placeholder="Enter a verse, theme, or feeling…" onkeydown="if(event.key==='Enter')nudge()">
+    <div class="bar-foot">
+      <div class="tx">
+        <span class="txchip primary">BSB</span><span class="txchip other">KJV</span>
+        <span style="font-size:11px;color:var(--inksoft);font-style:italic;font-family:Georgia,serif" id="modenote">· devotional posture</span>
+      </div>
+      <button class="go" onclick="nudge()" id="gobtn">Begin</button>
+    </div>
+  </div>
+
+  <div id="examples">
+    <div class="examples-h" id="exh">Try a devotional</div>
+    <div id="exlist"></div>
+  </div>
+
+  <div class="thread" id="thread"></div>
+  <div class="cta">
+    <a href="https://lukeburger-dotcom.github.io/the-bible-study-app-site/">About The Bible Study App →</a>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+var MODE = 'devotional';
+var PLAYED = {};
+
+var EXAMPLES = {
+  quick: ["Why did Jesus weep at Lazarus's tomb? (John 11:35)"],
+  deep: ["Why did Jesus weep at Lazarus's tomb? (John 11:35)"],
+  devotional: ["Mark 5:25–34 — the woman who reached for Jesus"]
+};
+var PLACEHOLDERS = { quick: "Type a verse, phrase, or question…", deep: "Type a verse, phrase, or question…", devotional: "Enter a verse, theme, or feeling…" };
+var MODENOTES = { quick: "· 2 study layers", deep: "· 8 study layers", devotional: "· devotional posture" };
+var GO = { quick: "Study", deep: "Study", devotional: "Begin" };
+var THINKING = { quick: "Considering your study…", deep: "Considering your study…", devotional: "Listening for your invitation…" };
+
+// ── Sample content (pre-rendered blocks, staged reveal) ─────────────────────
+var STUDY_BLOCKS = [
+  '<div class="h2"><span class="dot"></span><h2>Direct Answer</h2></div>',
+  '<p class="p">John 11:35 — the shortest verse in the English Bible — shows Jesus weeping at the tomb of his friend Lazarus, moments before raising him. The tears are not despair; he knows what he is about to do. The Greek suggests quiet, personal grief in the presence of death itself, and love for the mourners around him.</p>',
+  '<div class="h2"><span class="dot"></span><h2>Key Passage</h2></div>',
+  '<div class="quote">Jesus wept.<br><span style="font-size:13px;color:var(--inksoft)">— John 11:35 (KJV)</span></div>' +
+  '<details class="checkline"><summary>Check this passage ▸</summary><div class="checkpanel"><div class="ref">John 11:35 · KJV · bundled text</div><span class="vnum">35</span>Jesus wept.</div></details>',
+  '<div class="h2"><span class="dot"></span><h2>Original-Language Notes</h2></div>',
+  '<div class="h3card">ἐδάκρυσεν (edakrysen)</div>' +
+  '<table class="lang">' +
+  '<tr><td>Found in</td><td>John 11:35 — "wept"</td></tr>' +
+  '<tr><td>Lemma</td><td>δακρύω (dakryō)</td></tr>' +
+  '<tr><td>Parsing</td><td>verb, aorist active indicative, 3rd person singular</td></tr>' +
+  '<tr><td>Lexicon refs</td><td>BDAG s.v. δακρύω; cf. Louw-Nida 25.138</td></tr>' +
+  '<tr><td>Sense here</td><td>to shed tears quietly — distinct from the loud ritual wailing (κλαίω) of the mourners in v. 33</td></tr>' +
+  '</table>' +
+  '<p class="p">This verb appears only here in the New Testament. The crowd wails; Jesus weeps. The distinction is deliberate — his grief is personal, not performed.</p>',
+  '<div class="h2"><span class="dot"></span><h2>Interpretive Options</h2></div>',
+  '<p class="p">Commentators read the tears differently: grief shared with those he loved (a common view across traditions); indignation at death itself, following the strong verb ἐνεβριμήσατο in v. 33 (so D. A. Carson, <em>The Gospel According to John</em>); or the full humanity of Christ on display beside his divinity (John Calvin\'s commentary on John emphasizes this pairing). These readings are not mutually exclusive.</p>',
+  '<div class="h2"><span class="dot"></span><h2>Cross-References</h2></div>',
+  '<p class="p">Hebrews 4:15 (a high priest who sympathizes); Isaiah 53:3 (a man of sorrows); Romans 12:15 (weep with those who weep); Luke 19:41 (Jesus weeps over Jerusalem).</p>',
+  '<div class="h2"><span class="dot"></span><h2>Sources</h2></div>',
+  '<p class="p">D. A. Carson, <em>The Gospel According to John</em> (PNTC); John Calvin, <em>Commentary on the Gospel According to John</em>; BDAG lexicon. Verify all Scripture against an authoritative edition.</p>'
+];
+
+var DEEP_EXTRA = [
+  '<div class="h2"><span class="dot"></span><h2>Context &amp; Background</h2></div>',
+  '<p class="p">First-century Jewish mourning was communal and loud: professional mourners, flute players, and antiphonal wailing were expected even at a poor man\'s funeral (m. Ketubbot 4:4 requires "not less than two flutes and one wailing woman"). Bethany sat barely two miles from Jerusalem (John 11:18), so the crowd of consolers was large — grief here was public theater, which makes Jesus\' quiet tears stand out all the more. Tombs of the period were rock-cut chambers sealed with rolling or plug stones; "four days" (v. 39) mattered because of a popular belief that the soul lingered near the body three days. Every claim here is the kind the full app attributes layer by layer — this demo shows the shape.</p>'
+];
+
+var DEVO_BLOCKS = [
+  '<div class="h2"><span class="dot"></span><h2>The Passage</h2></div>',
+  '<div class="quote">She had suffered greatly under the care of many physicians and had spent all she had, but to no avail. Instead, her condition had only grown worse. When the woman heard about Jesus, she came up through the crowd behind Him and touched His cloak. For she kept saying, "If only I touch His clothes, I will be healed."<br><span style="font-size:13px;color:var(--inksoft)">— Mark 5:26–28 (BSB)</span></div>' +
+  '<details class="checkline"><summary>Check this passage ▸</summary><div class="checkpanel"><div class="ref">Mark 5:26–28 · BSB · bundled text</div>In the real app, the actual bundled verse text appears here for comparison — tap-to-verify is built into every study.</div></details>',
+  '<div class="h2"><span class="dot"></span><h2>The Weight of It</h2></div>',
+  '<p class="p">Twelve years. Under the law she lived by, her bleeding made her untouchable — and everyone knew it. Twelve years of no hand on her shoulder. No embrace at a wedding. Every chair she sat on, unclean. Every person she brushed against, contaminated. She had poured out everything she owned on physicians, and Mark says it plainly: she only got worse.</p>',
+  '<p class="p">So what she does in this crowd is not sweet. It is desperate and it is brave. Every step through that crush of bodies broke the rules that had caged her. She wasn\'t supposed to be there. She touched him anyway.</p>',
+  '<p class="p">And the word Mark uses for her thought — she <em>kept saying</em> it to herself, over and over, a drumbeat under her fear: <em>if I touch even his clothes</em>. Twelve years of nothing, and still that stubborn ember: <em>if</em>.</p>',
+  '<div class="h2"><span class="dot"></span><h2>Sit With This</h2></div>',
+  '<p class="p"><span class="sit">What do you want from Jesus so badly you\'d reach for him even if it cost you?</span></p>',
+  '<p class="p">There\'s no need to rush an answer.</p>',
+  '<div class="h2"><span class="dot"></span><h2>A Prayer</h2></div>',
+  '<p class="p">I\'m tired of managing this on my own. I have spent so much trying to fix it, and I\'m not fixed. You know what I reach for instead of you. Today I\'m pushing through the crowd — the noise, the doubt, the years — because even the edge of you is enough. I\'m reaching.</p>',
+  '<div class="h2"><span class="dot"></span><h2>An Invitation for Today</h2></div>',
+  '<p class="p">Once today, when you notice yourself managing an old ache instead of naming it, stop and name it — to God, out loud if you can.</p>'
+];
+
+var FOLLOWUPS = {
+  quick: { q: "Was it grief — or something closer to anger?",
+    blocks: [
+      '<p class="p">Both currents are in the text. Two verses earlier (v. 33), John uses ἐνεβριμήσατο (enebrimēsato) — a hard word, elsewhere used of stern warning, with a root picture of a horse snorting. Many translations soften it to "deeply moved," but commentators like Carson argue it carries indignation: Jesus standing before death itself — the wreckage it makes of people he loves — and being angry at it. Then v. 35: the tears. Anger at death, grief with the grieving — held together in one person, moments before he undoes it.</p>',
+      '<p class="p">This is a general summary of a well-documented discussion; the full app walks it word by word, sourced. Verify against an authoritative edition.</p>'
+    ]},
+  deep: { q: "Was it grief — or something closer to anger?",
+    blocks: [
+      '<p class="p">Both currents are in the text. Two verses earlier (v. 33), John uses ἐνεβριμήσατο (enebrimēsato) — a hard word, elsewhere used of stern warning, with a root picture of a horse snorting. Many translations soften it to "deeply moved," but commentators like Carson argue it carries indignation: Jesus standing before death itself — the wreckage it makes of people he loves — and being angry at it. Then v. 35: the tears. Anger at death, grief with the grieving — held together in one person, moments before he undoes it.</p>',
+      '<p class="p">This is a general summary of a well-documented discussion; the full app walks it word by word, sourced. Verify against an authoritative edition.</p>'
+    ]},
+  devotional: { q: "I don't know if I have that kind of faith",
+    blocks: [
+      '<p class="p">Look closely at what her faith actually was. Not certainty — she came up <em>behind</em> him, hoping to stay unseen. Not theology — she got some of it wrong, imagining healing worked like static electricity. It was a trembling, rule-breaking, half-hidden <em>reach</em>. That\'s all. And Jesus didn\'t correct her first — he healed her first, then called her "daughter."</p>',
+      '<p class="p">You don\'t need the faith you imagine other people have. You need enough to reach. If today that\'s one honest sentence to God — that\'s the hem of the garment.</p>'
+    ]}
+};
+
+// ── Engine ───────────────────────────────────────────────────────────────────
+function setMode(m) {
+  MODE = m;
+  document.querySelectorAll('.pill').forEach(function(p){ p.classList.toggle('active', p.dataset.mode === m); });
+  document.getElementById('input').placeholder = PLACEHOLDERS[m];
+  document.getElementById('modenote').textContent = MODENOTES[m];
+  document.getElementById('gobtn').textContent = GO[m];
+  document.getElementById('exh').textContent = m === 'devotional' ? 'Try a devotional' : 'Try a study';
+  renderExamples();
+}
+function renderExamples() {
+  var list = document.getElementById('exlist');
+  list.innerHTML = '';
+  EXAMPLES[MODE].forEach(function(ex){
+    var b = document.createElement('button');
+    b.className = 'example';
+    b.innerHTML = '<span class="arrow">→</span><span>' + ex + '</span>';
+    b.onclick = function(){ play(MODE, ex); };
+    list.appendChild(b);
+  });
+}
+function nudge() {
+  var v = document.getElementById('input').value.trim();
+  toast(v ? 'This demo plays sample studies — tap an example below. The real app answers anything you bring it.'
+          : 'Tap an example below to see the app in action.');
+}
+function toast(msg) {
+  var t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('show');
+  setTimeout(function(){ t.classList.remove('show'); }, 3200);
+}
+function play(mode, question) {
+  if (PLAYED[mode]) { document.getElementById('thread').scrollIntoView({behavior:'smooth'}); return; }
+  PLAYED[mode] = true;
+  document.getElementById('examples').style.display = 'none';
+  var thread = document.getElementById('thread');
+  var label = mode === 'devotional' ? 'Devotional' : 'Study';
+  var icon = mode === 'devotional' ? '☀️' : '📖';
+  var qhtml = '<div class="q-line"><div class="q-icon">' + icon + '</div><div><div class="q-label">' + label +
+              '</div><div class="q-text">“' + question + '”</div></div></div>';
+  var card = document.createElement('div');
+  card.innerHTML = qhtml + '<div class="card-r"><div class="stage"><div class="spin"></div>' + THINKING[mode] +
+                   '</div></div>';
+  thread.appendChild(card);
+  card.scrollIntoView({behavior:'smooth', block:'end'});
+
+  var blocks = mode === 'devotional' ? DEVO_BLOCKS : (mode === 'deep' ? STUDY_BLOCKS.slice(0,6).concat(DEEP_EXTRA, STUDY_BLOCKS.slice(6)) : STUDY_BLOCKS);
+  var footer = mode === 'devotional'
+    ? 'A starting point for your time with God — not a substitute for it.'
+    : 'Verify Bible text and lexicon details against authoritative editions for serious study.';
+
+  setTimeout(function(){
+    var inner = card.querySelector('.card-r');
+    inner.innerHTML = '<div class="badge">✦ ' + label + '</div><div id="blocks-' + mode + '"></div><span class="cursor" id="cur-' + mode + '"></span>';
+    var holder = inner.querySelector('#blocks-' + mode);
+    var i = 0;
+    var iv = setInterval(function(){
+      if (i >= blocks.length) {
+        clearInterval(iv);
+        var c = inner.querySelector('#cur-' + mode); if (c) c.remove();
+        var f = document.createElement('div'); f.className = 'footer-note'; f.textContent = footer;
+        inner.appendChild(f);
+        appendFollowup(thread, mode);
+        return;
+      }
+      var d = document.createElement('div'); d.className = 'block'; d.innerHTML = blocks[i];
+      holder.appendChild(d);
+      requestAnimationFrame(function(){ requestAnimationFrame(function(){ d.classList.add('show'); }); });
+      d.scrollIntoView({behavior:'smooth', block:'end'});
+      i++;
+    }, 700);
+  }, 1400);
+}
+function appendFollowup(thread, mode) {
+  var fu = FOLLOWUPS[mode];
+  var box = document.createElement('div');
+  box.className = 'followup';
+  box.innerHTML = '<div class="fu-label">💬 ' + (mode === 'devotional' ? 'Reflect or ask deeper' : 'Ask a follow-up') + '</div>';
+  var chip = document.createElement('button');
+  chip.className = 'fu-chip';
+  chip.textContent = '“' + fu.q + '”';
+  chip.onclick = function() {
+    box.remove();
+    var label = mode === 'devotional' ? 'Reply' : 'Reply';
+    var card = document.createElement('div');
+    card.innerHTML = '<div class="q-line"><div class="q-icon" style="background:var(--term)"><span style="filter:grayscale(1)">💬</span></div><div><div class="q-label" style="color:var(--inksoft)">Follow-up 1</div><div class="q-text">“' + fu.q + '”</div></div></div>' +
+                     '<div class="card-r"><div class="badge">✦ ' + label + '</div><div class="fu-blocks"></div></div>';
+    thread.appendChild(card);
+    var holder = card.querySelector('.fu-blocks');
+    var i = 0;
+    var iv = setInterval(function(){
+      if (i >= fu.blocks.length) { clearInterval(iv); return; }
+      var d = document.createElement('div'); d.className = 'block'; d.innerHTML = fu.blocks[i];
+      holder.appendChild(d);
+      requestAnimationFrame(function(){ requestAnimationFrame(function(){ d.classList.add('show'); }); });
+      d.scrollIntoView({behavior:'smooth', block:'end'});
+      i++;
+    }, 900);
+  };
+  box.appendChild(chip);
+  thread.appendChild(box);
+  box.scrollIntoView({behavior:'smooth', block:'end'});
+}
+renderExamples();
+</script>
+</body>
+</html>
