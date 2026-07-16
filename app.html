@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Bible Study App — Live Preview</title>
+<style>
+  :root {
+    --bg1:#f4ead7; --bg2:#ebdfc4; --card:#fbf5e7; --cardsoft:#f7eed9;
+    --ink:#2a2218; --inksoft:#6b5d4a; --burg:#6b1f2e; --burgdeep:#52162a; --burgsoft:#8b3243;
+    --border:#d4c4a3; --bordersoft:#e3d5b5; --script:#fdf8ed; --term:#f5ecd6; --gold:#9a7b3f; --cream:#f5e9c8;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:linear-gradient(180deg,var(--bg1),var(--bg2)) fixed; color:var(--ink);
+         font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text",system-ui,sans-serif; }
+  .wrap { max-width:720px; margin:0 auto; padding:0 16px 80px; }
+  .banner { background:var(--burgdeep); color:var(--cream); text-align:center; font-size:12.5px; padding:8px 14px; }
+  header { display:flex; justify-content:space-between; align-items:center; padding:18px 4px 14px;
+           border-bottom:1px solid var(--bordersoft); }
+  .brand { display:flex; align-items:center; gap:10px; }
+  .mark { width:34px; height:34px; border-radius:9px; background:var(--burg); display:flex; align-items:center;
+          justify-content:center; box-shadow:0 1px 3px rgba(82,22,42,.25); }
+  .title { font-family:Georgia,serif; font-size:17px; font-weight:600; color:var(--burgdeep); line-height:1.1; }
+  .tag { font-size:9.5px; color:var(--inksoft); letter-spacing:.09em; margin-top:3px; }
+  .newbtn { background:transparent; border:1px solid var(--border); color:var(--inksoft); border-radius:8px;
+            padding:6px 12px; font-size:12px; font-weight:600; cursor:pointer; display:none; }
+  .pills { display:flex; gap:6px; margin:16px 0 14px; }
+  .pill { flex:1; display:flex; align-items:center; justify-content:center; gap:6px; padding:9px 8px;
+          background:transparent; border:1px solid var(--bordersoft); color:var(--inksoft); border-radius:10px;
+          font-size:13px; font-weight:600; cursor:pointer; font-family:inherit; }
+  .pill.active { background:var(--card); border-color:var(--border); color:var(--burgdeep); }
+  .bar { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:16px;
+         box-shadow:0 1px 2px rgba(74,50,30,.06),0 4px 12px rgba(74,50,30,.04); }
+  .bar textarea { width:100%; min-height:56px; border:none; outline:none; background:transparent; font-size:16px;
+                  color:var(--ink); font-family:inherit; resize:vertical; }
+  .bar textarea::placeholder { color:var(--inksoft); opacity:.7; font-style:italic; font-family:Georgia,serif; }
+  .bar-foot { display:flex; justify-content:space-between; align-items:center; margin-top:10px; padding-top:10px;
+              border-top:1px solid var(--bordersoft); }
+  .txchip { font-size:11px; font-weight:600; padding:3px 8px; border-radius:4px; }
+  .txchip.primary { background:var(--burg); color:var(--cream); }
+  .txchip.other { border:1px solid var(--border); color:var(--inksoft); }
+  .modenote { font-size:11px; color:var(--inksoft); font-style:italic; font-family:Georgia,serif; }
+  .go { display:flex; align-items:center; gap:6px; background:var(--burg); color:var(--cream); border:none;
+        padding:8px 16px; border-radius:8px; font-size:14px; font-weight:600; cursor:pointer; font-family:inherit; }
+  .go:disabled { background:var(--border); color:var(--inksoft); cursor:not-allowed; }
+  .trial { display:flex; align-items:center; gap:8px; background:var(--cardsoft); border-radius:10px;
+           padding:10px 14px; margin-top:10px; font-size:12px; color:var(--inksoft); }
+  .examples-h { font-size:11px; font-weight:600; color:var(--inksoft); letter-spacing:.08em; text-transform:uppercase;
+                margin:22px 0 10px; }
+  .example { width:100%; text-align:left; background:var(--cardsoft); border:1px solid var(--bordersoft);
+             padding:12px 14px; border-radius:10px; cursor:pointer; font-family:Georgia,serif; font-style:italic;
+             color:var(--ink); font-size:14px; display:flex; gap:10px; margin-bottom:6px; }
+  .thread { margin-top:18px; }
+  .q-line { display:flex; gap:8px; margin-bottom:10px; align-items:flex-start; }
+  .q-icon { width:26px; height:26px; border-radius:7px; background:var(--burg); display:flex; align-items:center;
+            justify-content:center; font-size:12px; flex-shrink:0; }
+  .q-icon.f { background:var(--term); }
+  .q-label { font-size:10px; font-weight:700; color:var(--burg); letter-spacing:.08em; text-transform:uppercase;
+             margin-bottom:3px; }
+  .q-text { font-family:Georgia,serif; font-style:italic; font-size:15px; }
+  .card-r { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:18px 20px;
+            box-shadow:0 1px 2px rgba(74,50,30,.06),0 4px 12px rgba(74,50,30,.04); margin-bottom:26px; }
+  .badge { font-size:11px; font-weight:600; color:var(--gold); letter-spacing:.1em; text-transform:uppercase;
+           margin-bottom:12px; }
+  .stage { display:flex; align-items:center; gap:10px; font-family:Georgia,serif; font-style:italic; font-size:14px;
+           color:var(--burgdeep); padding:6px 0; }
+  .spin { width:14px; height:14px; border:2px solid var(--burg); border-top-color:transparent; border-radius:50%;
+          animation:rot 1s linear infinite; flex-shrink:0; }
+  @keyframes rot { to { transform:rotate(360deg); } }
+  .md h2 { display:flex; align-items:center; gap:10px; font-family:Georgia,serif; font-size:17px; font-weight:600;
+           color:var(--burgdeep); border-bottom:1px solid var(--bordersoft); padding-bottom:8px; margin:22px 0 10px; }
+  .md h2::before { content:""; width:6px; height:6px; border-radius:50%; background:var(--burg); flex-shrink:0; }
+  .md h3 { font-family:Georgia,serif; font-size:19px; font-weight:600; color:var(--burgdeep); margin:18px 0 8px;
+           padding:10px 14px; background:var(--term); border-radius:8px; border-left:3px solid var(--burg); }
+  .md p { margin:10px 0; line-height:1.7; font-size:15px; }
+  .md blockquote { background:var(--script); border-left:3px solid var(--burg); padding:14px 18px; margin:12px 0;
+                   border-radius:4px 8px 8px 4px; font-family:Georgia,serif; font-size:16px; line-height:1.65; }
+  .md blockquote p { margin:6px 0; font-size:16px; }
+  .md table { width:100%; border-collapse:collapse; font-size:13px; background:var(--script);
+              border:1px solid var(--bordersoft); border-radius:8px; overflow:hidden; margin:4px 0 12px; }
+  .md td { padding:8px 12px; vertical-align:top; border-bottom:1px solid var(--bordersoft); }
+  .md tr:last-child td { border-bottom:none; }
+  .md td:first-child { font-weight:600; color:var(--burgdeep); font-size:11px; letter-spacing:.04em;
+                       text-transform:uppercase; width:30%; background:var(--cardsoft); }
+  .md td:last-child { font-family:Georgia,serif; font-size:14px; line-height:1.5; }
+  .md ul, .md ol { margin:8px 0; padding-left:22px; }
+  .md li { margin-bottom:6px; line-height:1.6; font-size:15px; }
+  .md strong { color:var(--burgdeep); }
+  .cursor { display:inline-block; width:8px; height:15px; background:var(--burg); opacity:.7;
+            animation:blink 1s ease-in-out infinite; vertical-align:text-bottom; margin-left:2px; }
+  @keyframes blink { 50% { opacity:0; } }
+  .footer-note { margin-top:16px; padding-top:12px; border-top:1px solid var(--bordersoft); font-size:11px;
+                 color:var(--inksoft); font-style:italic; }
+  .errbox { background:#fde9e9; border:1px solid #f3c5c5; color:#7a1f29; border-radius:12px; padding:12px 14px;
+            font-size:13px; margin-bottom:16px; }
+  .followup { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:14px 16px;
+              margin-bottom:40px; }
+  .fu-label { font-size:11px; font-weight:600; color:var(--gold); letter-spacing:.08em; text-transform:uppercase;
+              margin-bottom:8px; }
+  .followup textarea { width:100%; min-height:48px; border:none; outline:none; background:transparent; font-size:15px;
+                       color:var(--ink); font-family:inherit; resize:vertical; }
+  .consent { position:fixed; inset:0; background:rgba(42,34,24,.55); display:flex; align-items:center;
+             justify-content:center; z-index:50; padding:16px; }
+  .consent-card { background:var(--bg1); border-radius:16px; max-width:440px; padding:26px;
+                  box-shadow:0 10px 40px rgba(42,34,24,.3); }
+  .consent-card h2 { font-family:Georgia,serif; color:var(--burgdeep); margin:0 0 12px; font-size:22px; }
+  .consent-card p { font-size:14px; line-height:1.6; margin:10px 0; }
+  .consent-card a { color:var(--burg); }
+  .agree { width:100%; background:var(--burg); color:var(--cream); border:none; padding:13px; border-radius:12px;
+           font-size:16px; font-weight:600; cursor:pointer; margin-top:12px; font-family:inherit; }
+  .cta { margin-top:30px; text-align:center; font-size:13px; }
+  .cta a { color:var(--burg); font-weight:600; }
+</style>
+</head>
+<body>
+<div class="banner">Live preview for friends &amp; family — real studies, a few free ones per device. The full app arrives on the App Store soon.</div>
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <div class="mark"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#f5e9c8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"/><line x1="16" y1="8" x2="2" y2="22"/></svg></div>
+      <div>
+        <div class="title">The Bible Study App</div>
+        <div class="tag">ACCURACY · CONTEXT · SOURCE</div>
+      </div>
+    </div>
+    <button class="newbtn" id="newbtn" onclick="newStudy()">+ New</button>
+  </header>
+
+  <div class="pills">
+    <button class="pill" data-mode="quick">⚡ Quick</button>
+    <button class="pill" data-mode="deep">📚 Deep</button>
+    <button class="pill active" data-mode="devotional">☀️ Devotional</button>
+  </div>
+
+  <div class="bar" id="mainbar">
+    <textarea id="input" placeholder="Enter a verse, theme, or feeling…"></textarea>
+    <div class="bar-foot">
+      <div style="display:flex;gap:5px;align-items:center">
+        <span class="txchip primary">BSB</span><span class="txchip other">KJV</span>
+        <span class="modenote" id="modenote">· devotional posture</span>
+      </div>
+      <button class="go" id="gobtn" onclick="submitMain()">Begin</button>
+    </div>
+  </div>
+  <div class="trial" id="trial" style="display:none"></div>
+
+  <div id="examples">
+    <div class="examples-h" id="exh">Try a devotional</div>
+    <div id="exlist"></div>
+  </div>
+
+  <div class="thread" id="thread"></div>
+
+  <div class="followup" id="followup" style="display:none">
+    <div class="fu-label" id="fulabel">Reflect or ask deeper</div>
+    <textarea id="fuinput" placeholder="Ask for more depth, name what you're feeling…"></textarea>
+    <div class="bar-foot">
+      <span class="modenote" id="fucontext"></span>
+      <button class="go" onclick="submitFollowUp()">Ask</button>
+    </div>
+  </div>
+
+  <div class="cta">
+    <a href="https://lukeburger-dotcom.github.io/the-bible-study-app-site/">About this app</a>
+  </div>
+</div>
+
+<div class="consent" id="consent" style="display:none">
+  <div class="consent-card">
+    <h2>Before your first study</h2>
+    <p>Your questions are sent to <strong>Anthropic's Claude</strong> (through this app's server) to generate studies and devotionals. No account, no name — just a random id for your free-study count.</p>
+    <p>Scripture shown comes from public-domain translations. AI commentary can err — verify against an authoritative edition. See the <a href="privacy.html">Privacy Policy</a>.</p>
+    <button class="agree" onclick="agree()">Agree &amp; Continue</button>
+  </div>
+</div>
+
+<script>
+var BACKEND = 'https://the-bible-study-app-production.up.railway.app';
+var APP_SECRET = '94aead26fd450f934ad5fffe14d36b0d7a5805901d7ef342';
+
+var MODE = 'devotional';
+var EXCHANGES = []; // {query, response, mode}
+var BUSY = false;
+
+var EXAMPLES = {
+  quick: ["What does Romans 8:28 mean in context?", "Greek word for 'love' in 1 Corinthians 13", "Cultural background of the prodigal son parable"],
+  deep: ["Why did Jesus weep at Lazarus's tomb? (John 11:35)", "What does 'hesed' carry in the book of Ruth?"],
+  devotional: ["I'm carrying grief today", "Mark 5:25–34 — the woman who reached for Jesus", "When you feel unseen", "I am grateful today but also tired"]
+};
+var UI = {
+  quick:      { ph:"Type a verse, phrase, or question…", note:"· 2 study layers", go:"Study", exh:"Try a study", think:"Considering your study…", fu:"Ask a follow-up", foot:"Verify Bible text and lexicon details against authoritative editions for serious study." },
+  deep:       { ph:"Type a verse, phrase, or question…", note:"· 8 study layers", go:"Study", exh:"Try a study", think:"Considering your study…", fu:"Ask a follow-up", foot:"Verify Bible text and lexicon details against authoritative editions for serious study." },
+  devotional: { ph:"Enter a verse, theme, or feeling…", note:"· devotional posture", go:"Begin", exh:"Try a devotional", think:"Listening for your invitation…", fu:"Reflect or ask deeper", foot:"A starting point for your time with God — not a substitute for it." }
+};
+var TOGGLES = {
+  quick: { originalLang:true, culturalHist:true },
+  deep:  { originalLang:true, fullLexicon:true, etymology:true, culturalHist:true, geography:true, floraFauna:true, archaeology:true, comparativeAne:true },
+  devotional: {}
+};
+
+function deviceId() {
+  var id = localStorage.getItem('bsa-device');
+  if (!id) {
+    id = 'web-' + (crypto.randomUUID ? crypto.randomUUID() : Math.random().toString(36).slice(2) + Date.now());
+    localStorage.setItem('bsa-device', id);
+  }
+  return id;
+}
+function esc(s) { var d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+function inline(s) {
+  return esc(s)
+    .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+    .replace(/(^|[^*])\*([^*]+)\*(?!\*)/g, '$1<em>$2</em>');
+}
+
+// ── Markdown block renderer (ported from the app prototype) ────────────────
+function renderMarkdown(text) {
+  var lines = text.split('\n');
+  var html = [], i = 0;
+  function isTable(l){ var t=l.trim(); return t.startsWith('|') && t.endsWith('|') && t.length>2; }
+  function isSep(l){ var t=l.trim(); if(!t.startsWith('|'))return false; var inner=t.replace(/^\|+|\|+$/g,''); return inner.length>0 && /^[-:| ]+$/.test(inner); }
+  while (i < lines.length) {
+    var start = i, line = lines[i], t = line.trim();
+    if (!t) { i++; continue; }
+    if (t.startsWith('## ')) { html.push('<h2>' + inline(t.slice(3)) + '</h2>'); i++; continue; }
+    if (t.startsWith('### ')) { html.push('<h3>' + inline(t.slice(4)) + '</h3>'); i++; continue; }
+    if (isTable(t)) {
+      var rows = [];
+      while (i < lines.length && isTable(lines[i].trim())) {
+        var lt = lines[i].trim();
+        if (!isSep(lt)) {
+          var cells = lt.split('|'); cells.shift(); cells.pop();
+          rows.push(cells.map(function(c){ return c.trim(); }));
+        }
+        i++;
+      }
+      if (rows.length && rows[0].length === 2 && /^(field)$/i.test(rows[0][0])) rows.shift();
+      html.push('<table>' + rows.map(function(r){
+        return '<tr>' + r.map(function(c){ return '<td>' + inline(c) + '</td>'; }).join('') + '</tr>';
+      }).join('') + '</table>');
+      continue;
+    }
+    if (t.startsWith('>')) {
+      var q = [];
+      while (i < lines.length && lines[i].trim().startsWith('>')) {
+        var qc = lines[i].trim().replace(/^>\s?/, '');
+        if (qc) q.push('<p>' + inline(qc) + '</p>');
+        i++;
+      }
+      html.push('<blockquote>' + q.join('') + '</blockquote>');
+      continue;
+    }
+    if (/^[-*]\s/.test(t)) {
+      var items = [];
+      while (i < lines.length && /^[-*]\s/.test(lines[i].trim())) { items.push('<li>' + inline(lines[i].trim().slice(2)) + '</li>'); i++; }
+      html.push('<ul>' + items.join('') + '</ul>');
+      continue;
+    }
+    if (/^\d+\.\s/.test(t)) {
+      var oitems = [];
+      while (i < lines.length && /^\d+\.\s/.test(lines[i].trim())) { oitems.push('<li>' + inline(lines[i].trim().replace(/^\d+\.\s/, '')) + '</li>'); i++; }
+      html.push('<ol>' + oitems.join('') + '</ol>');
+      continue;
+    }
+    var para = [];
+    while (i < lines.length) {
+      var pt = lines[i].trim();
+      if (!pt || pt.startsWith('#') || pt.startsWith('>') || /^[-*]\s/.test(pt) || /^\d+\.\s/.test(pt) || isTable(pt)) break;
+      para.push(pt); i++;
+    }
+    if (para.length) html.push('<p>' + inline(para.join(' ')) + '</p>');
+    if (i === start) i++;
+  }
+  return html.join('');
+}
+
+// ── UI wiring ────────────────────────────────────────────────────────────────
+document.querySelectorAll('.pill').forEach(function(p){
+  p.onclick = function(){ if (BUSY) return; setMode(p.dataset.mode); };
+});
+function setMode(m) {
+  MODE = m;
+  document.querySelectorAll('.pill').forEach(function(p){ p.classList.toggle('active', p.dataset.mode === m); });
+  document.getElementById('input').placeholder = UI[m].ph;
+  document.getElementById('modenote').textContent = UI[m].note;
+  document.getElementById('gobtn').textContent = UI[m].go;
+  document.getElementById('exh').textContent = UI[m].exh;
+  document.getElementById('fulabel').textContent = UI[m].fu;
+  renderExamples();
+}
+function renderExamples() {
+  var list = document.getElementById('exlist');
+  list.innerHTML = '';
+  EXAMPLES[MODE].forEach(function(ex){
+    var b = document.createElement('button');
+    b.className = 'example';
+    b.innerHTML = '<span style="color:var(--burgsoft);font-style:normal">→</span><span>' + esc(ex) + '</span>';
+    b.onclick = function(){ document.getElementById('input').value = ex; };
+    list.appendChild(b);
+  });
+}
+function agree() {
+  localStorage.setItem('bsa-consent', '1');
+  document.getElementById('consent').style.display = 'none';
+}
+function ensureConsent() {
+  if (localStorage.getItem('bsa-consent') === '1') return true;
+  document.getElementById('consent').style.display = 'flex';
+  return false;
+}
+function newStudy() {
+  EXCHANGES = [];
+  document.getElementById('thread').innerHTML = '';
+  document.getElementById('followup').style.display = 'none';
+  document.getElementById('mainbar').style.display = 'block';
+  document.getElementById('examples').style.display = 'block';
+  document.getElementById('newbtn').style.display = 'none';
+}
+function submitMain() {
+  var v = document.getElementById('input').value.trim();
+  if (!v || BUSY) return;
+  if (!ensureConsent()) return;
+  document.getElementById('input').value = '';
+  send(v);
+}
+function submitFollowUp() {
+  var v = document.getElementById('fuinput').value.trim();
+  if (!v || BUSY) return;
+  document.getElementById('fuinput').value = '';
+  send(v);
+}
+
+function send(query) {
+  BUSY = true;
+  document.getElementById('gobtn').disabled = true;
+  document.getElementById('mainbar').style.display = EXCHANGES.length ? 'none' : 'block';
+  document.getElementById('examples').style.display = 'none';
+  document.getElementById('followup').style.display = 'none';
+  document.getElementById('newbtn').style.display = 'inline-block';
+
+  var thread = document.getElementById('thread');
+  var idx = EXCHANGES.length;
+  var isFirst = idx === 0;
+  var label = isFirst ? (MODE === 'devotional' ? 'Devotional' : 'Study') : 'Follow-up ' + idx;
+  var wrap = document.createElement('div');
+  wrap.innerHTML =
+    '<div class="q-line"><div class="q-icon' + (isFirst ? '' : ' f') + '">' + (isFirst ? (MODE==='devotional'?'☀️':'📖') : '💬') + '</div>' +
+    '<div><div class="q-label">' + label + '</div><div class="q-text">“' + esc(query) + '”</div></div></div>' +
+    '<div class="card-r"><div class="stage"><div class="spin"></div>' + esc(UI[MODE].think) + '</div></div>';
+  thread.appendChild(wrap);
+  wrap.scrollIntoView({ behavior:'smooth', block:'end' });
+  var card = wrap.querySelector('.card-r');
+
+  var messages = [];
+  EXCHANGES.forEach(function(ex){
+    messages.push({ role:'user', content: ex.query });
+    if (ex.response) messages.push({ role:'assistant', content: ex.response });
+  });
+  messages.push({ role:'user', content: query });
+
+  var acc = '', gotText = false, mdDiv = null, trialRemaining = null;
+
+  fetch(BACKEND + '/v1/study', {
+    method: 'POST',
+    headers: { 'Content-Type':'application/json', 'X-Device-Id': deviceId(), 'X-App-Secret': APP_SECRET },
+    body: JSON.stringify({ mode: MODE, messages: messages, settings: { translations: ['BSB','KJV'], toggles: TOGGLES[MODE] } })
+  }).then(function(res){
+    if (!res.ok) {
+      return res.json().then(function(j){
+        throw new Error(res.status === 402
+          ? 'Your free studies on this device are used up — thank you for trying it! The full app (with subscriptions) lands on the App Store soon.'
+          : (j && j.error && j.error.message) || 'The server had trouble (' + res.status + '). Please try again.');
+      }, function(){ throw new Error('The server had trouble (' + res.status + '). Please try again.'); });
+    }
+    var reader = res.body.getReader();
+    var dec = new TextDecoder();
+    var buf = '', event = '';
+    function handle(eventName, data) {
+      var d; try { d = JSON.parse(data); } catch(e) { return; }
+      if (eventName === 'meta' && typeof d.trialRemaining === 'number') {
+        trialRemaining = d.trialRemaining;
+      } else if (eventName === 'delta' && d.text) {
+        if (!gotText) {
+          gotText = true;
+          card.innerHTML = '<div class="badge">✦ ' + (isFirst ? label : 'Reply') + '</div><div class="md"></div><span class="cursor"></span>';
+          mdDiv = card.querySelector('.md');
+        }
+        acc += d.text;
+        mdDiv.innerHTML = renderMarkdown(acc);
+      } else if (eventName === 'error') {
+        throw new Error(d.message || 'The study could not be completed. Please try again.');
+      }
+    }
+    function pump() {
+      return reader.read().then(function(r){
+        if (r.done) return;
+        buf += dec.decode(r.value, { stream:true });
+        var lines = buf.split('\n');
+        buf = lines.pop() || '';
+        for (var li = 0; li < lines.length; li++) {
+          var l = lines[li];
+          if (l.indexOf('event: ') === 0) event = l.slice(7).trim();
+          else if (l.indexOf('data: ') === 0) handle(event, l.slice(6));
+        }
+        return pump();
+      });
+    }
+    return pump();
+  }).then(function(){
+    if (!gotText) throw new Error('Empty response — please try again.');
+    finishCard();
+    EXCHANGES.push({ query: query, response: acc, mode: MODE });
+    showFollowUp();
+    showTrial(trialRemaining);
+  }).catch(function(err){
+    if (gotText) { finishCard(); EXCHANGES.push({ query: query, response: acc, mode: MODE }); showFollowUp(); }
+    else {
+      wrap.remove();
+      var eb = document.createElement('div');
+      eb.className = 'errbox';
+      eb.textContent = err.message;
+      thread.appendChild(eb);
+      if (EXCHANGES.length === 0) {
+        document.getElementById('mainbar').style.display = 'block';
+        document.getElementById('examples').style.display = 'block';
+        document.getElementById('input').value = query;
+      } else showFollowUp();
+      setTimeout(function(){ eb.remove(); }, 9000);
+    }
+    showTrial(trialRemaining);
+  }).finally(function(){
+    BUSY = false;
+    document.getElementById('gobtn').disabled = false;
+  });
+
+  function finishCard() {
+    var c = card.querySelector('.cursor'); if (c) c.remove();
+    var f = document.createElement('div');
+    f.className = 'footer-note';
+    f.textContent = UI[MODE].foot;
+    card.appendChild(f);
+  }
+  function showFollowUp() {
+    var fu = document.getElementById('followup');
+    fu.style.display = 'block';
+    document.getElementById('fucontext').textContent = 'Context from ' + EXCHANGES.length + ' exchange' + (EXCHANGES.length === 1 ? '' : 's') + ' above';
+    fu.scrollIntoView({ behavior:'smooth', block:'end' });
+  }
+}
+function showTrial(remaining) {
+  if (remaining === null || remaining === undefined) return;
+  var tr = document.getElementById('trial');
+  tr.style.display = 'flex';
+  tr.innerHTML = '✨ ' + (remaining > 0
+    ? remaining + ' free ' + (remaining === 1 ? 'study' : 'studies') + ' remaining on this device'
+    : 'Free studies used up — thank you for trying it! I hope you enjoyed it!');
+}
+renderExamples();
+</script>
+</body>
+</html>
