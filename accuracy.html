@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accuracy — The Bible Study App</title>
+<meta name="description" content="How The Bible Study App verifies its accuracy: real-time Scripture verification, audited sourcing, adversarial testing, and published results.">
+<style>
+  body { background: #f1e6d0; color: #2a2218; font-family: Georgia, serif; line-height: 1.65; margin: 0; }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 20px 60px; }
+  h1 { color: #52162a; font-size: 28px; margin-bottom: 4px; }
+  h2 { color: #52162a; font-size: 19px; margin-top: 32px; border-bottom: 1px solid #e3d5b5; padding-bottom: 6px; }
+  .tagline { color: #6b5d4a; font-style: italic; }
+  a { color: #6b1f2e; }
+  .card { background: #fbf5e7; border: 1px solid #d9c9a8; border-radius: 12px; padding: 18px 20px; margin: 14px 0; }
+  .num { color: #6b1f2e; font-weight: bold; font-family: -apple-system, sans-serif; font-size: 13px; letter-spacing: .06em; }
+  .verdict { border-left: 3px solid #6b1f2e; padding: 10px 16px; background: #f7efdb; font-style: italic; margin: 14px 0; }
+  .quiet { font-size: 13px; color: #6b5d4a; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  td, th { text-align: left; padding: 7px 8px; border-bottom: 1px solid #e3d5b5; vertical-align: top; }
+  th { color: #52162a; font-family: -apple-system, sans-serif; font-size: 12px; letter-spacing: .05em; text-transform: uppercase; }
+  footer { margin-top: 48px; font-size: 13px; color: #6b5d4a; }
+</style>
+</head>
+<body>
+<main>
+  <h1>How we know it's accurate</h1>
+  <p class="tagline">Accuracy · Context · Source — and the receipts behind the tagline.</p>
+
+  <p>AI can invent things. For a Bible study app, that's disqualifying. So we didn't settle for telling the AI to be careful — we built a system around it, and we publish what the system finds. Here is the whole thing, plainly.</p>
+
+  <h2>The five layers</h2>
+  <div class="card"><span class="num">1 · EXACT SCRIPTURE, ENFORCED BY CODE</span><br>
+  Every Scripture quotation is checked character-for-character against the actual public-domain text bundled in the app (BSB, KJV, WEB, ASV, YLT, Darby) — in real time, by deterministic software, not by the AI grading itself. A quote that drifts from the real wording is replaced with the exact text before it reaches you. You can also tap "Check this passage" under any quote and compare for yourself.</div>
+  <div class="card"><span class="num">2 · SOURCING RULES</span><br>
+  The AI must attribute every interpretive claim to named scholars and real works, may never invent page numbers or journal references, may never claim a scholarly consensus it can't name, and must present contested readings as contested — with the positions and the people who hold them.</div>
+  <div class="card"><span class="num">3 · A FROZEN TEST BATTERY</span><br>
+  55 fixed study prompts — 30 ordinary passages spanning the whole Bible, plus 25 adversarial prompts designed to bait fabrication (fake books, fake quotes, invented consensus, pressure for page numbers). The same battery re-runs after every significant change, so accuracy is measured, not assumed.</div>
+  <div class="card"><span class="num">4 · RIVAL-AI AUDITS</span><br>
+  Battery outputs are audited by a competing AI model (with web search), instructed to assume everything is wrong and verify claim-by-claim: every citation, every attribution, every date, every Greek and Hebrew claim — and, in the final lens, whether our summaries represent what the passages actually say.</div>
+  <div class="card"><span class="num">5 · PUBLISHED RESULTS</span><br>
+  The methodology and the raw study outputs are published below, unedited. If you're skeptical — good; that's the posture this app was built for. Check us.</div>
+
+  <h2>Results to date</h2>
+  <table>
+    <tr><th>What was checked</th><th>Scope</th><th>Result</th></tr>
+    <tr><td>Fabricated books, scholars, or sources</td><td>5 independent audit batches, ~24 studies claim-by-claim</td><td><strong>Zero found</strong></td></tr>
+    <tr><td>Misattributed scholarly positions</td><td>Same batches</td><td><strong>Zero found</strong></td></tr>
+    <tr><td>Scripture quote exactness</td><td>Every quote, every study, continuously</td><td><strong>Enforced by code</strong> (65 drifted quotes auto-corrected in the latest full battery; zero uncorrected)</td></tr>
+    <tr><td>Behavior under adversarial prompts</td><td>25 attack prompts (fake books, fake quotes, fake consensus…)</td><td><strong>No fabrication induced</strong>; sampled responses graded "exemplary" by the auditing model</td></tr>
+    <tr><td>Faithful summarization of Scripture</td><td>Dedicated audit on the four hardest cases (Psalm 22, Hosea 11:1/Matt 2:15, John 6, Matt 6:33), ~60–70 claims</td><td><strong>Zero misrepresentations</strong>; auditor's verdict: "No, it is not summarizing Scripture incorrectly."</td></tr>
+  </table>
+  <p class="quiet">Known minor-issue class, reported honestly: a handful of "mild" flags across all audits — e.g., a slightly intensified paraphrase ("controlling priority" for "first") or a loose echo-claim. No reversed meanings, no invented facts.</p>
+
+  <div class="verdict">What we claim: every quote verified against the real text; every interpretive claim sourced; audited by a rival AI across five batches with zero fabricated sources; results published.<br>
+  What we don't claim: perfection. AI-generated commentary is a starting point for study — the app says so on every study, and the primary sources always win.</div>
+
+  <h2>Check us</h2>
+  <p>Raw battery outputs (unedited, exactly as generated): <a href="accuracy-outputs/">browse the studies</a>. Methodology: <a href="accuracy-outputs/METHODOLOGY.md">the benchmark design</a>. Found an error we missed? <a href="index.html#contact">Tell us</a> — finding it is the point.</p>
+
+  <footer>The Bible Study App · <a href="index.html">Home</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></footer>
+</main>
+</body>
+</html>

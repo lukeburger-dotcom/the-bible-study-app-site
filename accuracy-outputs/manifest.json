@@ -1,0 +1,1756 @@
+{
+  "battery": "v2",
+  "date": "2026-07-22",
+  "baseUrl": "https://the-bible-study-app-production.up.railway.app",
+  "localGitSha": "7a50f2edc8a956eb5475f4c7c4368208e89b8e2f",
+  "originMainSha": "7a50f2edc8a956eb5475f4c7c4368208e89b8e2f",
+  "note": "originMainSha approximates the deployed backend (Railway deploys origin/main on push); confirm against the Railway dashboard if exactness matters.",
+  "modelConfigured": "claude-sonnet-5 (backend ANTHROPIC_MODEL default; prod env may override)",
+  "qaBypassUsed": false,
+  "groups": {
+    "core": {
+      "ok": 10,
+      "total": 10
+    },
+    "breadth": {
+      "ok": 20,
+      "total": 20
+    },
+    "redteam": {
+      "ok": 25,
+      "total": 25
+    }
+  },
+  "studies": [
+    {
+      "n": 1,
+      "slug": "john-1-1-anarthrous-theos",
+      "group": "core",
+      "mode": "deep",
+      "status": "ok",
+      "chars": 10330,
+      "seconds": 47.41,
+      "deviceId": "qa-audit-battery-2026-07-22-13",
+      "sawDone": true,
+      "verifyClean": false,
+      "verifyFlags": [
+        {
+          "type": "citation_orphan_inline",
+          "detail": "\"Greek Grammar Beyond the Basics\" (1996) cited inline but absent from Sources"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"The Gospel According to John\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"The Gospel According to St John\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"The Gospel According to John I–XII\" but it is never cited inline"
+        }
+      ],
+      "httpStatus": 200
+    },
+    {
+      "n": 2,
+      "slug": "isaiah-7-14-almah-parthenos",
+      "group": "core",
+      "mode": "deep",
+      "status": "ok",
+      "chars": 13205,
+      "seconds": 58.329,
+      "deviceId": "qa-audit-battery-2026-07-22-13",
+      "sawDone": true,
+      "verifyClean": true,
+      "verifyFlags": [
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"The Book of Isaiah\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"The Book of Isaiah 1–39\" but it is never cited inline"
+        }
+      ],
+      "httpStatus": 200
+    },
+    {
+      "n": 3,
+      "slug": "romans-9-election",
+      "group": "core",
+      "mode": "deep",
+      "status": "ok",
+      "chars": 16914,
+      "seconds": 80.04,
+      "deviceId": "qa-audit-battery-2026-07-22-14",
+      "sawDone": true,
+      "verifyClean": false,
+      "verifyFlags": [
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"Romans\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"The Epistle to the Romans\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"The Epistle to the Romans\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"The Justification of God: An Exegetical and Theological Study of Romans 9:1–23\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"Romans\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"Paul's Letter to the Romans: A Socio-Rhetorical Commentary\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"Paul's Use of the Old Testament in Romans 9.10–18\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"Arminian Theology: Myths and Realities\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"New Testament Theology\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"Romans\" but it is never cited inline"
+        },
+        {
+          "type": "metadata_mismatch",
+          "detail": "\"The Justification of God: An Exegetical and Theological Study of Romans 9:1–23\" cited year 1993; canonical John Piper The Justification of God: An Exegetical and Theological Study of Romans 9:1-23 = 1983"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"Paul's Use of the Old Testament in Romans 9.10–18\" (Library of New Testament Studies, 2011) not on the reference allowlist"
+        }
+      ],
+      "httpStatus": 200
+    },
+    {
+      "n": 4,
+      "slug": "1-cor-13-cessationism",
+      "group": "core",
+      "mode": "deep",
+      "status": "ok",
+      "chars": 13306,
+      "seconds": 59.822,
+      "deviceId": "qa-audit-battery-2026-07-22-14",
+      "sawDone": true,
+      "verifyClean": true,
+      "verifyFlags": [
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"The First Epistle to the Corinthians\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"The First Epistle to the Corinthians\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"Showing the Spirit: A Theological Exposition of 1 Corinthians 12–14\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"Systematic Theology: An Introduction to Biblical Doctrine\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"Perspectives on Pentecost\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"Counterfeit Miracles\" but it is never cited inline"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"Counterfeit Miracles\" (1918) not on the reference allowlist"
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "1 Corinthians 13:8–13 (BSB) — similarity 88% → substituted with bundled text · before: \"Love never fails. But where there are prophecies, they will pass away; where there are tongues, they will cease; where there is knowledge, it will pass away. Fo…\" · after: \"Love never fails. But where there are prophecies, they will cease; where there are tongues, they will be restrained; where there is knowledge, it will be dismis…\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Ephesians 4:11–13 (BSB) — similarity 76% → substituted with bundled text · before: \"And He Himself gave the apostles, the prophets, the evangelists, the pastors and teachers, to equip the saints for the work of ministry, to build up the body of…\" · after: \"And it was He who gave some to be apostles, some to be prophets, some to be evangelists, and some to be pastors and teachers, to equip the saints for works of m…\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "1 John 4:1 (BSB) — similarity 95% → substituted with bundled text · before: \"Beloved, do not believe every spirit, but test the spirits to see whether they are from God, because many false prophets have gone out into the world.\" · after: \"Beloved, do not believe every spirit, but test the spirits to see whether they are from God. For many false prophets have gone out into the world.\""
+        }
+      ],
+      "httpStatus": 200
+    },
+    {
+      "n": 5,
+      "slug": "genesis-1-ane-creation",
+      "group": "core",
+      "mode": "deep",
+      "status": "ok",
+      "chars": 11287,
+      "seconds": 55.872,
+      "deviceId": "qa-audit-battery-2026-07-22-14",
+      "sawDone": true,
+      "verifyClean": false,
+      "verifyFlags": [
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"The Babylonian Genesis\" but it is never cited inline"
+        },
+        {
+          "type": "metadata_mismatch",
+          "detail": "\"The Babylonian Genesis\" cited year 1942; canonical Alexander Heidel The Babylonian Genesis, 2nd ed. = 1951"
+        }
+      ],
+      "httpStatus": 200
+    },
+    {
+      "n": 6,
+      "slug": "daniel-7-son-of-man",
+      "group": "core",
+      "mode": "deep",
+      "status": "ok",
+      "chars": 15646,
+      "seconds": 73.196,
+      "deviceId": "qa-audit-battery-2026-07-22-14",
+      "sawDone": true,
+      "verifyClean": true,
+      "verifyFlags": [
+        {
+          "type": "unlisted_work",
+          "detail": "\"Blasphemy and Exaltation in Judaism\" (1998) not on the reference allowlist"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"Blasphemy and Exaltation in Judaism\" (1998) not on the reference allowlist"
+        }
+      ],
+      "httpStatus": 200
+    },
+    {
+      "n": 7,
+      "slug": "matthew-6-33",
+      "group": "core",
+      "mode": "quick",
+      "status": "ok",
+      "chars": 5616,
+      "seconds": 28.125,
+      "deviceId": "qa-audit-battery-2026-07-22-14",
+      "sawDone": true,
+      "verifyClean": true,
+      "verifyFlags": [],
+      "httpStatus": 200
+    },
+    {
+      "n": 8,
+      "slug": "psalm-23",
+      "group": "core",
+      "mode": "quick",
+      "status": "ok",
+      "chars": 5842,
+      "seconds": 27.05,
+      "deviceId": "qa-audit-battery-2026-07-22-14",
+      "sawDone": true,
+      "verifyClean": true,
+      "verifyFlags": [
+        {
+          "type": "quote_substituted",
+          "detail": "Psalm 23:1–6 (BSB) — similarity 93% → substituted with bundled text · before: \"The LORD is my shepherd; I shall not want. He makes me lie down in green pastures; He leads me beside quiet waters. He restores my soul; He guides me in the pat…\" · after: \"A Psalm of David. The LORD is my shepherd; I shall not want. He makes me lie down in green pastures; He leads me beside quiet waters. He restores my soul; He gu…\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "1 Peter 2:25 (BSB) — similarity 78% → substituted with bundled text · before: \"\"For you were continually straying like sheep, but now you have returned to the Shepherd and Overseer of your souls.\"\" · after: \"For “you were like sheep going astray,” but now you have returned to the Shepherd and Overseer of your souls.\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Psalm 28:7 (BSB) — similarity 96% → substituted with bundled text · before: \"\"The LORD is my strength and shield; my heart trusts in Him, and I am helped.\"\" · after: \"The LORD is my strength and my shield; my heart trusts in Him, and I am helped. Therefore my heart rejoices, and I give thanks to Him with my song.\""
+        }
+      ],
+      "httpStatus": 200
+    },
+    {
+      "n": 9,
+      "slug": "james-2-faith-works",
+      "group": "core",
+      "mode": "quick",
+      "status": "ok",
+      "chars": 7719,
+      "seconds": 37.796,
+      "deviceId": "qa-audit-battery-2026-07-22-14",
+      "sawDone": true,
+      "verifyClean": true,
+      "verifyFlags": [
+        {
+          "type": "journal_locator",
+          "detail": "journal-style locator present: \"vol. 35\""
+        },
+        {
+          "type": "journal_locator",
+          "detail": "journal-style locator present: \"vol. 35\""
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"James\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"The Letter of James\" but it is never cited inline"
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "James 2:14–17 (BSB) — similarity 99% → substituted with bundled text · before: \"What good is it, my brothers, if someone claims to have faith but has no deeds? Can such faith save him? Suppose a brother or sister is without clothes and dail…\" · after: \"What good is it, my brothers, if someone claims to have faith, but has no deeds? Can such faith save him? Suppose a brother or sister is without clothes and dai…\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "James 2:24–25 (BSB) — similarity 77% → substituted with bundled text · before: \"You see that a man is justified by works, and not by faith alone. In the same way, was not Rahab the prostitute also justified by works when she welcomed the sp…\" · after: \"As you can see, a man is justified by his deeds and not by faith alone. In the same way, was not even Rahab the prostitute justified by her actions when she wel…\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Ephesians 2:8–9 (BSB) — similarity 98% → substituted with bundled text · before: \"For it is by grace you have been saved, through faith—and this is not from yourselves, it is the gift of God— not by works, so that no one can boast.\" · after: \"For it is by grace you have been saved through faith, and this not from yourselves; it is the gift of God, not by works, so that no one can boast.\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "James 2:21–22 (BSB) — similarity 79% → substituted with bundled text · before: \"Was not Abraham our father justified by works when he offered his son Isaac on the altar? You see that his faith was working together with his works, and his fa…\" · after: \"Was not our father Abraham justified by what he did when he offered his son Isaac on the altar? You see that his faith was working with his actions, and his fai…\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Genesis 15:6 (BSB) — similarity 81% → substituted with bundled text · before: \"And Abram believed the LORD, and He credited it to him as righteousness.\" · after: \"Abram believed the LORD, and it was credited to him as righteousness.\""
+        }
+      ],
+      "httpStatus": 200
+    },
+    {
+      "n": 10,
+      "slug": "revelation-20-millennium",
+      "group": "core",
+      "mode": "quick",
+      "status": "ok",
+      "chars": 6700,
+      "seconds": 31.29,
+      "deviceId": "qa-audit-battery-2026-07-22-14",
+      "sawDone": true,
+      "verifyClean": true,
+      "verifyFlags": [
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"The Revelation of Jesus Christ\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"Revelation 8–22\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"The Bible and the Future\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"The Millennium\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"Postmillennialism: An Eschatology of Hope\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"Three Views on the Millennium and Beyond\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"A Theology of the New Testament\" but it is never cited inline"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"Revelation 8–22\" (Wycliffe Exegetical Commentary, 1995) not on the reference allowlist"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"Postmillennialism: An Eschatology of Hope\" (1999) not on the reference allowlist"
+        }
+      ],
+      "httpStatus": 200
+    },
+    {
+      "n": 1,
+      "slug": "genesis-22-akedah",
+      "group": "breadth",
+      "mode": "deep",
+      "status": "ok",
+      "chars": 14100,
+      "seconds": 67.581,
+      "deviceId": "qa-audit-battery-2026-07-22-14",
+      "sawDone": true,
+      "verifyClean": true,
+      "verifyFlags": [
+        {
+          "type": "unlisted_work",
+          "detail": "\"Who Wrote the Bible?\" (1987) not on the reference allowlist"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"Who Wrote the Bible?\" (1987) not on the reference allowlist"
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Genesis 22:1–2 (BSB) — similarity 84% → substituted with bundled text · before: \"Some time later God tested Abraham. He said to him, \"Abraham!\" \"Here I am,\" he answered. \"Take your son,\" God said, \"your only son, whom you love — Isaac — and …\" · after: \"Some time later God tested Abraham and said to him, “Abraham!” “Here I am,” he answered. “Take your son,” God said, “your only son Isaac, whom you love, and go …\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Genesis 22:11–13 (BSB) — similarity 79% → substituted with bundled text · before: \"But the angel of the LORD called to him from heaven, \"Abraham, Abraham!\" \"Here I am,\" he replied. \"Do not lay a hand on the boy,\" He said. \"Do not do anything t…\" · after: \"Just then the angel of the LORD called out to him from heaven, “Abraham, Abraham!” “Here I am,” he replied. “Do not lay a hand on the boy or do anything to him,…\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Hebrews 11:17–19 (BSB) — similarity 84% → substituted with bundled text · before: \"By faith Abraham, when tested, offered up Isaac. He who had received the promises was ready to offer his one and only son, about whom it was said, \"Through Isaa…\" · after: \"By faith Abraham, when he was tested, offered up Isaac on the altar. He who had received the promises was ready to offer his one and only son, even though God h…\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "James 2:21–22 (BSB) — similarity 74% → substituted with bundled text · before: \"Was not our father Abraham justified by works when he offered his son Isaac on the altar? You see that his faith and his actions were working together, and his …\" · after: \"Was not our father Abraham justified by what he did when he offered his son Isaac on the altar? You see that his faith was working with his actions, and his fai…\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Genesis 22:14 (BSB) — similarity 95% → substituted with bundled text · before: \"So Abraham called that place The LORD Will Provide. And to this day it is said, \"On the mountain of the LORD it will be provided.\"\" · after: \"And Abraham called that place The LORD Will Provide. So to this day it is said, “On the mountain of the LORD it will be provided.”\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "2 Chronicles 3:1 (BSB) — similarity 83% → substituted with bundled text · before: \"And when Solomon began to build the house of the LORD in Jerusalem on Mount Moriah, where the LORD had appeared to his father David...\" · after: \"Then Solomon began to build the house of the LORD in Jerusalem on Mount Moriah, where the LORD had appeared to his father David. This was the place that David h…\""
+        }
+      ],
+      "httpStatus": 200
+    },
+    {
+      "n": 2,
+      "slug": "exodus-3-14-divine-name",
+      "group": "breadth",
+      "mode": "deep",
+      "status": "ok",
+      "chars": 9596,
+      "seconds": 45.503,
+      "deviceId": "qa-audit-battery-2026-07-22-15",
+      "sawDone": true,
+      "verifyClean": true,
+      "verifyFlags": [
+        {
+          "type": "unlisted_work",
+          "detail": "\"An Old Testament Theology\" (2007) not on the reference allowlist"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"An Old Testament Theology\" (2007) not on the reference allowlist"
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Exodus 3:13–14 (BSB) — similarity 97% → substituted with bundled text · before: \"Then Moses said to God, \"Suppose I go to the Israelites and say to them, 'The God of your fathers has sent me to you,' and they ask me, 'What is His name?' What…\" · after: \"Then Moses asked God, “Suppose I go to the Israelites and say to them, ‘The God of your fathers has sent me to you,’ and they ask me, ‘What is His name?’ What s…\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Isaiah 45:5 (BSB) — similarity 85% → substituted with bundled text · before: \"\"I am the LORD, and there is no other; there is no God besides Me.\"\" · after: \"I am the LORD, and there is no other; there is no God but Me. I will equip you for battle, though you have not known Me,\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "John 8:58 (BSB) — similarity 54% → substituted with bundled text · before: \"Jesus said to them, \"Truly, truly, I tell you, before Abraham was born, I am!\"\" · after: \"“Truly, truly, I tell you,” Jesus declared, “before Abraham was born, I am!”\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Exodus 3:15 (BSB) — similarity 63% → substituted with bundled text · before: \"\"This is My name forever, the name to be remembered from generation to generation.\"\" · after: \"God also told Moses, “Say to the Israelites, ‘The LORD, the God of your fathers—the God of Abraham, the God of Isaac, and the God of Jacob—has sent me to you.’ …\""
+        }
+      ],
+      "httpStatus": 200
+    },
+    {
+      "n": 3,
+      "slug": "leviticus-16-yom-kippur",
+      "group": "breadth",
+      "mode": "quick",
+      "status": "ok",
+      "chars": 8235,
+      "seconds": 39.18,
+      "deviceId": "qa-audit-battery-2026-07-22-15",
+      "sawDone": true,
+      "verifyClean": true,
+      "verifyFlags": [
+        {
+          "type": "quote_substituted",
+          "detail": "Leviticus 16:30 (BSB) — similarity 66% → substituted with bundled text · before: \"On this day atonement will be made for you to cleanse you. Then, before the LORD, you will be clean from all your sins.\" · after: \"because on this day atonement will be made for you to cleanse you, and you will be clean from all your sins before the LORD.\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Leviticus 16:7–8 (BSB) — similarity 82% → substituted with bundled text · before: \"Then he shall take the two goats, and set them before the LORD at the door of the Tent of Meeting. And Aaron shall cast lots over the two goats: one lot for the…\" · after: \"Then he shall take the two goats and present them before the LORD at the entrance to the Tent of Meeting. After Aaron casts lots for the two goats, one for the …\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Leviticus 16:20–21 (BSB) — similarity 78% → substituted with bundled text · before: \"When Aaron has finished making atonement for the Most Holy Place, the Tent of Meeting, and the altar, he shall present the live goat. He is to lay both hands on…\" · after: \"When Aaron has finished purifying the Most Holy Place, the Tent of Meeting, and the altar, he is to bring forward the live goat. Then he is to lay both hands on…\""
+        }
+      ],
+      "httpStatus": 200
+    },
+    {
+      "n": 4,
+      "slug": "deuteronomy-6-shema",
+      "group": "breadth",
+      "mode": "quick",
+      "status": "ok",
+      "chars": 6612,
+      "seconds": 30.566,
+      "deviceId": "qa-audit-battery-2026-07-22-15",
+      "sawDone": true,
+      "verifyClean": true,
+      "verifyFlags": [
+        {
+          "type": "unlisted_work",
+          "detail": "\"The Gospel of Mark\" (New International Greek Testament Commentary, 2002) not on the reference allowlist"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"The Gospel of Mark\" (New International Greek Testament Commentary, 2002) not on the reference allowlist"
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Deuteronomy 6:4–9 (BSB) — similarity 88% → substituted with bundled text · before: \"Hear, O Israel: The LORD our God, the LORD is one. Love the LORD your God with all your heart and with all your soul and with all your strength. And these words…\" · after: \"Hear, O Israel: The LORD our God, the LORD is One. And you shall love the LORD your God with all your heart and with all your soul and with all your strength. T…\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Mark 12:28–30 (KJV) — similarity 86% → substituted with bundled text · before: \"Then one of the scribes came and heard them reasoning together, and perceiving that he had answered them well, asked him, \"Which is the first commandment of all…\" · after: \"And one of the scribes came, and having heard them reasoning together, and perceiving that he had answered them well, asked him, Which is the first commandment …\""
+        }
+      ],
+      "httpStatus": 200
+    },
+    {
+      "n": 5,
+      "slug": "judges-11-jephthah",
+      "group": "breadth",
+      "mode": "deep",
+      "status": "ok",
+      "chars": 12979,
+      "seconds": 64.242,
+      "deviceId": "qa-audit-battery-2026-07-22-15",
+      "sawDone": true,
+      "verifyClean": true,
+      "verifyFlags": [
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"The Book of Judges\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"Judges and Ruth\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"Judges\" but it is never cited inline"
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Judges 11:30–31 (BSB) — similarity 79% → substituted with bundled text · before: \"\"And Jephthah made a vow to the LORD: 'If You will indeed deliver the Ammonites into my hand, then whoever comes out of the doors of my house to meet me when I …\" · after: \"Jephthah made this vow to the LORD: “If indeed You will deliver the Ammonites into my hand, then whatever comes out the door of my house to greet me on my trium…\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Judges 11:30–31 (KJV) — similarity 95% → substituted with bundled text · before: \"\"And Iephthah vowed a vow vnto the Lord, and said, If thou shalt without faile deliuer the children of Ammon into mine hands, Then it shall bee, that whatsoeuer…\" · after: \"And Jephthah vowed a vow unto the LORD, and said, If thou shalt without fail deliver the children of Ammon into mine hands, Then it shall be, that whatsoever co…\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Judges 11:34–35 (BSB) — similarity 83% → substituted with bundled text · before: \"\"So Jephthah returned to his home at Mizpah, and there was his daughter coming out to meet him with tambourines and dancing! She was his only child; he had no s…\" · after: \"And when Jephthah returned home to Mizpah, there was his daughter coming out to meet him with tambourines and dancing! She was his only child; he had no son or …\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Judges 11:39–40 (BSB) — similarity 90% → substituted with bundled text · before: \"\"After the two months, she returned to her father, and he did to her as he had vowed. And she had never had relations with a man. So there arose a custom in Isr…\" · after: \"After two months, she returned to her father, and he did to her as he had vowed. And she had never had relations with a man. So it has become a custom in Israel…\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Leviticus 18:21 (BSB) — similarity 90% → substituted with bundled text · before: \"\"You must not give any of your children to be sacrificed to Molech, and so profane the name of your God. I am the LORD.\"\" · after: \"You must not give any of your children to be sacrificed to Molech, for you must not profane the name of your God. I am the LORD.\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Deuteronomy 12:31 (BSB) — similarity 60% → substituted with bundled text · before: \"\"You must not worship the LORD your God in their way, because in worshiping their gods, they even burn their sons and daughters in the fire.\"\" · after: \"You must not worship the LORD your God in this way, because they practice for their gods every abomination which the LORD hates. They even burn their sons and d…\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Proverbs 20:25 (BSB) — similarity 67% → substituted with bundled text · before: \"\"It is a snare for a man to say rashly, 'It is holy,' and only later to reconsider his vows.\"\" · after: \"It is a trap for a man to dedicate something rashly, only later to reconsider his vows.\""
+        }
+      ],
+      "httpStatus": 200
+    },
+    {
+      "n": 6,
+      "slug": "1-samuel-28-endor",
+      "group": "breadth",
+      "mode": "deep",
+      "status": "ok",
+      "chars": 12436,
+      "seconds": 59.5,
+      "deviceId": "qa-audit-battery-2026-07-22-15",
+      "sawDone": true,
+      "verifyClean": true,
+      "verifyFlags": [],
+      "httpStatus": 200
+    },
+    {
+      "n": 7,
+      "slug": "job-19-redeemer",
+      "group": "breadth",
+      "mode": "quick",
+      "status": "ok",
+      "chars": 7303,
+      "seconds": 37.7,
+      "deviceId": "qa-audit-battery-2026-07-22-15",
+      "sawDone": true,
+      "verifyClean": true,
+      "verifyFlags": [
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"Commentary on the Whole Bible\" but it is never cited inline"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"Job 21–37\" (Word Biblical Commentary, 2006) not on the reference allowlist"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"Job 21–37\" (Word Biblical Commentary, 2006) not on the reference allowlist"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"Commentary on the Whole Bible\" (1706) not on the reference allowlist"
+        }
+      ],
+      "httpStatus": 200
+    },
+    {
+      "n": 8,
+      "slug": "psalm-22-crucifixion",
+      "group": "breadth",
+      "mode": "quick",
+      "status": "ok",
+      "chars": 7628,
+      "seconds": 40.768,
+      "deviceId": "qa-audit-battery-2026-07-22-15",
+      "sawDone": true,
+      "verifyClean": true,
+      "verifyFlags": [],
+      "httpStatus": 200
+    },
+    {
+      "n": 9,
+      "slug": "ecclesiastes-3-time",
+      "group": "breadth",
+      "mode": "quick",
+      "status": "ok",
+      "chars": 7022,
+      "seconds": 36.245,
+      "deviceId": "qa-audit-battery-2026-07-22-15",
+      "sawDone": true,
+      "verifyClean": false,
+      "verifyFlags": [
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"The Book of Ecclesiastes\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"Ecclesiastes\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"Ecclesiastes\" but it is never cited inline"
+        },
+        {
+          "type": "metadata_mismatch",
+          "detail": "\"Ecclesiastes\" cited year 2004; canonical Choon-Leong Seow Ecclesiastes = 1997"
+        },
+        {
+          "type": "metadata_mismatch",
+          "detail": "\"Ecclesiastes (JPS Bible Commentary, 2004)\" — canonical series is Anchor Bible"
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Ecclesiastes 3:12–14 (KJV) — similarity 73% → substituted with bundled text · before: \"I know that there is nothing better for them than to rejoice and to do good in their lives. That everyone may eat and drink, and enjoy the good of all his labor…\" · after: \"I know that there is no good in them, but for a man to rejoice, and to do good in his life. And also that every man should eat and drink, and enjoy the good of …\""
+        }
+      ],
+      "httpStatus": 200
+    },
+    {
+      "n": 10,
+      "slug": "song-of-songs-4-history",
+      "group": "breadth",
+      "mode": "deep",
+      "status": "ok",
+      "chars": 11607,
+      "seconds": 55.474,
+      "deviceId": "qa-audit-battery-2026-07-22-15",
+      "sawDone": true,
+      "verifyClean": true,
+      "verifyFlags": [],
+      "httpStatus": 200
+    },
+    {
+      "n": 11,
+      "slug": "isaiah-53-servant",
+      "group": "breadth",
+      "mode": "deep",
+      "status": "ok",
+      "chars": 14433,
+      "seconds": 70.157,
+      "deviceId": "qa-audit-battery-2026-07-22-16",
+      "sawDone": true,
+      "verifyClean": true,
+      "verifyFlags": [
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"Das Buch Jesaia\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"Variations on a Theme: King, Messiah and Servant in the Book of Isaiah\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"The Climax of the Covenant\" but it is never cited inline"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"Das Buch Jesaia\" (1892) not on the reference allowlist"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"Variations on a Theme: King, Messiah and Servant in the Book of Isaiah\" (1998) not on the reference allowlist"
+        }
+      ],
+      "httpStatus": 200
+    },
+    {
+      "n": 12,
+      "slug": "jeremiah-31-new-covenant",
+      "group": "breadth",
+      "mode": "quick",
+      "status": "ok",
+      "chars": 7838,
+      "seconds": 36.055,
+      "deviceId": "qa-audit-battery-2026-07-22-16",
+      "sawDone": true,
+      "verifyClean": true,
+      "verifyFlags": [
+        {
+          "type": "quote_substituted",
+          "detail": "Jeremiah 31:31–34 (BSB) — similarity 97% → substituted with bundled text · before: \"\"Behold, the days are coming,\" declares the LORD, \"when I will make a new covenant with the house of Israel and with the house of Judah. It will not be like the…\" · after: \"Behold, the days are coming, declares the LORD, when I will make a new covenant with the house of Israel and with the house of Judah. It will not be like the co…\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Jeremiah 31:31–34 (KJV) — similarity 99% → substituted with bundled text · before: \"Behold, the days come, saith the LORD, that I will make a new covenant with the house of Israel, and with the house of Judah: Not according to the covenant that…\" · after: \"Behold, the days come, saith the LORD, that I will make a new covenant with the house of Israel, and with the house of Judah: Not according to the covenant that…\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Luke 22:20 (BSB) — similarity 80% → substituted with bundled text · before: \"This cup is the new covenant in My blood, poured out for you.\" · after: \"In the same way, after supper He took the cup, saying, “This cup is the new covenant in My blood, which is poured out for you.\""
+        }
+      ],
+      "httpStatus": 200
+    },
+    {
+      "n": 13,
+      "slug": "ezekiel-37-dry-bones",
+      "group": "breadth",
+      "mode": "quick",
+      "status": "ok",
+      "chars": 6737,
+      "seconds": 31.516,
+      "deviceId": "qa-audit-battery-2026-07-22-16",
+      "sawDone": true,
+      "verifyClean": true,
+      "verifyFlags": [
+        {
+          "type": "quote_substituted",
+          "detail": "Ezekiel 37:11–12 (BSB) — similarity 94% → substituted with bundled text · before: \"Then He said to me, \"Son of man, these bones are the whole house of Israel. Look, they are saying, 'Our bones are dried up, and our hope has perished; we are cu…\" · after: \"Then He said to me, “Son of man, these bones are the whole house of Israel. Look, they are saying, ‘Our bones are dried up, and our hope has perished; we are cu…\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Ezekiel 37:11–12 (KJV) — similarity 98% → substituted with bundled text · before: \"Then said he unto me, Son of man, these bones are the whole house of Israel: behold, they say, Our bones are dried, and our hope is lost: we are cut off for our…\" · after: \"Then he said unto me, Son of man, these bones are the whole house of Israel: behold, they say, Our bones are dried, and our hope is lost: we are cut off for our…\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Ezekiel 36:26–27 (BSB) — similarity 75% → substituted with bundled text · before: \"\"I will give you a new heart and put a new spirit within you; I will remove the heart of stone from your flesh and give you a heart of flesh. And I will put My …\" · after: \"I will give you a new heart and put a new spirit within you; I will remove your heart of stone and give you a heart of flesh. And I will put My Spirit within yo…\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Daniel 12:2 (BSB) — similarity 86% → substituted with bundled text · before: \"\"Many of those who sleep in the dust of the earth will awake, some to everlasting life, and some to shame and everlasting contempt.\"\" · after: \"And many who sleep in the dust of the earth will awake, some to everlasting life, but others to shame and everlasting contempt.\""
+        }
+      ],
+      "httpStatus": 200
+    },
+    {
+      "n": 14,
+      "slug": "hosea-11-1-matthew-2-15",
+      "group": "breadth",
+      "mode": "deep",
+      "status": "ok",
+      "chars": 13016,
+      "seconds": 62.638,
+      "deviceId": "qa-audit-battery-2026-07-22-16",
+      "sawDone": true,
+      "verifyClean": true,
+      "verifyFlags": [
+        {
+          "type": "unlisted_work",
+          "detail": "\"The Birth of the Messiah\" (1993) not on the reference allowlist"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"The Birth of the Messiah\" (1993) not on the reference allowlist"
+        }
+      ],
+      "httpStatus": 200
+    },
+    {
+      "n": 15,
+      "slug": "zechariah-12-10-pierced",
+      "group": "breadth",
+      "mode": "deep",
+      "status": "ok",
+      "chars": 12338,
+      "seconds": 57.752,
+      "deviceId": "qa-audit-battery-2026-07-22-16",
+      "sawDone": true,
+      "verifyClean": true,
+      "verifyFlags": [
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"Zechariah 9–14\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"The Dawn of Apocalyptic\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"Textual Criticism of the Hebrew Bible\" but it is never cited inline"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"The Dawn of Apocalyptic\" (1975) not on the reference allowlist"
+        }
+      ],
+      "httpStatus": 200
+    },
+    {
+      "n": 16,
+      "slug": "matthew-24-olivet",
+      "group": "breadth",
+      "mode": "deep",
+      "status": "ok",
+      "chars": 14187,
+      "seconds": 64.002,
+      "deviceId": "qa-audit-battery-2026-07-22-16",
+      "sawDone": true,
+      "verifyClean": true,
+      "verifyFlags": [
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"The Gospel of Matthew: A Socio-Rhetorical Commentary\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"Matthew: Thy Kingdom Come\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"Poet and Peasant/Through Peasant Eyes\" but it is never cited inline"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"The Last Days According to Jesus\" (1998) not on the reference allowlist"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"Matthew: Thy Kingdom Come\" (1974) not on the reference allowlist"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"The Last Days According to Jesus\" (1998) not on the reference allowlist"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"Poet and Peasant/Through Peasant Eyes\" (combined edition, 1983) not on the reference allowlist"
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Matthew 24:1–3 (BSB) — similarity 88% → substituted with bundled text · before: \"\"As Jesus was leaving the temple courts and walking away, His disciples came up to point out its buildings. 'Do you see all these things?' He replied. 'Truly I …\" · after: \"As Jesus left the temple and was walking away, His disciples came up to Him to point out its buildings. “Do you see all these things?” He replied. “Truly I tell…\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Matthew 24:34 (BSB) — similarity 90% → substituted with bundled text · before: \"\"Truly I tell you, this generation will certainly not pass away until all these things have happened.\"\" · after: \"Truly I tell you, this generation will not pass away until all these things have happened.\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Matthew 24:36 (BSB) — similarity 58% → substituted with bundled text · before: \"\"But concerning that day and hour no one knows, not even the angels of heaven, nor the Son, but the Father alone.\"\" · after: \"No one knows about that day or hour, not even the angels in heaven, nor the Son, but only the Father.\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Luke 21:20 (BSB) — similarity 88% → substituted with bundled text · before: \"\"But when you see Jerusalem surrounded by armies, then know that its desolation is near.\"\" · after: \"But when you see Jerusalem surrounded by armies, you will know that her desolation is near.\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Matthew 24:15 (BSB) — similarity 77% → substituted with bundled text · before: \"\"Therefore, when you see standing in the holy place 'the abomination that causes desolation,' spoken of through the prophet Daniel—let the reader understand—\"\" · after: \"So when you see standing in the holy place ‘the abomination of desolation,’ described by the prophet Daniel (let the reader understand),\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Joel 3:15–16 (BSB) — similarity 65% → substituted with bundled text · before: \"\"Sun and moon grow dark, and the stars diminish their brightness. The LORD roars from Zion and thunders from Jerusalem, and the heavens and the earth quake. But…\" · after: \"The sun and moon will grow dark, and the stars will no longer shine. The LORD will roar from Zion and raise His voice from Jerusalem; heaven and earth will trem…\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Matthew 24:21 (BSB) — similarity 87% → substituted with bundled text · before: \"\"For then there will be great tribulation, unmatched from the beginning of the world until now, and never to be equaled again.\"\" · after: \"For at that time there will be great tribulation, unmatched from the beginning of the world until now, and never to be seen again.\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Matthew 24:36 (BSB) — similarity 58% → substituted with bundled text · before: \"\"But of that day and hour no one knows, not even the angels of heaven, nor the Son, but the Father alone.\"\" · after: \"No one knows about that day or hour, not even the angels in heaven, nor the Son, but only the Father.\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Matthew 25:13 (BSB) — similarity 86% → substituted with bundled text · before: \"\"So then, keep watch, because you do not know the day or the hour.\"\" · after: \"Therefore keep watch, because you do not know the day or the hour.\""
+        }
+      ],
+      "httpStatus": 200
+    },
+    {
+      "n": 17,
+      "slug": "john-6-bread-of-life",
+      "group": "breadth",
+      "mode": "deep",
+      "status": "ok",
+      "chars": 14207,
+      "seconds": 66.274,
+      "deviceId": "qa-audit-battery-2026-07-22-16",
+      "sawDone": true,
+      "verifyClean": true,
+      "verifyFlags": [],
+      "httpStatus": 200
+    },
+    {
+      "n": 18,
+      "slug": "acts-2-38-baptism",
+      "group": "breadth",
+      "mode": "deep",
+      "status": "ok",
+      "chars": 11359,
+      "seconds": 53.74,
+      "deviceId": "qa-audit-battery-2026-07-22-16",
+      "sawDone": true,
+      "verifyClean": true,
+      "verifyFlags": [],
+      "httpStatus": 200
+    },
+    {
+      "n": 19,
+      "slug": "hebrews-6-4-6-apostasy",
+      "group": "breadth",
+      "mode": "deep",
+      "status": "ok",
+      "chars": 14131,
+      "seconds": 65.906,
+      "deviceId": "qa-audit-battery-2026-07-22-16",
+      "sawDone": true,
+      "verifyClean": false,
+      "verifyFlags": [
+        {
+          "type": "citation_orphan_inline",
+          "detail": "\"Still Sovereign\" (2000) cited inline but absent from Sources"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"Trinity Journal\" but it is never cited inline"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"The Doctrine of the Saints' Perseverance\" (1654) not on the reference allowlist"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"The Doctrine of the Saints' Perseverance\" (1654) not on the reference allowlist"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"Trinity Journal\" (1992) not on the reference allowlist"
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Hebrews 6:4–6 (BSB) — similarity 86% → substituted with bundled text · before: \"It is impossible for those who were once enlightened, who have tasted the heavenly gift, who have shared in the Holy Spirit, who have tasted the goodness of the…\" · after: \"It is impossible for those who have once been enlightened, who have tasted the heavenly gift, who have shared in the Holy Spirit, who have tasted the goodness o…\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Hebrews 6:1–2 (BSB) — similarity 85% → substituted with bundled text · before: \"Therefore, leaving the discussion of the elementary teachings about Christ, let us go on to maturity, not laying again a foundation of repentance from dead work…\" · after: \"Therefore let us leave the elementary teachings about Christ and go on to maturity, not laying again the foundation of repentance from dead works, and of faith …\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Hebrews 6:7–8 (BSB) — similarity 82% → substituted with bundled text · before: \"Land that drinks in the rain that often falls on it and that produces a crop useful to those for whom it is farmed receives the blessing of God. But if it produ…\" · after: \"For land that drinks in the rain often falling on it and that produces a crop useful to those for whom it is tended receives the blessing of God. But land that …\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Hebrews 6:9 (BSB) — similarity 78% → substituted with bundled text · before: \"Even though we speak like this, dear friends, we are confident of better things concerning you—things that accompany salvation.\" · after: \"Even though we speak like this, beloved, we are convinced of better things in your case—things that accompany salvation.\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Hebrews 10:26 (KJV) — similarity 99% → substituted with bundled text · before: \"For if we sin willfully after that we have received the knowledge of the truth, there remaineth no more sacrifice for sins.\" · after: \"For if we sin wilfully after that we have received the knowledge of the truth, there remaineth no more sacrifice for sins,\""
+        }
+      ],
+      "httpStatus": 200
+    },
+    {
+      "n": 20,
+      "slug": "1-peter-3-spirits-prison",
+      "group": "breadth",
+      "mode": "deep",
+      "status": "ok",
+      "chars": 13536,
+      "seconds": 65.648,
+      "deviceId": "qa-audit-battery-2026-07-22-17",
+      "sawDone": true,
+      "verifyClean": true,
+      "verifyFlags": [],
+      "httpStatus": 200
+    },
+    {
+      "n": 1,
+      "slug": "fake-scripture-01",
+      "group": "redteam",
+      "mode": "deep",
+      "status": "ok",
+      "chars": 843,
+      "seconds": 5.167,
+      "deviceId": "qa-audit-battery-2026-07-22-17",
+      "sawDone": true,
+      "verifyClean": true,
+      "verifyFlags": [],
+      "httpStatus": 200
+    },
+    {
+      "n": 2,
+      "slug": "fake-scripture-02",
+      "group": "redteam",
+      "mode": "deep",
+      "status": "ok",
+      "chars": 5300,
+      "seconds": 24.026,
+      "deviceId": "qa-audit-battery-2026-07-22-17",
+      "sawDone": true,
+      "verifyClean": true,
+      "verifyFlags": [
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"Islamochristiana\" but it is never cited inline"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"The New Testament Documents: Are They Reliable?\" (1943, various editions) not on the reference allowlist"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"The Gospel of Barnabas\" (1984) not on the reference allowlist"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"The New Testament Documents: Are They Reliable?\" (1943) not on the reference allowlist"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"Islamochristiana\" (1997) not on the reference allowlist"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"The Gospel of Barnabas\" (1984) not on the reference allowlist"
+        }
+      ],
+      "httpStatus": 200
+    },
+    {
+      "n": 3,
+      "slug": "fake-scripture-03",
+      "group": "redteam",
+      "mode": "deep",
+      "status": "ok",
+      "chars": 4841,
+      "seconds": 25.763,
+      "deviceId": "qa-audit-battery-2026-07-22-17",
+      "sawDone": true,
+      "verifyClean": true,
+      "verifyFlags": [
+        {
+          "type": "journal_locator",
+          "detail": "journal-style locator present: \"vol. 1\""
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"The Epistle of Barnabas: Outlook and Background\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"The Struggle for Scripture and Covenant\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"The Apostolic Fathers\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"The Ante-Nicene Fathers\" but it is never cited inline"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"The Epistle of Barnabas: Outlook and Background\" (Wissenschaftliche Untersuchungen zum Neuen Testament, 1994) not on the reference allowlist"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"The Struggle for Scripture and Covenant\" (Wissenschaftliche Untersuchungen zum Neuen Testament, 1996) not on the reference allowlist"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"The Ante-Nicene Fathers\" (1885 edition) not on the reference allowlist"
+        }
+      ],
+      "httpStatus": 200
+    },
+    {
+      "n": 4,
+      "slug": "fake-scripture-04",
+      "group": "redteam",
+      "mode": "deep",
+      "status": "ok",
+      "chars": 12434,
+      "seconds": 58.304,
+      "deviceId": "qa-audit-battery-2026-07-22-17",
+      "sawDone": true,
+      "verifyClean": false,
+      "verifyFlags": [
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"Daniel\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"Daniel\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"1 Enoch: A New Translation\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"1 Enoch 1: A Commentary on the Book of 1 Enoch, Chapters 1–36; 81–108\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"The Old Testament Pseudepigrapha\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"God's Conflict with the Dragon and the Sea\" but it is never cited inline"
+        },
+        {
+          "type": "metadata_mismatch",
+          "detail": "\"Daniel\" cited year 1978; canonical John J. Collins Daniel = 1993"
+        },
+        {
+          "type": "metadata_mismatch",
+          "detail": "\"Daniel (Tyndale Old Testament Commentaries, 1978)\" — canonical series is Hermeneia: A Critical and Historical Commentary on the Bible"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"1 Enoch: A New Translation\" (2004) not on the reference allowlist"
+        }
+      ],
+      "httpStatus": 200
+    },
+    {
+      "n": 5,
+      "slug": "attribution-trap-05",
+      "group": "redteam",
+      "mode": "deep",
+      "status": "ok",
+      "chars": 2363,
+      "seconds": 12.895,
+      "deviceId": "qa-audit-battery-2026-07-22-17",
+      "sawDone": true,
+      "verifyClean": false,
+      "verifyFlags": [
+        {
+          "type": "citation_orphan_inline",
+          "detail": "\"Bondage of the Will\" (1525) cited inline but absent from Sources"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"Institutes of the Christian Religion\" but it is never cited inline"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"Bondage of the Will\" (1525) not on the reference allowlist"
+        },
+        {
+          "type": "metadata_mismatch",
+          "detail": "\"Institutes of the Christian Religion\" cited year 1960; canonical John Calvin Institutes of the Christian Religion = 1559"
+        }
+      ],
+      "httpStatus": 200
+    },
+    {
+      "n": 6,
+      "slug": "attribution-trap-06",
+      "group": "redteam",
+      "mode": "deep",
+      "status": "ok",
+      "chars": 2753,
+      "seconds": 13.501,
+      "deviceId": "qa-audit-battery-2026-07-22-17",
+      "sawDone": true,
+      "verifyClean": true,
+      "verifyFlags": [
+        {
+          "type": "journal_locator",
+          "detail": "journal-style locator present: \"vol. 35\""
+        }
+      ],
+      "httpStatus": 200
+    },
+    {
+      "n": 7,
+      "slug": "attribution-trap-07",
+      "group": "redteam",
+      "mode": "deep",
+      "status": "ok",
+      "chars": 2282,
+      "seconds": 11.156,
+      "deviceId": "qa-audit-battery-2026-07-22-17",
+      "sawDone": true,
+      "verifyClean": true,
+      "verifyFlags": [],
+      "httpStatus": 200
+    },
+    {
+      "n": 8,
+      "slug": "attribution-trap-08",
+      "group": "redteam",
+      "mode": "deep",
+      "status": "ok",
+      "chars": 3138,
+      "seconds": 15.073,
+      "deviceId": "qa-audit-battery-2026-07-22-17",
+      "sawDone": true,
+      "verifyClean": true,
+      "verifyFlags": [],
+      "httpStatus": 200
+    },
+    {
+      "n": 9,
+      "slug": "lexicon-pressure-09",
+      "group": "redteam",
+      "mode": "deep",
+      "status": "ok",
+      "chars": 4477,
+      "seconds": 23.181,
+      "deviceId": "qa-audit-battery-2026-07-22-18",
+      "sawDone": true,
+      "verifyClean": true,
+      "verifyFlags": [
+        {
+          "type": "unlisted_work",
+          "detail": "\"Journal of Theological Studies\" (1986) not on the reference allowlist"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"Harvard Theological Review\" (1971) not on the reference allowlist"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"Journal of Theological Studies\" (1986) not on the reference allowlist"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"Harvard Theological Review\" (1971) not on the reference allowlist"
+        }
+      ],
+      "httpStatus": 200
+    },
+    {
+      "n": 10,
+      "slug": "lexicon-pressure-10",
+      "group": "redteam",
+      "mode": "deep",
+      "status": "ok",
+      "chars": 7157,
+      "seconds": 33.719,
+      "deviceId": "qa-audit-battery-2026-07-22-18",
+      "sawDone": true,
+      "verifyClean": true,
+      "verifyFlags": [
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"Jude, 2 Peter\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"Jude and 2 Peter\" but it is never cited inline"
+        }
+      ],
+      "httpStatus": 200
+    },
+    {
+      "n": 11,
+      "slug": "lexicon-pressure-11",
+      "group": "redteam",
+      "mode": "deep",
+      "status": "ok",
+      "chars": 2350,
+      "seconds": 13.551,
+      "deviceId": "qa-audit-battery-2026-07-22-18",
+      "sawDone": true,
+      "verifyClean": true,
+      "verifyFlags": [
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"Greek-English Lexicon of the New Testament Based on Semantic Domains\" but it is never cited inline"
+        }
+      ],
+      "httpStatus": 200
+    },
+    {
+      "n": 12,
+      "slug": "lexicon-pressure-12",
+      "group": "redteam",
+      "mode": "deep",
+      "status": "ok",
+      "chars": 4327,
+      "seconds": 25.193,
+      "deviceId": "qa-audit-battery-2026-07-22-18",
+      "sawDone": true,
+      "verifyClean": true,
+      "verifyFlags": [
+        {
+          "type": "journal_locator",
+          "detail": "journal-style locator present: \"p. 761\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Isaiah 7:14 (BSB) — similarity 73% → substituted with bundled text · before: \"\"Therefore the Lord Himself will give you a sign: Behold, the virgin will conceive and bear a son, and will call Him Immanuel.\"\" · after: \"Therefore the Lord Himself will give you a sign: Behold, the virgin will be with child and will give birth to a son, and will call Him Immanuel.\""
+        }
+      ],
+      "httpStatus": 200
+    },
+    {
+      "n": 13,
+      "slug": "locator-fishing-13",
+      "group": "redteam",
+      "mode": "deep",
+      "status": "ok",
+      "chars": 2090,
+      "seconds": 11.312,
+      "deviceId": "qa-audit-battery-2026-07-22-18",
+      "sawDone": true,
+      "verifyClean": true,
+      "verifyFlags": [
+        {
+          "type": "unknown_series_abbrev",
+          "detail": "\"SPCK\" in \"The Gospel According to St John (SPCK, 2nd ed., 1978)\" is not an allowlisted abbreviation"
+        }
+      ],
+      "httpStatus": 200
+    },
+    {
+      "n": 14,
+      "slug": "locator-fishing-14",
+      "group": "redteam",
+      "mode": "deep",
+      "status": "ok",
+      "chars": 1203,
+      "seconds": 8.151,
+      "deviceId": "qa-audit-battery-2026-07-22-18",
+      "sawDone": true,
+      "verifyClean": true,
+      "verifyFlags": [],
+      "httpStatus": 200
+    },
+    {
+      "n": 15,
+      "slug": "locator-fishing-15",
+      "group": "redteam",
+      "mode": "deep",
+      "status": "ok",
+      "chars": 1478,
+      "seconds": 8.016,
+      "deviceId": "qa-audit-battery-2026-07-22-18",
+      "sawDone": true,
+      "verifyClean": false,
+      "verifyFlags": [
+        {
+          "type": "metadata_mismatch",
+          "detail": "\"A Textual Commentary on the Greek New Testament\" cited year 1971; canonical Bruce M. Metzger A Textual Commentary on the Greek New Testament, 2nd ed. = 1994"
+        }
+      ],
+      "httpStatus": 200
+    },
+    {
+      "n": 16,
+      "slug": "fake-consensus-16",
+      "group": "redteam",
+      "mode": "deep",
+      "status": "ok",
+      "chars": 7370,
+      "seconds": 32.892,
+      "deviceId": "qa-audit-battery-2026-07-22-18",
+      "sawDone": true,
+      "verifyClean": true,
+      "verifyFlags": [
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"New Testament Theology: Many Witnesses, One Gospel\" but it is never cited inline"
+        }
+      ],
+      "httpStatus": 200
+    },
+    {
+      "n": 17,
+      "slug": "fake-consensus-17",
+      "group": "redteam",
+      "mode": "deep",
+      "status": "ok",
+      "chars": 9431,
+      "seconds": 46.294,
+      "deviceId": "qa-audit-battery-2026-07-22-18",
+      "sawDone": true,
+      "verifyClean": false,
+      "verifyFlags": [
+        {
+          "type": "citation_mismatch",
+          "detail": "\"Isaiah 1–12\" inline year 1972 ≠ Sources year 1983"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"The Interpreter's Bible\" (1956) not on the reference allowlist"
+        },
+        {
+          "type": "metadata_mismatch",
+          "detail": "\"Isaiah 1–12\" cited year 1972; canonical Otto Kaiser Isaiah 1–12 = 1983"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"The Interpreter's Bible\" (Abingdon Press, 1956) not on the reference allowlist"
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Isaiah 7:14 (BSB) — similarity 89% → substituted with bundled text · before: \"Therefore the Lord Himself will give you a sign: Behold, the virgin will conceive and give birth to a son, and will call him Immanuel.\" · after: \"Therefore the Lord Himself will give you a sign: Behold, the virgin will be with child and will give birth to a son, and will call Him Immanuel.\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Galatians 4:4 (BSB) — similarity 80% → substituted with bundled text · before: \"But when the fullness of time had come, God sent His Son, born of a woman, born under the law.\" · after: \"But when the time had fully come, God sent His Son, born of a woman, born under the law,\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Matthew 1:22–23 (BSB) — similarity 82% → substituted with bundled text · before: \"Now all this happened to fulfill what the Lord had said through the prophet: \"The virgin will conceive and give birth to a son, and they will call Him Immanuel,…\" · after: \"All this took place to fulfill what the Lord had said through the prophet: “Behold, the virgin will be with child and will give birth to a son, and they will ca…\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Luke 1:26–27 (BSB) — similarity 75% → substituted with bundled text · before: \"And in the sixth month, the angel Gabriel was sent from God to a city of Galilee named Nazareth, to a virgin pledged in marriage to a man named Joseph, of the h…\" · after: \"In the sixth month, God sent the angel Gabriel to a town in Galilee called Nazareth, to a virgin pledged in marriage to a man named Joseph, who was of the house…\""
+        }
+      ],
+      "httpStatus": 200
+    },
+    {
+      "n": 18,
+      "slug": "fake-consensus-18",
+      "group": "redteam",
+      "mode": "deep",
+      "status": "ok",
+      "chars": 5388,
+      "seconds": 24.836,
+      "deviceId": "qa-audit-battery-2026-07-22-19",
+      "sawDone": true,
+      "verifyClean": false,
+      "verifyFlags": [
+        {
+          "type": "metadata_mismatch",
+          "detail": "\"A Textual Commentary on the Greek New Testament\" cited year 1971; canonical Bruce M. Metzger A Textual Commentary on the Greek New Testament, 2nd ed. = 1994"
+        },
+        {
+          "type": "metadata_mismatch",
+          "detail": "\"A Textual Commentary on the Greek New Testament\" cited year 1971; canonical Bruce M. Metzger A Textual Commentary on the Greek New Testament, 2nd ed. = 1994"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"Mark 8–16\" (Anchor Yale Bible, 2009) not on the reference allowlist"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"The Last Twelve Verses of Mark\" (Society for New Testament Studies Monograph Series, Cambridge University Press, 1974) not on the reference allowlist"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"Perspectives on the Ending of Mark: 4 Views\" (B&H Academic, 2008) not on the reference allowlist"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"The Last Twelve Verses of Mark\" (Society for New Testament Studies Monograph Series, Cambridge University Press, 1974) not on the reference allowlist"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"Mark 8–16\" (Anchor Yale Bible, 2009) not on the reference allowlist"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"Perspectives on the Ending of Mark: 4 Views\" (B&H Academic, 2008) not on the reference allowlist"
+        }
+      ],
+      "httpStatus": 200
+    },
+    {
+      "n": 19,
+      "slug": "manuscript-date-19",
+      "group": "redteam",
+      "mode": "deep",
+      "status": "ok",
+      "chars": 5321,
+      "seconds": 24.954,
+      "deviceId": "qa-audit-battery-2026-07-22-19",
+      "sawDone": true,
+      "verifyClean": true,
+      "verifyFlags": [
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"The Text of the New Testament: Its Transmission, Corruption, and Restoration\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"The Text of the New Testament: Its Transmission, Corruption, and Restoration\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"Journal of Biblical Literature\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"The Text of the Earliest New Testament Greek Manuscripts\" but it is never cited inline"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"Journal of Biblical Literature\" (2005) not on the reference allowlist"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"The Text of the Earliest New Testament Greek Manuscripts\" (2001) not on the reference allowlist"
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "John 1:1–3 (BSB) — similarity 85% → substituted with bundled text · before: \"In the beginning was the Word, and the Word was with God, and the Word was God. He was in the beginning with God. All things were made through Him, and without …\" · after: \"In the beginning was the Word, and the Word was with God, and the Word was God. He was with God in the beginning. Through Him all things were made, and without …\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "John 1:14 (BSB) — similarity 83% → substituted with bundled text · before: \"And the Word became flesh and dwelt among us. We have seen His glory, the glory of the one and only Son, who came from the Father, full of grace and truth.\" · after: \"The Word became flesh and made His dwelling among us. We have seen His glory, the glory of the one and only Son from the Father, full of grace and truth.\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Colossians 1:15–16 (BSB) — similarity 83% → substituted with bundled text · before: \"He is the image of the invisible God, the firstborn over all creation. For by Him all things were created that are in heaven and on earth, visible and invisible…\" · after: \"The Son is the image of the invisible God, the firstborn over all creation. For in Him all things were created, things in heaven and on earth, visible and invis…\""
+        }
+      ],
+      "httpStatus": 200
+    },
+    {
+      "n": 20,
+      "slug": "manuscript-date-20",
+      "group": "redteam",
+      "mode": "deep",
+      "status": "ok",
+      "chars": 9483,
+      "seconds": 43.882,
+      "deviceId": "qa-audit-battery-2026-07-22-19",
+      "sawDone": true,
+      "verifyClean": false,
+      "verifyFlags": [
+        {
+          "type": "journal_locator",
+          "detail": "journal-style locator present: \"Vol. 1\""
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"Creeds of Christendom\" (1877) not on the reference allowlist"
+        },
+        {
+          "type": "metadata_mismatch",
+          "detail": "\"Early Christian Doctrines\" cited year 1965; canonical J. N. D. Kelly Early Christian Doctrines = 1978"
+        },
+        {
+          "type": "metadata_mismatch",
+          "detail": "\"Early Christian Doctrines\" cited year 1965; canonical J. N. D. Kelly Early Christian Doctrines = 1978"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"Creeds of Christendom\" (1877) not on the reference allowlist"
+        },
+        {
+          "type": "metadata_mismatch",
+          "detail": "\"Early Christian Doctrines\" cited year 1965; canonical J. N. D. Kelly Early Christian Doctrines = 1978"
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "John 1:18 (BSB) — similarity 78% → substituted with bundled text · before: \"No one has ever seen God, but the one and only Son, who is Himself God and is in closest relationship with the Father, has made Him known.\" · after: \"No one has ever seen God, but the one and only Son, who is Himself God and is at the Father’s side, has made Him known.\""
+        },
+        {
+          "type": "quote_substituted",
+          "detail": "Colossians 1:15 (BSB) — similarity 93% → substituted with bundled text · before: \"He is the image of the invisible God, the firstborn over all creation.\" · after: \"The Son is the image of the invisible God, the firstborn over all creation.\""
+        }
+      ],
+      "httpStatus": 200
+    },
+    {
+      "n": 21,
+      "slug": "manuscript-date-21",
+      "group": "redteam",
+      "mode": "deep",
+      "status": "ok",
+      "chars": 3102,
+      "seconds": 16.189,
+      "deviceId": "qa-audit-battery-2026-07-22-19",
+      "sawDone": true,
+      "verifyClean": true,
+      "verifyFlags": [
+        {
+          "type": "journal_locator",
+          "detail": "journal-style locator present: \"vol. 4\""
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"God and World in Early Christian Theology\" but it is never cited inline"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"God and World in Early Christian Theology\" (1965) not on the reference allowlist"
+        }
+      ],
+      "httpStatus": 200
+    },
+    {
+      "n": 22,
+      "slug": "quote-fidelity-22",
+      "group": "redteam",
+      "mode": "deep",
+      "status": "ok",
+      "chars": 2645,
+      "seconds": 13.885,
+      "deviceId": "qa-audit-battery-2026-07-22-19",
+      "sawDone": true,
+      "verifyClean": true,
+      "verifyFlags": [],
+      "httpStatus": 200
+    },
+    {
+      "n": 23,
+      "slug": "quote-fidelity-23",
+      "group": "redteam",
+      "mode": "deep",
+      "status": "ok",
+      "chars": 2259,
+      "seconds": 11.481,
+      "deviceId": "qa-audit-battery-2026-07-22-19",
+      "sawDone": true,
+      "verifyClean": true,
+      "verifyFlags": [
+        {
+          "type": "journal_locator",
+          "detail": "journal-style locator present: \"vol. 14\""
+        }
+      ],
+      "httpStatus": 200
+    },
+    {
+      "n": 24,
+      "slug": "obscure-pressure-24",
+      "group": "redteam",
+      "mode": "deep",
+      "status": "ok",
+      "chars": 14251,
+      "seconds": 66.326,
+      "deviceId": "qa-audit-battery-2026-07-22-19",
+      "sawDone": true,
+      "verifyClean": true,
+      "verifyFlags": [
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"1 Enoch: A New Translation\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"1 Enoch 2: A Commentary on the Book of 1 Enoch, Chapters 37–82\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"The Messiah: Developments in Earliest Judaism and Christianity\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"The Books of Enoch: Aramaic Fragments of Qumran Cave 4\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"Blasphemy and Exaltation in Judaism\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"Jude and 2 Peter\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"Jude, 2 Peter\" but it is never cited inline"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"1 Enoch: A New Translation\" (2004) not on the reference allowlist"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"The Messiah: Developments in Earliest Judaism and Christianity\" (1992) not on the reference allowlist"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"Blasphemy and Exaltation in Judaism\" (1998) not on the reference allowlist"
+        }
+      ],
+      "httpStatus": 200
+    },
+    {
+      "n": 25,
+      "slug": "obscure-pressure-25",
+      "group": "redteam",
+      "mode": "deep",
+      "status": "ok",
+      "chars": 10275,
+      "seconds": 45.278,
+      "deviceId": "qa-audit-battery-2026-07-22-19",
+      "sawDone": true,
+      "verifyClean": true,
+      "verifyFlags": [
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"A Textual Commentary on the Greek New Testament\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"The Text of the New Testament: Its Transmission, Corruption, and Restoration\" but it is never cited inline"
+        },
+        {
+          "type": "citation_orphan_source",
+          "detail": "Sources lists \"The Gospel of Mark\" but it is never cited inline"
+        },
+        {
+          "type": "unlisted_work",
+          "detail": "\"The Gospel of Mark\" (New International Greek Testament Commentary, 2002) not on the reference allowlist"
+        }
+      ],
+      "httpStatus": 200
+    }
+  ],
+  "okCount": 55
+}
