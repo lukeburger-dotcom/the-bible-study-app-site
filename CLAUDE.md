@@ -34,7 +34,7 @@ leaked — it is published.
 ---
 
 ## Layout
-- `index.html` — home. `app.html` — the live web app. `demo.html` — demo.
+- `index.html` — home. `demo.html` — demo.
 - `accuracy.html` — the accuracy/receipts page.
 - `accuracy-outputs/` — **published raw outputs from the audit battery.**
 - `compare.html` + `compare-card.png` — the comparison page and its share card.

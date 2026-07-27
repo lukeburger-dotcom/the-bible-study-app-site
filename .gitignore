@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+
+# editors
+*.swp
+*~
+
+# tooling / local state
+.claude/settings.local.json
+node_modules/
+
+# never
+.env
+.env.*
+*.log
