@@ -160,3 +160,60 @@ unchanged, so there is nothing to render differently.
    download rather than display. That was the problem the abandoned staged
    change was reaching for. Solving it properly means generating the `.html`
    files, which is a separate piece of work and would need its own order.
+
+---
+
+# SITE-COPY-1B
+
+Date: 2026-08-02 · **Nothing pushed.**
+
+Order: `SITE-COPY-1B.md`. Both sections done. Copy used verbatim, no em dashes.
+
+**The contradiction flagged at the top of this report is resolved.** Item 1 of
+the "Recommended next" list above is closed by this change.
+
+## §1: `index.html:47`
+
+Question and answer both replaced, `<p>` / `<strong>` / `<br>` structure kept
+exactly. Confirmed by inspection that the line's tag sequence is still
+`<p> <strong> </strong> <br> </p>`, and that index.html's tag counts are
+identical to `HEAD`.
+
+- Question: "Why aren't NASB, NIV, or ESV available?" becomes "Why aren't NIV
+  or ESV available?"
+- Answer: the "Version 1 ships with trustworthy public-domain translations"
+  claim is gone, replaced with the four that are live plus the two that are not.
+
+The page no longer says NASB is unavailable one line after saying it is.
+
+## §2: The neighbours
+
+```
+grep -nE "NIV|ESV|NASB|licensed|licenses|agreements land|Version 1 ships" *.html
+```
+
+Run across all six root pages. **Four hits, none needing a fix.**
+
+| Hit | What it says | Done |
+|---|---|---|
+| `index.html:46` | Names the four licensed translations as live, with copyright shown | Correct already. This is SITE-COPY-1 §1 copy. No change |
+| `index.html:47` | The new answer | This order's §1 |
+| `accuracy.html:34` | NASB 2020, NLT, NKJV and The Message "are served from their publishers' authorized libraries" | Correct already. This is SITE-COPY-1 §2 copy. No change |
+| `compare.html:176` | "all three ship translations we don't yet have licenses for" | **Out of scope by §2, and left alone.** Noted below |
+
+`demo.html`, `privacy.html` and `terms.html` returned nothing. No page other
+than the one fixed described a shipped translation as unavailable or coming.
+
+### The one thing worth knowing about `compare.html:176`
+
+The order puts `compare.html` out of scope and I have left it untouched, but
+for the record its caveat paragraph says of Logos, YouVersion and Hallow that
+"all three ship translations we don't yet have licenses for". Since 1.1 that is
+weaker than the truth: four are licensed now. It is a fairness caveat rather
+than a false claim, and the page is retired, untracked and gitignored, so
+nothing published is affected. It only matters if compare is ever revived.
+
+## §3: The commit
+
+Committed locally. **Not pushed.** Two files: `index.html` and this report.
+`SITE-COPY-1B.md` stays untracked, same as the earlier order files.
