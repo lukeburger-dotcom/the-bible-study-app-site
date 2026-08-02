@@ -31,7 +31,7 @@
 
   <h2>The five layers</h2>
   <div class="card"><span class="num">1 · EXACT SCRIPTURE, ENFORCED BY CODE</span><br>
-  Every Scripture quotation is checked character-for-character against the actual public-domain text bundled in the app (BSB, KJV, WEB, ASV, YLT, Darby) — in real time, by deterministic software, not by the AI grading itself. A quote that drifts from the real wording is replaced with the exact text before it reaches you. You can also tap "Check this passage" under any quote and compare for yourself.</div>
+  Scripture is never typed by the AI. When a study cites a verse, the model writes only the reference; the server looks the verse up and renders the exact published wording before it reaches you. Six complete public-domain Bibles are bundled in the app (BSB, KJV, WEB, ASV, YLT, Darby). NASB 2020, the New Living Translation, the New King James Version, and The Message are served from their publishers' authorized libraries, with the required copyright line shown. Tap "Check this passage" under any quote to read the verse on its own and compare.</div>
   <div class="card"><span class="num">2 · SOURCING RULES</span><br>
   The AI must attribute every interpretive claim to named scholars and real works, may never invent page numbers or journal references, may never claim a scholarly consensus it can't name, and must present contested readings as contested — with the positions and the people who hold them.</div>
   <div class="card"><span class="num">3 · A FROZEN TEST BATTERY</span><br>
@@ -46,7 +46,7 @@
     <tr><th>What was checked</th><th>Scope</th><th>Result</th></tr>
     <tr><td>Fabricated books, scholars, or sources</td><td>5 independent audit batches, ~24 studies claim-by-claim</td><td><strong>Zero found</strong></td></tr>
     <tr><td>Misattributed scholarly positions</td><td>Same batches</td><td><strong>Zero found</strong></td></tr>
-    <tr><td>Scripture quote exactness</td><td>Every quote, every study, continuously</td><td><strong>Enforced by code</strong> (65 drifted quotes auto-corrected in the latest full battery; zero uncorrected)</td></tr>
+    <tr><td>Scripture quote exactness</td><td>Every quote, every study, continuously</td><td><strong>Enforced by architecture</strong> (the model cannot emit verse text; the server renders every quotation from the published source)</td></tr>
     <tr><td>Behavior under adversarial prompts</td><td>25 attack prompts (fake books, fake quotes, fake consensus…)</td><td><strong>No fabrication induced</strong>; sampled responses graded "exemplary" by the auditing model</td></tr>
     <tr><td>Faithful summarization of Scripture</td><td>Dedicated audit on the four hardest cases (Psalm 22, Hosea 11:1/Matt 2:15, John 6, Matt 6:33), ~60–70 claims</td><td><strong>Zero misrepresentations</strong>; auditor's verdict: "No, it is not summarizing Scripture incorrectly."</td></tr>
   </table>

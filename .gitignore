@@ -19,3 +19,8 @@ node_modules/
 .env
 .env.*
 *.log
+
+# SITE-COPY-1 §5: the comparison page was never published and is retired.
+# Kept on disk, deliberately not tracked, so it stops reading as pending work.
+compare.html
+compare-card.png
