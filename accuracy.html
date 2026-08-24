@@ -3,60 +3,123 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Accuracy — The Bible Study App</title>
-<meta name="description" content="How The Bible Study App verifies its accuracy: real-time Scripture verification, audited sourcing, adversarial testing, and published results.">
+<title>How this app is checked · The Bible Study App</title>
+<meta name="description" content="Three things check this app: code that runs on every study, a written record of what that code found, and a rival AI reading studies line by line. All three are explained here, along with exactly where the checking stops.">
 <style>
-  body { background: #f1e6d0; color: #2a2218; font-family: Georgia, serif; line-height: 1.65; margin: 0; }
-  main { max-width: 720px; margin: 0 auto; padding: 40px 20px 60px; }
+  body { background: #f1e6d0; color: #2a2218; font-family: Georgia, serif; line-height: 1.7; margin: 0; }
+  main { max-width: 700px; margin: 0 auto; padding: 40px 20px 60px; }
   h1 { color: #52162a; font-size: 28px; margin-bottom: 4px; }
-  h2 { color: #52162a; font-size: 19px; margin-top: 32px; border-bottom: 1px solid #e3d5b5; padding-bottom: 6px; }
+  h2 { color: #52162a; font-size: 19px; margin-top: 40px; border-bottom: 1px solid #e3d5b5; padding-bottom: 6px; }
   .tagline { color: #6b5d4a; font-style: italic; }
   a { color: #6b1f2e; }
   .card { background: #fbf5e7; border: 1px solid #d9c9a8; border-radius: 12px; padding: 18px 20px; margin: 14px 0; }
   .num { color: #6b1f2e; font-weight: bold; font-family: -apple-system, sans-serif; font-size: 13px; letter-spacing: .06em; }
-  .verdict { border-left: 3px solid #6b1f2e; padding: 10px 16px; background: #f7efdb; font-style: italic; margin: 14px 0; }
-  .quiet { font-size: 13px; color: #6b5d4a; }
+  .verdict { border-left: 3px solid #6b1f2e; padding: 12px 16px; background: #f7efdb; font-style: italic; margin: 16px 0; }
+  .admit { border-left: 3px solid #8a7a55; padding: 12px 16px; background: #f3ead4; margin: 16px 0; }
+  .quiet { font-size: 14px; color: #6b5d4a; }
+  .lead { font-size: 17px; }
   table { width: 100%; border-collapse: collapse; font-size: 14px; }
-  td, th { text-align: left; padding: 7px 8px; border-bottom: 1px solid #e3d5b5; vertical-align: top; }
+  td, th { text-align: left; padding: 8px; border-bottom: 1px solid #e3d5b5; vertical-align: top; }
   th { color: #52162a; font-family: -apple-system, sans-serif; font-size: 12px; letter-spacing: .05em; text-transform: uppercase; }
+  ul { padding-left: 20px; }
+  li { margin: 12px 0; }
   footer { margin-top: 48px; font-size: 13px; color: #6b5d4a; }
 </style>
 </head>
 <body>
 <main>
-  <h1>How we know it's accurate</h1>
-  <p class="tagline">Accuracy · Context · Source — and the receipts behind the tagline.</p>
+  <h1>How this app is checked</h1>
+  <p class="tagline">Accuracy · Context · Source. Here is what is behind those three words.</p>
 
-  <p>AI can invent things. For a Bible study app, that's disqualifying. So we didn't settle for telling the AI to be careful — we built a system around it, and we publish what the system finds. Here is the whole thing, plainly.</p>
+  <p class="lead">AI makes things up. In a Bible study app that is not survivable, so this app does not rely on telling the AI to be careful. Three things check the work. Code that runs on every study, a written record of what that code found, and a rival AI that reads finished studies line by line. The code carries most of the weight, and it is the part almost nobody explains.</p>
 
-  <h2>The five layers</h2>
-  <div class="card"><span class="num">1 · EXACT SCRIPTURE, ENFORCED BY CODE</span><br>
-  Scripture is never typed by the AI. When a study cites a verse, the model writes only the reference; the server looks the verse up and renders the exact published wording before it reaches you. Six complete public-domain Bibles are bundled in the app (BSB, KJV, WEB, ASV, YLT, Darby). NASB 2020, the New Living Translation, the New King James Version, and The Message are served from their publishers' authorized libraries, with the required copyright line shown. Tap "Check this passage" under any quote to read the verse on its own and compare.</div>
-  <div class="card"><span class="num">2 · SOURCING RULES</span><br>
-  The AI must attribute every interpretive claim to named scholars and real works, may never invent page numbers or journal references, may never claim a scholarly consensus it can't name, and must present contested readings as contested — with the positions and the people who hold them.</div>
-  <div class="card"><span class="num">3 · A FROZEN TEST BATTERY</span><br>
-  55 fixed study prompts — 30 ordinary passages spanning the whole Bible, plus 25 adversarial prompts designed to bait fabrication (fake books, fake quotes, invented consensus, pressure for page numbers). The same battery re-runs after every significant change, so accuracy is measured, not assumed.</div>
-  <div class="card"><span class="num">4 · RIVAL-AI AUDITS</span><br>
-  Battery outputs are audited by a competing AI model (with web search), instructed to assume everything is wrong and verify claim-by-claim: every citation, every attribution, every date, every Greek and Hebrew claim — and, in the final lens, whether our summaries represent what the passages actually say.</div>
-  <div class="card"><span class="num">5 · PUBLISHED RESULTS</span><br>
-  The methodology and the raw study outputs are published below, unedited. If you're skeptical — good; that's the posture this app was built for. Check us.</div>
+  <h2>The first check: code, running on every study</h2>
 
-  <h2>Results to date</h2>
+  <p>This part is plain computer code. It has no opinion. It gives the same answer every time, and it runs on every single study. Nothing is spot-checked.</p>
+
+  <div class="card"><span class="num">THE APP LOOKS UP EVERY VERSE ITSELF</span><br>
+  The AI never types out a Bible verse. It writes down the reference, like John 1:1, and the app looks up that verse and puts the real published words in before anything reaches you. Six full Bibles are stored inside the app: the King James Version, the Berean Standard Bible, the World English Bible, the American Standard Version, Young's Literal Translation and the Darby Translation. Four more come straight from their publishers with the copyright line attached: NASB 2020, the New Living Translation, the New King James Version and The Message. Under any quote, tap "Check this passage" to read the verse on its own.</div>
+
+  <div class="card"><span class="num">THE APP BUILDS THE WORD CARDS ITSELF</span><br>
+  When a study digs into a Greek, Hebrew or Aramaic word, the AI writes down only the verse and the word. The app builds the rest of the card from dictionaries stored inside it: the original script, how to say it, which language it is, what it means, and which dictionary each meaning comes from. Whatever the AI typed inside that card is thrown away without being read. If the word is not actually in the verse, the whole card is dropped rather than shown as a guess. Those dictionaries hold 447,384 tagged words and 40,367 entries.</div>
+
+  <div class="card"><span class="num">ARAMAIC IS CALLED ARAMAIC</span><br>
+  Not all of the Old Testament is Hebrew. Daniel 2:4 to 7:28, Ezra 4:8 to 6:18, Ezra 7:12 to 26, and Jeremiah 10:11 are Aramaic. The app calls those 4,827 words Aramaic, because it reads the grammar tag on each individual word instead of assuming an Old Testament book must be Hebrew.</div>
+
+  <div class="card"><span class="num">EVERY BOOK NAMED IN A STUDY HAS TO SHOW UP IN ITS SOURCE LIST</span><br>
+  If a study mentions a commentary in the text, that commentary has to appear in the study's own source list at the bottom, and anything in the list has to be used in the text. Either kind of gap gets flagged. The app also never gives a page number, on purpose: author, book and year are things a library catalog can confirm, and page numbers are the detail AI invents most often.</div>
+
+  <div class="card"><span class="num">THE BOOKS ARE REAL BOOKS</span><br>
+  Books cited in a study are matched against a list of 301 reference works, and anything outside that list is looked up in public library catalogs. All 301 were confirmed real through OpenLibrary and OpenAlex. We also invented 15 fake books and ran them through the exact same check, including made-up volumes inside real commentary series and real scholars with made-up titles. Not one of the 15 fakes came back confirmed. Six real books used as a control did.</div>
+
+  <div class="verdict">None of this is the AI checking its own homework. It is ordinary code comparing what the AI wrote against something that cannot be wrong: the stored Bible text, the stored dictionaries, the library catalog. Think of a spellchecker. A spellchecker is not the writer deciding their own spelling looks fine. It compares every word against a dictionary. This is that, for Scripture, for original-language words, and for books.</div>
+
+  <h2>The second check: the app grades itself out loud, every day</h2>
+
+  <p>A check nobody reads is a check nobody can trust, so every single study writes down what happened to it. Not a pass or fail. The actual working: how many Bible quotes were in the study, how many the app printed from its own stored text, how many came from a publisher, how many it compared word for word, and how many it could not vouch for.</p>
+
+  <p><strong>That line gets written whether the news is good or bad.</strong> That sounds obvious and it is the single most important design decision on this page. A checker that only speaks up when something is wrong goes silent in two situations that look identical from outside: a perfect day, and a checker that has quietly died. This one talks every time, so the difference is always visible.</p>
+
+  <p>Two findings stop everything and go straight to the top of the report. A study where any quoted Scripture could not be accounted for, and any sign that the AI typed out Scripture itself instead of asking the app for it. <strong>Every morning those lines are gathered into a health report and read before anything else about the business.</strong> Not a dashboard nobody opens. One report, every day, that says which checks held and what they caught.</p>
+
+  <div class="admit"><strong>The honest limit here, and we would rather tell you than have you catch it.</strong> Those lines live in the server's rolling log, which only keeps a few days at a time. So we can tell you what the checks found this week, and we cannot yet hand you one lifetime number for every study ever produced. Building that permanent count is what we are working on right now, and when it exists it goes on this page whatever it says.</div>
+
+  <h2>The third check: a rival AI reads studies line by line</h2>
+
+  <p>Some things have no database to check them against. No catalog anywhere can tell you whether a particular scholar really holds a particular view. So a competing AI model, with web search, reads finished studies claim by claim, under instructions to assume everything is wrong and try to prove it.</p>
+
   <table>
-    <tr><th>What was checked</th><th>Scope</th><th>Result</th></tr>
-    <tr><td>Fabricated books, scholars, or sources</td><td>5 independent audit batches, ~24 studies claim-by-claim</td><td><strong>Zero found</strong></td></tr>
-    <tr><td>Misattributed scholarly positions</td><td>Same batches</td><td><strong>Zero found</strong></td></tr>
-    <tr><td>Scripture quote exactness</td><td>Every quote, every study, continuously</td><td><strong>Enforced by architecture</strong> (the model cannot emit verse text; the server renders every quotation from the published source)</td></tr>
-    <tr><td>Behavior under adversarial prompts</td><td>25 attack prompts (fake books, fake quotes, fake consensus…)</td><td><strong>No fabrication induced</strong>; sampled responses graded "exemplary" by the auditing model</td></tr>
-    <tr><td>Faithful summarization of Scripture</td><td>Dedicated audit on the four hardest cases (Psalm 22, Hosea 11:1/Matt 2:15, John 6, Matt 6:33), ~60–70 claims</td><td><strong>Zero misrepresentations</strong>; auditor's verdict: "No, it is not summarizing Scripture incorrectly."</td></tr>
+    <tr><th>What was checked</th><th>How much</th><th>Result</th></tr>
+    <tr><td>Made-up books, scholars or sources</td><td>Five separate rounds, about 24 studies read line by line</td><td><strong>None found</strong></td></tr>
+    <tr><td>Views credited to the wrong scholar</td><td>The same rounds</td><td><strong>None found</strong></td></tr>
+    <tr><td>What happens when you try to trick it</td><td>25 trap questions: fake books, fake quotes, made-up consensus, pressure for page numbers</td><td><strong>It did not take the bait</strong></td></tr>
+    <tr><td>Whether the studies describe passages fairly</td><td>The four hardest cases (Psalm 22, Hosea 11:1 with Matthew 2:15, John 6, Matthew 6:33), around 60 to 70 claims</td><td><strong>Nothing reversed or invented</strong></td></tr>
   </table>
-  <p class="quiet">Known minor-issue class, reported honestly: a handful of "mild" flags across all audits — e.g., a slightly intensified paraphrase ("controlling priority" for "first") or a loose echo-claim. No reversed meanings, no invented facts.</p>
 
-  <div class="verdict">What we claim: every quote verified against the real text; every interpretive claim sourced; audited by a rival AI across five batches with zero fabricated sources; results published.<br>
-  What we don't claim: perfection. AI-generated commentary is a starting point for study — the app says so on every study, and the primary sources always win.</div>
+  <p class="quiet">Reported honestly: a handful of mild flags across all the rounds, like a paraphrase that pushed a little harder than the text ("controlling priority" where the text says "first"). Nothing reversed, nothing invented.</p>
+
+  <div class="admit"><strong>What that table leaves out.</strong> Nobody counted how many claims were in those studies to begin with. That matters more than it sounds. If one reviewer checks ten claims and another checks a hundred, and both come back clean, from the outside they look identical. Until we have that count, no percentage goes on this page next to these rounds.</div>
+
+  <h2>Where the checking stops</h2>
+
+  <p>Every limit below is one we went looking for and found. None of them is something nobody thought about. Knowing precisely where a check ends is the difference between a system you can inspect and a system asking you to take its word for the whole thing, and most of these have something deliberate standing in their place.</p>
+
+  <ul>
+    <li><strong>Whether the verse fits the point.</strong> The words of a quote are guaranteed. Whether that verse actually supports the argument built around it is judgment, and no amount of code settles it. This is one of the main things the rival AI is pointed at, and it is why that third check exists at all.</li>
+    <li><strong>Greek and Hebrew words inside ordinary paragraphs.</strong> The word cards are locked down completely. A word mentioned in passing in a paragraph is not yet tied to a dictionary entry, so the rule for now is that the AI may reach for an original-language word only where a card is standing behind it. Tying prose words to the dictionary too is actively being built.</li>
+    <li><strong>Which edition of a book.</strong> This is a deliberate trade. The app cites author, book and year, which is exactly the level a library catalog can confirm, and it never cites page numbers, which are the thing AI invents most. The cost of that trade is that we can prove the author and the book are real without proving the specific edition is the one consulted. Adding book barcodes to all 301 would close it, and that is a real job we have not done.</li>
+    <li><strong>Whether a scholar really said it, in most cases.</strong> This one is a copyright wall rather than a gap in the work. Of the 301 books, only 15 are old enough that anyone can read their full text for free, so those 15 are the only ones a machine could ever check against the book itself. For the rest the app is honest about which kind of confirmation it has: the book is real, and the view attributed to it rests on the writing rules and the audit rounds.</li>
+    <li><strong>How strong the fake-book test is.</strong> Fifteen fakes with none confirmed is a real result and a small one. It shows the check works. It does not show a fake could never get through, and we would rather give you the size of the test than a reassuring adjective. Running several hundred fakes would settle it properly, and that is written up and waiting.</li>
+    <li><strong>Interpretation itself.</strong> This one is deliberate and permanent. Studies have to present a disputed reading as disputed and name who holds each view, and that is enforced by the writing rules and by the audits. A database deciding whose reading of John 6 is correct would be worse than admitting the limit.</li>
+    <li><strong>Two words in Genesis 31:47.</strong> Jegar-sahadutha is Aramaic, and the scholarly grammar data the app is built on labels those two words Hebrew, so the app inherits it. We found this by checking our own Aramaic claim rather than trusting it, the fix is written, and it is exactly the size of thing this page exists to admit.</li>
+  </ul>
+
+  <h2>Compared to what</h2>
+
+  <p>The fair comparison is not a perfect book. It is everything else on the shelf, where a share of citations have always failed to say what they were claimed to say. Two studies measured it carefully.</p>
+
+  <ul>
+    <li>Researchers asked <strong>2,648 authors</strong> to look at a real citation of their own work and say whether it supported the claim it was attached to. <strong>16.6% said it did not</strong>, and the rate was about the same in every field. <span class="quiet">Wakeling, Paramita and Pinfield, Journal of the Association for Information Science and Technology, 2025.</span></li>
+    <li>A second paper went back over fifteen earlier studies, put them all on one definition, and found <strong>14.5%</strong>. About two thirds of those were the serious kind, where the source does not support the claim, has nothing to do with it, or says the opposite. <span class="quiet">Mogull, PLOS ONE, 2017.</span></li>
+  </ul>
+
+  <p>We are not claiming a machine reads better than a scholar does. The claim is smaller, and you can check it: <strong>this app's citations get checked, and the published record's mostly do not.</strong></p>
+
+  <h2>Why the checking works here</h2>
+
+  <p>In 2026 researchers at Princeton took 1,300 pieces of legal writing, planted citation errors in them, and set AI agents loose to find the errors. The agents caught invented cases and wrong case names most of the time. Not one of them reliably caught a wrong page number. The reason is in the paper: those page numbers live inside expensive subscription databases the agents cannot see, and about a fifth of the court opinions they managed to pull had no usable page information at all.</p>
+
+  <p>That is the whole thing in one finding. <strong>How hard something is to check depends on whether you can see what you are checking against.</strong> It is why this app keeps its Bibles and its dictionaries inside the download instead of asking some outside service for them. Holding the real thing is what makes the comparison cheap enough to run every single time.</p>
+
+  <p class="quiet">Two more results from that same study are worth knowing. Pointed at legal writing from before AI drafting existed, the same agent turned up more than ten real citation mistakes that no machine had ever gone looking for. And AI does not simply get more accurate as it gets newer: the most recent model in the study invented citations more often than one from two years earlier did. Checking is permanent. It does not become unnecessary as the technology grows up.</p>
+
+  <h2>What we claim, and what we do not</h2>
+
+  <div class="verdict">What we claim: every Bible quote is looked up and printed by the app rather than typed by the AI. Every word card is built from a dictionary stored in the app. Every interpretive claim names a real source. Every study writes down what the checks found, and those findings are read every day. A rival AI has read studies line by line across five rounds and found no made-up sources and no views credited to the wrong scholar. The method and the raw studies are published.<br><br>
+  What we do not claim: perfection, or any percentage we cannot show you the full working for. Every limit we know about is listed above rather than left out. AI writing is a starting point for study. The app says so on every study, and the primary sources always win.</div>
 
   <h2>Check us</h2>
-  <p>Raw battery outputs (unedited, exactly as generated): <a href="accuracy-outputs/">browse the studies</a>. Methodology: <a href="accuracy-outputs/METHODOLOGY.md">the benchmark design</a>. Found an error we missed? <a href="index.html#contact">Tell us</a> — finding it is the point.</p>
+  <p>The raw studies, unedited and exactly as the app produced them: <a href="accuracy-outputs/">browse them here</a>. The method: <a href="accuracy-outputs/METHODOLOGY.md">how the test set is built</a>. It is 55 fixed prompts, 30 ordinary passages from across the whole Bible and 25 written to tempt the AI into making something up, and the whole set runs again after any significant change. Found an error we missed? <a href="index.html#contact">Tell us</a>. Finding it is the point.</p>
 
   <footer>The Bible Study App · <a href="index.html">Home</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></footer>
 </main>
