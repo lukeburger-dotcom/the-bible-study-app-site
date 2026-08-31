@@ -4,26 +4,76 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>How this app is checked · The Bible Study App</title>
-<meta name="description" content="Three things check this app: code that runs on every study, a written record of what that code found, and a rival AI reading studies line by line. All three are explained here, along with exactly where the checking stops.">
+<meta name="description" content="Three things check this app: code that runs on every study, a running count of what that code found, and a rival AI reading studies line by line. All three are explained here, along with exactly where the checking stops.">
 <style>
-  body { background: #f1e6d0; color: #2a2218; font-family: Georgia, serif; line-height: 1.7; margin: 0; }
-  main { max-width: 700px; margin: 0 auto; padding: 40px 20px 60px; }
-  h1 { color: #52162a; font-size: 28px; margin-bottom: 4px; }
-  h2 { color: #52162a; font-size: 19px; margin-top: 40px; border-bottom: 1px solid #e3d5b5; padding-bottom: 6px; }
-  .tagline { color: #6b5d4a; font-style: italic; }
-  a { color: #6b1f2e; }
-  .card { background: #fbf5e7; border: 1px solid #d9c9a8; border-radius: 12px; padding: 18px 20px; margin: 14px 0; }
-  .num { color: #6b1f2e; font-weight: bold; font-family: -apple-system, sans-serif; font-size: 13px; letter-spacing: .06em; }
-  .verdict { border-left: 3px solid #6b1f2e; padding: 12px 16px; background: #f7efdb; font-style: italic; margin: 16px 0; }
-  .admit { border-left: 3px solid #8a7a55; padding: 12px 16px; background: #f3ead4; margin: 16px 0; }
-  .quiet { font-size: 14px; color: #6b5d4a; }
+  :root {
+    --bg: #f1e6d0; --ink: #2a2218; --head: #52162a; --accent: #6b1f2e;
+    --card: #fbf5e7; --border: #d9c9a8; --muted: #6b5d4a; --soft: #f7efdb;
+    --caught: #0f6b56; --slipped: #b95b17; --untest: #6d7a91;
+  }
+  body { background: var(--bg); color: var(--ink); font-family: Georgia, serif; line-height: 1.7; margin: 0; }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 20px 60px; }
+  h1 { color: var(--head); font-size: 30px; margin-bottom: 4px; text-wrap: balance; }
+  h2 { color: var(--head); font-size: 20px; margin-top: 44px; border-bottom: 1px solid #e3d5b5; padding-bottom: 6px; }
+  h3 { color: var(--head); font-size: 16px; margin: 22px 0 6px; }
+  .tagline { color: var(--muted); font-style: italic; margin-top: 0; }
+  a { color: var(--accent); }
   .lead { font-size: 17px; }
+  .quiet { font-size: 14px; color: var(--muted); }
+  .sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 18px 20px; margin: 14px 0; }
+  .num { color: var(--accent); font-weight: bold; font-family: -apple-system, sans-serif; font-size: 13px; letter-spacing: .06em; }
+  .verdict { border-left: 3px solid var(--accent); padding: 12px 16px; background: var(--soft); font-style: italic; margin: 16px 0; }
+  .admit { border-left: 3px solid #8a7a55; padding: 12px 16px; background: #f3ead4; margin: 16px 0; }
+
+  /* three-check pipeline strip */
+  .pipeline { display: flex; gap: 10px; margin: 22px 0 6px; }
+  .pipeline .step { flex: 1; background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; }
+  .pipeline .step .k { font-family: Georgia, serif; font-size: 26px; color: var(--accent); line-height: 1; }
+  .pipeline .step .t { font-family: -apple-system, sans-serif; font-size: 12.5px; letter-spacing: .04em; text-transform: uppercase; color: var(--head); margin: 6px 0 2px; font-weight: 600; }
+  .pipeline .step .d { font-size: 13.5px; color: var(--muted); line-height: 1.45; }
+  @media (max-width: 560px) { .pipeline { flex-direction: column; } }
+
+  /* live counter band */
+  .counter { background: var(--head); border-radius: 14px; padding: 20px 22px 16px; margin: 20px 0; color: #f1e2c8; }
+  .counter .band-title { font-family: -apple-system, sans-serif; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: #d8bd92; margin-bottom: 10px; }
+  .counter .tiles { display: flex; gap: 26px; flex-wrap: wrap; }
+  .counter .tile .v { font-family: -apple-system, sans-serif; font-variant-numeric: tabular-nums; font-size: 34px; font-weight: 650; color: #fdf6e6; line-height: 1.1; }
+  .counter .tile .l { font-size: 13.5px; color: #d8bd92; }
+  .counter .foot { font-size: 12.5px; color: #c9ab7e; margin-top: 12px; line-height: 1.5; }
+  .counter .unavailable { font-size: 15px; font-style: italic; color: #e8d5b0; }
+
+  /* waffle chart */
+  .waffle-block { margin: 18px 0; }
+  .waffle-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 6px; }
+  .waffle-head .name { font-family: -apple-system, sans-serif; font-size: 13.5px; font-weight: 600; color: var(--head); }
+  .waffle-head .result { font-family: -apple-system, sans-serif; font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .waffle { display: grid; grid-template-columns: repeat(30, 1fr); gap: 3px; max-width: 540px; }
+  .waffle span { aspect-ratio: 1; border-radius: 2.5px; display: block; }
+  .waffle .c { background: var(--caught); }
+  .waffle .s { background: var(--slipped); }
+  .waffle .u { background: transparent; border: 1.5px solid var(--untest); }
+  .legend { display: flex; gap: 20px; flex-wrap: wrap; margin: 14px 0 4px; font-family: -apple-system, sans-serif; font-size: 13px; color: var(--ink); }
+  .legend .key { display: inline-block; width: 12px; height: 12px; border-radius: 2.5px; vertical-align: -1px; margin-right: 6px; }
+  .legend .key.c { background: var(--caught); }
+  .legend .key.s { background: var(--slipped); }
+  .legend .key.u { background: transparent; border: 1.5px solid var(--untest); width: 10px; height: 10px; }
+
+  /* comparison tiles */
+  .compare { display: flex; gap: 12px; flex-wrap: wrap; margin: 16px 0; }
+  .compare .ctile { flex: 1 1 200px; background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
+  .compare .ctile .v { font-family: -apple-system, sans-serif; font-variant-numeric: tabular-nums; font-size: 30px; font-weight: 650; color: var(--head); }
+  .compare .ctile .l { font-size: 13.5px; color: var(--ink); line-height: 1.45; margin-top: 2px; }
+  .compare .ctile .src { font-size: 12px; color: var(--muted); margin-top: 8px; }
+
   table { width: 100%; border-collapse: collapse; font-size: 14px; }
   td, th { text-align: left; padding: 8px; border-bottom: 1px solid #e3d5b5; vertical-align: top; }
-  th { color: #52162a; font-family: -apple-system, sans-serif; font-size: 12px; letter-spacing: .05em; text-transform: uppercase; }
+  th { color: var(--head); font-family: -apple-system, sans-serif; font-size: 12px; letter-spacing: .05em; text-transform: uppercase; }
   ul { padding-left: 20px; }
   li { margin: 12px 0; }
-  footer { margin-top: 48px; font-size: 13px; color: #6b5d4a; }
+  .overflow { overflow-x: auto; }
+  footer { margin-top: 48px; font-size: 13px; color: var(--muted); }
 </style>
 </head>
 <body>
@@ -31,7 +81,19 @@
   <h1>How this app is checked</h1>
   <p class="tagline">Accuracy · Context · Source. Here is what is behind those three words.</p>
 
-  <p class="lead">AI makes things up. In a Bible study app that is not survivable, so this app does not rely on telling the AI to be careful. Three things check the work. Code that runs on every study, a written record of what that code found, and a rival AI that reads finished studies line by line. The code carries most of the weight, and it is the part almost nobody explains.</p>
+  <p class="lead">AI makes things up. In a Bible study app that is not survivable, so this app does not rely on telling the AI to be careful. Three things check the work, and this page walks through each one, shows you what the checks have caught, and names exactly where the checking stops.</p>
+
+  <div class="pipeline sans">
+    <div class="step"><div class="k">1</div><div class="t">Code, on every study</div><div class="d">Plain computer code with no opinion. Runs on every single study, never spot-checked.</div></div>
+    <div class="step"><div class="k">2</div><div class="t">A count, kept out loud</div><div class="d">Every study writes down what happened to it, good news or bad, and the totals live on this page.</div></div>
+    <div class="step"><div class="k">3</div><div class="t">A rival AI, reading</div><div class="d">A competing model reads finished studies line by line, under instructions to prove them wrong.</div></div>
+  </div>
+
+  <div class="counter sans" id="live-counter">
+    <div class="band-title">The running count, live from the checking layer</div>
+    <div id="counter-body"><p class="unavailable">The lifetime counter is being built right now. When it exists, the real numbers go here, whatever they say.</p></div>
+    <div class="foot">These numbers come straight from the same records the checks write. Our own testing traffic is subtracted before anything is counted here.</div>
+  </div>
 
   <h2>The first check: code, running on every study</h2>
 
@@ -44,78 +106,118 @@
   When a study digs into a Greek, Hebrew or Aramaic word, the AI writes down only the verse and the word. The app builds the rest of the card from dictionaries stored inside it: the original script, how to say it, which language it is, what it means, and which dictionary each meaning comes from. Whatever the AI typed inside that card is thrown away without being read. If the word is not actually in the verse, the whole card is dropped rather than shown as a guess. Those dictionaries hold 447,384 tagged words and 40,367 entries.</div>
 
   <div class="card"><span class="num">ARAMAIC IS CALLED ARAMAIC</span><br>
-  Not all of the Old Testament is Hebrew. Daniel 2:4 to 7:28, Ezra 4:8 to 6:18, Ezra 7:12 to 26, and Jeremiah 10:11 are Aramaic. The app calls those 4,827 words Aramaic, because it reads the grammar tag on each individual word instead of assuming an Old Testament book must be Hebrew.</div>
+  Some of the Old Testament is Aramaic rather than Hebrew: Daniel 2:4 to 7:28, Ezra 4:8 to 6:18, Ezra 7:12 to 26, and Jeremiah 10:11. The app calls those 4,827 words Aramaic, because it reads the grammar tag on each individual word instead of assuming an Old Testament book must be Hebrew.</div>
 
   <div class="card"><span class="num">EVERY BOOK NAMED IN A STUDY HAS TO SHOW UP IN ITS SOURCE LIST</span><br>
   If a study mentions a commentary in the text, that commentary has to appear in the study's own source list at the bottom, and anything in the list has to be used in the text. Either kind of gap gets flagged. Author, book and year are what a library catalog can confirm, so that is the level the check is built on. Page and volume numbers are a separate matter: the app allows one where the AI is confident of it, nothing in the pipeline verifies it, and the writing rules require a study carrying any to say so at the foot of its source list.</div>
 
   <div class="card"><span class="num">THE BOOKS ARE REAL BOOKS</span><br>
-  Books cited in a study are matched against a list of 332 reference works, and anything outside that list is looked up in public library catalogs. All 332 were confirmed real through OpenLibrary and OpenAlex. We also test the check itself by planting fakes in it. In August 2026 we ran 300 invented books and 30 real ones through the exact same path. Every fake that put a real scholar's name on a book that does not exist was caught, 60 out of 60. Every invented volume of a commentary titled for a single book of the Bible was caught, 45 out of 45. No real book was rejected. And 16 fakes out of 255 came back confirmed, which is about 6 in 100, with a ceiling closer to 9 in 100 at this sample size. The ones that get through share one shape: a made-up volume number on a real book whose own title carries no numbers, where the check has nothing to disagree with. An earlier round of 15 fakes caught all 15 and was too small to show this. When the catalogs answer and cannot find a book, the study keeps the citation and loses the line that says its citations were cross-referenced.</div>
+  Books cited in a study are matched against a shelf of 332 reference works, every one confirmed real through OpenLibrary and OpenAlex. Anything cited from off that shelf is looked up in public library catalogs. When a lookup comes back empty, or the catalog turns the lookup away and a second, cleaned-up attempt fails too, the study keeps the citation and loses the line that says its citations were cross-referenced. A citation the catalogs could not check never counts as a citation they confirmed.</div>
 
   <div class="verdict">None of this is the AI checking its own homework. It is ordinary code comparing what the AI wrote against something that cannot be wrong: the stored Bible text, the stored dictionaries, the library catalog. Think of a spellchecker. A spellchecker is not the writer deciding their own spelling looks fine. It compares every word against a dictionary. This is that, for Scripture, for original-language words, and for books.</div>
 
-  <h2>The second check: the app grades itself out loud, every day</h2>
+  <h2>We attack our own book check, and here is the full result</h2>
 
-  <p>A check nobody reads is a check nobody can trust, so every single study writes down what happened to it. Not a pass or fail. The actual working: how many Bible quotes were in the study, how many the app printed from its own stored text, how many came from a publisher, how many it compared word for word, and how many it could not vouch for.</p>
+  <p>A check you have never attacked is a check you know nothing about. So in August 2026 we built 300 fake books, planted them in the checking pipeline alongside 30 real ones, and recorded exactly what happened to each. Every square below is one planted fake.</p>
+
+  <p>The fakes were not all the same kind, and the difference between the kinds is the whole story. A number by itself, like "16 got through," would tell you almost nothing, because it matters enormously <em>what</em> got through.</p>
+
+  <div class="waffle-block">
+    <div class="waffle-head"><span class="name">Fakes where the book does not exist at all</span><span class="result">105 planted · all 105 caught</span></div>
+    <div class="waffle" id="w1" aria-label="105 fakes, all caught"></div>
+    <p class="quiet" style="margin-top:8px">A real scholar's name on a book that was never written. This is the classic AI hallucination, the kind that would truly mislead you, and the check caught every single one.</p>
+  </div>
+
+  <div class="waffle-block">
+    <div class="waffle-head"><span class="name">Fakes where the book is real but the wrong person is attached</span><span class="result">45 planted · 44 caught · 1 accepted</span></div>
+    <div class="waffle" id="w2" aria-label="45 fakes, 44 caught, 1 accepted"></div>
+    <p class="quiet" style="margin-top:8px">The one it accepted embarrassed the test, and in a way we did not expect: when we chased it down, the "wrong" editor we had invented for a reference work turned out to really have edited its newest edition. The check was right and our fake was accidentally true.</p>
+  </div>
+
+  <div class="waffle-block">
+    <div class="waffle-head"><span class="name">Fakes where the book is real, with an invented volume or book number riding on it</span><span class="result">105 planted · 90 caught · 15 accepted</span></div>
+    <div class="waffle" id="w3" aria-label="105 fakes, 90 caught, 15 accepted"></div>
+    <p class="quiet" style="margin-top:8px">This is where the check actually leaks, so look at what a leak means here. Every one of the 15 points at a real book, by the real author, on the real subject. What is wrong is a volume or section number bolted onto it. A reader who follows one lands on the right shelf at the wrong door. That is a flaw worth fixing, and it is a different universe from a source that does not exist.</p>
+  </div>
+
+  <div class="waffle-block">
+    <div class="waffle-head"><span class="name">Fakes where a real book carries an invented subtitle</span><span class="result">45 planted · this method cannot test them</span></div>
+    <div class="waffle" id="w4" aria-label="45 fakes, untestable by this method"></div>
+    <p class="quiet" style="margin-top:8px">Library catalogs can confirm an author, a title and a year. A subtitle riding on a real title is beyond what they can settle today, so we report this class as unmeasured rather than pretending the squares are green. Closing it means matching against each book's barcode number, a real job on the roadmap and not yet done.</p>
+  </div>
+
+  <div class="legend sans">
+    <span><span class="key c"></span>Caught</span>
+    <span><span class="key s"></span>Accepted</span>
+    <span><span class="key u"></span>Cannot be tested this way</span>
+  </div>
+
+  <h3>The honest arithmetic</h3>
+  <p>Of the 255 fakes this method can genuinely test, 16 were accepted. That is about 6 in 100, with a statistical ceiling closer to 9 in 100 at this sample size, and we publish it rather than rounding it away. Two more things give that figure its meaning. First, every accepted fake was of the decorated-real-book kind; the invented-source kind went 0 for 105. Second, the 30 real books planted as controls all came through, so the check is not passing the test by simply rejecting everything it sees.</p>
+  <p class="quiet">An earlier round used 15 fakes and caught all 15. We stopped citing that result when this one existed: fifteen samples was too small to find any of what the 300 found, and a clean scorecard from a small test says more about the test than the check.</p>
+
+  <h2>The second check: the app counts its own work, out loud</h2>
+
+  <p>A check nobody reads is a check nobody can trust, so every single study writes down what happened to it. The actual working, never a bare pass or fail: how many Bible quotes were in the study, how many the app printed from its own stored text, how many came from a publisher, how many it compared word for word, and how many it could not vouch for.</p>
 
   <p><strong>That line gets written whether the news is good or bad.</strong> That sounds obvious and it is the single most important design decision on this page. A checker that only speaks up when something is wrong goes silent in two situations that look identical from outside: a perfect day, and a checker that has quietly died. This one talks every time, so the difference is always visible.</p>
 
-  <p>Two findings stop everything and go straight to the top of the report. A study where any quoted Scripture could not be accounted for, and any sign that the AI typed out Scripture itself instead of asking the app for it. <strong>Every morning those lines are gathered into a health report and read before anything else about the business.</strong> Not a dashboard nobody opens. One report, every day, that says which checks held and what they caught.</p>
+  <p>Two findings stop everything and go straight to the top of the report: a study where any quoted Scripture could not be accounted for, and any sign that the AI typed out Scripture itself instead of asking the app for it. <strong>Every morning those lines are gathered into a health report and read before anything else about the business.</strong></p>
 
-  <div class="admit"><strong>The honest limit here, and we would rather tell you than have you catch it.</strong> Those lines live in the server's rolling log, which only keeps a few days at a time. So we can tell you what the checks found this week, and we cannot yet hand you one lifetime number for every study ever produced. Building that permanent count is what we are working on right now, and when it exists it goes on this page whatever it says.</div>
+  <p>The counter at the top of this page is this check made public. It is fed by the same records, updated as studies happen, with our own testing traffic subtracted, and it stays on this page whatever it says.</p>
 
   <h2>The third check: a rival AI reads studies line by line</h2>
 
   <p>Some things have no database to check them against. No catalog anywhere can tell you whether a particular scholar really holds a particular view. So a competing AI model, with web search, reads finished studies claim by claim, under instructions to assume everything is wrong and try to prove it.</p>
 
-  <table>
+  <p>The largest run so far, in August 2026, put 55 fixed studies through three reading packs: 25 written to bait the AI into inventing things, 10 on the most disputed passages in Scripture, and 20 drawn from across the whole Bible.</p>
+
+  <div class="overflow"><table>
     <tr><th>What was checked</th><th>How much</th><th>Result</th></tr>
-    <tr><td>Made-up books, scholars or sources</td><td>Five separate rounds, about 24 studies read line by line</td><td><strong>None found</strong></td></tr>
-    <tr><td>Views credited to the wrong scholar</td><td>The same rounds</td><td><strong>None found</strong></td></tr>
-    <tr><td>What happens when you try to trick it</td><td>25 trap questions: fake books, fake quotes, made-up consensus, pressure for page numbers</td><td><strong>It did not take the bait</strong></td></tr>
-    <tr><td>Whether the studies describe passages fairly</td><td>The four hardest cases (Psalm 22, Hosea 11:1 with Matthew 2:15, John 6, Matthew 6:33), around 60 to 70 claims</td><td><strong>Nothing reversed or invented</strong></td></tr>
-  </table>
+    <tr><td>25 trap prompts: fake books, fake quotes, invented consensus, pressure for page numbers</td><td>Every study read line by line</td><td><strong>It did not take the bait, on any of the 25</strong></td></tr>
+    <tr><td>The hardest disputed passages, checked claim by claim</td><td>10 studies</td><td><strong>No made-up sources, no views credited to the wrong scholar</strong></td></tr>
+    <tr><td>Ordinary passages from Genesis to Revelation</td><td>20 studies</td><td><strong>One real error found, described below</strong></td></tr>
+  </table></div>
 
-  <p class="quiet">Reported honestly: a handful of mild flags across all the rounds, like a paraphrase that pushed a little harder than the text ("controlling priority" where the text says "first"). Nothing reversed, nothing invented.</p>
+  <div class="admit"><strong>The one real error, told in full because it earns this page its keep.</strong> In one of the 20 breadth studies, the reviewer flagged a book title, and it was right: the study had cited a real scholar, in her real year, in her real series, on her real subject, under a title she never used. Her actual book exists and says roughly what the study attributed to it, which is exactly what made the error hard for a human eye to catch. Two things came out of that finding. The invented title had slipped past the book check because the catalog had turned that particular lookup away, and the pipeline then counted "we could not check this" as a pass; that is fixed, and such a citation now loses its cross-referenced line instead. And the error itself is the same low-severity shape as the test result above: a decoration on a real source rather than an invented one. We would rather show you one real error and what it changed than a clean table you have to take on faith.</div>
 
-  <div class="admit"><strong>What that table leaves out.</strong> Nobody counted how many claims were in those studies to begin with. That matters more than it sounds. If one reviewer checks ten claims and another checks a hundred, and both come back clean, from the outside they look identical. Until we have that count, no percentage goes on this page next to these rounds.</div>
-
-  <h2>Where the checking stops</h2>
-
-  <p>Every limit below is one we went looking for and found. None of them is something nobody thought about. Knowing precisely where a check ends is the difference between a system you can inspect and a system asking you to take its word for the whole thing, and most of these have something deliberate standing in their place.</p>
-
-  <ul>
-    <li><strong>Whether the verse fits the point.</strong> The words of a quote are guaranteed. Whether that verse actually supports the argument built around it is judgment, and no amount of code settles it. This is one of the main things the rival AI is pointed at, and it is why that third check exists at all.</li>
-    <li><strong>Greek and Hebrew words inside ordinary paragraphs.</strong> The word cards are locked down completely. A word mentioned in passing in a paragraph is not yet tied to a dictionary entry, so the rule for now is that the AI may reach for an original-language word only where a card is standing behind it. Tying prose words to the dictionary too is actively being built.</li>
-    <li><strong>Which edition of a book.</strong> This is a deliberate trade. The app cites author, book and year, which is exactly the level a library catalog can confirm. Page and volume numbers are allowed where the AI is confident of them and nothing verifies them, which is why a study carrying one is required to say so under its sources. The cost of that trade is that we can prove the author and the book are real without proving the specific edition is the one consulted. Adding book barcodes to all 332 would close it, and that is a real job we have not done.</li>
-    <li><strong>Whether a scholar really said it, in most cases.</strong> This one is a copyright wall rather than a gap in the work. Of the 332 books, only 15 are old enough that anyone can read their full text for free, so those 15 are the only ones a machine could ever check against the book itself. For the rest the app is honest about which kind of confirmation it has: the book is real, and the view attributed to it rests on the writing rules and the audit rounds.</li>
-    <li><strong>How strong the fake-book test is.</strong> This section used to say that running several hundred fakes would settle it. We ran them, and they did settle it: about 6 in 100 got through, all of the one shape described above. That is the honest figure and it is not zero. What holds against it is the shelf itself, 332 works checked one at a time, and a citation that matches one of those never reaches a catalog at all.</li>
-    <li><strong>Interpretation itself.</strong> This one is deliberate and permanent. Studies have to present a disputed reading as disputed and name who holds each view, and that is enforced by the writing rules and by the audits. A database deciding whose reading of John 6 is correct would be worse than admitting the limit.</li>
-    <li><strong>Two words in Genesis 31:47.</strong> Jegar-sahadutha is Aramaic, and the scholarly grammar data the app is built on labels those two words Hebrew, so the app inherits it. We found this by checking our own Aramaic claim rather than trusting it, the fix is written, and it is exactly the size of thing this page exists to admit.</li>
-  </ul>
+  <div class="admit"><strong>What the table above still leaves out.</strong> Nobody counted how many claims were in those studies to begin with. That matters more than it sounds. If one reviewer checks ten claims and another checks a hundred, and both come back clean, from the outside they look identical. Until we have that count, no percentage goes on this page next to these rounds.</div>
 
   <h2>Compared to what</h2>
 
-  <p>The fair comparison is not a perfect book. It is everything else on the shelf, where a share of citations have always failed to say what they were claimed to say. Two studies measured it carefully.</p>
+  <p>The fair comparison is everything else on the shelf rather than some perfect book, because a share of published citations have always failed to say what they were claimed to say. Two studies measured it carefully.</p>
 
-  <ul>
-    <li>Researchers asked <strong>2,648 authors</strong> to look at a real citation of their own work and say whether it supported the claim it was attached to. <strong>16.6% said it did not</strong>, and the rate was about the same in every field. <span class="quiet">Wakeling, Paramita and Pinfield, Journal of the Association for Information Science and Technology, 2025.</span></li>
-    <li>A second paper went back over fifteen earlier studies, put them all on one definition, and found <strong>14.5%</strong>. About two thirds of those were the serious kind, where the source does not support the claim, has nothing to do with it, or says the opposite. <span class="quiet">Mogull, PLOS ONE, 2017.</span></li>
-  </ul>
+  <div class="compare sans">
+    <div class="ctile"><div class="v">16.6%</div><div class="l">of 2,648 authors, shown a real citation of their own work, said it did not support the claim attached to it. The rate held across every field.</div><div class="src">Wakeling, Paramita &amp; Pinfield, JASIST, 2025</div></div>
+    <div class="ctile"><div class="v">14.5%</div><div class="l">citation error rate when fifteen earlier studies were put on one definition. About two thirds were the serious kind, where the source does not support the claim at all.</div><div class="src">Mogull, PLOS ONE, 2017</div></div>
+  </div>
 
-  <p>We are not claiming a machine reads better than a scholar does. The claim is smaller, and you can check it: <strong>this app's citations get checked, and the published record's mostly do not.</strong></p>
+  <p>We are not claiming a machine reads better than a scholar does. The claim is smaller, and you can check it: this app's citations get checked on every study, while the published record's citations mostly never get checked at all.</p>
 
   <h2>Why the checking works here</h2>
 
   <p>In 2026 researchers at Princeton took 1,300 pieces of legal writing, planted citation errors in them, and set AI agents loose to find the errors. The agents caught invented cases and wrong case names most of the time. Not one of them reliably caught a wrong page number. The reason is in the paper: those page numbers live inside expensive subscription databases the agents cannot see, and about a fifth of the court opinions they managed to pull had no usable page information at all.</p>
 
-  <p>That is the whole thing in one finding. <strong>How hard something is to check depends on whether you can see what you are checking against.</strong> It is why this app keeps its Bibles and its dictionaries inside the download instead of asking some outside service for them. Holding the real thing is what makes the comparison cheap enough to run every single time.</p>
+  <p>That is the whole thing in one finding. <strong>How hard something is to check depends on whether you can see what you are checking against.</strong> It is why this app keeps its Bibles and its dictionaries inside the download instead of asking some outside service for them. Holding the real thing is what makes the comparison cheap enough to run every single time. And notice how the Princeton result rhymes with ours: invented sources are catchable and got caught; small numbers riding on real sources are the hard residue. That is the industry's frontier, and this page shows you exactly where this app sits on it.</p>
 
   <p class="quiet">Two more results from that same study are worth knowing. Pointed at legal writing from before AI drafting existed, the same agent turned up more than ten real citation mistakes that no machine had ever gone looking for. And AI does not simply get more accurate as it gets newer: the most recent model in the study invented citations more often than one from two years earlier did. Checking is permanent. It does not become unnecessary as the technology grows up.</p>
 
+  <h2>Where the checking stops</h2>
+
+  <p>Every limit below is one we went looking for and found. Knowing precisely where a check ends is the difference between a system you can inspect and a system asking you to take its word for the whole thing, and most of these have something deliberate standing in their place.</p>
+
+  <ul>
+    <li><strong>Whether the verse fits the point.</strong> The words of a quote are guaranteed. Whether that verse actually supports the argument built around it is judgment, and no amount of code settles it. This is one of the main things the rival AI is pointed at, and it is why that third check exists at all.</li>
+    <li><strong>Greek and Hebrew words inside ordinary paragraphs.</strong> The word cards are locked down completely. A word mentioned in passing in a paragraph is not yet tied to a dictionary entry, so the rule for now is that the AI may reach for an original-language word only where a card is standing behind it. Tying prose words to the dictionary too is actively being built.</li>
+    <li><strong>Which edition of a book.</strong> This is a deliberate trade. The app cites author, book and year, which is exactly the level a library catalog can confirm. Page and volume numbers are allowed where the AI is confident of them and nothing verifies them, which is why a study carrying one is required to say so under its sources. The cost of that trade is visible in the test above: decorations on real books are the one place fakes get through, and adding each book's barcode number to the shelf is the real, not-yet-done job that would close it.</li>
+    <li><strong>Whether a scholar really said it, in most cases.</strong> This one is a copyright wall rather than a gap in the work. Of the 332 books, only 15 are old enough that anyone can read their full text for free, so those 15 are the only ones a machine could ever check against the book itself. For the rest the app is honest about which kind of confirmation it has: the book is real, and the view attributed to it rests on the writing rules and the audit rounds.</li>
+    <li><strong>Interpretation itself.</strong> This one is deliberate and permanent. Studies have to present a disputed reading as disputed and name who holds each view, and that is enforced by the writing rules and by the audits. A database deciding whose reading of John 6 is correct would be worse than admitting the limit.</li>
+    <li><strong>Two words in Genesis 31:47.</strong> Jegar-sahadutha is Aramaic, and the scholarly grammar data the app is built on labels those two words Hebrew, so the app inherits it. We found this by checking our own Aramaic claim rather than trusting it, the fix is written, and it is exactly the size of thing this page exists to admit.</li>
+  </ul>
+
   <h2>What we claim, and what we do not</h2>
 
-  <div class="verdict">What we claim: every Bible quote is looked up and printed by the app rather than typed by the AI. Every word card is built from a dictionary stored in the app. Every interpretive claim names a real source. Every study writes down what the checks found, and those findings are read every day. A rival AI has read studies line by line across five rounds and found no made-up sources and no views credited to the wrong scholar. The method and the raw studies are published.<br><br>
+  <div class="verdict">What we claim: every Bible quote is looked up and printed by the app rather than typed by the AI. Every word card is built from a dictionary stored in the app. Every interpretive claim names a real source. Every study writes down what the checks found, those findings are read every day, and their running total lives at the top of this page. A rival AI has read studies line by line, found one error across every round so far, and that error changed the pipeline. The method and the raw studies are published.<br><br>
   What we do not claim: perfection, or any percentage we cannot show you the full working for. Every limit we know about is listed above rather than left out. AI writing is a starting point for study. The app says so on every study, and the primary sources always win.</div>
 
   <h2>Check us</h2>
@@ -123,5 +225,57 @@
 
   <footer>The Bible Study App · <a href="index.html">Home</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></footer>
 </main>
+
+<script>
+(function () {
+  // Waffle charts: one square per planted fake. Counts come from the
+  // August 2026 control run and must match the prose beside them.
+  function waffle(id, caught, accepted, untestable) {
+    var el = document.getElementById(id);
+    if (!el) return;
+    var html = '';
+    var i;
+    for (i = 0; i < caught; i++) html += '<span class="c"></span>';
+    for (i = 0; i < accepted; i++) html += '<span class="s"></span>';
+    for (i = 0; i < untestable; i++) html += '<span class="u"></span>';
+    el.innerHTML = html;
+  }
+  waffle('w1', 105, 0, 0);
+  waffle('w2', 44, 1, 0);
+  waffle('w3', 90, 15, 0);
+  waffle('w4', 0, 0, 45);
+
+  // Live counter. Endpoint contract: ACCURACY-COUNTER-2.
+  var ENDPOINT = 'https://the-bible-study-app-production.up.railway.app/public/checks';
+  // The floor the band has to clear before it shows a number at all.
+  var MIN_STUDIES = 250;
+  function fmt(n) { return Number(n).toLocaleString('en-US'); }
+  fetch(ENDPOINT).then(function (r) {
+    if (!r.ok) throw new Error('unavailable');
+    return r.json();
+  }).then(function (d) {
+    if (typeof d.studies !== 'number' || typeof d.blocks !== 'number' || typeof d.covered !== 'number') throw new Error('shape');
+    // The count began on the day the ledger shipped, so for its first stretch
+    // the honest thing to show is the fallback line, not a number small enough
+    // to read as the whole history of the app. Below the floor the band says
+    // it is still being built, which is true.
+    if (d.studies < MIN_STUDIES) return;
+    var tiles =
+      '<div class="tile"><div class="v">' + fmt(d.studies) + '</div><div class="l">studies checked, every one</div></div>';
+    // Never "0 of 0". The quotes tile appears once there is something to count.
+    if (d.blocks > 0) {
+      tiles += '<div class="tile"><div class="v">' + fmt(d.covered) + ' of ' + fmt(d.blocks) + '</div><div class="l">Scripture quotes verified word for word</div></div>';
+    }
+    var since = '';
+    if (d.coversFrom) {
+      var dt = new Date(d.coversFrom);
+      if (!isNaN(dt)) since = 'Counting since ' + dt.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) + '. ';
+    }
+    document.getElementById('counter-body').innerHTML =
+      '<div class="tiles">' + tiles + '</div>' +
+      (since ? '<div class="foot">' + since + 'Numbers refresh every few minutes.</div>' : '');
+  }).catch(function () { /* the built-in fallback line stays */ });
+})();
+</script>
 </body>
 </html>

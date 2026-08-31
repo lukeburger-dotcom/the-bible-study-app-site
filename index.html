@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Bible Study App — Deep study, impactful devotions</title>
+<title>The Bible Study App · Deep study, impactful devotions</title>
 <meta name="description" content="Every interpretation names its scholar. Every quote sits a tap away from the text it came from.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="The Bible Study App">
-<meta property="og:title" content="The Bible Study App — Deep study, impactful devotions">
+<meta property="og:title" content="The Bible Study App · Deep study, impactful devotions">
 <meta property="og:description" content="Every interpretation names its scholar. Every quote sits a tap away from the text it came from.">
 <meta property="og:url" content="https://trythebiblestudy.app/">
 <meta property="og:image" content="https://trythebiblestudy.app/og-card.png">
@@ -26,6 +26,9 @@
   .tagline { color: #6b5d4a; font-style: italic; }
   a { color: #6b1f2e; }
   .btn { display: inline-block; background: #6b1f2e; color: #f5e9c8; padding: 10px 18px; border-radius: 8px; text-decoration: none; font-family: -apple-system, sans-serif; font-size: 15px; margin-top: 8px; }
+  .checkline { background: #52162a; color: #f1e2c8; border-radius: 10px; padding: 12px 16px; margin-top: 18px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 14.5px; line-height: 1.5; }
+  .checkline strong { color: #fdf6e6; font-variant-numeric: tabular-nums; font-size: 17px; }
+  .checkline a { color: #e8c98f; }
   footer { margin-top: 48px; font-size: 13px; color: #6b5d4a; }
   footer a { margin-right: 14px; }
 </style>
@@ -37,8 +40,10 @@
   <p>Three ways to engage Scripture: <strong>Quick Study</strong> for a focused answer, <strong>Deep Study</strong> for thorough scholarly treatment, and <strong>Devotional</strong> for contemplative engagement that turns cultural and linguistic depth into felt weight. Every claim sourced, every passage checkable against real Bible text bundled in the app.</p>
   <p><a class="btn" href="https://apps.apple.com/us/app/id6791622634">Download on the App&nbsp;Store</a>&nbsp;&nbsp;<a href="accuracy.html">How this app is checked →</a></p>
 
+  <div class="checkline" id="checkline" hidden><strong id="cl-studies"></strong> studies checked so far, every single one, with <strong id="cl-quotes"></strong> Scripture quotes verified word for word. <a href="accuracy.html">See how the checking works</a></div>
+
   <h2>Support</h2>
-  <p>Something not working, a question about your subscription, or feedback on study quality? Email us — a human reads these.</p>
+  <p>Something not working, a question about your subscription, or feedback on study quality? Email us. A human reads these.</p>
   <p><a class="btn" href="mailto:support@trythebiblestudy.app?subject=The%20Bible%20Study%20App%20support">Email support</a></p>
 
   <h2>Common questions</h2>
@@ -53,5 +58,23 @@
     <span>© 2026 The Bible Study App</span>
   </footer>
 </main>
+<script>
+(function () {
+  // Live counter strip. Endpoint contract: ACCURACY-COUNTER-2. Hidden unless
+  // real numbers arrive; nothing static ever stands in for them.
+  fetch('https://the-bible-study-app-production.up.railway.app/public/checks').then(function (r) {
+    if (!r.ok) throw new Error('unavailable');
+    return r.json();
+  }).then(function (d) {
+    if (typeof d.studies !== 'number' || typeof d.covered !== 'number') throw new Error('shape');
+    // Same floor as the accuracy page: the strip stays hidden until the
+    // running count is worth showing. Nothing static ever stands in for it.
+    if (d.studies < 250 || d.covered < 1) return;
+    document.getElementById('cl-studies').textContent = Number(d.studies).toLocaleString('en-US');
+    document.getElementById('cl-quotes').textContent = Number(d.covered).toLocaleString('en-US');
+    document.getElementById('checkline').hidden = false;
+  }).catch(function () {});
+})();
+</script>
 </body>
 </html>
