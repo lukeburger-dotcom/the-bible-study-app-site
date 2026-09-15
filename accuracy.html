@@ -43,6 +43,9 @@
   .counter .tile .l { font-size: 13.5px; color: #d8bd92; }
   .counter .foot { font-size: 12.5px; color: #c9ab7e; margin-top: 12px; line-height: 1.5; }
   .counter .unavailable { font-size: 15px; font-style: italic; color: #e8d5b0; }
+  .counter .intro { font-size: 15px; color: #f1e2c8; margin: 0 0 14px; line-height: 1.5; }
+  .counter .intro b { color: #fdf6e6; font-variant-numeric: tabular-nums; }
+  .counter a { color: #e8c98f; }
 
   /* waffle chart */
   .waffle-block { margin: 18px 0; }
@@ -90,12 +93,11 @@
   </div>
 
   <div class="counter sans" id="live-counter">
-    <div class="band-title">Every study, checked. The running score.</div>
+    <div class="band-title">The scorecard, live</div>
     <div id="counter-body"><p class="unavailable">The lifetime counter is being built right now. When it exists, the real numbers go here, whatever they say.</p></div>
-    <div class="foot" id="counter-foot">The count comes from the app's own records. Our own test studies are left out.</div>
   </div>
 
-  <h2>The first check: code, running on every study</h2>
+  <h2 id="first-check">The first check: code, running on every study</h2>
 
   <p>This part is plain computer code. It has no opinion. It gives the same answer every time, and it runs on every single study. Nothing is spot-checked.</p>
 
@@ -265,20 +267,23 @@
     // to read as the whole history of the app. Below the floor the band says
     // it is still being built, which is true.
     if (d.studies < MIN_STUDIES) return;
-    var tiles =
-      '<div class="tile"><div class="v">' + fmt(d.studies) + '</div><div class="l">studies checked</div></div>';
-    // The quote tiles appear once there is a quote to count. Never "0 of 0".
-    if (d.blocks > 0) {
-      tiles += '<div class="tile"><div class="v">' + fmt(d.blocks) + '</div><div class="l">Bible quotes checked word for word against the printed Bible</div></div>';
-      tiles += '<div class="tile"><div class="v">' + fmt(uncovered) + '</div><div class="l">quotes that reached a reader unchecked</div></div>';
-    }
+    // Plain words on purpose. A reader who has never seen this page has to be
+    // able to read the band once and know what was counted and what went
+    // wrong. The full mechanics sit one link below.
     var since = '';
     if (d.coversFrom) {
       var dt = new Date(d.coversFrom);
-      if (!isNaN(dt)) since = 'Counting since ' + dt.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) + '. ';
+      if (!isNaN(dt)) since = 'Since ' + dt.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }) + ', ';
     }
-    document.getElementById('counter-body').innerHTML = '<div class="tiles">' + tiles + '</div>';
-    document.getElementById('counter-foot').textContent = since + 'The count comes from the app\'s own records. Our own test studies are left out.';
+    var intro = '<p class="intro">' + (since || 'So far, ') + 'the app has written <b>' + fmt(d.studies) + '</b> studies for readers. A study is one answer the app writes when you ask about a passage. Here is what the checks found in those studies.</p>';
+    var tiles = '';
+    // The quote tiles appear once there is a quote to count. Never "0 of 0".
+    if (d.blocks > 0) {
+      tiles += '<div class="tile"><div class="v">' + fmt(d.blocks) + '</div><div class="l">Bible quotes shown to readers</div></div>';
+      tiles += '<div class="tile"><div class="v">' + fmt(uncovered) + '</div><div class="l">slipped past the check</div></div>';
+    }
+    var foot = '<div class="foot">The AI never types a Bible verse. The app copies each quote from a real printed Bible. A quote that got in any other way counts as slipping past. <a href="#first-check">How this works</a>.</div>';
+    document.getElementById('counter-body').innerHTML = intro + (tiles ? '<div class="tiles">' + tiles + '</div>' : '') + foot;
   }).catch(function () { /* the built-in fallback line stays */ });
 })();
 </script>
