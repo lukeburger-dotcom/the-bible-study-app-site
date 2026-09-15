@@ -40,7 +40,7 @@
   <p>Three ways to engage Scripture: <strong>Quick Study</strong> for a focused answer, <strong>Deep Study</strong> for thorough scholarly treatment, and <strong>Devotional</strong> for contemplative engagement that turns cultural and linguistic depth into felt weight. Every claim sourced, every passage checkable against the real published Bible text.</p>
   <p><a class="btn" href="https://apps.apple.com/us/app/id6791622634">Download on the App&nbsp;Store</a>&nbsp;&nbsp;<a href="accuracy.html">How this app is checked →</a></p>
 
-  <div class="checkline" id="checkline" hidden><strong id="cl-studies"></strong> studies checked so far, every single one, with <strong id="cl-quotes"></strong> Scripture quotes verified word for word. <a href="accuracy.html">See how the checking works</a></div>
+  <div class="checkline" id="checkline" hidden><strong id="cl-studies"></strong> studies checked. <strong id="cl-quotes"></strong> Bible quotes checked word for word against the printed Bible. <strong id="cl-uncovered"></strong> reached a reader unchecked. <a href="accuracy.html">See how the checking works</a></div>
 
   <h2>Support</h2>
   <p>Something not working, a question about your subscription, or feedback on study quality? Email us. A human reads these.</p>
@@ -66,12 +66,14 @@
     if (!r.ok) throw new Error('unavailable');
     return r.json();
   }).then(function (d) {
-    if (typeof d.studies !== 'number' || typeof d.covered !== 'number') throw new Error('shape');
+    if (typeof d.studies !== 'number' || typeof d.blocks !== 'number' || typeof d.covered !== 'number') throw new Error('shape');
+    var uncovered = (typeof d.uncovered === 'number') ? d.uncovered : Math.max(0, d.blocks - d.covered);
     // Same floor as the accuracy page: the strip stays hidden until the
     // running count is worth showing. Nothing static ever stands in for it.
-    if (d.studies < 250 || d.covered < 1) return;
+    if (d.studies < 250 || d.blocks < 1) return;
     document.getElementById('cl-studies').textContent = Number(d.studies).toLocaleString('en-US');
-    document.getElementById('cl-quotes').textContent = Number(d.covered).toLocaleString('en-US');
+    document.getElementById('cl-quotes').textContent = Number(d.blocks).toLocaleString('en-US');
+    document.getElementById('cl-uncovered').textContent = Number(uncovered).toLocaleString('en-US');
     document.getElementById('checkline').hidden = false;
   }).catch(function () {});
 })();
