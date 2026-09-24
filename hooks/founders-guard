@@ -1,0 +1,86 @@
+#!/bin/sh
+# ---------------------------------------------------------------------------
+# Founders-code guard: the one definition of what a leaked Founders Lifetime
+# code looks like.  SITE-GUARD-2 (230).  hooks/pre-commit runs it over every
+# line a commit adds; hooks/commit-msg runs it over the commit message.  Keep
+# the site repo's and the app repo's copies of all three files byte-identical.
+#
+# Reads text on standard input.  Exits 1 when it finds any of:
+#   - Apple's App Store redemption link (the app host plus its redemption
+#     path, any case);
+#   - the App Store query parameter that opens offer-code entry (any case);
+#   - an 18-character run of capital letters and digits, bounded by
+#     non-alphanumerics, holding at least one letter.  An all-digit run is an
+#     ordinary long number and passes.
+# On a finding it prints one line per KIND of thing found, never the thing
+# itself.  Exits 0, silently, when it finds nothing.  Exits 2 if any step
+# cannot run, so the hooks can refuse the commit rather than pass it.
+#
+# The Founders codes are LIVE $149.99 licenses.  This file is public: GitHub
+# Pages serves the site repo.  The patterns are not secret, but no code value
+# may ever appear here.  The link and parameter patterns are joined from
+# pieces at run time, so no guard file contains a string the guard blocks --
+# if one did, it would block its own commit.  Keep it that way when editing:
+# never write either pattern out whole.
+# ---------------------------------------------------------------------------
+
+# Bytes, not characters: no locale may hide a line or widen a range, and no
+# grep option or exported shell function may change what a check means.
+LC_ALL=C
+export LC_ALL
+unset GREP_OPTIONS GREP_COLOR GREP_COLORS
+unset -f cat grep mktemp printf rm test tr 2> /dev/null
+
+work=
+trap 'rm -rf "$work"' EXIT
+trap 'exit 2' HUP INT TERM
+work=$(mktemp -d "${TMPDIR:-/tmp}/founders-guard.XXXXXX") || exit 2
+cat > "$work/text" || exit 2
+
+# Apple's app host plus its redemption path.
+link_host='apps\.apple\.com'
+link_path='/red''eem'
+link_re="${link_host}${link_path}"
+
+# The query parameter an App Store link uses to open offer-code entry.
+param_name='ctx'
+param_value='offer''codes'
+param_re="${param_name}=${param_value}"
+
+found=0
+
+# grep exits 0 on a match, 1 on none, and anything else when it failed.
+grep -a -qiE "$link_re" "$work/text"
+case $? in
+  0) found=1; printf '  - an App Store redemption link\n' ;;
+  1) ;;
+  *) exit 2 ;;
+esac
+
+grep -a -qiE "$param_re" "$work/text"
+case $? in
+  0) found=1; printf '  - an offer-code query parameter (the App Store link parameter that opens code entry)\n' ;;
+  1) ;;
+  *) exit 2 ;;
+esac
+
+# Every byte that is not a letter or digit becomes a line break, so each
+# maximal run of letters and digits stands alone on its own line.  A run is
+# code-shaped when it is exactly 18 capitals and digits with at least one
+# letter.  Splitting first means neighbouring runs cannot share, or use up,
+# the boundary between them.
+tr -c 'A-Za-z0-9' '\n' < "$work/text" > "$work/runs" || exit 2
+grep -a -E '^[A-Z0-9]{18}$' "$work/runs" > "$work/shaped"
+test "$?" -le 1 || exit 2
+n=$(grep -a -c '[A-Z]' "$work/shaped")
+test "$?" -le 1 || exit 2
+case $n in
+  ''|*[!0-9]*) exit 2 ;;
+esac
+if test "$n" -gt 0; then
+  found=1
+  printf '  - %s string(s) shaped like a Founders code (18 capitals and digits, at least one letter)\n' "$n"
+fi
+
+test "$found" -eq 0 && exit 0
+exit 1

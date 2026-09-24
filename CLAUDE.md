@@ -24,12 +24,17 @@ leaked — it is published.
   "just for testing" line.
 - Git history is permanent. Deleting a code in the next commit does not unpublish
   it. The only fix is invalidating 500 codes and minting new ones.
-- `.git/hooks/pre-commit` blocks a commit whose staged diff contains an Apple
-  redemption link, an offer-code query parameter, or an 18-character uppercase
-  alphanumeric string. **Hooks are not version-controlled** — a fresh clone has
-  no guard until it is reinstalled.
-- If the hook fires on something harmless, unstage the file rather than reaching
-  for `--no-verify`.
+- The guard is `hooks/founders-guard`. It blocks an Apple redemption link, an
+  offer-code query parameter, or an 18-character run of capitals and digits
+  that holds at least one letter. The tracked `hooks/pre-commit` runs it over
+  every line a commit adds, and the tracked `hooks/commit-msg` over the commit
+  message, once `core.hooksPath` is set. A fresh clone must run
+  `git config core.hooksPath hooks` once. A checkout with no `hooks/` folder
+  runs no guard.
+- On a block, unstage the file the guard names (or remove the string) and
+  commit again. Never reach for `--no-verify`.
+- If `hooks/` files ever lose their exec bit, git skips them silently;
+  `git ls-files -s hooks/` must show 100755.
 
 ---
 
@@ -79,6 +84,9 @@ and its history is permanent. A Claude Code tab opened here reads its order
 from there. Never commit an order file, a session report, or a founders code to
 this repo.
 
+Do an order's sections in order, meet each section's stated acceptance, and stop
+and report rather than widen the scope.
+
 Report back the way the app repo does: what changed, what you verified, commit
 hashes, anything blocked.
 
@@ -87,5 +95,5 @@ hashes, anything blocked.
   `~/Documents` and `~/Desktop` — iCloud sync corrupts git objects.
 - Sibling repo: `~/Developer/the-bible-study-app` — the iOS app and backend.
   **Not public.** Different repo, different rules; see its own `CLAUDE.md`.
-- The founders-code guard is tracked at `hooks/pre-commit`. After any fresh
+- The founders-code guard is tracked in `hooks/`. After any fresh
   clone, run once: `git config core.hooksPath hooks`.

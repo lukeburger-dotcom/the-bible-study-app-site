@@ -1,76 +1,122 @@
 #!/bin/sh
 # ---------------------------------------------------------------------------
-# Founders-code guard.  Installed 2026-07-25; tracked in the repo since
-# SITE-GUARD-1 (2026-09-24).
+# Founders-code guard, pre-commit.  Installed 2026-07-25 in .git/hooks;
+# tracked in the site repo by SITE-GUARD-1 (227); one shared definition,
+# for both repos, since SITE-GUARD-2 (230).
 #
-# The Founders Lifetime gift codes are LIVE $149.99 licenses.  This repo and
-# the app repo both have a GitHub remote.  A committed code is a giveaway that
-# cannot be undone by deleting it later -- it stays in the history and in
-# every fork.
+# The Founders Lifetime gift codes are LIVE $149.99 licenses.  A committed
+# code is a giveaway that cannot be undone by deleting it later -- it stays in
+# the history and in every clone.
 #
-# This hook blocks any commit whose staged changes contain a redemption link
-# or something shaped like an Apple offer code.
+# This hook feeds every line the commit adds to hooks/founders-guard, which
+# holds the checks.  It reads the staged diff as text, so binary files and
+# files marked -diff are scanned too, and it drops diff headers by their place
+# in the diff, so a content line that begins "++" is still checked.  If any
+# step fails, it refuses the commit rather than pass it unchecked.
 #
-# Git never copies hooks into a clone, so this one is tracked.  Each clone
-# turns it on once:   git config core.hooksPath hooks
-#
-# This repo is public and GitHub Pages serves this file.  The patterns are not
-# secret, but no code value may ever appear here.  The link and parameter
-# patterns are joined from pieces at run time, so this file never contains
-# the strings it blocks -- if it did, it would block its own commit.  Keep it
-# that way when editing: never write either pattern out whole.
-#
-# If you are certain a match is a false positive:   git commit --no-verify
+# Git never copies hooks into a clone, so these are tracked.  Each clone turns
+# them on once:   git config core.hooksPath hooks
+# A checkout with no hooks/ folder runs no guard.  Every file in hooks/ must
+# keep mode 100755 (git ls-files -s hooks/): git skips a hook it cannot run.
 # ---------------------------------------------------------------------------
 
-added=$(git diff --cached --diff-filter=d -U0 | grep '^+' | grep -v '^+++' || true)
-[ -z "$added" ] && exit 0
+LC_ALL=C
+export LC_ALL
+unset -f awk cat dirname git mkdir mktemp printf rm sed sh test tr wc 2> /dev/null
 
-found=0
-report=""
+guard="$(dirname "$0")/founders-guard"
 
-# The App Store redemption page: Apple's app host plus its redemption path.
-link_host='apps\.apple\.com'
-link_path='/red''eem'
-link_re="${link_host}${link_path}"
-
-# The query parameter an App Store link uses to open offer-code entry.
-param_name='ctx'
-param_value='offer''codes'
-param_re="${param_name}=${param_value}"
-
-if printf '%s\n' "$added" | grep -qiE "$link_re"; then
-  found=1; report="${report}  - an App Store redemption link (Apple's code-redemption page)\n"
-fi
-
-if printf '%s\n' "$added" | grep -qiE "$param_re"; then
-  found=1; report="${report}  - an offer-code query parameter (the App Store link parameter that opens code entry)\n"
-fi
-
-# Apple offer codes are 18 characters, uppercase letters and digits, mixed.
-codes=$(printf '%s\n' "$added" \
-  | grep -oE '(^|[^A-Za-z0-9])[A-Z0-9]{18}([^A-Za-z0-9]|$)' \
-  | tr -cd 'A-Z0-9\n' \
-  | grep -E '[0-9]' \
-  | grep -E '[A-Z]' || true)
-if [ -n "$codes" ]; then
-  found=1
-  n=$(printf '%s\n' "$codes" | grep -c . || true)
-  report="${report}  - ${n} string(s) shaped like an Apple offer code (18 chars, A-Z0-9)\n"
-fi
-
-if [ "$found" -eq 1 ]; then
-  printf '\n'
-  printf 'COMMIT BLOCKED -- possible Founders Lifetime code in staged changes.\n\n'
-  printf 'Found:\n'
-  printf "$report"
-  printf '\nThese codes are live $149.99 licenses and this repo is on GitHub.\n'
-  printf 'The codes belong only in ~/Documents, never in a repo.\n\n'
-  printf 'Staged files:\n'
-  git diff --cached --name-only | sed 's/^/  /'
-  printf '\nUnstage the offending file, or if this is a false positive:\n'
-  printf '  git commit --no-verify\n\n'
+cannot_run() {
+  printf '\nCOMMIT BLOCKED -- the founders-code guard could not run (%s).\n' "$1"
+  printf 'The check cannot be trusted, so nothing is committed.  Fix the guard and commit again.\n\n'
   exit 1
-fi
+}
 
-exit 0
+# Before trusting a pass, prove the guard still runs to its last check: it
+# must catch a made-up code shape, joined here from two short pieces.
+self_test() {
+  printf '%s%s\n' 'ABCDEFGHIJ' '12345678' | sh "$guard" > /dev/null 2>&1
+  test "$?" -eq 1 || cannot_run "founders-guard failed its self-test"
+}
+
+work=
+trap 'rm -rf "$work"' EXIT
+trap 'exit 1' HUP INT TERM
+work=$(mktemp -d "${TMPDIR:-/tmp}/founders-pre-commit.XXXXXX") || cannot_run "no temp directory"
+
+git diff --cached --text --no-ext-diff --no-textconv --no-color \
+  --submodule=short --diff-filter=d -U0 > "$work/diff" || cannot_run "git diff failed"
+
+# NUL bytes become spaces, so a NUL cannot hide the rest of its line.
+tr '\000' ' ' < "$work/diff" > "$work/patch" || cannot_run "tr failed"
+
+# The lines the diff adds, without their leading "+".  Everything from a
+# "diff --git" line up to that file's first "@@" is header and is dropped:
+# that is the only place a "+++ b/..." or "+++ /dev/null" header sits.  Given
+# a directory, it writes file N's added lines to DIR/N instead, in diff order,
+# and the number of files to DIR/count.  A type change (a file becoming a
+# symlink, or back) is two blocks with the same "diff --git" line: one file.
+added_lines() {
+  awk -v dir="$1" '
+    /^diff --git / {
+      if ($0 == last) { header = 1; next }
+      last = $0
+      if (out != "") close(out)
+      n++
+      if (dir != "") out = dir "/" n
+      header = 1
+      next
+    }
+    /^@@/ { header = 0; next }
+    !header && /^\+/ {
+      if (dir != "") print substr($0, 2) > out
+      else print substr($0, 2)
+    }
+    END { if (dir != "") print n + 0 > (dir "/count") }' "$work/patch"
+}
+
+added_lines "" > "$work/added" || cannot_run "awk failed"
+
+found=$(sh "$guard" < "$work/added")
+rc=$?
+if test "$rc" -eq 0; then
+  self_test
+  exit 0
+fi
+test "$rc" -eq 1 || cannot_run "founders-guard exited $rc"
+
+printf '\nCOMMIT BLOCKED -- possible Founders Lifetime code in staged changes.\n\n'
+printf 'Found:\n%s\n\n' "$found"
+printf 'In:\n'
+
+# Name the staged files that hold a finding.  The names come from the same
+# diff, in the same order, one per file (a type change's two blocks count
+# once); a newline inside a name is shown as "?".  A name that itself holds a
+# blocked string is never printed.
+named=0
+if mkdir "$work/files" && added_lines "$work/files" &&
+   git diff --cached --name-only -z --diff-filter=d --no-ext-diff \
+     --submodule=short > "$work/names.z" &&
+   tr '\n\000' '\001\n' < "$work/names.z" > "$work/names" &&
+   count=$(tr -d ' ' < "$work/files/count") &&
+   test "$count" -eq "$(wc -l < "$work/names" | tr -d ' ')"; then
+  i=1
+  while test "$i" -le "$count"; do
+    if test -f "$work/files/$i" && ! sh "$guard" < "$work/files/$i" > /dev/null 2>&1; then
+      named=1
+      name=$(sed -n "${i}p" "$work/names" | tr '\001' '?')
+      test -n "$name" || name='?'
+      if printf '%s\n' "$name" | sh "$guard" > /dev/null 2>&1; then
+        printf '  %s\n' "$name"
+      else
+        printf '  (a staged file whose own name holds a blocked string)\n'
+      fi
+    fi
+    i=$((i + 1))
+  done
+fi
+test "$named" -eq 1 || printf '  (could not tell which staged file; git diff --cached --stat lists them)\n'
+
+printf '\nUnstage that file, or remove the string, and commit again. These codes are live $149.99 licenses.\n'
+printf 'They belong only in ~/Documents, never in a repo.\n\n'
+exit 1

@@ -1,0 +1,55 @@
+#!/bin/sh
+# ---------------------------------------------------------------------------
+# Founders-code guard, commit-msg.  SITE-GUARD-2 (230).
+#
+# The Founders Lifetime gift codes are LIVE $149.99 licenses, and a commit
+# message is as permanent and as public as the files it commits.  This hook
+# feeds the whole message file git hands it ($1) to hooks/founders-guard,
+# which holds the checks.  That includes git's "#" comment lines and, for an
+# editor commit made with -v, the diff git shows below its scissors line.
+# Git always drops that diff from the stored message, and normally the "#"
+# lines too (--cleanup=verbatim or whitespace keeps them); either way they are
+# scanned, so this can only refuse too much, never let a code through.  A
+# commit made with -v that removes a code from a file is refused here, and is
+# made without -v instead.
+#
+# Git never copies hooks into a clone, so these are tracked.  Each clone turns
+# them on once:   git config core.hooksPath hooks
+# ---------------------------------------------------------------------------
+
+LC_ALL=C
+export LC_ALL
+unset -f cat dirname printf rm sh test 2> /dev/null
+
+guard="$(dirname "$0")/founders-guard"
+
+cannot_run() {
+  printf '\nCOMMIT BLOCKED -- the founders-code guard could not run (%s).\n' "$1"
+  printf 'The check cannot be trusted, so nothing is committed.  Fix the guard and commit again.\n\n'
+  exit 1
+}
+
+# Before trusting a pass, prove the guard still runs to its last check: it
+# must catch a made-up code shape, joined here from two short pieces.
+self_test() {
+  printf '%s%s\n' 'ABCDEFGHIJ' '12345678' | sh "$guard" > /dev/null 2>&1
+  test "$?" -eq 1 || cannot_run "founders-guard failed its self-test"
+}
+
+test -r "$1" || cannot_run "no readable commit message file"
+
+found=$(sh "$guard" < "$1")
+rc=$?
+if test "$rc" -eq 0; then
+  self_test
+  exit 0
+fi
+test "$rc" -eq 1 || cannot_run "founders-guard exited $rc"
+
+printf '\nCOMMIT BLOCKED -- possible Founders Lifetime code in the commit message.\n\n'
+printf 'Found:\n%s\n\n' "$found"
+printf 'Remove the string from the message, and commit again. These codes are live $149.99 licenses.\n'
+printf 'They belong only in ~/Documents, never in a repo.\n'
+printf 'The whole message file is scanned, with git'"'"'s "#" lines and the diff that\n'
+printf 'commit -v adds.  If the string is only there, commit with -m and without -v.\n\n'
+exit 1
