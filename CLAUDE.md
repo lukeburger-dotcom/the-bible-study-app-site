@@ -73,10 +73,11 @@ leaked — it is published.
    the page.
 
 ## Work orders
-The cloud Claude session hands work over as a markdown file committed to this
-repo root (e.g. `COMPARE-PAGE.md`), sectioned `§0`, `§1`, … Do them in order.
-Each section names its acceptance criterion. If a section turns out bigger than
-described, stop and report rather than expanding scope.
+Work orders for this repo are written into the PRIVATE app repo's root
+(`~/Developer/the-bible-study-app`), never into this repo: this repo is public
+and its history is permanent. A Claude Code tab opened here reads its order
+from there. Never commit an order file, a session report, or a founders code to
+this repo.
 
 Report back the way the app repo does: what changed, what you verified, commit
 hashes, anything blocked.
@@ -86,3 +87,5 @@ hashes, anything blocked.
   `~/Documents` and `~/Desktop` — iCloud sync corrupts git objects.
 - Sibling repo: `~/Developer/the-bible-study-app` — the iOS app and backend.
   **Not public.** Different repo, different rules; see its own `CLAUDE.md`.
+- The founders-code guard is tracked at `hooks/pre-commit`. After any fresh
+  clone, run once: `git config core.hooksPath hooks`.

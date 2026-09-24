@@ -1,0 +1,76 @@
+#!/bin/sh
+# ---------------------------------------------------------------------------
+# Founders-code guard.  Installed 2026-07-25; tracked in the repo since
+# SITE-GUARD-1 (2026-09-24).
+#
+# The Founders Lifetime gift codes are LIVE $149.99 licenses.  This repo and
+# the app repo both have a GitHub remote.  A committed code is a giveaway that
+# cannot be undone by deleting it later -- it stays in the history and in
+# every fork.
+#
+# This hook blocks any commit whose staged changes contain a redemption link
+# or something shaped like an Apple offer code.
+#
+# Git never copies hooks into a clone, so this one is tracked.  Each clone
+# turns it on once:   git config core.hooksPath hooks
+#
+# This repo is public and GitHub Pages serves this file.  The patterns are not
+# secret, but no code value may ever appear here.  The link and parameter
+# patterns are joined from pieces at run time, so this file never contains
+# the strings it blocks -- if it did, it would block its own commit.  Keep it
+# that way when editing: never write either pattern out whole.
+#
+# If you are certain a match is a false positive:   git commit --no-verify
+# ---------------------------------------------------------------------------
+
+added=$(git diff --cached --diff-filter=d -U0 | grep '^+' | grep -v '^+++' || true)
+[ -z "$added" ] && exit 0
+
+found=0
+report=""
+
+# The App Store redemption page: Apple's app host plus its redemption path.
+link_host='apps\.apple\.com'
+link_path='/red''eem'
+link_re="${link_host}${link_path}"
+
+# The query parameter an App Store link uses to open offer-code entry.
+param_name='ctx'
+param_value='offer''codes'
+param_re="${param_name}=${param_value}"
+
+if printf '%s\n' "$added" | grep -qiE "$link_re"; then
+  found=1; report="${report}  - an App Store redemption link (Apple's code-redemption page)\n"
+fi
+
+if printf '%s\n' "$added" | grep -qiE "$param_re"; then
+  found=1; report="${report}  - an offer-code query parameter (the App Store link parameter that opens code entry)\n"
+fi
+
+# Apple offer codes are 18 characters, uppercase letters and digits, mixed.
+codes=$(printf '%s\n' "$added" \
+  | grep -oE '(^|[^A-Za-z0-9])[A-Z0-9]{18}([^A-Za-z0-9]|$)' \
+  | tr -cd 'A-Z0-9\n' \
+  | grep -E '[0-9]' \
+  | grep -E '[A-Z]' || true)
+if [ -n "$codes" ]; then
+  found=1
+  n=$(printf '%s\n' "$codes" | grep -c . || true)
+  report="${report}  - ${n} string(s) shaped like an Apple offer code (18 chars, A-Z0-9)\n"
+fi
+
+if [ "$found" -eq 1 ]; then
+  printf '\n'
+  printf 'COMMIT BLOCKED -- possible Founders Lifetime code in staged changes.\n\n'
+  printf 'Found:\n'
+  printf "$report"
+  printf '\nThese codes are live $149.99 licenses and this repo is on GitHub.\n'
+  printf 'The codes belong only in ~/Documents, never in a repo.\n\n'
+  printf 'Staged files:\n'
+  git diff --cached --name-only | sed 's/^/  /'
+  printf '\nUnstage the offending file, or if this is a false positive:\n'
+  printf '  git commit --no-verify\n\n'
+  exit 1
+fi
+
+exit 0
