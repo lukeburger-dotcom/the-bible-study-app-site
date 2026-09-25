@@ -1,9 +1,10 @@
 #!/bin/sh
 # ---------------------------------------------------------------------------
 # Founders-code guard: the one definition of what a leaked Founders Lifetime
-# code looks like.  SITE-GUARD-2 (230).  hooks/pre-commit runs it over every
-# line a commit adds; hooks/commit-msg runs it over the commit message.  Keep
-# the site repo's and the app repo's copies of all three files byte-identical.
+# code looks like.  SITE-GUARD-2 (230); split into two passes by SITE-GUARD-3
+# (239).  hooks/pre-commit and hooks/pre-merge-commit run it over every line
+# a commit adds; hooks/commit-msg runs it over the commit message.  Keep the
+# site repo's and the app repo's copies of all four files byte-identical.
 #
 # Reads text on standard input.  Exits 1 when it finds any of:
 #   - Apple's App Store redemption link (the app host plus its redemption
@@ -12,9 +13,17 @@
 #   - an 18-character run of capital letters and digits, bounded by
 #     non-alphanumerics, holding at least one letter.  An all-digit run is an
 #     ordinary long number and passes.
+# One argument selects which of those rules run:
+#   founders-guard all    the link and parameter rules.  pre-commit feeds it
+#                         every staged file, binary included.
+#   founders-guard text   the 18-character rule.  pre-commit feeds it text
+#                         files only, since compressed image bytes throw up
+#                         such runs by chance.
+#   founders-guard        all three rules (a commit message, a file name).
 # On a finding it prints one line per KIND of thing found, never the thing
 # itself.  Exits 0, silently, when it finds nothing.  Exits 2 if any step
-# cannot run, so the hooks can refuse the commit rather than pass it.
+# cannot run, or on any other argument, so the hooks can refuse the commit
+# rather than pass it.
 #
 # The Founders codes are LIVE $149.99 licenses.  This file is public: GitHub
 # Pages serves the site repo.  The patterns are not secret, but no code value
@@ -30,6 +39,14 @@ LC_ALL=C
 export LC_ALL
 unset GREP_OPTIONS GREP_COLOR GREP_COLORS
 unset -f cat grep mktemp printf rm test tr 2> /dev/null
+
+# The argument only selects; the rules below are the same for every caller.
+case $#:${1-} in
+  0:) links=1 codes=1 ;;
+  1:all) links=1 codes=0 ;;
+  1:text) links=0 codes=1 ;;
+  *) exit 2 ;;
+esac
 
 work=
 trap 'rm -rf "$work"' EXIT
@@ -49,37 +66,41 @@ param_re="${param_name}=${param_value}"
 
 found=0
 
-# grep exits 0 on a match, 1 on none, and anything else when it failed.
-grep -a -qiE "$link_re" "$work/text"
-case $? in
-  0) found=1; printf '  - an App Store redemption link\n' ;;
-  1) ;;
-  *) exit 2 ;;
-esac
+if test "$links" -eq 1; then
+  # grep exits 0 on a match, 1 on none, and anything else when it failed.
+  grep -a -qiE "$link_re" "$work/text"
+  case $? in
+    0) found=1; printf '  - an App Store redemption link\n' ;;
+    1) ;;
+    *) exit 2 ;;
+  esac
 
-grep -a -qiE "$param_re" "$work/text"
-case $? in
-  0) found=1; printf '  - an offer-code query parameter (the App Store link parameter that opens code entry)\n' ;;
-  1) ;;
-  *) exit 2 ;;
-esac
+  grep -a -qiE "$param_re" "$work/text"
+  case $? in
+    0) found=1; printf '  - an offer-code query parameter (the App Store link parameter that opens code entry)\n' ;;
+    1) ;;
+    *) exit 2 ;;
+  esac
+fi
 
-# Every byte that is not a letter or digit becomes a line break, so each
-# maximal run of letters and digits stands alone on its own line.  A run is
-# code-shaped when it is exactly 18 capitals and digits with at least one
-# letter.  Splitting first means neighbouring runs cannot share, or use up,
-# the boundary between them.
-tr -c 'A-Za-z0-9' '\n' < "$work/text" > "$work/runs" || exit 2
-grep -a -E '^[A-Z0-9]{18}$' "$work/runs" > "$work/shaped"
-test "$?" -le 1 || exit 2
-n=$(grep -a -c '[A-Z]' "$work/shaped")
-test "$?" -le 1 || exit 2
-case $n in
-  ''|*[!0-9]*) exit 2 ;;
-esac
-if test "$n" -gt 0; then
-  found=1
-  printf '  - %s string(s) shaped like a Founders code (18 capitals and digits, at least one letter)\n' "$n"
+if test "$codes" -eq 1; then
+  # Every byte that is not a letter or digit becomes a line break, so each
+  # maximal run of letters and digits stands alone on its own line.  A run is
+  # code-shaped when it is exactly 18 capitals and digits with at least one
+  # letter.  Splitting first means neighbouring runs cannot share, or use up,
+  # the boundary between them.
+  tr -c 'A-Za-z0-9' '\n' < "$work/text" > "$work/runs" || exit 2
+  grep -a -E '^[A-Z0-9]{18}$' "$work/runs" > "$work/shaped"
+  test "$?" -le 1 || exit 2
+  n=$(grep -a -c '[A-Z]' "$work/shaped")
+  test "$?" -le 1 || exit 2
+  case $n in
+    ''|*[!0-9]*) exit 2 ;;
+  esac
+  if test "$n" -gt 0; then
+    found=1
+    printf '  - %s string(s) shaped like a Founders code (18 capitals and digits, at least one letter)\n' "$n"
+  fi
 fi
 
 test "$found" -eq 0 && exit 0

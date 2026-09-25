@@ -2,17 +2,29 @@
 # ---------------------------------------------------------------------------
 # Founders-code guard, pre-commit.  Installed 2026-07-25 in .git/hooks;
 # tracked in the site repo by SITE-GUARD-1 (227); one shared definition,
-# for both repos, since SITE-GUARD-2 (230).
+# for both repos, since SITE-GUARD-2 (230); two passes since SITE-GUARD-3
+# (239).  hooks/pre-merge-commit runs this same file for a merge.
 #
 # The Founders Lifetime gift codes are LIVE $149.99 licenses.  A committed
 # code is a giveaway that cannot be undone by deleting it later -- it stays in
 # the history and in every clone.
 #
 # This hook feeds every line the commit adds to hooks/founders-guard, which
-# holds the checks.  It reads the staged diff as text, so binary files and
-# files marked -diff are scanned too, and it drops diff headers by their place
-# in the diff, so a content line that begins "++" is still checked.  If any
-# step fails, it refuses the commit rather than pass it unchecked.
+# holds the checks, in two passes over the staged diff:
+#   - "all": the diff read with --text, so every file is read, binary and
+#     -diff files included.  The link and parameter rules run on it.
+#   - "text": the same diff without --text, where git prints "Binary files
+#     ... differ" instead of a binary file's bytes.  The 18-character rule
+#     runs on it, so it reads text files only.  "Binary" is git's own test: a
+#     NUL byte in the first 8,000 bytes.  Git's diff applies that test to
+#     both sides of a change, so a text file that replaces, or is renamed or
+#     copied from, a binary one is shown as binary too; for every change
+#     shown that way, the staged file is tested on its own, and read whole
+#     by this pass when it is text.  Attributes are read from the empty
+#     tree, so no .gitattributes can mark a text file binary and hide it.
+# Diff headers are dropped by their place in the diff, so a content line that
+# begins "++" is still checked.  If any step fails, it refuses the commit
+# rather than pass it unchecked.
 #
 # Git never copies hooks into a clone, so these are tracked.  Each clone turns
 # them on once:   git config core.hooksPath hooks
@@ -22,21 +34,32 @@
 
 LC_ALL=C
 export LC_ALL
-unset -f awk cat dirname git mkdir mktemp printf rm sed sh test tr wc 2> /dev/null
+unset -f awk cat dirname git head mkdir mktemp printf read rm sed sh test tr wc 2> /dev/null
 
 guard="$(dirname "$0")/founders-guard"
 
+# Git runs this hook with no argument.  hooks/pre-merge-commit passes "merge",
+# which changes only the wording below.
+case ${1-} in
+  merge) what='MERGE' ;;
+  *) what='COMMIT' ;;
+esac
+
 cannot_run() {
-  printf '\nCOMMIT BLOCKED -- the founders-code guard could not run (%s).\n' "$1"
+  printf '\n%s BLOCKED -- the founders-code guard could not run (%s).\n' "$what" "$1"
   printf 'The check cannot be trusted, so nothing is committed.  Fix the guard and commit again.\n\n'
   exit 1
 }
 
-# Before trusting a pass, prove the guard still runs to its last check: it
-# must catch a made-up code shape, joined here from two short pieces.
+# Before trusting a pass, prove each pass still runs to its last check: each
+# must catch a made-up shape of its own kind, joined here from short pieces.
 self_test() {
-  printf '%s%s\n' 'ABCDEFGHIJ' '12345678' | sh "$guard" > /dev/null 2>&1
-  test "$?" -eq 1 || cannot_run "founders-guard failed its self-test"
+  printf '%s%s\n' 'ABCDEFGHIJ' '12345678' | sh "$guard" text > /dev/null 2>&1
+  test "$?" -eq 1 || cannot_run "founders-guard failed its self-test (text pass)"
+  printf '%s%s%s\n' 'https://apps.apple.com' '/red' 'eem' | sh "$guard" all > /dev/null 2>&1
+  test "$?" -eq 1 || cannot_run "founders-guard failed its self-test (all pass, link)"
+  printf '%s%s%s\n' 'https://apps.apple.com/app/id1?ctx=' 'offer' 'codes' | sh "$guard" all > /dev/null 2>&1
+  test "$?" -eq 1 || cannot_run "founders-guard failed its self-test (all pass, parameter)"
 }
 
 work=
@@ -44,18 +67,26 @@ trap 'rm -rf "$work"' EXIT
 trap 'exit 1' HUP INT TERM
 work=$(mktemp -d "${TMPDIR:-/tmp}/founders-pre-commit.XXXXXX") || cannot_run "no temp directory"
 
-git diff --cached --text --no-ext-diff --no-textconv --no-color \
-  --submodule=short --diff-filter=d -U0 > "$work/diff" || cannot_run "git diff failed"
+empty_tree=$(git hash-object -t tree /dev/null) || cannot_run "git hash-object failed"
+test -n "$empty_tree" || cannot_run "no empty tree id"
 
-# NUL bytes become spaces, so a NUL cannot hide the rest of its line.
-tr '\000' ' ' < "$work/diff" > "$work/patch" || cannot_run "tr failed"
+# The staged diff.  The two passes' diffs differ only in --text.  Full blob
+# ids in the "index" header lines let the text pass find a staged file.
+staged_diff() {
+  git --attr-source="$empty_tree" diff --cached "$@" --no-ext-diff \
+    --no-textconv --no-color --submodule=short --diff-filter=d -U0 --full-index
+}
 
-# The lines the diff adds, without their leading "+".  Everything from a
-# "diff --git" line up to that file's first "@@" is header and is dropped:
-# that is the only place a "+++ b/..." or "+++ /dev/null" header sits.  Given
-# a directory, it writes file N's added lines to DIR/N instead, in diff order,
-# and the number of files to DIR/count.  A type change (a file becoming a
-# symlink, or back) is two blocks with the same "diff --git" line: one file.
+staged_diff --text > "$work/diff.all" || cannot_run "git diff --text failed"
+staged_diff > "$work/diff.text" || cannot_run "git diff failed"
+
+# The lines a diff (file $2) adds, without their leading "+".  Everything from
+# a "diff --git" line up to that file's first "@@" is header and is dropped:
+# that is the only place a "+++ b/..." or "+++ /dev/null" header, or a
+# "Binary files ... differ" line, sits.  Given a directory ($1), it writes
+# file N's added lines to DIR/N instead, in diff order, and the number of
+# files to DIR/count.  A type change (a file becoming a symlink, or back) is
+# two blocks with the same "diff --git" line: one file.
 added_lines() {
   awk -v dir="$1" '
     /^diff --git / {
@@ -72,51 +103,130 @@ added_lines() {
       if (dir != "") print substr($0, 2) > out
       else print substr($0, 2)
     }
-    END { if (dir != "") print n + 0 > (dir "/count") }' "$work/patch"
+    END { if (dir != "") print n + 0 > (dir "/count") }' "$2"
 }
 
-added_lines "" > "$work/added" || cannot_run "awk failed"
+# NUL bytes become spaces, so a NUL cannot hide the rest of its line.
+for pass in all text; do
+  tr '\000' ' ' < "$work/diff.$pass" > "$work/patch.$pass" || cannot_run "tr failed"
+  added_lines "" "$work/patch.$pass" > "$work/added.$pass" || cannot_run "awk failed"
+done
 
-found=$(sh "$guard" < "$work/added")
-rc=$?
-if test "$rc" -eq 0; then
+# Each file the text diff shows as "Binary files ... differ": its number in
+# the diff (counted as added_lines counts) and its staged blob id, from the
+# second id of that file's "index OLD..NEW" line.  An id of all zeros is the
+# empty side of a type change, and is skipped.
+binary_blocks() {
+  awk '
+    /^diff --git / { if ($0 != last) n++; last = $0; id = ""; header = 1; next }
+    /^@@/ { header = 0; next }
+    header && /^index [0-9a-f]+\.\.[0-9a-f]+/ { split($2, ids, /\.\./); id = ids[2]; next }
+    header && /^Binary files / { print n, (id == "" ? "-" : id) }' "$1"
+}
+binary_blocks "$work/patch.text" > "$work/binary" || cannot_run "awk failed"
+
+# A staged file with no NUL byte in its first 8,000 bytes is text, whatever
+# the other side of its change was: the text pass reads all of it, since
+# what sat inside a binary file is readable text for the first time.
+mkdir "$work/whole" || cannot_run "mkdir failed"
+while read -r n id; do
+  case $n in
+    ''|*[!0-9]*) cannot_run "a binary change without a file number" ;;
+  esac
+  case $id in
+    ''|*[!0-9a-f]*) cannot_run "a binary change without a blob id" ;;
+    *[!0]*) ;;
+    *) continue ;;
+  esac
+  git cat-file blob "$id" > "$work/blob" || cannot_run "git cat-file failed"
+  nuls=$(head -c 8000 "$work/blob" | tr -dc '\000' | wc -c | tr -d ' ')
+  case $nuls in
+    ''|*[!0-9]*) cannot_run "the binary test failed" ;;
+  esac
+  test "$nuls" -eq 0 || continue
+  # A line break after each file, so no run can join the next file's first.
+  { tr '\000' ' ' < "$work/blob" && printf '\n'; } > "$work/whole/$n" || cannot_run "tr failed"
+  cat "$work/whole/$n" >> "$work/added.text" || cannot_run "cat failed"
+done < "$work/binary"
+
+found_all=$(sh "$guard" all < "$work/added.all")
+rc_all=$?
+found_text=$(sh "$guard" text < "$work/added.text")
+rc_text=$?
+case $rc_all in
+  0|1) ;;
+  *) cannot_run "founders-guard all exited $rc_all" ;;
+esac
+case $rc_text in
+  0|1) ;;
+  *) cannot_run "founders-guard text exited $rc_text" ;;
+esac
+if test "$rc_all" -eq 0 && test "$rc_text" -eq 0; then
   self_test
   exit 0
 fi
-test "$rc" -eq 1 || cannot_run "founders-guard exited $rc"
 
-printf '\nCOMMIT BLOCKED -- possible Founders Lifetime code in staged changes.\n\n'
-printf 'Found:\n%s\n\n' "$found"
-printf 'In:\n'
-
-# Name the staged files that hold a finding.  The names come from the same
-# diff, in the same order, one per file (a type change's two blocks count
-# once); a newline inside a name is shown as "?".  A name that itself holds a
+# Name the staged files that hold a finding, for one pass ($1).  The names
+# come from the same staged diff, in the same order, one per file (a type
+# change's two blocks count once); a newline inside a name is shown as "?".
+# The text pass also names a file it read whole.  A name that itself holds a
 # blocked string is never printed.
-named=0
-if mkdir "$work/files" && added_lines "$work/files" &&
-   git diff --cached --name-only -z --diff-filter=d --no-ext-diff \
-     --submodule=short > "$work/names.z" &&
+names_ok=0
+if git --attr-source="$empty_tree" diff --cached --name-only -z \
+     --diff-filter=d --no-ext-diff --submodule=short > "$work/names.z" &&
    tr '\n\000' '\001\n' < "$work/names.z" > "$work/names" &&
-   count=$(tr -d ' ' < "$work/files/count") &&
-   test "$count" -eq "$(wc -l < "$work/names" | tr -d ' ')"; then
-  i=1
-  while test "$i" -le "$count"; do
-    if test -f "$work/files/$i" && ! sh "$guard" < "$work/files/$i" > /dev/null 2>&1; then
-      named=1
-      name=$(sed -n "${i}p" "$work/names" | tr '\001' '?')
-      test -n "$name" || name='?'
-      if printf '%s\n' "$name" | sh "$guard" > /dev/null 2>&1; then
-        printf '  %s\n' "$name"
-      else
-        printf '  (a staged file whose own name holds a blocked string)\n'
-      fi
-    fi
-    i=$((i + 1))
-  done
+   names=$(wc -l < "$work/names" | tr -d ' '); then
+  names_ok=1
 fi
-test "$named" -eq 1 || printf '  (could not tell which staged file; git diff --cached --stat lists them)\n'
 
-printf '\nUnstage that file, or remove the string, and commit again. These codes are live $149.99 licenses.\n'
+add_whole() {
+  for w in "$work"/whole/*; do
+    test -f "$w" || continue
+    cat "$w" >> "$1/${w##*/}" || return 1
+  done
+}
+
+name_files() {
+  named=0
+  if test "$names_ok" -eq 1 && mkdir "$work/files.$1" &&
+     added_lines "$work/files.$1" "$work/patch.$1" &&
+     { test "$1" = all || add_whole "$work/files.$1"; } &&
+     count=$(tr -d ' ' < "$work/files.$1/count") &&
+     test "$count" -eq "$names"; then
+    i=1
+    while test "$i" -le "$count"; do
+      if test -f "$work/files.$1/$i" && ! sh "$guard" "$1" < "$work/files.$1/$i" > /dev/null 2>&1; then
+        named=1
+        name=$(sed -n "${i}p" "$work/names" | tr '\001' '?')
+        test -n "$name" || name='?'
+        if printf '%s\n' "$name" | sh "$guard" > /dev/null 2>&1; then
+          printf '    %s\n' "$name"
+        else
+          printf '    (a staged file whose own name holds a blocked string)\n'
+        fi
+      fi
+      i=$((i + 1))
+    done
+  fi
+  test "$named" -eq 1 || printf '    (could not tell which staged file; git diff --cached --stat lists them)\n'
+}
+
+printf '\n%s BLOCKED -- possible Founders Lifetime code in staged changes.\n' "$what"
+if test "$rc_all" -eq 1; then
+  printf '\nFound by the all pass (every staged file, binary included):\n%s\n  In:\n' "$found_all"
+  name_files all
+fi
+if test "$rc_text" -eq 1; then
+  printf '\nFound by the text pass (staged text files):\n%s\n  In:\n' "$found_text"
+  name_files text
+fi
+
+if test "$what" = MERGE; then
+  printf '\nThe merge is left in progress.  To finish it: remove the string from each file named above,\n'
+  printf 'git add those files, then git commit (this check runs again).  To drop it instead: git merge --abort\n'
+  printf 'These codes are live $149.99 licenses.\n'
+else
+  printf '\nUnstage that file, or remove the string, and commit again. These codes are live $149.99 licenses.\n'
+fi
 printf 'They belong only in ~/Documents, never in a repo.\n\n'
 exit 1

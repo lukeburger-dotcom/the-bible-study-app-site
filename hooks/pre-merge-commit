@@ -1,0 +1,29 @@
+#!/bin/sh
+# ---------------------------------------------------------------------------
+# Founders-code guard, pre-merge-commit.  SITE-GUARD-3 (239).
+#
+# A merge that needs no conflict resolution commits without running
+# pre-commit; git runs this hook instead, after the merge is staged and before
+# its commit.  The staged diff is then everything the merge brings in, so this
+# runs hooks/pre-commit itself: the same two passes of hooks/founders-guard,
+# the same fail-closed stages, one definition.  If pre-commit is missing,
+# empty or unreadable, or fails, the merge is not committed.  (Like any hook
+# file, a pre-commit cut short partway runs only what is left of it.)
+#
+# Git never copies hooks into a clone, so these are tracked.  Each clone turns
+# them on once:   git config core.hooksPath hooks
+# ---------------------------------------------------------------------------
+
+LC_ALL=C
+export LC_ALL
+unset -f dirname printf sh test 2> /dev/null
+
+hook="$(dirname "$0")/pre-commit"
+
+if ! test -f "$hook" || ! test -r "$hook" || ! test -s "$hook"; then
+  printf '\nMERGE BLOCKED -- the founders-code guard could not run (no readable, non-empty hooks/pre-commit).\n'
+  printf 'The check cannot be trusted, so nothing is committed.  Fix the guard and commit again.\n\n'
+  exit 1
+fi
+
+exec sh "$hook" merge

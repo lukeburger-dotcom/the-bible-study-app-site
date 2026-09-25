@@ -24,11 +24,14 @@ leaked — it is published.
   "just for testing" line.
 - Git history is permanent. Deleting a code in the next commit does not unpublish
   it. The only fix is invalidating 500 codes and minting new ones.
-- The guard is `hooks/founders-guard`. It blocks an Apple redemption link, an
-  offer-code query parameter, or an 18-character run of capitals and digits
-  that holds at least one letter. The tracked `hooks/pre-commit` runs it over
-  every line a commit adds, and the tracked `hooks/commit-msg` over the commit
-  message, once `core.hooksPath` is set. A fresh clone must run
+- The guard is `hooks/founders-guard`. It blocks an Apple redemption link or
+  an offer-code query parameter in any file, binary included, and an
+  18-character run of capitals and digits that holds at least one letter in
+  text files only (by git's own test, a file is binary when a NUL byte sits in
+  its first 8,000 bytes). Three tracked hooks run it once `core.hooksPath` is
+  set: `hooks/pre-commit` over every line a commit adds,
+  `hooks/pre-merge-commit` over what a merge brings in, and `hooks/commit-msg`
+  over the commit message. A fresh clone must run
   `git config core.hooksPath hooks` once. A checkout with no `hooks/` folder
   runs no guard.
 - On a block, unstage the file the guard names (or remove the string) and
