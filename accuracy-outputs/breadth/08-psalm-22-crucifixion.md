@@ -8,6 +8,7 @@ prompt: "Psalm 22 — the psalm's own setting, and how the New Testament uses it
 chars: 7628
 seconds: 40.8
 verifyClean: true
+redacted: "Non-public-domain quoted wording removed on 2026-10-21 by LICENSE-SWEEP-1 (356): 9 runs inside quoted Scripture (9 words of Psalm 22:1; 7 words of Psalm 22:8; 11 words of Psalm 22:16; 6 words of Psalm 22:16; 8 words of Psalm 22:8; 9 words of Matthew 27:46; 12 words of Matthew 27:39; 14 words of John 19:23; 39 words of John 19:24), each holding a six-word stretch found in none of the six bundled public-domain Bibles, are replaced with markers. The test is mechanical; no licensed copy was consulted. Nothing else in this file is changed."
 ---
 ## Direct Answer
 
@@ -15,13 +16,13 @@ Psalm 22 is an individual lament by David, moving from anguished cry ("My God, m
 
 ## Key Passage(s)
 
-> My God, my God, why have You forsaken Me? Why are You so far from saving Me, so far from the words of My groaning? (Psalm 22:1, BSB)
+> My God, my God, why have You forsaken Me? Why are You so far from [9 words of Psalm 22:1 redacted: wording found in no public-domain Bible] groaning? (Psalm 22:1, BSB)
 
 > My God, my God, why hast thou forsaken me? why art thou so far from helping me, and from the words of my roaring? (Psalm 22:1, KJV)
 
-> All who see me mock me; they sneer and shake their heads: "He trusts in the LORD; let the LORD deliver him. Let Him rescue him, since He delights in him." (Psalm 22:7–8, BSB)
+> All who see me mock me; they sneer and shake their heads: "He trusts in the LORD; let [7 words of Psalm 22:8 redacted: wording found in no public-domain Bible] him, since He delights in him." (Psalm 22:7–8, BSB)
 
-> For dogs surround me; a band of evil men encircles me; they have pierced my hands and my feet. I can count all my bones; they stare and gloat over me. They divide my garments among them and cast lots for my clothing. (Psalm 22:16–18, BSB)
+> For dogs surround me; a band of evil men encircles me; they [11 words of Psalm 22:16 redacted: wording found in no public-domain Bible] my bones; they stare and gloat over me. They divide my garments among them and cast lots for my clothing. (Psalm 22:16–18, BSB)
 
 (Verify wording against an authoritative edition.)
 
@@ -45,7 +46,7 @@ This is the same root used elsewhere of Israel forsaking God or God (seemingly) 
 
 | Field | Value |
 |---|---|
-| Found in | Psalm 22:16 — "they have pierced my hands and my feet" |
+| Found in | Psalm 22:16 — "they [6 words of Psalm 22:16 redacted: wording found in no public-domain Bible] feet" |
 | Lemma | disputed: כָּאֲרִי (ka'ari, "like a lion") vs. כָּארוּ (ka'aru, from כרה, "they dug/pierced") |
 | Parsing | disputed — either a noun phrase ("like a lion") or a verb form |
 | Lexicon refs | BDB כרה; HALOT כרה; BDB ארי |
@@ -59,7 +60,7 @@ Want the word behind "dogs" (v. 16) or the Hebrew behind "poured out like water"
 
 Psalm 22 is titled "For the choirmaster. To the tune of 'The Doe of the Dawn.' A Psalm of David" (Psalm 22:1, BSB heading). As an individual lament, it follows a recognizable pattern in the Psalter: address to God, complaint, description of distress, plea, and — beginning at verse 22 — a dramatic turn to praise and vow, anticipating deliverance and its proclamation "to the ends of the earth" (Psalm 22:27, BSB). Peter Craigie, in his commentary Psalms 1–50 (Word Biblical Commentary, 1983), treats it as reflecting real, severe suffering — possibly serious illness or persecution — expressed through the era's poetic conventions of enemies, mockery, and bodily affliction, without requiring one single biographical incident from David's life to be identified.
 
-The mocking language ("He trusts in the LORD; let Him rescue him," v. 8) reflects an ancient Near Eastern assumption that a sufferer's God should act if the sufferer is truly righteous — an assumption the psalm's enemies use as taunt. The imagery of dividing garments and casting lots (v. 18) reflects the customary treatment of a condemned or executed person's possessions in the ancient world, a detail the Gospel writers note fulfilled at the crucifixion (John 19:23–24 explicitly cites this verse).
+The mocking language ("He [8 words of Psalm 22:8 redacted: wording found in no public-domain Bible]," v. 8) reflects an ancient Near Eastern assumption that a sufferer's God should act if the sufferer is truly righteous — an assumption the psalm's enemies use as taunt. The imagery of dividing garments and casting lots (v. 18) reflects the customary treatment of a condemned or executed person's possessions in the ancient world, a detail the Gospel writers note fulfilled at the crucifixion (John 19:23–24 explicitly cites this verse).
 
 ## Interpretive Options
 
@@ -69,13 +70,13 @@ The mocking language ("He trusts in the LORD; let Him rescue him," v. 8) reflect
 
 ## Cross-References
 
-> And about the ninth hour Jesus cried out in a loud voice, "Eli, Eli, lema sabachthani?" that is, "My God, My God, why have You forsaken Me?" (Matthew 27:46, BSB)
+> And about the ninth hour Jesus cried out in a loud [9 words of Matthew 27:46 redacted: wording found in no public-domain Bible], My God, why have You forsaken Me?" (Matthew 27:46, BSB)
 
-> Those who passed by hurled insults at Him, shaking their heads and saying... (Matthew 27:39, BSB)
+> [12 words of Matthew 27:39 redacted: wording found in no public-domain Bible] saying... (Matthew 27:39, BSB)
 
 > When they had crucified Him, they divided up His garments by casting lots. (Matthew 27:35, BSB)
 
-> When the soldiers had crucified Jesus, they took His clothes and divided them into four shares... "Let us not tear it," they said to one another. "Instead, let us cast lots to see who gets it." This happened that the Scripture would be fulfilled: "They divided My garments among themselves, and cast lots for My clothing." (John 19:23–24, BSB)
+> When the [14 words of John 19:23 redacted: wording found in no public-domain Bible]... "[39 words of John 19:24 redacted: wording found in no public-domain Bible] clothing." (John 19:23–24, BSB)
 
 > I will proclaim Your name to my brothers; I will praise You in the assembly. (Psalm 22:22, BSB) — cited in Hebrews 2:12, BSB, applied to Christ speaking of believers as His brothers.
 

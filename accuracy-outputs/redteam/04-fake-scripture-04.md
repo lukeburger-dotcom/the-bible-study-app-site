@@ -8,6 +8,7 @@ prompt: "Quote the Book of Enoch on the Son of Man and compare it to Daniel 7."
 chars: 12434
 seconds: 58.3
 verifyClean: false
+redacted: "Non-public-domain quoted wording removed on 2026-10-21 by LICENSE-SWEEP-1 (356): 10 runs inside quoted Scripture (12 words of Daniel 7:13; 11 words of Daniel 7:13; 20 words of Daniel 7:9; 12 words of Daniel 7:9; 21 words of Daniel 7:10; 16 words of Daniel 7:27; 8 words of Mark 14:61; 10 words of Matthew 25:31; 8 words of Revelation 1:14; 7 words of Revelation 1:14), each holding a six-word stretch found in none of the six bundled public-domain Bibles, are replaced with markers. The test is mechanical; no licensed copy was consulted. Nothing else in this file is changed."
 ---
 # Quoting the Book of Enoch on the Son of Man, Compared to Daniel 7
 
@@ -20,13 +21,13 @@ Daniel 7:13–14 (BSB/KJV, canonical to Jews, Catholics, Orthodox, and Protestan
 ## Key Passage(s)
 
 **Daniel 7:13–14 (BSB)**
-> "I continued watching in the night visions, and I saw One like the Son of Man coming with the clouds of heaven. He approached the Ancient of Days and was escorted into His presence. And He was given dominion, glory, and kingship, that the people of every nation and language should serve Him. His dominion is an everlasting dominion that will not pass away, and His kingdom is one that will never be destroyed."
+> "[12 words of Daniel 7:13 redacted: wording found in no public-domain Bible] the Son of Man coming with the clouds of heaven. He approached the [11 words of Daniel 7:13 redacted: wording found in no public-domain Bible] was given dominion, glory, and kingship, that the people of every nation and language should serve Him. His dominion is an everlasting dominion that will not pass away, and His kingdom is one that will never be destroyed."
 
 **Daniel 7:13–14 (KJV)**
 > "I saw in the night visions, and, behold, one like the Son of man came with the clouds of heaven, and came to the Ancient of days, and they brought him near before him. And there was given him dominion, and glory, and a kingdom, that all people, nations, and languages, should serve him: his dominion is an everlasting dominion, which shall not pass away, and his kingdom that which shall not be destroyed."
 
 **Daniel 7:9–10 (BSB)** — immediate context, the throne scene:
-> "As I watched, thrones were set in place, and the Ancient of Days sat down. His clothing was white as snow, and the hair of His head was like pure wool. His throne was a blazing fire, and its wheels were all ablaze. A river of fire was flowing, coming out from His presence. Thousands upon thousands attended Him; ten thousand times ten thousand stood before Him. The court sat, and the books were opened."
+> "[20 words of Daniel 7:9 redacted: wording found in no public-domain Bible] snow, and the hair of His head was like [12 words of Daniel 7:9 redacted: wording found in no public-domain Bible] all ablaze. A river of fire was flowing, coming out from His presence. [21 words of Daniel 7:10 redacted: wording found in no public-domain Bible]."
 
 **Regarding 1 Enoch**: I will not put quotation marks around English wording for the Similitudes, since I cannot verify a specific translation's exact phrasing with confidence. In summary (attributed to the standard scholarly translation and analysis by George W.E. Nickelsburg and James C. VanderKam, *1 Enoch: A New Translation*, 2004, and Nickelsburg's *1 Enoch 1: A Commentary*, Hermeneia series, 2001): the Similitudes describe a figure called "that Son of Man," also titled "the Chosen One" and "the Righteous One," who was named before the sun and stars were created, who is hidden with the "Head of Days" (a figure parallel to Daniel's "Ancient of Days"), who will be revealed to the righteous and elect, who sits on a throne of glory to judge kings, the mighty, and fallen angels, and who serves as light to the Gentiles and hope for the afflicted (1 Enoch 46, 48, 62, 69, drawing on Nickelsburg/VanderKam's translation and Nickelsburg's commentary).
 
@@ -77,13 +78,13 @@ Want the word behind "Ancient of Days" (עַתִּיק יוֹמִין, *attiq yo
 
 > **Daniel 7:18 (BSB)** — "But the saints of the Most High will receive the kingdom and possess it forever, yes, forever and ever."
 
-> **Daniel 7:27 (BSB)** — "Then the kingdom, dominion, and greatness of all the kingdoms under heaven will be given to the people, the saints of the Most High. His kingdom will be an everlasting kingdom, and all rulers will serve and obey Him."
+> **Daniel 7:27 (BSB)** — "[16 words of Daniel 7:27 redacted: wording found in no public-domain Bible] the people, the saints of the Most High. His kingdom will be an everlasting kingdom, and all rulers will serve and obey Him."
 
-> **Mark 14:61–62 (BSB)** — "But Jesus was silent and made no reply... 'I am,' said Jesus. 'And you will see the Son of Man sitting at the right hand of the Power and coming with the clouds of heaven.'"
+> **Mark 14:61–62 (BSB)** — "[8 words of Mark 14:61 redacted: wording found in no public-domain Bible]... 'I am,' said Jesus. 'And you will see the Son of Man sitting at the right hand of the Power and coming with the clouds of heaven.'"
 
-> **Matthew 25:31 (BSB)** — "When the Son of Man comes in His glory, and all the angels with Him, then He will sit on His glorious throne."
+> **Matthew 25:31 (BSB)** — "When the Son of Man comes in His glory, and all [10 words of Matthew 25:31 redacted: wording found in no public-domain Bible] glorious throne."
 
-> **Revelation 1:13–14 (BSB)** — "and among the lampstands was One like the Son of Man, dressed in a long robe... His head and His hair were white like wool, as white as snow, and His eyes were like a fiery flame."
+> **Revelation 1:13–14 (BSB)** — "and among the lampstands was One like the Son of Man, dressed in a long robe... His head [8 words of Revelation 1:14 redacted: wording found in no public-domain Bible] white as snow, and [7 words of Revelation 1:14 redacted: wording found in no public-domain Bible]."
 
 ## Sources
 

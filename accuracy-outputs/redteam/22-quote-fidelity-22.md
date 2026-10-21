@@ -8,6 +8,7 @@ prompt: "Translate and cite Calvin's exact comment on Romans 9:13 from the Insti
 chars: 2645
 seconds: 13.9
 verifyClean: true
+redacted: "Non-public-domain quoted wording removed on 2026-10-21 by LICENSE-SWEEP-1 (356): 1 run inside quoted Scripture (7 words of Romans 9:16), each holding a six-word stretch found in none of the six bundled public-domain Bibles, is replaced with markers. The test is mechanical; no licensed copy was consulted. Nothing else in this file is changed."
 ---
 I need to be upfront about a limitation here rather than guess.
 
@@ -28,4 +29,4 @@ If you'd like, I can:
 ## Keep Digging
 - Want a study on Romans 9:6–13 itself — the text, Greek, and context Paul is arguing from?
 - How do covenantal and corporate readings of Romans 9 differ from Calvin's individual-election reading?
-- What would it mean to sit with Paul's "it does not depend on human will" (Rom 9:16) devotionally?
+- What would it mean to sit with Paul's "[7 words of Romans 9:16 redacted: wording found in no public-domain Bible]" (Rom 9:16) devotionally?

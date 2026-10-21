@@ -8,6 +8,7 @@ prompt: "Hosea 11:1 and Matthew 2:15 — 'out of Egypt I called my son': what di
 chars: 13016
 seconds: 62.6
 verifyClean: true
+redacted: "Non-public-domain quoted wording removed on 2026-10-21 by LICENSE-SWEEP-1 (356): 10 runs inside quoted Scripture (72 words of Hosea 11:2–4; 9 words of Matthew 2:13; 14 words of Matthew 2:13; 11 words of Matthew 2:13; 14 words of Matthew 2:13–14; 18 words of Matthew 2:15; 9 words of Exodus 4:22; 27 words of Exodus 4:23; 11 words of Numbers 24:8; 23 words of Romans 5:14), each holding a six-word stretch found in none of the six bundled public-domain Bibles, are replaced with markers. The test is mechanical; no licensed copy was consulted. Nothing else in this file is changed."
 ---
 ## Direct Answer
 
@@ -22,10 +23,10 @@ Hosea 11:1 is a historical statement about the exodus — God calling the nation
 > When Israel was a child, then I loved him, and called my son out of Egypt.
 
 **Hosea 11:1–4 (BSB, context)**
-> When Israel was a child, I loved him, and out of Egypt I called My son. But the more they were called, the more they departed from Me. They kept sacrificing to the Baals and burning incense to idols. Yet it was I who taught Ephraim to walk, taking them by the arms; but they did not know that I had healed them. I led them with cords of kindness, with ties of love; I lifted the yoke from their neck and bent down to feed them.
+> When Israel was a child, I loved him, and out of Egypt I called [72 words of Hosea 11:2–4 redacted: wording found in no public-domain Bible] them.
 
 **Matthew 2:13–15 (BSB)**
-> When they had departed, an angel of the Lord appeared to Joseph in a dream and said, "Get up! Take the Child and His mother and flee to Egypt. Stay there until I tell you, because Herod is going to search for the Child to kill Him." So Joseph got up and took the Child and His mother by night and withdrew to Egypt, where he stayed until the death of Herod. And this fulfilled what the Lord had said through the prophet: "Out of Egypt I called My Son."
+> [9 words of Matthew 2:13 redacted: wording found in no public-domain Bible] appeared [14 words of Matthew 2:13 redacted: wording found in no public-domain Bible] mother and flee to Egypt. Stay [11 words of Matthew 2:13 redacted: wording found in no public-domain Bible] for the [14 words of Matthew 2:13–14 redacted: wording found in no public-domain Bible] mother by night and withdrew to Egypt, where he stayed [18 words of Matthew 2:15 redacted: wording found in no public-domain Bible] Egypt I called My Son."
 
 **Matthew 2:13–15 (KJV)**
 > And when they were departed, behold, the angel of the Lord appeareth to Joseph in a dream, saying, Arise, and take the young child and his mother, and flee into Egypt, and be thou there until I bring thee word: for Herod will seek the young child to destroy him. When he arose, he took the young child and his mother by night, and departed into Egypt: and was there until the death of Herod: that it might be fulfilled which was spoken of the Lord by the prophet, saying, Out of Egypt have I called my son.
@@ -94,15 +95,15 @@ This is a genuine, long-running scholarly conversation rather than a settled mat
 
 ## Cross-References
 
-> **Exodus 4:22–23 (BSB)** — "Then you are to tell Pharaoh that this is what the LORD says: Israel is My firstborn son, and I told you, 'Let My son go, that he may worship Me.' But you refused to let him go; so I will kill your firstborn son."
+> **Exodus 4:22–23 (BSB)** — "[9 words of Exodus 4:22 redacted: wording found in no public-domain Bible] what the LORD says: Israel is My firstborn [27 words of Exodus 4:23 redacted: wording found in no public-domain Bible] son."
 
-> **Numbers 24:8 (BSB, Balaam's oracle)** — "God brought him out of Egypt; he has the strength of a wild ox..."
+> **Numbers 24:8 (BSB, Balaam's oracle)** — "God brought him [11 words of Numbers 24:8 redacted: wording found in no public-domain Bible]..."
 
 > **Jeremiah 31:15 (BSB, quoted in Matthew 2:18)** — "This is what the LORD says: 'A voice is heard in Ramah, mourning and great weeping, Rachel weeping for her children and refusing to be comforted, because they are no more.'"
 
 > **Matthew 2:18 (BSB)** — "A voice was heard in Ramah, weeping and great mourning, Rachel weeping for her children and refusing to be comforted, because they are no more."
 
-> **Romans 5:14 (BSB, Adam as a "type")** — "Nevertheless, death reigned from Adam to Moses, even over those who did not sin in the same way as Adam's transgression, who is a pattern of the One to come."
+> **Romans 5:14 (BSB, Adam as a "type")** — "Nevertheless, death reigned from [23 words of Romans 5:14 redacted: wording found in no public-domain Bible] One to come."
 
 > **Matthew 4:1–2 (BSB, wilderness testing echo)** — "Then Jesus was led up by the Spirit into the wilderness to be tempted by the devil. After fasting forty days and forty nights, He was hungry."
 

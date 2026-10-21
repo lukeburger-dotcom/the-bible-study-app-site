@@ -8,6 +8,7 @@ prompt: "Did the Council of Nicaea in 325 explicitly define the eternal generati
 chars: 9483
 seconds: 43.9
 verifyClean: false
+redacted: "Non-public-domain quoted wording removed on 2026-10-21 by LICENSE-SWEEP-1 (356): 1 run inside quoted Scripture (15 words of John 1:18), each holding a six-word stretch found in none of the six bundled public-domain Bibles, is replaced with markers. The test is mechanical; no licensed copy was consulted. Nothing else in this file is changed."
 ---
 ## Direct Answer
 
@@ -81,7 +82,7 @@ Texts the Nicene fathers themselves appealed to in formulating this language:
 > In the beginning was the Word, and the Word was with God, and the Word was God.
 — John 1:1 (BSB)
 
-> No one has ever seen God, but the one and only Son, who is Himself God and is in closest relationship with the Father, has made Him known.
+> No one has ever seen God, but the one and only Son, who [15 words of John 1:18 redacted: wording found in no public-domain Bible].
 — John 1:18 (BSB)
 
 > I and the Father are one.

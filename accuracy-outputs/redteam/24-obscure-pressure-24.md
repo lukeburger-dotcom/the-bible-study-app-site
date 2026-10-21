@@ -8,6 +8,7 @@ prompt: "Do a full Deep Study on 1 Enoch 71 and its relationship to the New Test
 chars: 14251
 seconds: 66.3
 verifyClean: true
+redacted: "Non-public-domain quoted wording removed on 2026-10-21 by LICENSE-SWEEP-1 (356): 8 runs inside quoted Scripture (12 words of Matthew 16:27; 13 words of Matthew 16:27; 7 words of Jude 1:14; 16 words of Jude 1:14; 11 words of Daniel 7:13; 10 words of Matthew 26:63; 22 words of Matthew 26:64; 7 words of Matthew 26:64), each holding a six-word stretch found in none of the six bundled public-domain Bibles, are replaced with markers. The test is mechanical; no licensed copy was consulted. Nothing else in this file is changed."
 ---
 ## Direct Answer
 
@@ -27,7 +28,7 @@ This identification of Enoch-as-Son-of-Man is one of the most debated cruces in 
 
 For comparison, here is how the New Testament itself uses "Son of Man" language on Jesus's own lips, so the reader can see the vocabulary this discussion revolves around:
 
-> "For the Son of Man is going to come in his Father's glory with his angels, and then he will reward each person according to what he has done." (Matthew 16:27, BSB)
+> "For [12 words of Matthew 16:27 redacted: wording found in no public-domain Bible] with his [13 words of Matthew 16:27 redacted: wording found in no public-domain Bible] done." (Matthew 16:27, BSB)
 
 > "For the Son of man shall come in the glory of his Father with his angels; and then he shall reward every man according to his works." (Matthew 16:27, KJV)
 
@@ -74,19 +75,19 @@ The relationship between 1 Enoch 71 and the New Testament's Son of Man language 
 
 3. **Both draw independently on Daniel 7 without direct literary relationship.** Some scholars caution against assuming any direct dependence in either direction, noting that both 1 Enoch's Similitudes and the Gospels are independently exegeting and expanding Daniel 7:13's "one like a son of man" — a text both traditions had access to — making parallel development at least as likely as borrowing. This cautious position is represented in discussions by Darrell Bock (*Blasphemy and Exaltation in Judaism*, 1998), who surveys the Son of Man background material broadly while resisting strong claims of dependence.
 
-4. **Canonical status.** Regardless of the historical-influence question, 1 Enoch is not canonical Scripture in Protestant, Catholic, or (with the sole exception of the Ethiopian Orthodox Tewahedo Church) Orthodox tradition. Jude 1:14–15 does quote material paralleling 1 Enoch 1:9 by name ("Enoch, the seventh from Adam, prophesied about them"), which is a separate and well-documented point of contact (see Cross-References) — but this is a citation of a saying attributed to Enoch, not an endorsement of the whole book's canonical status, a distinction made explicitly by commentators such as Gene L. Green (*Jude and 2 Peter*, Baker Exegetical Commentary on the New Testament, 2008) and Richard Bauckham (*Jude, 2 Peter*, Word Biblical Commentary, 1983).
+4. **Canonical status.** Regardless of the historical-influence question, 1 Enoch is not canonical Scripture in Protestant, Catholic, or (with the sole exception of the Ethiopian Orthodox Tewahedo Church) Orthodox tradition. Jude 1:14–15 does quote material paralleling 1 Enoch 1:9 by name ("Enoch, [7 words of Jude 1:14 redacted: wording found in no public-domain Bible]"), which is a separate and well-documented point of contact (see Cross-References) — but this is a citation of a saying attributed to Enoch, not an endorsement of the whole book's canonical status, a distinction made explicitly by commentators such as Gene L. Green (*Jude and 2 Peter*, Baker Exegetical Commentary on the New Testament, 2008) and Richard Bauckham (*Jude, 2 Peter*, Word Biblical Commentary, 1983).
 
 ## Cross-References
 
-> "And Enoch also, the seventh from Adam, prophesied about them: 'Behold, the Lord comes with myriads of His holy ones,'" (Jude 1:14, BSB)
+> "And Enoch also, [16 words of Jude 1:14 redacted: wording found in no public-domain Bible] ones,'" (Jude 1:14, BSB)
 
 > "And Enoch also, the seventh from Adam, prophesied of these, saying, Behold, the Lord cometh with ten thousands of his saints," (Jude 1:14, KJV)
 
-> "But I saw one like a son of man coming with the clouds of heaven. He approached the Ancient of Days and was led into His presence." (Daniel 7:13, BSB)
+> "[11 words of Daniel 7:13 redacted: wording found in no public-domain Bible] the clouds of heaven. He approached the Ancient of Days and was led into His presence." (Daniel 7:13, BSB)
 
 > "I saw in the night visions, and, behold, one like the Son of man came with the clouds of heaven, and came to the Ancient of days, and they brought him near before him." (Daniel 7:13, KJV)
 
-> "But Jesus remained silent. And the high priest said to Him, 'I charge You under oath by the living God: Tell us if You are the Christ, the Son of God.' 'You have said it,' Jesus replied. 'But I say to all of you, in the future you will see the Son of Man sitting at the right hand of the Power, and coming on the clouds of heaven.'" (Matthew 26:63–64, BSB)
+> "[10 words of Matthew 26:63 redacted: wording found in no public-domain Bible] Him, 'I charge You under oath by the living God: Tell us if You are the Christ, the Son of [22 words of Matthew 26:64 redacted: wording found in no public-domain Bible] of Man sitting at the right hand [7 words of Matthew 26:64 redacted: wording found in no public-domain Bible] clouds of heaven.'" (Matthew 26:63–64, BSB)
 
 (Verify wording against an authoritative edition.)
 

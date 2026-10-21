@@ -8,6 +8,7 @@ prompt: "Jeremiah 31:31–34 — the new covenant: what is promised, and how doe
 chars: 7838
 seconds: 36.1
 verifyClean: true
+redacted: "Non-public-domain quoted wording removed on 2026-10-21 by LICENSE-SWEEP-1 (356): 8 runs inside quoted Scripture (10 words of Jeremiah 31:33; 8 words of Jeremiah 31:34; 10 words of Jeremiah 31:34; 6 words of Jeremiah 31:32; 9 words of Hebrews 8:13; 9 words of Luke 22:20; 10 words of Hebrews 8:7; 10 words of Hebrews 8:10), each holding a six-word stretch found in none of the six bundled public-domain Bibles, are replaced with markers. The test is mechanical; no licensed copy was consulted. Nothing else in this file is changed."
 ---
 ## Direct Answer
 
@@ -15,7 +16,7 @@ Jeremiah 31:31–34 promises a "new covenant" with Israel and Judah — distinct
 
 ## Key Passage(s)
 
-> "Behold, the days are coming," declares the LORD, "when I will make a new covenant with the house of Israel and with the house of Judah. It will not be like the covenant I made with their fathers when I took them by the hand to bring them out of the land of Egypt — a covenant they broke, though I was a husband to them," declares the LORD. "But this is the covenant I will make with the house of Israel after those days," declares the LORD. "I will put My law in their minds and inscribe it on their hearts. I will be their God, and they will be My people. No longer will each man teach his neighbor or his brother, saying, 'Know the LORD,' for they will all know Me, from the least of them to the greatest," declares the LORD. "For I will forgive their iniquity and remember their sin no more."
+> "Behold, the days are coming," declares the LORD, "when I will make a new covenant with the house of Israel and with the house of Judah. It will not be like the covenant I made with their fathers when I took them by the hand to bring them out of the land of Egypt — a covenant they broke, though I was a husband to them," declares the LORD. "But this is the covenant I will make with the house of Israel after those days," declares the LORD. "I will put My law in their minds and [10 words of Jeremiah 31:33 redacted: wording found in no public-domain Bible], and they will be My people. No longer will each man teach his neighbor or his brother, saying, '[8 words of Jeremiah 31:34 redacted: wording found in no public-domain Bible] Me, from the least of them to the greatest," declares the LORD. "For I [10 words of Jeremiah 31:34 redacted: wording found in no public-domain Bible]."
 > — Jeremiah 31:31–34 (BSB)
 
 > Behold, the days come, saith the LORD, that I will make a new covenant with the house of Israel, and with the house of Judah: Not according to the covenant that I made with their fathers in the day that I took them by the hand to bring them out of the land of Egypt; which my covenant they brake, although I was an husband unto them, saith the LORD: But this shall be the covenant that I will make with the house of Israel; After those days, saith the LORD, I will put my law in their inward parts, and write it in their hearts; and will be their God, and they shall be my people. And they shall teach no more every man his neighbour, and every man his brother, saying, Know the LORD: for they shall all know me, from the least of them even unto the greatest of them, saith the LORD: for I will forgive their iniquity, and I will remember their sin no more.
@@ -37,7 +38,7 @@ Two terms carry the weight here: *berith chadashah* ("new covenant"), because th
 | Lexicon refs | HALOT; BDB |
 | Sense here | new in kind/quality, not merely new in time |
 
-HALOT and BDB both attest *chadash* as "new, fresh" — the term doesn't by itself specify whether this is a renewal of the old arrangement or something categorically different. That question is resolved by the passage's content (v. 32: "not like the covenant I made with their fathers") more than by the adjective alone. Hebrews leans hard on this contrast (Hebrews 8:13) to argue the first covenant is "obsolete."
+HALOT and BDB both attest *chadash* as "new, fresh" — the term doesn't by itself specify whether this is a renewal of the old arrangement or something categorically different. That question is resolved by the passage's content (v. 32: "[6 words of Jeremiah 31:32 redacted: wording found in no public-domain Bible] with their fathers") more than by the adjective alone. Hebrews leans hard on this contrast (Hebrews 8:13) to argue the first covenant is "obsolete."
 
 ### בַּעַלְתִּי (ba'alti)
 
@@ -59,7 +60,7 @@ Jeremiah prophesied in the final decades of Judah's kingdom, through the Babylon
 
 ## Interpretive Options
 
-**How Hebrews uses the passage:** Hebrews 8:6–13 quotes Jeremiah 31:31–34 in full as scriptural proof that a new covenant was always anticipated and that Christ is its mediator. Hebrews 8:13 draws the inference: "By calling this covenant 'new,' He has made the first one obsolete." Hebrews 10:15–17 returns to verses 33–34 specifically to argue that Christ's single sacrifice accomplishes the forgiveness the new covenant promises, rendering repeated sacrifice unnecessary. This is documented in the text of Hebrews itself.
+**How Hebrews uses the passage:** Hebrews 8:6–13 quotes Jeremiah 31:31–34 in full as scriptural proof that a new covenant was always anticipated and that Christ is its mediator. Hebrews 8:13 draws the inference: "[9 words of Hebrews 8:13 redacted: wording found in no public-domain Bible] first one obsolete." Hebrews 10:15–17 returns to verses 33–34 specifically to argue that Christ's single sacrifice accomplishes the forgiveness the new covenant promises, rendering repeated sacrifice unnecessary. This is documented in the text of Hebrews itself.
 
 **Who are the covenant partners — Israel/Judah specifically, or the church?** Jeremiah's oracle names "the house of Israel and the house of Judah" explicitly (v. 31). Hebrews applies the promise to the church gathered around Christ without re-naming Israel. Covenant theologians (e.g., in the Reformed tradition broadly) read this as the church inheriting/fulfilling the promise as true Israel; dispensational interpreters (e.g., in the tradition following Charles Ryrie) hold that the promise retains a future, literal fulfillment for ethnic Israel, with the church currently participating in the new covenant's benefits without exhausting its referent. This is a live interpretive divide rather than a settled question — named here as such rather than resolved.
 
@@ -67,10 +68,10 @@ Jeremiah prophesied in the final decades of Judah's kingdom, through the Babylon
 
 ## Cross-References
 
-> This cup is the new covenant in My blood, poured out for you.
+> This cup is the [9 words of Luke 22:20 redacted: wording found in no public-domain Bible].
 > — Luke 22:20 (BSB)
 
-> For if that first covenant had been faultless, no place would have been sought for a second... "This is the covenant I will make with the house of Israel after those days," declares the Lord. "I will put My laws in their minds and write them on their hearts..."
+> For if that [10 words of Hebrews 8:7 redacted: wording found in no public-domain Bible] sought for a second... "This is the covenant I will make with the house of Israel after those days," declares the Lord. "I will put My [10 words of Hebrews 8:10 redacted: wording found in no public-domain Bible]..."
 > — Hebrews 8:7, 10 (BSB)
 
 > I will give you a new heart and put a new spirit within you; I will remove your heart of stone and give you a heart of flesh.

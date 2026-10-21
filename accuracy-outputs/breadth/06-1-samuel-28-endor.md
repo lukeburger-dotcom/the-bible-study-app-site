@@ -8,6 +8,7 @@ prompt: "1 Samuel 28 — Saul and the medium at Endor: did Samuel really appear,
 chars: 12436
 seconds: 59.5
 verifyClean: true
+redacted: "Non-public-domain quoted wording removed on 2026-10-21 by LICENSE-SWEEP-1 (356): 8 runs inside quoted Scripture (9 words of 1 Samuel 28:13–14; 6 words of 1 Samuel 28:3; 10 words of 1 Chronicles 10:13; 6 words of Leviticus 19:31; 11 words of Leviticus 19:31; 13 words of Deuteronomy 18:10–11; 12 words of 1 Chronicles 10:13; 18 words of 1 Chronicles 10:13), each holding a six-word stretch found in none of the six bundled public-domain Bibles, are replaced with markers. The test is mechanical; no licensed copy was consulted. Nothing else in this file is changed."
 ---
 ## Direct Answer
 
@@ -60,7 +61,7 @@ The term appears throughout the Torah's prohibitions (Leviticus 19:31; 20:6, 27;
 
 | Field | Value |
 |---|---|
-| Found in | 1 Samuel 28:13 — "I saw gods ascending out of the earth" (KJV); BSB reads "I see a spirit form ascending from the ground" |
+| Found in | 1 Samuel 28:13 — "I saw gods ascending out of the earth" (KJV); BSB reads "[9 words of 1 Samuel 28:13–14 redacted: wording found in no public-domain Bible]" |
 | Lemma | אֱלֹהִים (elohim) |
 | Parsing | Noun, masculine plural in form (common as a plural-of-majesty, frequently singular in sense) |
 | Lexicon refs | BDB 43; HALOT 1.52 |
@@ -77,7 +78,7 @@ Want the word behind "disquieted" (28:15) or the term for "familiar spirit" as u
 
 **Historical/narrative setting.** This scene falls immediately before Saul's death (1 Samuel 31) and is deliberately placed by the narrator between two panels of David's story (1 Samuel 27 and 29), a structuring device many commentators note — Robert Alter, *The David Story* (1999), discusses how this positioning heightens the tragic irony of Saul's final night. The Philistines have mustered at Shunem; Saul is camped at Gilboa (1 Samuel 28:4), and En-dor lay across the Jezreel valley, behind or near Philistine lines — meaning Saul's night journey was also physically dangerous, undertaken in disguise (28:8).
 
-**Cultural/legal background.** Saul had earlier "expelled the mediums and spiritists from the land" (1 Samuel 28:3, BSB), enforcing the Torah's prohibitions on necromancy (Leviticus 19:31; 20:6, 27; Deuteronomy 18:10–11). His visit to the medium is thus a direct reversal of his own policy and of covenant law — a point the text is at pains to make explicit through his disguise and the woman's fearful reaction.
+**Cultural/legal background.** Saul had earlier "[6 words of 1 Samuel 28:3 redacted: wording found in no public-domain Bible] the land" (1 Samuel 28:3, BSB), enforcing the Torah's prohibitions on necromancy (Leviticus 19:31; 20:6, 27; Deuteronomy 18:10–11). His visit to the medium is thus a direct reversal of his own policy and of covenant law — a point the text is at pains to make explicit through his disguise and the woman's fearful reaction.
 
 **ANE comparative context.** Necromancy (consultation of the dead for guidance) was practiced across the ancient Near East — attested in Mesopotamian and Ugaritic sources involving rituals to summon ancestral spirits for oracles, as surveyed in general treatments such as the *Anchor Bible Dictionary* entries on divination and necromancy. Israel's law set itself apart from neighboring nations precisely by banning these practices and directing inquiry to Yahweh through prophets, priests (Urim), and dreams instead (cf. 1 Samuel 28:6, which lists exactly these three legitimate channels Saul had already tried and found silent).
 
@@ -95,15 +96,15 @@ This is one of the most debated narrative-theological questions in the Old Testa
 
 **4. Soul sleep / conditional immortality readings.** Some traditions (e.g., certain strands of Adventist or Christadelphian theology) that hold the dead are unconscious until resurrection read this passage as evidence *against* a literal appearance of Samuel's spirit, favoring option 2 or 3 on theological grounds independent of the narrative details.
 
-Commentators broadly agree, whichever view is taken, that the text's own moral judgment is unambiguous: 1 Chronicles 10:13–14 states Saul died "for his unfaithfulness... and also for asking counsel of a medium, to seek guidance" (BSB), naming this consultation as a contributing cause of his downfall, alongside his disobedience to the Lord's word. The narrative does not commend the practice regardless of who or what appeared.
+Commentators broadly agree, whichever view is taken, that the text's own moral judgment is unambiguous: 1 Chronicles 10:13–14 states Saul died "for his unfaithfulness... and [10 words of 1 Chronicles 10:13 redacted: wording found in no public-domain Bible]" (BSB), naming this consultation as a contributing cause of his downfall, alongside his disobedience to the Lord's word. The narrative does not commend the practice regardless of who or what appeared.
 
 ## Cross-References
 
-> Do not turn to mediums or spiritists; do not seek them out, and be defiled by them. I am the LORD your God. (Leviticus 19:31, BSB)
+> [6 words of Leviticus 19:31 redacted: wording found in no public-domain Bible] spiritists; [11 words of Leviticus 19:31 redacted: wording found in no public-domain Bible] am the LORD your God. (Leviticus 19:31, BSB)
 
-> Let no one be found among you who ... practices divination or sorcery, interprets omens, practices witchcraft, casts spells, consults a medium or spiritist, or inquires of the dead. (Deuteronomy 18:10–11, BSB)
+> Let no one be found among you who ... [13 words of Deuteronomy 18:10–11 redacted: wording found in no public-domain Bible] or spiritist, or inquires of the dead. (Deuteronomy 18:10–11, BSB)
 
-> So Saul died for his unfaithfulness to the LORD in that he did not keep the word of the LORD and even asked a medium for guidance, and did not inquire of the LORD. So the LORD put him to death and turned the kingdom over to David son of Jesse. (1 Chronicles 10:13–14, BSB)
+> So Saul died for [12 words of 1 Chronicles 10:13 redacted: wording found in no public-domain Bible] word [18 words of 1 Chronicles 10:13 redacted: wording found in no public-domain Bible] the LORD put him to death and turned the kingdom over to David son of Jesse. (1 Chronicles 10:13–14, BSB)
 
 > For Satan himself masquerades as an angel of light. (2 Corinthians 11:14, BSB)
 

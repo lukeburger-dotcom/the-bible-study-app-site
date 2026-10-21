@@ -8,6 +8,7 @@ prompt: "Give the BDB entry for the Hebrew root of 'almah in Isaiah 7:14 and any
 chars: 4327
 seconds: 25.2
 verifyClean: true
+redacted: "Non-public-domain quoted wording removed on 2026-10-21 by LICENSE-SWEEP-1 (356): 1 run inside quoted Scripture (7 words of Isaiah 7:14), each holding a six-word stretch found in none of the six bundled public-domain Bibles, is replaced with markers. The test is mechanical; no licensed copy was consulted. Nothing else in this file is changed."
 ---
 # עַלְמָה (almah) — Isaiah 7:14
 
@@ -15,7 +16,7 @@ Here's what I can responsibly lay out on this word, working from BDB (Brown-Driv
 
 ## The Passage
 
-> "Therefore the Lord Himself will give you a sign: Behold, the virgin will conceive and bear a son, and will call Him Immanuel."
+> "Therefore the Lord Himself will give you a sign: Behold, the virgin will conceive [7 words of Isaiah 7:14 redacted: wording found in no public-domain Bible] Him Immanuel."
 > — Isaiah 7:14 (BSB)
 
 > "Therefore the Lord himself shall give you a sign; Behold, a virgin shall conceive, and bear a son, and shall call his name Immanuel."

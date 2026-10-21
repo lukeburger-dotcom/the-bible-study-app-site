@@ -8,6 +8,7 @@ prompt: "Isaiah 53 — the suffering servant: the passage in its context, the id
 chars: 14433
 seconds: 70.2
 verifyClean: true
+redacted: "Non-public-domain quoted wording removed on 2026-10-21 by LICENSE-SWEEP-1 (356): 2 runs inside quoted Scripture (8 words of Isaiah 53:4; 9 words of Acts 8:32), each holding a six-word stretch found in none of the six bundled public-domain Bibles, are replaced with markers. The test is mechanical; no licensed copy was consulted. Nothing else in this file is changed."
 ---
 ## Direct Answer
 
@@ -49,7 +50,7 @@ This same word appears throughout Isaiah 40–55 applied explicitly to Israel/Ja
 
 | Field | Value |
 |---|---|
-| Found in | Isaiah 53:4 — "Surely he has borne our griefs and carried our sorrows" (BSB uses "griefs... sorrows"; KJV "griefs... sorrows") |
+| Found in | Isaiah 53:4 — "[8 words of Isaiah 53:4 redacted: wording found in no public-domain Bible] our sorrows" (BSB uses "griefs... sorrows"; KJV "griefs... sorrows") |
 | Lemma | נָשָׂא (to lift, bear, carry); סָבַל (to bear a burden, carry a load) |
 | Parsing | נָשָׂא — Qal perfect, 3ms; סָבַל — Qal perfect, 3ms |
 | Lexicon refs | BDB 669 (נשׂא); BDB 687 (סבל); HALOT 724, 741 |
@@ -106,7 +107,7 @@ Want the word behind "stricken" (נָגוּעַ) in 53:4, or the term "guilt off
 > He is despised and rejected of men; a man of sorrows, and acquainted with grief: and we hid as it were our faces from him; he was despised, and we esteemed him not.
 > — Isaiah 53:3 (KJV)
 
-> He was led as a sheep to the slaughter; and like a lamb dumb before his shearer, so he openeth not his mouth: In his humiliation his judgment was taken away: and who shall declare his generation? for his life is taken from the earth.
+> He was led as a sheep to the slaughter; and like a lamb [9 words of Acts 8:32 redacted: wording found in no public-domain Bible] mouth: In his humiliation his judgment was taken away: and who shall declare his generation? for his life is taken from the earth.
 > — Acts 8:32–33 (KJV, quoting Isaiah 53:7–8, as read by the Ethiopian eunuch)
 
 > Surely he hath borne our griefs, and carried our sorrows.

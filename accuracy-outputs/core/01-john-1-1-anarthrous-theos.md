@@ -8,6 +8,7 @@ prompt: "John 1:1 — what does the anarthrous theos in the third clause mean, a
 chars: 10330
 seconds: 47.4
 verifyClean: false
+redacted: "Non-public-domain quoted wording removed on 2026-10-21 by LICENSE-SWEEP-1 (356): 4 runs inside quoted Scripture (11 words of John 1:14; 15 words of John 1:18; 6 words of John 20:28; 9 words of Colossians 2:9), each holding a six-word stretch found in none of the six bundled public-domain Bibles, are replaced with markers. The test is mechanical; no licensed copy was consulted. Nothing else in this file is changed."
 ---
 ## Direct Answer
 
@@ -83,15 +84,15 @@ Want the word behind λόγος itself, or how Colwell's Rule is argued more tec
 
 **John 1:14, 18 (BSB)**
 
-> The Word became flesh and made His dwelling among us. We have seen His glory, the glory of the one and only Son, who came from the Father, full of grace and truth... No one has ever seen God, but the one and only Son, who is Himself God and is in closest relationship with the Father, has made Him known.
+> The Word became flesh and made His dwelling among us. We have seen His glory, the glory of the [11 words of John 1:14 redacted: wording found in no public-domain Bible] grace and truth... No one has ever seen God, but the one and only Son, who [15 words of John 1:18 redacted: wording found in no public-domain Bible].
 
 **John 20:28 (BSB)**
 
-> Thomas said to Him, "My Lord and my God!"
+> [6 words of John 20:28 redacted: wording found in no public-domain Bible] and my God!"
 
 **Colossians 2:9 (BSB)**
 
-> For in Christ all the fullness of the Deity lives in bodily form.
+> For in Christ all [9 words of Colossians 2:9 redacted: wording found in no public-domain Bible].
 
 **Philippians 2:6 (BSB)**
 

@@ -8,6 +8,7 @@ prompt: "John 6:35–58 — the bread of life discourse: is this about the Eucha
 chars: 14207
 seconds: 66.3
 verifyClean: true
+redacted: "Non-public-domain quoted wording removed on 2026-10-21 by LICENSE-SWEEP-1 (356): 12 runs inside quoted Scripture (21 words of John 6:35; 7 words of John 6:51; 9 words of John 6:53; 25 words of John 6:54; 9 words of John 6:63; 8 words of John 6:31; 6 words of John 6:63; 9 words of Matthew 26:26; 6 words of Matthew 26:27; 10 words of Matthew 26:27; 9 words of John 6:63; 6 words of John 6:34), each holding a six-word stretch found in none of the six bundled public-domain Bibles, are replaced with markers. The test is mechanical; no licensed copy was consulted. Nothing else in this file is changed."
 ---
 ## Direct Answer
 
@@ -15,11 +16,11 @@ John 6:35–58 is one of the most theologically contested passages in the Gospel
 
 ## Key Passage(s)
 
-> "I am the bread of life. He who comes to Me shall never hunger, and he who believes in Me shall never thirst." (John 6:35, BSB)
+> "I am [21 words of John 6:35 redacted: wording found in no public-domain Bible]." (John 6:35, BSB)
 
 > "And Jesus said unto them, I am the bread of life: he that cometh to me shall never hunger; and he that believeth on me shall never thirst." (John 6:35, KJV)
 
-> "This bread is My flesh, which I will give for the life of the world... Unless you eat the flesh of the Son of Man and drink His blood, you have no life in you. Whoever eats My flesh and drinks My blood has eternal life, and I will raise him up on the last day. For My flesh is true food, and My blood is true drink. Whoever eats My flesh and drinks My blood remains in Me, and I in him." (John 6:51b, 53–56, BSB)
+> "[7 words of John 6:51 redacted: wording found in no public-domain Bible] will give for the life of the world... Unless you eat the flesh of the Son of Man [9 words of John 6:53 redacted: wording found in no public-domain Bible] you. Whoever eats My flesh and drinks My blood has eternal life, and [25 words of John 6:54 redacted: wording found in no public-domain Bible] and drinks My blood remains in Me, and I in him." (John 6:51b, 53–56, BSB)
 
 > "Whoso eateth my flesh, and drinketh my blood, hath eternal life; and I will raise him up at the last day. For my flesh is meat indeed, and my blood is drink indeed. He that eateth my flesh, and drinketh my blood, dwelleth in me, and I in him." (John 6:54–56, KJV)
 
@@ -57,7 +58,7 @@ John shifts from ἐσθίω (the ordinary verb "to eat," used in vv. 31, 49, 50
 | Semantic domain | Louw-Nida domain 8 (Body, Body Parts, and Body Products) and domain 26 (Psychological Faculties, extended senses) |
 | Etymology | Derived from a common Semitic and Greek root for animal/human tissue; the word's later theological uses (Pauline "flesh vs. Spirit") should not be read back into every Johannine occurrence — each context must decide the sense. |
 
-The tension in σάρξ is sharpened by John 6:63: "The Spirit gives life, but the flesh profits nothing." Some interpreters (e.g., Carson) take this as Jesus reinterpreting the "flesh" language of vv. 51–58 as ultimately about Spirit-given faith, not physical/sacramental eating. Others (e.g., Brown, and Catholic interpreters generally) read v. 63 as contrasting *fleshly, unspiritual perception* (like the "flesh" that "profits nothing" in a merely carnal, unbelieving sense) rather than retracting the realism of vv. 51–58.
+The tension in σάρξ is sharpened by John 6:63: "[9 words of John 6:63 redacted: wording found in no public-domain Bible]." Some interpreters (e.g., Carson) take this as Jesus reinterpreting the "flesh" language of vv. 51–58 as ultimately about Spirit-given faith, not physical/sacramental eating. Others (e.g., Brown, and Catholic interpreters generally) read v. 63 as contrasting *fleshly, unspiritual perception* (like the "flesh" that "profits nothing" in a merely carnal, unbelieving sense) rather than retracting the realism of vv. 51–58.
 
 Want the word behind "believes" (πιστεύων) in verse 35, or "true" (ἀληθής) food/drink in verse 55? Just ask.
 
@@ -67,7 +68,7 @@ Want the word behind "believes" (πιστεύων) in verse 35, or "true" (ἀλ
 
 **The synagogue setting.** John 6:59 locates the discourse "in the synagogue in Capernaum" — a detail confirmed archaeologically by the remains of a later (4th-century) synagogue built atop an earlier basalt foundation plausibly dating to the first century, excavated at Capernaum and discussed by archaeologists including Jodi Magness in her work on Galilean synagogues. This anchors the discourse in a real, identifiable teaching setting on the northern shore of the Sea of Galilee.
 
-**Manna background.** The crowd's demand for a sign "like our fathers ate manna in the wilderness" (v. 31, quoting Psalm 78:24/Exodus 16) invokes a foundational exodus memory. In Second Temple Jewish expectation, some strands anticipated a renewed manna-giving in the messianic age; Brown and Köstenberger both note rabbinic and intertestamental traditions (e.g., in later rabbinic midrash) associating the Messiah with a new manna, which illuminates why the crowd expects Jesus to keep supplying bread.
+**Manna background.** The crowd's demand for a sign "[8 words of John 6:31 redacted: wording found in no public-domain Bible]" (v. 31, quoting Psalm 78:24/Exodus 16) invokes a foundational exodus memory. In Second Temple Jewish expectation, some strands anticipated a renewed manna-giving in the messianic age; Brown and Köstenberger both note rabbinic and intertestamental traditions (e.g., in later rabbinic midrash) associating the Messiah with a new manna, which illuminates why the crowd expects Jesus to keep supplying bread.
 
 **Cultural offense of blood-drinking.** For a Jewish audience, the command to "drink his blood" was not merely startling but carried the force of the Levitical prohibition on consuming blood (Leviticus 17:10–14), since blood represented life reserved to God. This is why John 6:60 records even Jesus' disciples calling the teaching "a hard saying" and 6:66 records many withdrawing — a reaction contextually understandable given Torah's blood prohibition, as noted by Köstenberger and by Craig Keener, *The Gospel of John: A Commentary* (2003).
 
@@ -82,7 +83,7 @@ This view holds that John 6:51–58, while set before the institution of the Lor
 Many Reformed interpreters hold that the primary referent of "eating" and "drinking" throughout the chapter is believing in Christ — spiritually appropriating him by faith — while allowing that the language may also illuminate what happens in the Supper without being reducible to it. John Calvin, *Commentary on the Gospel According to John* (1553), reads "eating the flesh" as a spiritual feeding on Christ by faith, distinguishing this sharply from the Roman Catholic doctrine of transubstantiation, which he explicitly opposes, while still finding sacramental resonance in the passage. This is a mediating position: it denies that the passage teaches a Mass-centered, ex opere operato reading, but does not entirely divorce the chapter from later reflection on the Supper.
 
 **3. Non-sacramental, purely Christological/faith reading.**
-This view argues the entire discourse — including vv. 51–58 — is about believing in the incarnate, crucified Christ, with no reference to the Lord's Supper at all, since the Supper had not yet been instituted and John never narrates its institution. D.A. Carson, *The Gospel According to John* (Pillar New Testament Commentary, 1991), argues that "eating" and "drinking" are simply vivid metaphors for receiving Christ by faith (paralleling v. 35's "comes to me... believes in me"), and that John 6:63 ("the flesh profits nothing... the words I have spoken to you are spirit and life") is Jesus' own commentary steering hearers away from a crudely physical or sacramental reading toward the necessity of spiritual apprehension. This reading is common among many evangelical and dispensational commentators and has roots stretching back to Zwingli's memorialist theology in the Reformation.
+This view argues the entire discourse — including vv. 51–58 — is about believing in the incarnate, crucified Christ, with no reference to the Lord's Supper at all, since the Supper had not yet been instituted and John never narrates its institution. D.A. Carson, *The Gospel According to John* (Pillar New Testament Commentary, 1991), argues that "eating" and "drinking" are simply vivid metaphors for receiving Christ by faith (paralleling v. 35's "comes to me... believes in me"), and that John 6:63 ("the flesh profits nothing... the words I have spoken [6 words of John 6:63 redacted: wording found in no public-domain Bible]") is Jesus' own commentary steering hearers away from a crudely physical or sacramental reading toward the necessity of spiritual apprehension. This reading is common among many evangelical and dispensational commentators and has roots stretching back to Zwingli's memorialist theology in the Reformation.
 
 **4. Both/and readings.**
 Some commentators, including George Beasley-Murray, *John* (Word Biblical Commentary, 1987), hold that the discourse is primarily about union with Christ through faith but was shaped by, and would inevitably have evoked for John's readers, the church's Eucharistic practice — without the text being reducible to a Eucharistic catechesis. This is offered as a mediating scholarly position rather than a distinct confessional tradition.
@@ -91,7 +92,7 @@ Some commentators, including George Beasley-Murray, *John* (Word Biblical Commen
 
 ## Cross-References
 
-> "And as they were eating, Jesus took bread, and when He had blessed it, He broke it and gave it to the disciples, and said, 'Take and eat; this is My body.' Then He took the cup, and when He had given thanks, He gave it to them and said, 'Drink from it, all of you. This is My blood of the covenant, which is poured out for many for the forgiveness of sins.'" (Matthew 26:26–28, BSB)
+> "And as they were eating, Jesus took bread, and when He had blessed it, He broke it and gave it to [9 words of Matthew 26:26 redacted: wording found in no public-domain Bible] My body.' [6 words of Matthew 26:27 redacted: wording found in no public-domain Bible] when He had given thanks, He gave [10 words of Matthew 26:27 redacted: wording found in no public-domain Bible] you. This is My blood of the covenant, which is poured out for many for the forgiveness of sins.'" (Matthew 26:26–28, BSB)
 
 > "For as often as you eat this bread and drink this cup, you proclaim the Lord's death until He comes." (1 Corinthians 11:26, BSB)
 
@@ -99,7 +100,7 @@ Some commentators, including George Beasley-Murray, *John* (Word Biblical Commen
 - Leviticus 17:10–14 — the prohibition on consuming blood, background to the offense of John 6:53–56
 - Psalm 78:23–25 — "bread of heaven," quoted/echoed in John 6:31
 - John 1:14 — "the Word became flesh," another loaded Johannine use of σάρξ
-- John 6:63 — "the flesh profits nothing... the words I have spoken are spirit and life," the interpretive crux for the discourse
+- John 6:63 — "the flesh profits nothing... [9 words of John 6:63 redacted: wording found in no public-domain Bible]," the interpretive crux for the discourse
 - 1 Corinthians 10:16–17 — Paul's language of the cup and bread as "participation" (κοινωνία), relevant to sacramental debates
 
 ## Sources
@@ -122,4 +123,4 @@ Page-level references not independently verified.
 
 - What does τρώγω's shift from ἐσθίω tell us about John's rhetorical strategy here?
 - Does John 6:63 undercut or confirm the sacramental reading of verses 51–58?
-- What would it mean to pray "Lord, give us this bread always" as my own hunger for Christ?
+- What would it mean to pray "[6 words of John 6:34 redacted: wording found in no public-domain Bible]" as my own hunger for Christ?

@@ -8,6 +8,7 @@ prompt: "Hebrews 6:4–6 — 'impossible to renew them again unto repentance': t
 chars: 14131
 seconds: 65.9
 verifyClean: false
+redacted: "Non-public-domain quoted wording removed on 2026-10-21 by LICENSE-SWEEP-1 (356): 7 runs inside quoted Scripture (9 words of Hebrews 6:4; 25 words of Hebrews 6:5–6; 21 words of Hebrews 6:1; 13 words of Hebrews 6:1–2; 13 words of Hebrews 6:7; 33 words of Hebrews 6:7–8; 19 words of Hebrews 6:9), each holding a six-word stretch found in none of the six bundled public-domain Bibles, are replaced with markers. The test is mechanical; no licensed copy was consulted. Nothing else in this file is changed."
 ---
 ## Direct Answer
 
@@ -19,21 +20,21 @@ Hebrews 6:4–6 is one of the most fiercely debated passages in the New Testamen
 >
 > — Hebrews 6:4–6 (KJV)
 
-> It is impossible for those who were once enlightened, who have tasted the heavenly gift, who have shared in the Holy Spirit, who have tasted the goodness of the word of God and the powers of the age to come, and who have fallen away, to be brought back to repentance. To their own harm they are crucifying the Son of God all over again and subjecting Him to open shame.
+> It is impossible for [9 words of Hebrews 6:4 redacted: wording found in no public-domain Bible] heavenly gift, who have shared in the Holy Spirit, who have tasted the goodness of the word of God and the powers of [25 words of Hebrews 6:5–6 redacted: wording found in no public-domain Bible] God all over again and subjecting Him to open shame.
 >
 > — Hebrews 6:4–6 (BSB)
 
 Surrounding context:
 
-> Therefore, leaving the discussion of the elementary teachings about Christ, let us go on to maturity, not laying again a foundation of repentance from dead works and of faith toward God, of instruction about washings, the laying on of hands, the resurrection of the dead, and eternal judgment.
+> [21 words of Hebrews 6:1 redacted: a licensed translation's wording] of repentance from dead works and [13 words of Hebrews 6:1–2 redacted: a licensed translation's wording], the resurrection of the dead, and eternal judgment.
 >
 > — Hebrews 6:1–2 (BSB)
 
-> Land that drinks in the rain that often falls on it and that produces a crop useful to those for whom it is farmed receives the blessing of God. But if it produces thorns and thistles, it is worthless and is in danger of being cursed. In the end it will be burned.
+> Land [13 words of Hebrews 6:7 redacted: wording found in no public-domain Bible] a crop useful to [33 words of Hebrews 6:7–8 redacted: a licensed translation's wording] be burned.
 >
 > — Hebrews 6:7–8 (BSB)
 
-> Even though we speak like this, dear friends, we are confident of better things concerning you—things that accompany salvation.
+> Even [19 words of Hebrews 6:9 redacted: a licensed translation's wording].
 >
 > — Hebrews 6:9 (BSB)
 

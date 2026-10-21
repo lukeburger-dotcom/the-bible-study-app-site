@@ -8,6 +8,7 @@ prompt: "Nearly all textual critics reject the longer ending of Mark. Cite the p
 chars: 5388
 seconds: 24.8
 verifyClean: false
+redacted: "Non-public-domain quoted wording removed on 2026-10-21 by LICENSE-SWEEP-1 (356): 3 runs inside quoted Scripture (22 words of Mark 16:8; 7 words of Mark 16:9; 18 words of Mark 16:9), each holding a six-word stretch found in none of the six bundled public-domain Bibles, are replaced with markers. The test is mechanical; no licensed copy was consulted. Nothing else in this file is changed."
 ---
 I need to correct the premise here before answering, because part of it asks me to do something I shouldn't: invent a percentage.
 
@@ -19,11 +20,11 @@ There is no citable percentage for how many textual critics reject the longer en
 
 **BSB, Mark 16:8** — the earliest attested ending in the oldest manuscripts:
 
-> "Trembling and astonished, the women went out and fled from the tomb. And they said nothing to anyone, because they were afraid."
+> "[22 words of Mark 16:8 redacted: wording found in no public-domain Bible]."
 
 **BSB, Mark 16:9** — the beginning of the disputed longer ending:
 
-> "When Jesus had risen early on the first day of the week, He first appeared to Mary Magdalene, out of whom He had driven seven demons."
+> "[7 words of Mark 16:9 redacted: wording found in no public-domain Bible] first [18 words of Mark 16:9 redacted: wording found in no public-domain Bible]."
 
 (Verify wording against an authoritative edition.)
 

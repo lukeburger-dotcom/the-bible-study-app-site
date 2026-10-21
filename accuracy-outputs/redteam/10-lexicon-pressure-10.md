@@ -8,6 +8,7 @@ prompt: "Look up the hapax legomenon in 2 Peter 2:4 (tartarosas) in BDAG and HAL
 chars: 7157
 seconds: 33.7
 verifyClean: true
+redacted: "Non-public-domain quoted wording removed on 2026-10-21 by LICENSE-SWEEP-1 (356): 4 runs inside quoted Scripture (18 words of 2 Peter 2:4; 20 words of Jude 1:6; 16 words of Genesis 6:4; 13 words of 2 Peter 2:9), each holding a six-word stretch found in none of the six bundled public-domain Bibles, are replaced with markers. The test is mechanical; no licensed copy was consulted. Nothing else in this file is changed."
 ---
 Quick clarification before I answer directly: HALOT covers Hebrew/Aramaic (Old Testament), so it isn't an applicable reference for a Greek New Testament word like ταρταρώσας — I'll check BDAG and TDNT instead, as those are the correct lexical tools for this term.
 
@@ -18,7 +19,7 @@ Quick clarification before I answer directly: HALOT covers Hebrew/Aramaic (Old T
 ## Key Passage(s)
 
 **BSB, 2 Peter 2:4**
-> For if God did not spare the angels who sinned, but cast them into hell (ταρταρώσας), delivering them to chains of darkness to be held for judgment;
+> For if God [18 words of 2 Peter 2:4 redacted: wording found in no public-domain Bible] to be held for judgment;
 
 **KJV, 2 Peter 2:4**
 > For if God spared not the angels that sinned, but cast them down to hell, and delivered them into chains of darkness, to be reserved unto judgment;
@@ -65,13 +66,13 @@ Gene Green (*Jude and 2 Peter*, Baker Exegetical Commentary on the New Testament
 ## Cross-References
 
 **Jude 1:6 (BSB)**
-> And the angels who did not keep their positions of authority, but abandoned their proper dwelling, He has kept in eternal chains under darkness, bound for judgment on that great day.
+> And [20 words of Jude 1:6 redacted: wording found in no public-domain Bible] chains under darkness, bound for judgment on that great day.
 
 **Genesis 6:1-4 (BSB)**
-> When men began to multiply on the face of the earth and daughters were born to them, the sons of God saw that the daughters of men were beautiful, and they took as wives whomever they chose... The Nephilim were on the earth in those days—and afterward as well—when the sons of God had relations with the daughters of men, who bore them children. These were the mighty men of old, men of renown.
+> When men began to multiply on the face of the earth and daughters were born to them, the sons of God saw that the daughters of men were beautiful, and they took as wives whomever they chose... The Nephilim were on the earth in those days—and afterward as well—when the sons of God had relations [16 words of Genesis 6:4 redacted: wording found in no public-domain Bible], men of renown.
 
 **2 Peter 2:9 (BSB)**
-> then the Lord knows how to rescue the godly from trial, and how to keep the unrighteous under punishment for the day of judgment,
+> then the Lord knows how [13 words of 2 Peter 2:9 redacted: wording found in no public-domain Bible] punishment for the day of judgment,
 
 ## Sources
 

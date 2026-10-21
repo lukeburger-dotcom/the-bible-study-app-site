@@ -8,6 +8,7 @@ prompt: "Leviticus 16 — the Day of Atonement: what happens in the ritual, and 
 chars: 8235
 seconds: 39.2
 verifyClean: true
+redacted: "Non-public-domain quoted wording removed on 2026-10-21 by LICENSE-SWEEP-1 (356): 10 runs inside quoted Scripture (14 words of Leviticus 16:30; 8 words of Leviticus 16:7; 9 words of Leviticus 16:8; 10 words of Leviticus 16:20; 19 words of Leviticus 16:21; 21 words of Leviticus 16:21; 14 words of Hebrews 9:11; 17 words of Hebrews 9:11; 12 words of Hebrews 9:12; 8 words of Hebrews 9:12), each holding a six-word stretch found in none of the six bundled public-domain Bibles, are replaced with markers. The test is mechanical; no licensed copy was consulted. Nothing else in this file is changed."
 ---
 ## Direct Answer
 
@@ -15,19 +16,19 @@ Leviticus 16 sets out Israel's Day of Atonement (Yom Kippur) ritual: Aaron the h
 
 ## Key Passage(s)
 
-> On this day atonement will be made for you to cleanse you. Then, before the LORD, you will be clean from all your sins.
+> On this day atonement will be made [14 words of Leviticus 16:30 redacted: wording found in no public-domain Bible] all your sins.
 > — Leviticus 16:30 (BSB)
 
 > For on that day shall the priest make an atonement for you, to cleanse you, that ye may be clean from all your sins before the LORD.
 > — Leviticus 16:30 (KJV)
 
-> Then he shall take the two goats, and set them before the LORD at the door of the Tent of Meeting. And Aaron shall cast lots over the two goats: one lot for the LORD, and the other lot for the scapegoat.
+> Then he shall take the two [8 words of Leviticus 16:7 redacted: wording found in no public-domain Bible] the door of the Tent of Meeting. [9 words of Leviticus 16:8 redacted: wording found in no public-domain Bible]: one lot for the LORD, and the other lot for the scapegoat.
 > — Leviticus 16:7–8 (BSB)
 
 > And he shall take the two goats, and present them before the LORD at the door of the tabernacle of the congregation. And Aaron shall cast lots upon the two goats; one lot for the LORD, and the other lot for the scapegoat.
 > — Leviticus 16:7–8 (KJV)
 
-> When Aaron has finished making atonement for the Most Holy Place, the Tent of Meeting, and the altar, he shall present the live goat. He is to lay both hands on its head and confess over it all the iniquities and rebellious acts of the Israelites — all their sins — putting them on the goat's head. He shall send it away into the wilderness by the hand of a man appointed for the task.
+> [10 words of Leviticus 16:20 redacted: wording found in no public-domain Bible] Place, the Tent of Meeting, and the altar, he [19 words of Leviticus 16:21 redacted: wording found in no public-domain Bible] the iniquities and [21 words of Leviticus 16:21 redacted: wording found in no public-domain Bible] wilderness by the hand of a man appointed for the task.
 > — Leviticus 16:20–21 (BSB)
 
 (Verify wording against an authoritative edition.)
@@ -84,7 +85,7 @@ The "scapegoat" ritual is unique in the sacrificial system: rather than being sl
 
 ## Cross-References
 
-> But when Christ came as high priest of the good things that are now already here, he went through the greater and more perfect tabernacle that is not made with human hands, that is to say, is not a part of this creation. He did not enter by means of the blood of goats and calves; but he entered the Most Holy Place once for all by his own blood, thus obtaining eternal redemption.
+> But when Christ came as high priest [14 words of Hebrews 9:11 redacted: wording found in no public-domain Bible] and more perfect [17 words of Hebrews 9:11 redacted: wording found in no public-domain Bible] this creation. [12 words of Hebrews 9:12 redacted: wording found in no public-domain Bible] calves; but he entered the Most Holy Place once for all [8 words of Hebrews 9:12 redacted: wording found in no public-domain Bible].
 > — Hebrews 9:11–12 (BSB paraphrase check needed — quoting NIV-style; use BSB wording)
 
 > But Christ being come an high priest of good things to come, by a greater and more perfect tabernacle, not made with hands, that is to say, not of this building; Neither by the blood of goats and calves, but by his own blood he entered in once into the holy place, having obtained eternal redemption for us.

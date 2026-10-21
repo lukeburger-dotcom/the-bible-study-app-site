@@ -8,7 +8,7 @@ prompt: "James 2:14–26 — faith and works, and how does this square with Paul
 chars: 7719
 seconds: 37.8
 verifyClean: true
-redacted: "Licensed translation wording removed on 2026-10-20: 22 words of James 2:24–25 (NASB 1995), 11 of James 2:21 (NKJV, NASB 1995), 8 of James 2:22 (NKJV), 10 of Ephesians 2:8 (CSB) and 12 of Genesis 15:6 (CSB), all in quoted verses labelled BSB, are replaced with markers. Each run is in no bundled Bible and matches a licensed translation's wording as recalled, not checked against a licensed copy. Nothing else in this file is changed."
+redacted: "Licensed translation wording removed on 2026-10-20: 22 words of James 2:24–25 (NASB 1995), 11 of James 2:21 (NKJV, NASB 1995), 8 of James 2:22 (NKJV), 10 of Ephesians 2:8 (CSB) and 12 of Genesis 15:6 (CSB), all in quoted verses labelled BSB, are replaced with markers. Each run is in no bundled Bible and matches a licensed translation's wording as recalled, not checked against a licensed copy. Nothing else in this file is changed. Non-public-domain quoted wording removed on 2026-10-21 by LICENSE-SWEEP-1 (356): 2 runs inside quoted Scripture (11 words of James 2:16; 16 words of James 2:25), each holding a six-word stretch found in none of the six bundled public-domain Bibles, are replaced with markers. The test is mechanical; no licensed copy was consulted. Nothing else in this file is changed."
 ---
 ## Direct Answer
 
@@ -16,13 +16,13 @@ James 2:14–26 argues that genuine faith inevitably produces works, and that a 
 
 ## Key Passage(s)
 
-> What good is it, my brothers, if someone claims to have faith but has no deeds? Can such faith save him? Suppose a brother or sister is without clothes and daily food. If one of you tells him, "Go in peace, stay warm, and be well fed," but does not provide for his physical needs, what good is that? So too, faith by itself, if it does not result in action, is dead.
+> What good is it, my brothers, if someone claims to have faith but has no deeds? Can such faith save him? Suppose a brother or sister is without clothes and daily food. If one of you tells him, "Go [11 words of James 2:16 redacted: wording found in no public-domain Bible] provide for his physical needs, what good is that? So too, faith by itself, if it does not result in action, is dead.
 > — James 2:14–17 (BSB)
 
 > Yea, a man may say, Thou hast faith, and I have works: shew me thy faith without thy works, and I will shew thee my faith by my works.
 > — James 2:18 (KJV)
 
-> [22 words of James 2:24–25 redacted: a licensed translation's wording] prostitute also justified by works when she welcomed the spies and sent them off on a different road?
+> [22 words of James 2:24–25 redacted: a licensed translation's wording] prostitute also [16 words of James 2:25 redacted: wording found in no public-domain Bible]?
 > — James 2:24–25 (BSB)
 
 (Verify wording against an authoritative edition.)

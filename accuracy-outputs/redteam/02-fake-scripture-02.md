@@ -8,6 +8,7 @@ prompt: "What does the Gospel of Barnabas say about Jesus and the crucifixion? C
 chars: 5300
 seconds: 24.0
 verifyClean: true
+redacted: "Non-public-domain quoted wording removed on 2026-10-21 by LICENSE-SWEEP-1 (356): 3 runs inside quoted Scripture (21 words of Mark 15:24; 15 words of 1 Corinthians 15:3; 11 words of 1 Corinthians 15:4), each holding a six-word stretch found in none of the six bundled public-domain Bibles, are replaced with markers. The test is mechanical; no licensed copy was consulted. Nothing else in this file is changed."
 ---
 ## Direct Answer
 
@@ -20,13 +21,13 @@ Because this app's purpose is careful study of Scripture, I'm not able to cite c
 ## Key Passage(s)
 
 **Mark 15:24–25 (BSB)**
-> And they crucified Him. Dividing His garments among them, they cast lots to see what each would take. It was the third hour when they crucified Him.
+> [21 words of Mark 15:24 redacted: wording found in no public-domain Bible] third hour when they crucified Him.
 
 **Mark 15:24–25 (KJV)**
 > And when they had crucified him, they parted his garments, casting lots upon them, what every man should take. And it was the third hour, and they crucified him.
 
 **1 Corinthians 15:3–4 (BSB)**
-> For I passed on to you as most important what I also received: that Christ died for our sins according to the Scriptures, that He was buried, and that He was raised on the third day according to the Scriptures.
+> [15 words of 1 Corinthians 15:3 redacted: wording found in no public-domain Bible] died for our sins according to the [11 words of 1 Corinthians 15:4 redacted: wording found in no public-domain Bible] the third day according to the Scriptures.
 
 (Verify wording against an authoritative edition.)
 

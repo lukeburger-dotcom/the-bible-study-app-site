@@ -8,6 +8,7 @@ prompt: "Job 19:25–27 — 'I know that my redeemer liveth': what did Job mean,
 chars: 7303
 seconds: 37.7
 verifyClean: true
+redacted: "Non-public-domain quoted wording removed on 2026-10-21 by LICENSE-SWEEP-1 (356): 5 runs inside quoted Scripture (45 words of Job 19:23–25; 16 words of Job 19:26–27; 7 words of Job 14:14; 7 words of Daniel 12:2; 7 words of Job 9:33), each holding a six-word stretch found in none of the six bundled public-domain Bibles, are replaced with markers. The test is mechanical; no licensed copy was consulted. Nothing else in this file is changed."
 ---
 ## Direct Answer
 Job declares his confidence that a living "Redeemer" (Hebrew *go'el*) will one day stand upon the earth and vindicate him — even after his body has been destroyed. Whether this is a clear statement of bodily resurrection or a hope for post-mortem vindication before God is genuinely debated among commentators; the Hebrew of verses 26–27 is notoriously difficult, and translations diverge sharply at exactly the point where the "resurrection" reading would need to be secured.
@@ -15,7 +16,7 @@ Job declares his confidence that a living "Redeemer" (Hebrew *go'el*) will one d
 ## Key Passage(s)
 
 **BSB, Job 19:23–27**
-> "Oh, that my words were written down, that they were recorded in a scroll, that they were inscribed with an iron stylus on lead, or engraved in rock forever! But I know that my Redeemer lives, and at the last He will stand upon the earth. Even after my skin has been destroyed, yet in my flesh I will see God, whom I myself will see, and my eyes will behold Him, and not as a stranger. How my heart yearns within me!"
+> "[45 words of Job 19:23–25 redacted: wording found in no public-domain Bible] earth. Even after my skin has been destroyed, yet in my [16 words of Job 19:26–27 redacted: wording found in no public-domain Bible], and not as a stranger. How my heart yearns within me!"
 
 **KJV, Job 19:25–27**
 > "For I know that my redeemer liveth, and that he shall stand at the latter day upon the earth: And though after my skin worms destroy this body, yet in my flesh shall I see God: Whom I shall see for myself, and mine eyes shall behold, and not another; though my reins be consumed within me."
@@ -73,16 +74,16 @@ This is a genuinely contested question at the grammatical level, not simply a mo
 ## Cross-References
 
 **BSB, Job 14:14**
-> "If a man dies, will he live again? All the days of my hard service I will wait until my relief comes."
+> "If a man dies, will he live again? All the days of my hard service [7 words of Job 14:14 redacted: wording found in no public-domain Bible]."
 
 **BSB, Daniel 12:2**
-> "And multitudes who sleep in the dust of the earth will awake, some to everlasting life, but others to shame and everlasting contempt."
+> "[7 words of Daniel 12:2 redacted: wording found in no public-domain Bible] of the earth will awake, some to everlasting life, but others to shame and everlasting contempt."
 
 **BSB, 1 Corinthians 15:20**
 > "But now Christ has been raised from the dead, the firstfruits of those who have fallen asleep."
 
 **BSB, Job 9:33**
-> "Nor is there a mediator between us, to lay his hand on us both."
+> "Nor is there a mediator between [7 words of Job 9:33 redacted: wording found in no public-domain Bible] both."
 
 ## Sources
 

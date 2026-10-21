@@ -8,13 +8,14 @@ prompt: "What does Matthew 6:33 mean in context?"
 chars: 5616
 seconds: 28.1
 verifyClean: true
+redacted: "Non-public-domain quoted wording removed on 2026-10-21 by LICENSE-SWEEP-1 (356): 4 runs inside quoted Scripture (7 words of Matthew 6:33; 9 words of Matthew 6:26; 6 words of Matthew 6:34; 13 words of Matthew 6:34), each holding a six-word stretch found in none of the six bundled public-domain Bibles, are replaced with markers. The test is mechanical; no licensed copy was consulted. Nothing else in this file is changed."
 ---
 ## Direct Answer
 Matthew 6:33 calls disciples to make God's kingdom and righteousness their controlling priority, trusting Him to supply material needs as a consequence — not as the goal itself. It caps Jesus' teaching against anxiety about food, drink, and clothing (Matthew 6:25–34), reorienting worry into trust.
 
 ## Key Passage(s)
 
-> But seek first His kingdom and His righteousness, and all these things will be added to you. (Matthew 6:33, BSB)
+> [7 words of Matthew 6:33 redacted: wording found in no public-domain Bible] righteousness, and all these things will be added to you. (Matthew 6:33, BSB)
 
 > But seek ye first the kingdom of God, and his righteousness; and all these things shall be added unto you. (Matthew 6:33, KJV)
 
@@ -22,9 +23,9 @@ Surrounding context:
 
 > Therefore I tell you, do not worry about your life, what you will eat or drink; or about your body, what you will wear. Is not life more than food, and the body more than clothing? (Matthew 6:25, BSB)
 
-> Look at the birds of the air: They do not sow or reap or gather into barns—and yet your heavenly Father feeds them. Are you not more valuable than they? (Matthew 6:26, BSB)
+> Look at the birds of the air: They do not sow or reap or gather into barns—and yet your heavenly Father [9 words of Matthew 6:26 redacted: wording found in no public-domain Bible]? (Matthew 6:26, BSB)
 
-> So do not worry about tomorrow, for tomorrow will worry about itself. Sufficient for the day is its own trouble. (Matthew 6:34, BSB)
+> [6 words of Matthew 6:34 redacted: wording found in no public-domain Bible], for [13 words of Matthew 6:34 redacted: wording found in no public-domain Bible]. (Matthew 6:34, BSB)
 
 (Verify wording against an authoritative edition.)
 

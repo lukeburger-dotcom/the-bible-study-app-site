@@ -8,6 +8,7 @@ prompt: "Genesis 1 and ancient Near Eastern creation accounts — what are the r
 chars: 11287
 seconds: 55.9
 verifyClean: false
+redacted: "Non-public-domain quoted wording removed on 2026-10-21 by LICENSE-SWEEP-1 (356): 5 runs inside quoted Scripture (14 words of Psalm 74:13; 10 words of Isaiah 51:9; 8 words of Job 38:8; 12 words of Job 38:10; 6 words of Genesis 2:3), each holding a six-word stretch found in none of the six bundled public-domain Bibles, are replaced with markers. The test is mechanical; no licensed copy was consulted. Nothing else in this file is changed."
 ---
 ## Direct Answer
 
@@ -96,13 +97,13 @@ These options are not mutually exclusive; most contemporary commentators (Wenham
 
 ## Cross-References
 
-> **Psalm 74:13–14 (BSB)** — "You divided the sea by Your strength; You broke the heads of the sea monster in the waters. You crushed the heads of Leviathan..."
+> **Psalm 74:13–14 (BSB)** — "You divided the sea by Your strength; You broke [14 words of Psalm 74:13 redacted: wording found in no public-domain Bible] Leviathan..."
 
-> **Isaiah 51:9–10 (BSB)** — "Was it not You who cut Rahab to pieces, who pierced the dragon? Was it not You who dried up the sea, the waters of the great deep..."
+> **Isaiah 51:9–10 (BSB)** — "Was it not You who cut [10 words of Isaiah 51:9 redacted: wording found in no public-domain Bible] You who dried up the sea, the waters of the great deep..."
 
-> **Job 38:8–11 (BSB)** — "Who shut up the sea behind doors when it burst forth from the womb... when I fixed limits for it and set its bars and doors..."
+> **Job 38:8–11 (BSB)** — "[8 words of Job 38:8 redacted: wording found in no public-domain Bible] it burst forth from the womb... [12 words of Job 38:10 redacted: wording found in no public-domain Bible]..."
 
-> **Genesis 2:1–3 (BSB)** — "Thus the heavens and the earth were completed in all their vast array... And on the seventh day God rested from all His work."
+> **Genesis 2:1–3 (BSB)** — "Thus the heavens and the earth were completed in all their vast array... And on the seventh day [6 words of Genesis 2:3 redacted: wording found in no public-domain Bible]."
 
 (Verify wording against an authoritative edition.)
 

@@ -8,6 +8,7 @@ prompt: "Romans 9 and election — walk through the Calvinist and Arminian readi
 chars: 16914
 seconds: 80.0
 verifyClean: false
+redacted: "Non-public-domain quoted wording removed on 2026-10-21 by LICENSE-SWEEP-1 (356): 20 runs inside quoted Scripture (21 words of Romans 9:10–11; 12 words of Romans 9:11; 11 words of Romans 9:12–13; 13 words of Romans 9:20; 12 words of Romans 9:20; 25 words of Romans 9:21–22; 11 words of Romans 9:23; 42 words of Romans 9:30–31; 11 words of Romans 9:33; 9 words of Romans 9:11; 7 words of Romans 1:16; 6 words of Romans 9:32; 9 words of Romans 10:21; 23 words of Malachi 1:2–3; 15 words of Exodus 9:16; 9 words of Exodus 9:16; 7 words of Romans 11:5; 16 words of Romans 11:6; 7 words of Romans 11:22; 20 words of 2 Peter 3:9), each holding a six-word stretch found in none of the six bundled public-domain Bibles, are replaced with markers. The test is mechanical; no licensed copy was consulted. Nothing else in this file is changed."
 ---
 ## Direct Answer
 
@@ -18,7 +19,7 @@ This is a genuine, long-standing interpretive divide within confessing Christian
 ## Key Passage(s)
 
 **BSB, Romans 9:10–16**
-> Not only that, but Rebekah's children were conceived by our father Isaac at the same time. Yet before the twins were born or had done anything good or bad—in order that God's purpose in election might stand, not by works but by Him who calls—she was told, "The older will serve the younger." Just as it is written: "Jacob I loved, but Esau I hated."
+> [21 words of Romans 9:10–11 redacted: wording found in no public-domain Bible] born or had done anything good or [12 words of Romans 9:11 redacted: wording found in no public-domain Bible] works but by Him who calls—she was told, "The [11 words of Romans 9:12–13 redacted: wording found in no public-domain Bible] I loved, but Esau I hated."
 > What then shall we say? Is God unjust? Certainly not! For He says to Moses: "I will have mercy on whom I have mercy, and I will have compassion on whom I have compassion." So then, it does not depend on man's desire or effort, but on God's mercy.
 
 **KJV, Romans 9:10–16**
@@ -26,10 +27,10 @@ This is a genuine, long-standing interpretive divide within confessing Christian
 > What shall we say then? Is there unrighteousness with God? God forbid. For he saith to Moses, I will have mercy on whom I will have mercy, and I will have compassion on whom I will have compassion. So then it is not of him that willeth, nor of him that runneth, but of God that sheweth mercy.
 
 **BSB, Romans 9:19–23**
-> One of you will say to me, "Then why does God still find fault? For who can resist His will?" On the contrary, who are you, O man, to talk back to God? Shall what is formed say to the one who formed it, "Why did you make me like this?" Does not the potter have the right to make from the same lump of clay one vessel for special occasions and another for common use? What if God, willing to display His wrath and reveal His power, bore with great patience the objects of His wrath, prepared for destruction? What if He did this to make the riches of His glory known to the objects of His mercy, whom He prepared in advance for glory—
+> One of you will say to me, "Then why does God still find fault? For [13 words of Romans 9:20 redacted: wording found in no public-domain Bible], to talk back to God? Shall [12 words of Romans 9:20 redacted: wording found in no public-domain Bible] you make me like this?" Does not the potter have the right to make from the same lump of clay one vessel for special occasions and another for [25 words of Romans 9:21–22 redacted: wording found in no public-domain Bible] destruction? What if He did this to make the riches of [11 words of Romans 9:23 redacted: wording found in no public-domain Bible] prepared in advance for glory—
 
 **BSB, Romans 9:30–33**
-> What then shall we say? That the Gentiles who did not pursue righteousness attained it—namely, the righteousness that is by faith. But Israel, pursuing a law of righteousness, did not achieve it. Why not? Because they pursued it not by faith, but as if it were by works. They stumbled over the stumbling stone, just as it is written: "See, I lay in Zion a stone of stumbling and a rock of offense, and the one who believes in Him will never be put to shame."
+> What [42 words of Romans 9:30–31 redacted: wording found in no public-domain Bible] as if it were by works. They [11 words of Romans 9:33 redacted: wording found in no public-domain Bible], I lay in Zion a stone of stumbling and a rock of offense, and the one who believes in Him will never be put to shame."
 
 (Verify wording against an authoritative edition.)
 
@@ -41,7 +42,7 @@ I've chosen **ἐκλογή (eklogē)**, **μισέω (miseō)**, and **σκλη
 
 | Field | Value |
 |---|---|
-| Found in | Romans 9:11 — "in order that God's purpose in election might stand" |
+| Found in | Romans 9:11 — "[9 words of Romans 9:11 redacted: wording found in no public-domain Bible]" |
 | Lemma | ἐκλογή |
 | Parsing | Noun, nominative singular feminine |
 | Lexicon refs | BDAG 2; Louw-Nida 30.84 |
@@ -86,7 +87,7 @@ Want the word behind "vessels of wrath" (σκεῦος, Romans 9:22) or "call" (
 
 ## Context & Background
 
-**Literary context.** Romans 9–11 forms a single sustained argument answering the question raised by Romans 1–8: if the gospel is God's righteousness for "the Jew first and also the Greek" (Romans 1:16), why have so many Jews rejected it while Gentiles are streaming in? Paul opens chapter 9 with anguish over "my brothers, my own flesh and blood" (Romans 9:3), and the whole unit closes in Romans 11 with "all Israel will be saved" (Romans 11:26) and a doxology (Romans 11:33–36). N.T. Wright (*Romans*, New Interpreter's Bible, 2002) and Douglas Moo both stress that any reading of chapter 9 in isolation from 10–11 risks distorting Paul's actual argument, which is about covenant faithfulness and Israel's present unbelief, not primarily an abstract doctrine of individual predestination.
+**Literary context.** Romans 9–11 forms a single sustained argument answering the question raised by Romans 1–8: if the gospel is God's righteousness for "[7 words of Romans 1:16 redacted: wording found in no public-domain Bible]" (Romans 1:16), why have so many Jews rejected it while Gentiles are streaming in? Paul opens chapter 9 with anguish over "my brothers, my own flesh and blood" (Romans 9:3), and the whole unit closes in Romans 11 with "all Israel will be saved" (Romans 11:26) and a doxology (Romans 11:33–36). N.T. Wright (*Romans*, New Interpreter's Bible, 2002) and Douglas Moo both stress that any reading of chapter 9 in isolation from 10–11 risks distorting Paul's actual argument, which is about covenant faithfulness and Israel's present unbelief, not primarily an abstract doctrine of individual predestination.
 
 **Historical setting.** Paul is writing to a Roman house-church congregation with both Jewish and Gentile believers, likely in the mid-to-late 50s AD, addressing real tension over Jewish unbelief in the Messiah and Gentile inclusion — this is documented as the letter's occasion by commentators across traditions (e.g., Moo, NICNT, 1996; Wright, NIB, 2002).
 
@@ -107,23 +108,23 @@ Want the word behind "vessels of wrath" (σκεῦος, Romans 9:22) or "call" (
 
 - Reads the Jacob/Esau election (9:11–13) as about *roles in salvation history and covenant service* — which son carries the covenant line — not the eternal individual destiny of Jacob and Esau as persons (Esau is not said to be damned; Malachi's "hate" targets the nation Edom, not the individual patriarch).
 - Argues Paul's whole argument in Romans 9 is defending God's right to redefine "Israel" around faith in Christ rather than ethnic descent (9:6, "not all who are descended from Israel are Israel") — a point about corporate identity and covenant membership, not a metaphysic of who gets saved.
-- Leans heavily on Romans 9:30–33: Israel's exclusion is explained by unbelief ("pursued it not by faith, but as if it were by works") — a conditional, response-based explanation that sits uneasily next to a purely unconditional-decree reading of the earlier verses.
-- Points to Romans 10:9–13, 10:21 ("All day long I held out my hands to a disobedient and obstinate people") and Romans 11:20–23 (branches broken off "because of unbelief," and able to be grafted back in "if they do not persist in unbelief") as showing the whole unit's logic is conditioned on faith and unbelief, which should govern how chapter 9's harder statements are read.
+- Leans heavily on Romans 9:30–33: Israel's exclusion is explained by unbelief ("[6 words of Romans 9:32 redacted: wording found in no public-domain Bible] as if it were by works") — a conditional, response-based explanation that sits uneasily next to a purely unconditional-decree reading of the earlier verses.
+- Points to Romans 10:9–13, 10:21 ("[9 words of Romans 10:21 redacted: wording found in no public-domain Bible] a disobedient and obstinate people") and Romans 11:20–23 (branches broken off "because of unbelief," and able to be grafted back in "if they do not persist in unbelief") as showing the whole unit's logic is conditioned on faith and unbelief, which should govern how chapter 9's harder statements are read.
 - Abasciano's monograph specifically argues Paul's use of the Genesis and Malachi texts preserves their original corporate, historical sense rather than converting them into statements about individual eternal election.
 
 **A mediating/other position worth noting:** N.T. Wright (*Romans*, New Interpreter's Bible, 2002) reads Romans 9 as fundamentally about the *covenant faithfulness of God to his purposes*, with the potter/clay and hardening language describing God's sovereign freedom in the *unfolding of redemptive history* (raising up and setting aside nations and roles for his purposes), which does not map neatly onto either the classic Calvinist individual-salvation grid or a strictly corporate-only Arminian one — Wright insists Paul's target audience and argument is about Jew-Gentile inclusion, not the mechanics of individual conversion.
 
 ## Cross-References
 
-> **BSB, Malachi 1:2–3** — "'I have loved you,' says the LORD. But you ask, 'How have You loved us?' 'Was not Esau Jacob's brother?' declares the LORD. 'Yet I have loved Jacob, but Esau I have hated, and I have turned his mountains into a wasteland...'"
+> **BSB, Malachi 1:2–3** — "'I have loved you,' says the LORD. But you ask, 'How have You loved us?' 'Was not Esau Jacob's [23 words of Malachi 1:2–3 redacted: wording found in no public-domain Bible]...'"
 
-> **BSB, Exodus 9:16** — "But indeed, for this reason I have raised you up: to show you My power, and that My name may be proclaimed in all the earth."
+> **BSB, Exodus 9:16** — "[15 words of Exodus 9:16 redacted: wording found in no public-domain Bible], and [9 words of Exodus 9:16 redacted: wording found in no public-domain Bible] earth."
 
-> **BSB, Romans 11:5–6** — "So too, at the present time there is a remnant chosen by grace. And if by grace, then it is not by works; otherwise grace would no longer be grace."
+> **BSB, Romans 11:5–6** — "[7 words of Romans 11:5 redacted: wording found in no public-domain Bible] is a remnant [16 words of Romans 11:6 redacted: wording found in no public-domain Bible] no longer be grace."
 
-> **BSB, Romans 11:22–23** — "Consider therefore the kindness and severity of God: severity to those who fell, but kindness to you, if you continue in His kindness... And if they do not persist in unbelief, they will be grafted in..."
+> **BSB, Romans 11:22–23** — "[7 words of Romans 11:22 redacted: wording found in no public-domain Bible] God: severity to those who fell, but kindness to you, if you continue in His kindness... And if they do not persist in unbelief, they will be grafted in..."
 
-> **BSB, 2 Peter 3:9** — "The Lord is not slow to keep His promise, as some understand slowness. Instead, He is patient with you, not wanting anyone to perish, but everyone to come to repentance."
+> **BSB, 2 Peter 3:9** — "[20 words of 2 Peter 3:9 redacted: wording found in no public-domain Bible] wanting anyone to perish, but everyone to come to repentance."
 
 (Verify wording against an authoritative edition.)
 

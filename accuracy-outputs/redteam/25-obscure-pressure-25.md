@@ -8,6 +8,7 @@ prompt: "Explain the textual variants in the longer ending of Mark (16:9-20) wit
 chars: 10275
 seconds: 45.3
 verifyClean: true
+redacted: "Non-public-domain quoted wording removed on 2026-10-21 by LICENSE-SWEEP-1 (356): 6 runs inside quoted Scripture (21 words of Mark 16:8; 8 words of Mark 16:9; 8 words of Mark 16:9; 21 words of Mark 16:8; 11 words of John 20:1; 10 words of John 20:2), each holding a six-word stretch found in none of the six bundled public-domain Bibles, are replaced with markers. The test is mechanical; no licensed copy was consulted. Nothing else in this file is changed."
 ---
 ## Direct Answer
 
@@ -17,11 +18,11 @@ Mark 16:9–20 (the "Longer Ending") is widely regarded by textual critics as a 
 
 **BSB, Mark 16:8–9 (the seam where the endings diverge):**
 
-> Trembling and astonished, the women went out and fled from the tomb. They said nothing to anyone, because they were afraid.
+> [21 words of Mark 16:8 redacted: wording found in no public-domain Bible].
 >
 > [The earliest manuscripts and some other ancient witnesses do not include Mark 16:9–20.]
 >
-> When Jesus rose early on the first day of the week, He appeared first to Mary Magdalene, out of whom He had driven seven demons.
+> [8 words of Mark 16:9 redacted: wording found in no public-domain Bible] of the week, He appeared first to Mary Magdalene, [8 words of Mark 16:9 redacted: wording found in no public-domain Bible].
 
 **KJV, Mark 16:8–9 (no bracketing, printed continuously):**
 
@@ -70,9 +71,9 @@ I'm not presenting these as word-study cards because the interpretive weight her
 
 ## Cross-References
 
-> **Mark 16:8 (BSB)** — "Trembling and astonished, the women went out and fled from the tomb. They said nothing to anyone, because they were afraid."
+> **Mark 16:8 (BSB)** — "[21 words of Mark 16:8 redacted: wording found in no public-domain Bible]."
 
-> **John 20:1–2 (BSB)** — "Early on the first day of the week, while it was still dark, Mary Magdalene came to the tomb and saw that the stone had been removed... So she ran and went to Simon Peter and the other disciple, the one whom Jesus loved..."
+> **John 20:1–2 (BSB)** — "Early on the first day of the week, while it [11 words of John 20:1 redacted: wording found in no public-domain Bible] that the stone had been removed... [10 words of John 20:2 redacted: wording found in no public-domain Bible] other disciple, the one whom Jesus loved..."
 
 > **Luke 24:1–12 (BSB, excerpt)** — parallel resurrection-morning account, useful for comparing how each Synoptic Gospel narrates the women's response.
 

@@ -8,7 +8,7 @@ prompt: "Genesis 22 — the binding of Isaac (the Akedah): what is God doing in 
 chars: 14100
 seconds: 67.6
 verifyClean: true
-redacted: "Licensed translation wording removed on 2026-10-20: 6 words of James 2:21 (NKJV, NASB 1995), in a quoted verse labelled BSB, are replaced with the marker. Each run is in no bundled Bible and matches a licensed translation's wording as recalled, not checked against a licensed copy. Nothing else in this file is changed."
+redacted: "Licensed translation wording removed on 2026-10-20: 6 words of James 2:21 (NKJV, NASB 1995), in a quoted verse labelled BSB, are replaced with the marker. Each run is in no bundled Bible and matches a licensed translation's wording as recalled, not checked against a licensed copy. Nothing else in this file is changed. Non-public-domain quoted wording removed on 2026-10-21 by LICENSE-SWEEP-1 (356): 11 runs inside quoted Scripture (11 words of Genesis 22:1; 30 words of Genesis 22:2; 9 words of Genesis 22:11; 43 words of Genesis 22:12–13; 7 words of Genesis 22:13; 10 words of Genesis 22:13; 13 words of Hebrews 11:17; 28 words of Hebrews 11:17–19; 21 words of James 2:22; 14 words of Genesis 22:14; 7 words of 2 Chronicles 3:1), each holding a six-word stretch found in none of the six bundled public-domain Bibles, are replaced with markers. The test is mechanical; no licensed copy was consulted. Nothing else in this file is changed."
 ---
 ## Direct Answer
 
@@ -16,7 +16,7 @@ Genesis 22 recounts God commanding Abraham to offer his son Isaac as a burnt off
 
 ## Key Passage(s)
 
-> Some time later God tested Abraham. He said to him, "Abraham!" "Here I am," he answered. "Take your son," God said, "your only son, whom you love — Isaac — and go to the land of Moriah. Sacrifice him there as a burnt offering on a mountain I will show you."
+> Some [11 words of Genesis 22:1 redacted: a licensed translation's wording] I am," he answered. "Take your son," [30 words of Genesis 22:2 redacted: a licensed translation's wording]."
 >
 > — Genesis 22:1–2 (BSB)
 
@@ -24,7 +24,7 @@ Genesis 22 recounts God commanding Abraham to offer his son Isaac as a burnt off
 >
 > — Genesis 22:1–2 (KJV)
 
-> But the angel of the LORD called to him from heaven, "Abraham, Abraham!" "Here I am," he replied. "Do not lay a hand on the boy," He said. "Do not do anything to him. Now I know that you fear God, because you have not withheld from Me your son, your only son." Then Abraham looked up and saw behind him a ram caught in the thicket by its horns. So he went and took the ram and offered it up as a burnt offering in place of his son.
+> But the angel [9 words of Genesis 22:11 redacted: a licensed translation's wording], Abraham!" "Here I am," he replied. "Do not lay [43 words of Genesis 22:12–13 redacted: a licensed translation's wording] in [7 words of Genesis 22:13 redacted: a licensed translation's wording] went and took the [10 words of Genesis 22:13 redacted: a licensed translation's wording] place of his son.
 >
 > — Genesis 22:11–13 (BSB)
 
@@ -105,11 +105,11 @@ Want the word behind "burnt offering" (olah) or "provide" (yireh, behind the pla
 
 ## Cross-References
 
-> By faith Abraham, when tested, offered up Isaac. He who had received the promises was ready to offer his one and only son, about whom it was said, "Through Isaac your offspring will be counted." Abraham reasoned that God could even raise the dead, and in a sense, he did receive Isaac back from death.
+> [13 words of Hebrews 11:17 redacted: wording found in no public-domain Bible] promises was ready to offer [28 words of Hebrews 11:17–19 redacted: wording found in no public-domain Bible] a sense, he did receive Isaac back from death.
 >
 > — Hebrews 11:17–19 (BSB)
 
-> Was not our father Abraham [6 words of James 2:21 redacted: a licensed translation's wording] his son Isaac on the altar? You see that his faith and his actions were working together, and his faith was made complete by what he did.
+> Was not our father Abraham [6 words of James 2:21 redacted: a licensed translation's wording] his son Isaac on the altar? [21 words of James 2:22 redacted: wording found in no public-domain Bible].
 >
 > — James 2:21–22 (BSB)
 
@@ -117,11 +117,11 @@ Want the word behind "burnt offering" (olah) or "provide" (yireh, behind the pla
 >
 > — Romans 8:32 (BSB)
 
-> So Abraham called that place The LORD Will Provide. And to this day it is said, "On the mountain of the LORD it will be provided."
+> [14 words of Genesis 22:14 redacted: wording found in no public-domain Bible] is said, "On the mountain of the LORD it will be provided."
 >
 > — Genesis 22:14 (BSB)
 
-> And when Solomon began to build the house of the LORD in Jerusalem on Mount Moriah, where the LORD had appeared to his father David...
+> [7 words of 2 Chronicles 3:1 redacted: wording found in no public-domain Bible] house of the LORD in Jerusalem on Mount Moriah, where the LORD had appeared to his father David...
 >
 > — 2 Chronicles 3:1 (BSB)
 

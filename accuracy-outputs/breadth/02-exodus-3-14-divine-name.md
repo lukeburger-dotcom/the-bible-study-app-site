@@ -8,6 +8,7 @@ prompt: "Exodus 3:14 — 'I AM WHO I AM': the Hebrew ehyeh asher ehyeh, how the 
 chars: 9596
 seconds: 45.5
 verifyClean: true
+redacted: "Non-public-domain quoted wording removed on 2026-10-21 by LICENSE-SWEEP-1 (356): 5 runs inside quoted Scripture (9 words of Exodus 3:13; 9 words of Exodus 3:13; 6 words of Isaiah 45:5; 8 words of John 8:58; 14 words of Exodus 3:15), each holding a six-word stretch found in none of the six bundled public-domain Bibles, are replaced with markers. The test is mechanical; no licensed copy was consulted. Nothing else in this file is changed."
 ---
 ## Direct Answer
 
@@ -15,7 +16,7 @@ In Exodus 3:14, when Moses asks for God's name, God responds with the Hebrew phr
 
 ## Key Passage(s)
 
-> Then Moses said to God, "Suppose I go to the Israelites and say to them, 'The God of your fathers has sent me to you,' and they ask me, 'What is His name?' What shall I tell them?" God said to Moses, "I AM WHO I AM. This is what you are to say to the Israelites: 'I AM has sent me to you.'"
+> [9 words of Exodus 3:13 redacted: wording found in no public-domain Bible] the Israelites and say to them, 'The God of your fathers has sent me to you,' and they ask me, 'What is [9 words of Exodus 3:13 redacted: wording found in no public-domain Bible] to Moses, "I AM WHO I AM. This is what you are to say to the Israelites: 'I AM has sent me to you.'"
 > — Exodus 3:13–14 (BSB)
 
 > And Moses said unto God, Behold, when I come unto the children of Israel, and shall say unto them, The God of your fathers hath sent me unto you; and they shall say to me, What is his name? what shall I say unto them? And God said unto Moses, I AM THAT I AM: and he said, Thus shalt thou say unto the children of Israel, I AM hath sent me unto you.
@@ -85,19 +86,19 @@ These readings are not always mutually exclusive; several commentators (e.g., Fr
 
 ## Cross-References
 
-> "I am the LORD, and there is no other; there is no God besides Me."
+> "I am the LORD, and there is no [6 words of Isaiah 45:5 redacted: a licensed translation's wording] Me."
 > — Isaiah 45:5 (BSB)
 
 > "I am Alpha and Omega, the beginning and the ending, saith the Lord, which is, and which was, and which is to come, the Almighty."
 > — Revelation 1:8 (KJV)
 
-> Jesus said to them, "Truly, truly, I tell you, before Abraham was born, I am!"
+> Jesus said to them, "Truly, [8 words of John 8:58 redacted: wording found in no public-domain Bible], I am!"
 > — John 8:58 (BSB)
 
 > "I will be their God, and they shall be my people."
 > — Jeremiah 31:33 (KJV, context of covenant presence)
 
-> "This is My name forever, the name to be remembered from generation to generation."
+> "[14 words of Exodus 3:15 redacted: wording found in no public-domain Bible]."
 > — Exodus 3:15 (BSB)
 
 ## Sources

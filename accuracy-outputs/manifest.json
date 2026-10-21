@@ -5,7 +5,7 @@
   "localGitSha": "7a50f2edc8a956eb5475f4c7c4368208e89b8e2f",
   "originMainSha": "7a50f2edc8a956eb5475f4c7c4368208e89b8e2f",
   "note": "originMainSha approximates the deployed backend (Railway deploys origin/main on push); confirm against the Railway dashboard if exactness matters.",
-  "redacted": "Licensed translation wording removed on 2026-10-20: in the verify details' before texts, core 09's James 2:24–25 (22 words, NASB 1995), James 2:21 (11, NKJV and NASB 1995), James 2:22 (8, NKJV), Ephesians 2:8 (10, CSB) and Genesis 15:6 (12, CSB); breadth 01's James 2:21 (6, NKJV and NASB 1995); and redteam 17's Isaiah 7:14 (21) and Matthew 1:23 (12), NASB 2020, are replaced with markers. Each run is in no bundled Bible and matches a licensed translation's wording as recalled, not checked against a licensed copy. Nothing else in this file is changed.",
+  "redacted": "Licensed translation wording removed on 2026-10-20: in the verify details' before texts, core 09's James 2:24–25 (22 words, NASB 1995), James 2:21 (11, NKJV and NASB 1995), James 2:22 (8, NKJV), Ephesians 2:8 (10, CSB) and Genesis 15:6 (12, CSB); breadth 01's James 2:21 (6, NKJV and NASB 1995); and redteam 17's Isaiah 7:14 (21) and Matthew 1:23 (12), NASB 2020, are replaced with markers. Each run is in no bundled Bible and matches a licensed translation's wording as recalled, not checked against a licensed copy. Nothing else in this file is changed. Non-public-domain quoted wording removed on 2026-10-21 by LICENSE-SWEEP-1 (356): 56 runs inside quoted Scripture (23 words of 1 Corinthians 13:8; 28 words of Ephesians 4:11–12; 9 words of 1 John 4:1; 10 words of 1 Peter 2:25; 10 words of Psalm 28:7; 8 words of James 2:25; 9 words of Genesis 22:1; 8 words of Genesis 22:11; 13 words of Hebrews 11:17; 10 words of Hebrews 11:17; 13 words of James 2:22; 14 words of Genesis 22:14; 7 words of 2 Chronicles 3:1; 6 words of Isaiah 45:5; 14 words of Exodus 3:15; 14 words of Leviticus 16:30; 8 words of Leviticus 16:7; 9 words of Leviticus 16:8; 10 words of Leviticus 16:20; 10 words of Leviticus 16:21; 7 words of Deuteronomy 6:5; 12 words of Mark 12:28; 25 words of Judges 11:30–31; 14 words of Judges 11:34; 7 words of Judges 11:39; 11 words of Judges 11:39; 10 words of Leviticus 18:21; 17 words of Deuteronomy 12:31; 19 words of Proverbs 20:25; 21 words of Ecclesiastes 3:13; 9 words of Luke 22:20; 17 words of Ezekiel 36:26; 18 words of Matthew 24:1; 11 words of Matthew 24:34; 7 words of Matthew 24:36; 12 words of Matthew 24:36; 6 words of Luke 21:20; 22 words of Matthew 24:15; 25 words of Joel 3:15–16; 6 words of Matthew 24:21; 7 words of Matthew 24:21; 12 words of Matthew 24:36; 7 words of Matthew 25:13; 9 words of Hebrews 6:4; 21 words of Hebrews 6:1; 13 words of Hebrews 6:7; 15 words of Hebrews 6:7; 19 words of Hebrews 6:9; 7 words of Isaiah 7:14; 12 words of Galatians 4:4; 9 words of Matthew 1:22; 8 words of Luke 1:27; 8 words of John 1:14; 11 words of John 1:14; 18 words of Colossians 1:15–16; 15 words of John 1:18), each holding a six-word stretch found in none of the six bundled public-domain Bibles, are replaced with markers. The test is mechanical; no licensed copy was consulted. Nothing else in this file is changed. The runner's recheck on 2026-10-21 removed 2 more runs (8 words of Genesis 22:2; 8 words of John 8:58) that the sweep could not see (nested quote marks, a capitalised Verse, or a reference over 80 characters away).",
   "modelConfigured": "claude-sonnet-5 (backend ANTHROPIC_MODEL default; prod env may override)",
   "qaBypassUsed": false,
   "groups": {
@@ -182,15 +182,15 @@
         },
         {
           "type": "quote_substituted",
-          "detail": "1 Corinthians 13:8–13 (BSB) — similarity 88% → substituted with bundled text · before: \"Love never fails. But where there are prophecies, they will pass away; where there are tongues, they will cease; where there is knowledge, it will pass away. Fo…\" · after: \"Love never fails. But where there are prophecies, they will cease; where there are tongues, they will be restrained; where there is knowledge, it will be dismis…\""
+          "detail": "1 Corinthians 13:8–13 (BSB) — similarity 88% → substituted with bundled text · before: \"Love never fails. But where [23 words of 1 Corinthians 13:8 redacted: wording found in no public-domain Bible]…\" · after: \"Love never fails. But where there are prophecies, they will cease; where there are tongues, they will be restrained; where there is knowledge, it will be dismis…\""
         },
         {
           "type": "quote_substituted",
-          "detail": "Ephesians 4:11–13 (BSB) — similarity 76% → substituted with bundled text · before: \"And He Himself gave the apostles, the prophets, the evangelists, the pastors and teachers, to equip the saints for the work of ministry, to build up the body of…\" · after: \"And it was He who gave some to be apostles, some to be prophets, some to be evangelists, and some to be pastors and teachers, to equip the saints for works of m…\""
+          "detail": "Ephesians 4:11–13 (BSB) — similarity 76% → substituted with bundled text · before: \"[28 words of Ephesians 4:11–12 redacted: a licensed translation's wording] of…\" · after: \"And it was He who gave some to be apostles, some to be prophets, some to be evangelists, and some to be pastors and teachers, to equip the saints for works of m…\""
         },
         {
           "type": "quote_substituted",
-          "detail": "1 John 4:1 (BSB) — similarity 95% → substituted with bundled text · before: \"Beloved, do not believe every spirit, but test the spirits to see whether they are from God, because many false prophets have gone out into the world.\" · after: \"Beloved, do not believe every spirit, but test the spirits to see whether they are from God. For many false prophets have gone out into the world.\""
+          "detail": "1 John 4:1 (BSB) — similarity 95% → substituted with bundled text · before: \"Beloved, do not believe every spirit, but test the spirits to see [9 words of 1 John 4:1 redacted: a licensed translation's wording] have gone out into the world.\" · after: \"Beloved, do not believe every spirit, but test the spirits to see whether they are from God. For many false prophets have gone out into the world.\""
         }
       ],
       "httpStatus": 200
@@ -273,11 +273,11 @@
         },
         {
           "type": "quote_substituted",
-          "detail": "1 Peter 2:25 (BSB) — similarity 78% → substituted with bundled text · before: \"\"For you were continually straying like sheep, but now you have returned to the Shepherd and Overseer of your souls.\"\" · after: \"For “you were like sheep going astray,” but now you have returned to the Shepherd and Overseer of your souls.\""
+          "detail": "1 Peter 2:25 (BSB) — similarity 78% → substituted with bundled text · before: \"\"[10 words of 1 Peter 2:25 redacted: a licensed translation's wording] have returned to the Shepherd and Overseer of your souls.\"\" · after: \"For “you were like sheep going astray,” but now you have returned to the Shepherd and Overseer of your souls.\""
         },
         {
           "type": "quote_substituted",
-          "detail": "Psalm 28:7 (BSB) — similarity 96% → substituted with bundled text · before: \"\"The LORD is my strength and shield; my heart trusts in Him, and I am helped.\"\" · after: \"The LORD is my strength and my shield; my heart trusts in Him, and I am helped. Therefore my heart rejoices, and I give thanks to Him with my song.\""
+          "detail": "Psalm 28:7 (BSB) — similarity 96% → substituted with bundled text · before: \"\"The [10 words of Psalm 28:7 redacted: a licensed translation's wording] Him, and I am helped.\"\" · after: \"The LORD is my strength and my shield; my heart trusts in Him, and I am helped. Therefore my heart rejoices, and I give thanks to Him with my song.\""
         }
       ],
       "httpStatus": 200
@@ -316,7 +316,7 @@
         },
         {
           "type": "quote_substituted",
-          "detail": "James 2:24–25 (BSB) — similarity 77% → substituted with bundled text · before: \"[22 words of James 2:24–25 redacted: a licensed translation's wording] prostitute also justified by works when she welcomed the sp…\" · after: \"As you can see, a man is justified by his deeds and not by faith alone. In the same way, was not even Rahab the prostitute justified by her actions when she wel…\""
+          "detail": "James 2:24–25 (BSB) — similarity 77% → substituted with bundled text · before: \"[22 words of James 2:24–25 redacted: a licensed translation's wording] prostitute also [8 words of James 2:25 redacted: wording found in no public-domain Bible]…\" · after: \"As you can see, a man is justified by his deeds and not by faith alone. In the same way, was not even Rahab the prostitute justified by her actions when she wel…\""
         },
         {
           "type": "quote_substituted",
@@ -406,27 +406,27 @@
         },
         {
           "type": "quote_substituted",
-          "detail": "Genesis 22:1–2 (BSB) — similarity 84% → substituted with bundled text · before: \"Some time later God tested Abraham. He said to him, \"Abraham!\" \"Here I am,\" he answered. \"Take your son,\" God said, \"your only son, whom you love — Isaac — and …\" · after: \"Some time later God tested Abraham and said to him, “Abraham!” “Here I am,” he answered. “Take your son,” God said, “your only son Isaac, whom you love, and go …\""
+          "detail": "Genesis 22:1–2 (BSB) — similarity 84% → substituted with bundled text · before: \"Some [9 words of Genesis 22:1 redacted: a licensed translation's wording], \"Abraham!\" \"Here I am,\" he answered. \"Take your son,\" God said, \"[8 words of Genesis 22:2 redacted: a licensed translation's wording] …\" · after: \"Some time later God tested Abraham and said to him, “Abraham!” “Here I am,” he answered. “Take your son,” God said, “your only son Isaac, whom you love, and go …\""
         },
         {
           "type": "quote_substituted",
-          "detail": "Genesis 22:11–13 (BSB) — similarity 79% → substituted with bundled text · before: \"But the angel of the LORD called to him from heaven, \"Abraham, Abraham!\" \"Here I am,\" he replied. \"Do not lay a hand on the boy,\" He said. \"Do not do anything t…\" · after: \"Just then the angel of the LORD called out to him from heaven, “Abraham, Abraham!” “Here I am,” he replied. “Do not lay a hand on the boy or do anything to him,…\""
+          "detail": "Genesis 22:11–13 (BSB) — similarity 79% → substituted with bundled text · before: \"But the angel [8 words of Genesis 22:11 redacted: a licensed translation's wording], \"Abraham, Abraham!\" \"Here I am,\" he replied. \"Do not lay a hand on the boy,\" He said. \"Do not do anything t…\" · after: \"Just then the angel of the LORD called out to him from heaven, “Abraham, Abraham!” “Here I am,” he replied. “Do not lay a hand on the boy or do anything to him,…\""
         },
         {
           "type": "quote_substituted",
-          "detail": "Hebrews 11:17–19 (BSB) — similarity 84% → substituted with bundled text · before: \"By faith Abraham, when tested, offered up Isaac. He who had received the promises was ready to offer his one and only son, about whom it was said, \"Through Isaa…\" · after: \"By faith Abraham, when he was tested, offered up Isaac on the altar. He who had received the promises was ready to offer his one and only son, even though God h…\""
+          "detail": "Hebrews 11:17–19 (BSB) — similarity 84% → substituted with bundled text · before: \"[13 words of Hebrews 11:17 redacted: wording found in no public-domain Bible] promises was ready to offer [10 words of Hebrews 11:17 redacted: wording found in no public-domain Bible], \"Through Isaa…\" · after: \"By faith Abraham, when he was tested, offered up Isaac on the altar. He who had received the promises was ready to offer his one and only son, even though God h…\""
         },
         {
           "type": "quote_substituted",
-          "detail": "James 2:21–22 (BSB) — similarity 74% → substituted with bundled text · before: \"Was not our father Abraham [6 words of James 2:21 redacted: a licensed translation's wording] his son Isaac on the altar? You see that his faith and his actions were working together, and his …\" · after: \"Was not our father Abraham justified by what he did when he offered his son Isaac on the altar? You see that his faith was working with his actions, and his fai…\""
+          "detail": "James 2:21–22 (BSB) — similarity 74% → substituted with bundled text · before: \"Was not our father Abraham [6 words of James 2:21 redacted: a licensed translation's wording] his son Isaac on the altar? [13 words of James 2:22 redacted: wording found in no public-domain Bible] …\" · after: \"Was not our father Abraham justified by what he did when he offered his son Isaac on the altar? You see that his faith was working with his actions, and his fai…\""
         },
         {
           "type": "quote_substituted",
-          "detail": "Genesis 22:14 (BSB) — similarity 95% → substituted with bundled text · before: \"So Abraham called that place The LORD Will Provide. And to this day it is said, \"On the mountain of the LORD it will be provided.\"\" · after: \"And Abraham called that place The LORD Will Provide. So to this day it is said, “On the mountain of the LORD it will be provided.”\""
+          "detail": "Genesis 22:14 (BSB) — similarity 95% → substituted with bundled text · before: \"[14 words of Genesis 22:14 redacted: wording found in no public-domain Bible] is said, \"On the mountain of the LORD it will be provided.\"\" · after: \"And Abraham called that place The LORD Will Provide. So to this day it is said, “On the mountain of the LORD it will be provided.”\""
         },
         {
           "type": "quote_substituted",
-          "detail": "2 Chronicles 3:1 (BSB) — similarity 83% → substituted with bundled text · before: \"And when Solomon began to build the house of the LORD in Jerusalem on Mount Moriah, where the LORD had appeared to his father David...\" · after: \"Then Solomon began to build the house of the LORD in Jerusalem on Mount Moriah, where the LORD had appeared to his father David. This was the place that David h…\""
+          "detail": "2 Chronicles 3:1 (BSB) — similarity 83% → substituted with bundled text · before: \"[7 words of 2 Chronicles 3:1 redacted: wording found in no public-domain Bible] house of the LORD in Jerusalem on Mount Moriah, where the LORD had appeared to his father David...\" · after: \"Then Solomon began to build the house of the LORD in Jerusalem on Mount Moriah, where the LORD had appeared to his father David. This was the place that David h…\""
         }
       ],
       "httpStatus": 200
@@ -457,15 +457,15 @@
         },
         {
           "type": "quote_substituted",
-          "detail": "Isaiah 45:5 (BSB) — similarity 85% → substituted with bundled text · before: \"\"I am the LORD, and there is no other; there is no God besides Me.\"\" · after: \"I am the LORD, and there is no other; there is no God but Me. I will equip you for battle, though you have not known Me,\""
+          "detail": "Isaiah 45:5 (BSB) — similarity 85% → substituted with bundled text · before: \"\"I am the LORD, and there is no [6 words of Isaiah 45:5 redacted: a licensed translation's wording] Me.\"\" · after: \"I am the LORD, and there is no other; there is no God but Me. I will equip you for battle, though you have not known Me,\""
         },
         {
           "type": "quote_substituted",
-          "detail": "John 8:58 (BSB) — similarity 54% → substituted with bundled text · before: \"Jesus said to them, \"Truly, truly, I tell you, before Abraham was born, I am!\"\" · after: \"“Truly, truly, I tell you,” Jesus declared, “before Abraham was born, I am!”\""
+          "detail": "John 8:58 (BSB) — similarity 54% → substituted with bundled text · before: \"Jesus said to them, \"Truly, [8 words of John 8:58 redacted: wording found in no public-domain Bible], I am!\"\" · after: \"“Truly, truly, I tell you,” Jesus declared, “before Abraham was born, I am!”\""
         },
         {
           "type": "quote_substituted",
-          "detail": "Exodus 3:15 (BSB) — similarity 63% → substituted with bundled text · before: \"\"This is My name forever, the name to be remembered from generation to generation.\"\" · after: \"God also told Moses, “Say to the Israelites, ‘The LORD, the God of your fathers—the God of Abraham, the God of Isaac, and the God of Jacob—has sent me to you.’ …\""
+          "detail": "Exodus 3:15 (BSB) — similarity 63% → substituted with bundled text · before: \"\"[14 words of Exodus 3:15 redacted: wording found in no public-domain Bible].\"\" · after: \"God also told Moses, “Say to the Israelites, ‘The LORD, the God of your fathers—the God of Abraham, the God of Isaac, and the God of Jacob—has sent me to you.’ …\""
         }
       ],
       "httpStatus": 200
@@ -484,15 +484,15 @@
       "verifyFlags": [
         {
           "type": "quote_substituted",
-          "detail": "Leviticus 16:30 (BSB) — similarity 66% → substituted with bundled text · before: \"On this day atonement will be made for you to cleanse you. Then, before the LORD, you will be clean from all your sins.\" · after: \"because on this day atonement will be made for you to cleanse you, and you will be clean from all your sins before the LORD.\""
+          "detail": "Leviticus 16:30 (BSB) — similarity 66% → substituted with bundled text · before: \"On this day atonement will be made [14 words of Leviticus 16:30 redacted: wording found in no public-domain Bible] all your sins.\" · after: \"because on this day atonement will be made for you to cleanse you, and you will be clean from all your sins before the LORD.\""
         },
         {
           "type": "quote_substituted",
-          "detail": "Leviticus 16:7–8 (BSB) — similarity 82% → substituted with bundled text · before: \"Then he shall take the two goats, and set them before the LORD at the door of the Tent of Meeting. And Aaron shall cast lots over the two goats: one lot for the…\" · after: \"Then he shall take the two goats and present them before the LORD at the entrance to the Tent of Meeting. After Aaron casts lots for the two goats, one for the …\""
+          "detail": "Leviticus 16:7–8 (BSB) — similarity 82% → substituted with bundled text · before: \"Then he shall take the two [8 words of Leviticus 16:7 redacted: wording found in no public-domain Bible] the door of the Tent of Meeting. [9 words of Leviticus 16:8 redacted: wording found in no public-domain Bible]: one lot for the…\" · after: \"Then he shall take the two goats and present them before the LORD at the entrance to the Tent of Meeting. After Aaron casts lots for the two goats, one for the …\""
         },
         {
           "type": "quote_substituted",
-          "detail": "Leviticus 16:20–21 (BSB) — similarity 78% → substituted with bundled text · before: \"When Aaron has finished making atonement for the Most Holy Place, the Tent of Meeting, and the altar, he shall present the live goat. He is to lay both hands on…\" · after: \"When Aaron has finished purifying the Most Holy Place, the Tent of Meeting, and the altar, he is to bring forward the live goat. Then he is to lay both hands on…\""
+          "detail": "Leviticus 16:20–21 (BSB) — similarity 78% → substituted with bundled text · before: \"[10 words of Leviticus 16:20 redacted: wording found in no public-domain Bible] Place, the Tent of Meeting, and the altar, he [10 words of Leviticus 16:21 redacted: wording found in no public-domain Bible] hands on…\" · after: \"When Aaron has finished purifying the Most Holy Place, the Tent of Meeting, and the altar, he is to bring forward the live goat. Then he is to lay both hands on…\""
         }
       ],
       "httpStatus": 200
@@ -519,11 +519,11 @@
         },
         {
           "type": "quote_substituted",
-          "detail": "Deuteronomy 6:4–9 (BSB) — similarity 88% → substituted with bundled text · before: \"Hear, O Israel: The LORD our God, the LORD is one. Love the LORD your God with all your heart and with all your soul and with all your strength. And these words…\" · after: \"Hear, O Israel: The LORD our God, the LORD is One. And you shall love the LORD your God with all your heart and with all your soul and with all your strength. T…\""
+          "detail": "Deuteronomy 6:4–9 (BSB) — similarity 88% → substituted with bundled text · before: \"Hear, O Israel: The LORD our God, the LORD is one. Love the LORD your God with all your heart and with all your soul and [7 words of Deuteronomy 6:5 redacted: wording found in no public-domain Bible]…\" · after: \"Hear, O Israel: The LORD our God, the LORD is One. And you shall love the LORD your God with all your heart and with all your soul and with all your strength. T…\""
         },
         {
           "type": "quote_substituted",
-          "detail": "Mark 12:28–30 (KJV) — similarity 86% → substituted with bundled text · before: \"Then one of the scribes came and heard them reasoning together, and perceiving that he had answered them well, asked him, \"Which is the first commandment of all…\" · after: \"And one of the scribes came, and having heard them reasoning together, and perceiving that he had answered them well, asked him, Which is the first commandment …\""
+          "detail": "Mark 12:28–30 (KJV) — similarity 86% → substituted with bundled text · before: \"[12 words of Mark 12:28 redacted: wording found in no public-domain Bible] perceiving that he had answered them well, asked him, \"Which is the first commandment of all…\" · after: \"And one of the scribes came, and having heard them reasoning together, and perceiving that he had answered them well, asked him, Which is the first commandment …\""
         }
       ],
       "httpStatus": 200
@@ -554,7 +554,7 @@
         },
         {
           "type": "quote_substituted",
-          "detail": "Judges 11:30–31 (BSB) — similarity 79% → substituted with bundled text · before: \"\"And Jephthah made a vow to the LORD: 'If You will indeed deliver the Ammonites into my hand, then whoever comes out of the doors of my house to meet me when I …\" · after: \"Jephthah made this vow to the LORD: “If indeed You will deliver the Ammonites into my hand, then whatever comes out the door of my house to greet me on my trium…\""
+          "detail": "Judges 11:30–31 (BSB) — similarity 79% → substituted with bundled text · before: \"\"[25 words of Judges 11:30–31 redacted: a licensed translation's wording] of my house to meet me when I …\" · after: \"Jephthah made this vow to the LORD: “If indeed You will deliver the Ammonites into my hand, then whatever comes out the door of my house to greet me on my trium…\""
         },
         {
           "type": "quote_substituted",
@@ -562,23 +562,23 @@
         },
         {
           "type": "quote_substituted",
-          "detail": "Judges 11:34–35 (BSB) — similarity 83% → substituted with bundled text · before: \"\"So Jephthah returned to his home at Mizpah, and there was his daughter coming out to meet him with tambourines and dancing! She was his only child; he had no s…\" · after: \"And when Jephthah returned home to Mizpah, there was his daughter coming out to meet him with tambourines and dancing! She was his only child; he had no son or …\""
+          "detail": "Judges 11:34–35 (BSB) — similarity 83% → substituted with bundled text · before: \"\"[14 words of Judges 11:34 redacted: wording found in no public-domain Bible] out to meet him with tambourines and dancing! She was his only child; he had no s…\" · after: \"And when Jephthah returned home to Mizpah, there was his daughter coming out to meet him with tambourines and dancing! She was his only child; he had no son or …\""
         },
         {
           "type": "quote_substituted",
-          "detail": "Judges 11:39–40 (BSB) — similarity 90% → substituted with bundled text · before: \"\"After the two months, she returned to her father, and he did to her as he had vowed. And she had never had relations with a man. So there arose a custom in Isr…\" · after: \"After two months, she returned to her father, and he did to her as he had vowed. And she had never had relations with a man. So it has become a custom in Israel…\""
+          "detail": "Judges 11:39–40 (BSB) — similarity 90% → substituted with bundled text · before: \"\"[7 words of Judges 11:39 redacted: wording found in no public-domain Bible] her father, and he did to her as he had vowed. And she had never had [11 words of Judges 11:39 redacted: wording found in no public-domain Bible]…\" · after: \"After two months, she returned to her father, and he did to her as he had vowed. And she had never had relations with a man. So it has become a custom in Israel…\""
         },
         {
           "type": "quote_substituted",
-          "detail": "Leviticus 18:21 (BSB) — similarity 90% → substituted with bundled text · before: \"\"You must not give any of your children to be sacrificed to Molech, and so profane the name of your God. I am the LORD.\"\" · after: \"You must not give any of your children to be sacrificed to Molech, for you must not profane the name of your God. I am the LORD.\""
+          "detail": "Leviticus 18:21 (BSB) — similarity 90% → substituted with bundled text · before: \"\"You must not give any of your children [10 words of Leviticus 18:21 redacted: wording found in no public-domain Bible] of your God. I am the LORD.\"\" · after: \"You must not give any of your children to be sacrificed to Molech, for you must not profane the name of your God. I am the LORD.\""
         },
         {
           "type": "quote_substituted",
-          "detail": "Deuteronomy 12:31 (BSB) — similarity 60% → substituted with bundled text · before: \"\"You must not worship the LORD your God in their way, because in worshiping their gods, they even burn their sons and daughters in the fire.\"\" · after: \"You must not worship the LORD your God in this way, because they practice for their gods every abomination which the LORD hates. They even burn their sons and d…\""
+          "detail": "Deuteronomy 12:31 (BSB) — similarity 60% → substituted with bundled text · before: \"\"You must not worship [17 words of Deuteronomy 12:31 redacted: wording found in no public-domain Bible] and daughters in the fire.\"\" · after: \"You must not worship the LORD your God in this way, because they practice for their gods every abomination which the LORD hates. They even burn their sons and d…\""
         },
         {
           "type": "quote_substituted",
-          "detail": "Proverbs 20:25 (BSB) — similarity 67% → substituted with bundled text · before: \"\"It is a snare for a man to say rashly, 'It is holy,' and only later to reconsider his vows.\"\" · after: \"It is a trap for a man to dedicate something rashly, only later to reconsider his vows.\""
+          "detail": "Proverbs 20:25 (BSB) — similarity 67% → substituted with bundled text · before: \"\"[19 words of Proverbs 20:25 redacted: a licensed translation's wording] vows.\"\" · after: \"It is a trap for a man to dedicate something rashly, only later to reconsider his vows.\""
         }
       ],
       "httpStatus": 200
@@ -676,7 +676,7 @@
         },
         {
           "type": "quote_substituted",
-          "detail": "Ecclesiastes 3:12–14 (KJV) — similarity 73% → substituted with bundled text · before: \"I know that there is nothing better for them than to rejoice and to do good in their lives. That everyone may eat and drink, and enjoy the good of all his labor…\" · after: \"I know that there is no good in them, but for a man to rejoice, and to do good in his life. And also that every man should eat and drink, and enjoy the good of …\""
+          "detail": "Ecclesiastes 3:12–14 (KJV) — similarity 73% → substituted with bundled text · before: \"I know that there is nothing better for them than to rejoice [21 words of Ecclesiastes 3:13 redacted: a licensed translation's wording]…\" · after: \"I know that there is no good in them, but for a man to rejoice, and to do good in his life. And also that every man should eat and drink, and enjoy the good of …\""
         }
       ],
       "httpStatus": 200
@@ -752,7 +752,7 @@
         },
         {
           "type": "quote_substituted",
-          "detail": "Luke 22:20 (BSB) — similarity 80% → substituted with bundled text · before: \"This cup is the new covenant in My blood, poured out for you.\" · after: \"In the same way, after supper He took the cup, saying, “This cup is the new covenant in My blood, which is poured out for you.\""
+          "detail": "Luke 22:20 (BSB) — similarity 80% → substituted with bundled text · before: \"This cup is the [9 words of Luke 22:20 redacted: wording found in no public-domain Bible].\" · after: \"In the same way, after supper He took the cup, saying, “This cup is the new covenant in My blood, which is poured out for you.\""
         }
       ],
       "httpStatus": 200
@@ -779,7 +779,7 @@
         },
         {
           "type": "quote_substituted",
-          "detail": "Ezekiel 36:26–27 (BSB) — similarity 75% → substituted with bundled text · before: \"\"I will give you a new heart and put a new spirit within you; I will remove the heart of stone from your flesh and give you a heart of flesh. And I will put My …\" · after: \"I will give you a new heart and put a new spirit within you; I will remove your heart of stone and give you a heart of flesh. And I will put My Spirit within yo…\""
+          "detail": "Ezekiel 36:26–27 (BSB) — similarity 75% → substituted with bundled text · before: \"\"I will give you a new heart and put a new spirit [17 words of Ezekiel 36:26 redacted: a licensed translation's wording] of flesh. And I will put My …\" · after: \"I will give you a new heart and put a new spirit within you; I will remove your heart of stone and give you a heart of flesh. And I will put My Spirit within yo…\""
         },
         {
           "type": "quote_substituted",
@@ -884,39 +884,39 @@
         },
         {
           "type": "quote_substituted",
-          "detail": "Matthew 24:1–3 (BSB) — similarity 88% → substituted with bundled text · before: \"\"As Jesus was leaving the temple courts and walking away, His disciples came up to point out its buildings. 'Do you see all these things?' He replied. 'Truly I …\" · after: \"As Jesus left the temple and was walking away, His disciples came up to Him to point out its buildings. “Do you see all these things?” He replied. “Truly I tell…\""
+          "detail": "Matthew 24:1–3 (BSB) — similarity 88% → substituted with bundled text · before: \"\"As [18 words of Matthew 24:1 redacted: wording found in no public-domain Bible]. 'Do you see all these things?' He replied. 'Truly I …\" · after: \"As Jesus left the temple and was walking away, His disciples came up to Him to point out its buildings. “Do you see all these things?” He replied. “Truly I tell…\""
         },
         {
           "type": "quote_substituted",
-          "detail": "Matthew 24:34 (BSB) — similarity 90% → substituted with bundled text · before: \"\"Truly I tell you, this generation will certainly not pass away until all these things have happened.\"\" · after: \"Truly I tell you, this generation will not pass away until all these things have happened.\""
+          "detail": "Matthew 24:34 (BSB) — similarity 90% → substituted with bundled text · before: \"\"Truly I [11 words of Matthew 24:34 redacted: a licensed translation's wording] these things have happened.\"\" · after: \"Truly I tell you, this generation will not pass away until all these things have happened.\""
         },
         {
           "type": "quote_substituted",
-          "detail": "Matthew 24:36 (BSB) — similarity 58% → substituted with bundled text · before: \"\"But concerning that day and hour no one knows, not even the angels of heaven, nor the Son, but the Father alone.\"\" · after: \"No one knows about that day or hour, not even the angels in heaven, nor the Son, but only the Father.\""
+          "detail": "Matthew 24:36 (BSB) — similarity 58% → substituted with bundled text · before: \"\"[7 words of Matthew 24:36 redacted: a licensed translation's wording] one knows, not [12 words of Matthew 24:36 redacted: a licensed translation's wording].\"\" · after: \"No one knows about that day or hour, not even the angels in heaven, nor the Son, but only the Father.\""
         },
         {
           "type": "quote_substituted",
-          "detail": "Luke 21:20 (BSB) — similarity 88% → substituted with bundled text · before: \"\"But when you see Jerusalem surrounded by armies, then know that its desolation is near.\"\" · after: \"But when you see Jerusalem surrounded by armies, you will know that her desolation is near.\""
+          "detail": "Luke 21:20 (BSB) — similarity 88% → substituted with bundled text · before: \"\"But when you see Jerusalem surrounded by armies, then [6 words of Luke 21:20 redacted: a licensed translation's wording].\"\" · after: \"But when you see Jerusalem surrounded by armies, you will know that her desolation is near.\""
         },
         {
           "type": "quote_substituted",
-          "detail": "Matthew 24:15 (BSB) — similarity 77% → substituted with bundled text · before: \"\"Therefore, when you see standing in the holy place 'the abomination that causes desolation,' spoken of through the prophet Daniel—let the reader understand—\"\" · after: \"So when you see standing in the holy place ‘the abomination of desolation,’ described by the prophet Daniel (let the reader understand),\""
+          "detail": "Matthew 24:15 (BSB) — similarity 77% → substituted with bundled text · before: \"\"[22 words of Matthew 24:15 redacted: wording found in no public-domain Bible] reader understand—\"\" · after: \"So when you see standing in the holy place ‘the abomination of desolation,’ described by the prophet Daniel (let the reader understand),\""
         },
         {
           "type": "quote_substituted",
-          "detail": "Joel 3:15–16 (BSB) — similarity 65% → substituted with bundled text · before: \"\"Sun and moon grow dark, and the stars diminish their brightness. The LORD roars from Zion and thunders from Jerusalem, and the heavens and the earth quake. But…\" · after: \"The sun and moon will grow dark, and the stars will no longer shine. The LORD will roar from Zion and raise His voice from Jerusalem; heaven and earth will trem…\""
+          "detail": "Joel 3:15–16 (BSB) — similarity 65% → substituted with bundled text · before: \"\"Sun and moon [25 words of Joel 3:15–16 redacted: wording found in no public-domain Bible]…\" · after: \"The sun and moon will grow dark, and the stars will no longer shine. The LORD will roar from Zion and raise His voice from Jerusalem; heaven and earth will trem…\""
         },
         {
           "type": "quote_substituted",
-          "detail": "Matthew 24:21 (BSB) — similarity 87% → substituted with bundled text · before: \"\"For then there will be great tribulation, unmatched from the beginning of the world until now, and never to be equaled again.\"\" · after: \"For at that time there will be great tribulation, unmatched from the beginning of the world until now, and never to be seen again.\""
+          "detail": "Matthew 24:21 (BSB) — similarity 87% → substituted with bundled text · before: \"\"For [6 words of Matthew 24:21 redacted: wording found in no public-domain Bible], unmatched from the beginning of the world until [7 words of Matthew 24:21 redacted: wording found in no public-domain Bible].\"\" · after: \"For at that time there will be great tribulation, unmatched from the beginning of the world until now, and never to be seen again.\""
         },
         {
           "type": "quote_substituted",
-          "detail": "Matthew 24:36 (BSB) — similarity 58% → substituted with bundled text · before: \"\"But of that day and hour no one knows, not even the angels of heaven, nor the Son, but the Father alone.\"\" · after: \"No one knows about that day or hour, not even the angels in heaven, nor the Son, but only the Father.\""
+          "detail": "Matthew 24:36 (BSB) — similarity 58% → substituted with bundled text · before: \"\"But of that day and hour no one knows, not [12 words of Matthew 24:36 redacted: a licensed translation's wording].\"\" · after: \"No one knows about that day or hour, not even the angels in heaven, nor the Son, but only the Father.\""
         },
         {
           "type": "quote_substituted",
-          "detail": "Matthew 25:13 (BSB) — similarity 86% → substituted with bundled text · before: \"\"So then, keep watch, because you do not know the day or the hour.\"\" · after: \"Therefore keep watch, because you do not know the day or the hour.\""
+          "detail": "Matthew 25:13 (BSB) — similarity 86% → substituted with bundled text · before: \"\"[7 words of Matthew 25:13 redacted: wording found in no public-domain Bible] not know the day or the hour.\"\" · after: \"Therefore keep watch, because you do not know the day or the hour.\""
         }
       ],
       "httpStatus": 200
@@ -983,19 +983,19 @@
         },
         {
           "type": "quote_substituted",
-          "detail": "Hebrews 6:4–6 (BSB) — similarity 86% → substituted with bundled text · before: \"It is impossible for those who were once enlightened, who have tasted the heavenly gift, who have shared in the Holy Spirit, who have tasted the goodness of the…\" · after: \"It is impossible for those who have once been enlightened, who have tasted the heavenly gift, who have shared in the Holy Spirit, who have tasted the goodness o…\""
+          "detail": "Hebrews 6:4–6 (BSB) — similarity 86% → substituted with bundled text · before: \"It is impossible for [9 words of Hebrews 6:4 redacted: wording found in no public-domain Bible] heavenly gift, who have shared in the Holy Spirit, who have tasted the goodness of the…\" · after: \"It is impossible for those who have once been enlightened, who have tasted the heavenly gift, who have shared in the Holy Spirit, who have tasted the goodness o…\""
         },
         {
           "type": "quote_substituted",
-          "detail": "Hebrews 6:1–2 (BSB) — similarity 85% → substituted with bundled text · before: \"Therefore, leaving the discussion of the elementary teachings about Christ, let us go on to maturity, not laying again a foundation of repentance from dead work…\" · after: \"Therefore let us leave the elementary teachings about Christ and go on to maturity, not laying again the foundation of repentance from dead works, and of faith …\""
+          "detail": "Hebrews 6:1–2 (BSB) — similarity 85% → substituted with bundled text · before: \"[21 words of Hebrews 6:1 redacted: a licensed translation's wording] of repentance from dead work…\" · after: \"Therefore let us leave the elementary teachings about Christ and go on to maturity, not laying again the foundation of repentance from dead works, and of faith …\""
         },
         {
           "type": "quote_substituted",
-          "detail": "Hebrews 6:7–8 (BSB) — similarity 82% → substituted with bundled text · before: \"Land that drinks in the rain that often falls on it and that produces a crop useful to those for whom it is farmed receives the blessing of God. But if it produ…\" · after: \"For land that drinks in the rain often falling on it and that produces a crop useful to those for whom it is tended receives the blessing of God. But land that …\""
+          "detail": "Hebrews 6:7–8 (BSB) — similarity 82% → substituted with bundled text · before: \"Land [13 words of Hebrews 6:7 redacted: wording found in no public-domain Bible] a crop useful to [15 words of Hebrews 6:7 redacted: wording found in no public-domain Bible]…\" · after: \"For land that drinks in the rain often falling on it and that produces a crop useful to those for whom it is tended receives the blessing of God. But land that …\""
         },
         {
           "type": "quote_substituted",
-          "detail": "Hebrews 6:9 (BSB) — similarity 78% → substituted with bundled text · before: \"Even though we speak like this, dear friends, we are confident of better things concerning you—things that accompany salvation.\" · after: \"Even though we speak like this, beloved, we are convinced of better things in your case—things that accompany salvation.\""
+          "detail": "Hebrews 6:9 (BSB) — similarity 78% → substituted with bundled text · before: \"Even [19 words of Hebrews 6:9 redacted: a licensed translation's wording].\" · after: \"Even though we speak like this, beloved, we are convinced of better things in your case—things that accompany salvation.\""
         },
         {
           "type": "quote_substituted",
@@ -1338,7 +1338,7 @@
         },
         {
           "type": "quote_substituted",
-          "detail": "Isaiah 7:14 (BSB) — similarity 73% → substituted with bundled text · before: \"\"Therefore the Lord Himself will give you a sign: Behold, the virgin will conceive and bear a son, and will call Him Immanuel.\"\" · after: \"Therefore the Lord Himself will give you a sign: Behold, the virgin will be with child and will give birth to a son, and will call Him Immanuel.\""
+          "detail": "Isaiah 7:14 (BSB) — similarity 73% → substituted with bundled text · before: \"\"Therefore the Lord Himself will give you a sign: Behold, the virgin will conceive [7 words of Isaiah 7:14 redacted: wording found in no public-domain Bible] Him Immanuel.\"\" · after: \"Therefore the Lord Himself will give you a sign: Behold, the virgin will be with child and will give birth to a son, and will call Him Immanuel.\""
         }
       ],
       "httpStatus": 200
@@ -1448,15 +1448,15 @@
         },
         {
           "type": "quote_substituted",
-          "detail": "Galatians 4:4 (BSB) — similarity 80% → substituted with bundled text · before: \"But when the fullness of time had come, God sent His Son, born of a woman, born under the law.\" · after: \"But when the time had fully come, God sent His Son, born of a woman, born under the law,\""
+          "detail": "Galatians 4:4 (BSB) — similarity 80% → substituted with bundled text · before: \"[12 words of Galatians 4:4 redacted: wording found in no public-domain Bible], born of a woman, born under the law.\" · after: \"But when the time had fully come, God sent His Son, born of a woman, born under the law,\""
         },
         {
           "type": "quote_substituted",
-          "detail": "Matthew 1:22–23 (BSB) — similarity 82% → substituted with bundled text · before: \"Now all this happened to fulfill what the Lord had said through the prophet: \"[12 words of Matthew 1:23 redacted: a licensed translation's wording] will call Him Immanuel,…\" · after: \"All this took place to fulfill what the Lord had said through the prophet: “Behold, the virgin will be with child and will give birth to a son, and they will ca…\""
+          "detail": "Matthew 1:22–23 (BSB) — similarity 82% → substituted with bundled text · before: \"[9 words of Matthew 1:22 redacted: wording found in no public-domain Bible] had said through the prophet: \"[12 words of Matthew 1:23 redacted: a licensed translation's wording] will call Him Immanuel,…\" · after: \"All this took place to fulfill what the Lord had said through the prophet: “Behold, the virgin will be with child and will give birth to a son, and they will ca…\""
         },
         {
           "type": "quote_substituted",
-          "detail": "Luke 1:26–27 (BSB) — similarity 75% → substituted with bundled text · before: \"And in the sixth month, the angel Gabriel was sent from God to a city of Galilee named Nazareth, to a virgin pledged in marriage to a man named Joseph, of the h…\" · after: \"In the sixth month, God sent the angel Gabriel to a town in Galilee called Nazareth, to a virgin pledged in marriage to a man named Joseph, who was of the house…\""
+          "detail": "Luke 1:26–27 (BSB) — similarity 75% → substituted with bundled text · before: \"And in the sixth month, the angel Gabriel was sent from God to a city of Galilee named Nazareth, to a virgin pledged in marriage [8 words of Luke 1:27 redacted: a licensed translation's wording]…\" · after: \"In the sixth month, God sent the angel Gabriel to a town in Galilee called Nazareth, to a virgin pledged in marriage to a man named Joseph, who was of the house…\""
         }
       ],
       "httpStatus": 200
@@ -1550,11 +1550,11 @@
         },
         {
           "type": "quote_substituted",
-          "detail": "John 1:14 (BSB) — similarity 83% → substituted with bundled text · before: \"And the Word became flesh and dwelt among us. We have seen His glory, the glory of the one and only Son, who came from the Father, full of grace and truth.\" · after: \"The Word became flesh and made His dwelling among us. We have seen His glory, the glory of the one and only Son from the Father, full of grace and truth.\""
+          "detail": "John 1:14 (BSB) — similarity 83% → substituted with bundled text · before: \"And the Word became [8 words of John 1:14 redacted: wording found in no public-domain Bible] His glory, the glory of the [11 words of John 1:14 redacted: wording found in no public-domain Bible] grace and truth.\" · after: \"The Word became flesh and made His dwelling among us. We have seen His glory, the glory of the one and only Son from the Father, full of grace and truth.\""
         },
         {
           "type": "quote_substituted",
-          "detail": "Colossians 1:15–16 (BSB) — similarity 83% → substituted with bundled text · before: \"He is the image of the invisible God, the firstborn over all creation. For by Him all things were created that are in heaven and on earth, visible and invisible…\" · after: \"The Son is the image of the invisible God, the firstborn over all creation. For in Him all things were created, things in heaven and on earth, visible and invis…\""
+          "detail": "Colossians 1:15–16 (BSB) — similarity 83% → substituted with bundled text · before: \"He is the image of the invisible God, the [18 words of Colossians 1:15–16 redacted: a licensed translation's wording], visible and invisible…\" · after: \"The Son is the image of the invisible God, the firstborn over all creation. For in Him all things were created, things in heaven and on earth, visible and invis…\""
         }
       ],
       "httpStatus": 200
@@ -1597,7 +1597,7 @@
         },
         {
           "type": "quote_substituted",
-          "detail": "John 1:18 (BSB) — similarity 78% → substituted with bundled text · before: \"No one has ever seen God, but the one and only Son, who is Himself God and is in closest relationship with the Father, has made Him known.\" · after: \"No one has ever seen God, but the one and only Son, who is Himself God and is at the Father’s side, has made Him known.\""
+          "detail": "John 1:18 (BSB) — similarity 78% → substituted with bundled text · before: \"No one has ever seen God, but the one and only Son, who [15 words of John 1:18 redacted: wording found in no public-domain Bible].\" · after: \"No one has ever seen God, but the one and only Son, who is Himself God and is at the Father’s side, has made Him known.\""
         },
         {
           "type": "quote_substituted",

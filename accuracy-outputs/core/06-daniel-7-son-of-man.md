@@ -8,6 +8,7 @@ prompt: "Daniel 7 and the Son of Man — the figure, the dating debates around D
 chars: 15646
 seconds: 73.2
 verifyClean: true
+redacted: "Non-public-domain quoted wording removed on 2026-10-21 by LICENSE-SWEEP-1 (356): 12 runs inside quoted Scripture (13 words of Daniel 7:13; 23 words of Daniel 7:13–14; 8 words of Daniel 7:9; 14 words of Matthew 26:63; 19 words of Matthew 26:64; 7 words of Matthew 26:64; 11 words of Mark 14:61; 9 words of Mark 13:26; 11 words of Revelation 1:13; 7 words of Revelation 1:14; 13 words of Ezekiel 14:14; 8 words of Matthew 24:15), each holding a six-word stretch found in none of the six bundled public-domain Bibles, are replaced with markers. The test is mechanical; no licensed copy was consulted. Nothing else in this file is changed."
 ---
 ## Direct Answer
 
@@ -16,16 +17,16 @@ Daniel 7 presents a vision of four beasts (representing successive kingdoms) fol
 ## Key Passage(s)
 
 **Daniel 7:13–14 (BSB)**
-> "In my vision at night I continued watching, and I saw One like the Son of Man coming with the clouds of heaven. He approached the Ancient of Days and was escorted into His presence. And He was given dominion, glory, and a kingdom, that the people of every nation and language should serve Him. His dominion is an everlasting dominion that will not pass away, and His kingdom is one that will never be destroyed."
+> "[13 words of Daniel 7:13 redacted: wording found in no public-domain Bible] the Son of Man coming with the clouds of heaven. He approached the [23 words of Daniel 7:13–14 redacted: wording found in no public-domain Bible] nation and language should serve Him. His dominion is an everlasting dominion that will not pass away, and His kingdom is one that will never be destroyed."
 
 **Daniel 7:13–14 (KJV)**
 > "I saw in the night visions, and, behold, one like the Son of man came with the clouds of heaven, and came to the Ancient of days, and they brought him near before him. And there was given him dominion, and glory, and a kingdom, that all people, nations, and languages, should serve him: his dominion is an everlasting dominion, which shall not pass away, and his kingdom that which shall not be destroyed."
 
 **Daniel 7:9–10 (BSB)** — the throne scene immediately preceding
-> "As I watched: 'Thrones were set in place, and the Ancient of Days took His seat. His clothing was white as snow, and the hair of His head was like pure wool. His throne was flaming with fire, and its wheels were all ablaze. A river of fire was flowing, coming out from His presence...'"
+> "[8 words of Daniel 7:9 redacted: wording found in no public-domain Bible], and the Ancient of Days took His seat. His clothing was white as snow, and the hair of His head was like pure wool. His throne was flaming with fire, and its wheels were all ablaze. A river of fire was flowing, coming out from His presence...'"
 
 **Matthew 26:63–64 (BSB)** — Jesus applying the title to himself at his trial
-> "But Jesus remained silent. So the high priest declared, 'I charge you under oath by the living God: Tell us if You are the Christ, the Son of God.' 'You have said it,' Jesus replied. 'But I tell you, in the future you will see the Son of Man sitting at the right hand of the Power, and coming on the clouds of heaven.'"
+> "[14 words of Matthew 26:63 redacted: wording found in no public-domain Bible] by the living God: Tell us if You are the Christ, the Son of [19 words of Matthew 26:64 redacted: wording found in no public-domain Bible] of Man sitting at the right hand [7 words of Matthew 26:64 redacted: wording found in no public-domain Bible] clouds of heaven.'"
 
 (Verify wording against an authoritative edition.)
 
@@ -102,22 +103,22 @@ Jesus' use of "Son of Man" as his most frequent self-designation, and especially
 ## Cross-References
 
 > **Mark 14:61–62 (BSB)**
-> "But Jesus remained silent and gave no reply. Again the high priest questioned Him, 'Are You the Christ, the Son of the Blessed One?' 'I am,' said Jesus. 'And you will see the Son of Man sitting at the right hand of the Power and coming with the clouds of heaven.'"
+> "[11 words of Mark 14:61 redacted: wording found in no public-domain Bible] priest questioned Him, 'Are You the Christ, the Son of the Blessed One?' 'I am,' said Jesus. 'And you will see the Son of Man sitting at the right hand of the Power and coming with the clouds of heaven.'"
 
 > **Mark 13:26 (BSB)**
-> "At that time men will see the Son of Man coming in the clouds with great power and glory."
+> "[9 words of Mark 13:26 redacted: wording found in no public-domain Bible] Man coming in the clouds with great power and glory."
 
 > **Revelation 1:13–14 (BSB)**
-> "and among the lampstands was One like the Son of Man, dressed in a robe and with a golden sash around His chest. The hair of His head was white like wool, as white as snow, and His eyes were like a fiery flame."
+> "and among the lampstands was One like the Son [11 words of Revelation 1:13 redacted: wording found in no public-domain Bible] around His chest. The hair of His head was white like wool, as white as snow, and [7 words of Revelation 1:14 redacted: wording found in no public-domain Bible]."
 
 > **John 5:27 (BSB)**
 > "And He has given Him authority to execute judgment, because He is the Son of Man."
 
 > **Ezekiel 14:14 (BSB)** — the "Daniel" named by Ezekiel, relevant to the dating discussion
-> "even if these three men — Noah, Daniel, and Job — were in it, they would deliver only themselves by their righteousness, declares the Lord GOD."
+> "even if these three men — Noah, Daniel, and Job — were in [13 words of Ezekiel 14:14 redacted: wording found in no public-domain Bible]."
 
 > **Matthew 24:15 (BSB)** — Jesus' reference to "Daniel the prophet"
-> "So when you see the abomination of desolation, spoken of through Daniel the prophet, standing in the holy place (let the reader understand),"
+> "So when you see the [8 words of Matthew 24:15 redacted: wording found in no public-domain Bible] prophet, standing in the holy place (let the reader understand),"
 
 ## Sources
 

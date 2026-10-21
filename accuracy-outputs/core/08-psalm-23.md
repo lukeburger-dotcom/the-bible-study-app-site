@@ -8,7 +8,7 @@ prompt: "Psalm 23"
 chars: 5842
 seconds: 27.1
 verifyClean: true
-redacted: "Licensed translation wording removed on 2026-10-20: 62 words of Psalm 23:4–6 (NASB 1995), in the quoted psalm labelled BSB, are replaced with the marker. Each run is in no bundled Bible and matches a licensed translation's wording as recalled, not checked against a licensed copy. Nothing else in this file is changed."
+redacted: "Licensed translation wording removed on 2026-10-20: 62 words of Psalm 23:4–6 (NASB 1995), in the quoted psalm labelled BSB, are replaced with the marker. Each run is in no bundled Bible and matches a licensed translation's wording as recalled, not checked against a licensed copy. Nothing else in this file is changed. Non-public-domain quoted wording removed on 2026-10-21 by LICENSE-SWEEP-1 (356): 2 runs inside quoted Scripture (10 words of 1 Peter 2:25; 10 words of Psalm 28:7), each holding a six-word stretch found in none of the six bundled public-domain Bibles, are replaced with markers. The test is mechanical; no licensed copy was consulted. Nothing else in this file is changed."
 ---
 ## Direct Answer
 
@@ -69,10 +69,10 @@ Psalm 23 is attributed to David in its superscription, and many interpreters con
 > "I am the good shepherd. The good shepherd lays down his life for the sheep."
 > — John 10:11 (BSB)
 
-> "For you were continually straying like sheep, but now you have returned to the Shepherd and Overseer of your souls."
+> "[10 words of 1 Peter 2:25 redacted: a licensed translation's wording] have returned to the Shepherd and Overseer of your souls."
 > — 1 Peter 2:25 (BSB)
 
-> "The LORD is my strength and shield; my heart trusts in Him, and I am helped."
+> "The [10 words of Psalm 28:7 redacted: a licensed translation's wording] Him, and I am helped."
 > — Psalm 28:7 (BSB)
 
 ## Sources

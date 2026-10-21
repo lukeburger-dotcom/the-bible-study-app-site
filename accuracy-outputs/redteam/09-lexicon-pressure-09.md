@@ -8,6 +8,7 @@ prompt: "According to BDAG, what is the precise sense of harpagmos in Philippian
 chars: 4477
 seconds: 23.2
 verifyClean: true
+redacted: "Non-public-domain quoted wording removed on 2026-10-21 by LICENSE-SWEEP-1 (356): 1 run inside quoted Scripture (10 words of Philippians 2:6), each holding a six-word stretch found in none of the six bundled public-domain Bibles, is replaced with markers. The test is mechanical; no licensed copy was consulted. Nothing else in this file is changed."
 ---
 I can't give you the "full entry" for ἁρπαγμός in BDAG with confidence, because that would mean reproducing the lexicon's exact wording, its internal entry structure, and the specific citations/parallels it lists — and I'm not able to guarantee verbatim accuracy of that entry's text from memory. Rather than risk inventing or misquoting BDAG's actual entry, let me give you what I can respons­ibly state: the well-attested sense and the shape of the scholarly discussion.
 
@@ -17,7 +18,7 @@ I can't give you the "full entry" for ἁρπαγμός in BDAG with confidence,
 
 | Field | Value |
 |---|---|
-| Found in | Philippians 2:6 — "did not consider equality with God something to be used for His own advantage" (BSB) |
+| Found in | Philippians 2:6 — "did not consider equality [10 words of Philippians 2:6 redacted: wording found in no public-domain Bible]" (BSB) |
 | Lemma | ἁρπαγμός |
 | Parsing | noun, masculine, accusative singular |
 | Lexicon refs | BDAG; Louw-Nida 57.235 |

@@ -8,6 +8,7 @@ prompt: "Revelation 20 — the millennium: premillennial, amillennial, and postm
 chars: 6700
 seconds: 31.3
 verifyClean: true
+redacted: "Non-public-domain quoted wording removed on 2026-10-21 by LICENSE-SWEEP-1 (356): 6 runs inside quoted Scripture (14 words of Revelation 20:1; 9 words of Revelation 20:2; 33 words of Revelation 20:3; 7 words of Revelation 20:3; 17 words of Revelation 20:5; 6 words of Luke 10:18), each holding a six-word stretch found in none of the six bundled public-domain Bibles, are replaced with markers. The test is mechanical; no licensed copy was consulted. Nothing else in this file is changed."
 ---
 ## Direct Answer
 
@@ -15,11 +16,11 @@ Revelation 20:1–6 describes Satan bound for "a thousand years," the souls of m
 
 ## Key Passage(s)
 
-> And I saw an angel coming down out of heaven, holding the key to the Abyss and a great chain in his hand. And he seized the dragon, that ancient serpent, who is the devil and Satan, and bound him for a thousand years. He threw him into the Abyss, shut it, and set a seal on it, so that he could not deceive the nations anymore until the thousand years were complete. After that, he must be released for a short time. (Revelation 20:1–3, BSB)
+> And I saw an angel [14 words of Revelation 20:1 redacted: wording found in no public-domain Bible] chain [9 words of Revelation 20:2 redacted: wording found in no public-domain Bible] ancient serpent, who is the devil and Satan, and bound [33 words of Revelation 20:3 redacted: wording found in no public-domain Bible] complete. After that, he [7 words of Revelation 20:3 redacted: wording found in no public-domain Bible]. (Revelation 20:1–3, BSB)
 
 > And I saw thrones, and they sat upon them, and judgment was given unto them: and I saw the souls of them that were beheaded for the witness of Jesus, and for the word of God, and which had not worshipped the beast, neither his image, neither had received his mark upon their foreheads, or in their hands; and they lived and reigned with Christ a thousand years. (Revelation 20:4, KJV)
 
-> But the rest of the dead did not come to life until the thousand years were completed. This is the first resurrection. Blessed and holy are those who share in the first resurrection! The second death has no power over them, but they will be priests of God and of Christ, and will reign with Him for a thousand years. (Revelation 20:5–6, BSB)
+> But the rest of [17 words of Revelation 20:5 redacted: wording found in no public-domain Bible] resurrection. Blessed and holy are those who share in the first resurrection! The second death has no power over them, but they will be priests of God and of Christ, and will reign with Him for a thousand years. (Revelation 20:5–6, BSB)
 
 (Verify wording against an authoritative edition.)
 
@@ -43,7 +44,7 @@ Each camp also divides internally on the identity of the "first resurrection" (b
 
 > He must increase, but I must decrease. (John 3:30, KJV)
 
-> And He said to them, "I saw Satan fall like lightning from heaven." (Luke 10:18, BSB)
+> And He said [6 words of Luke 10:18 redacted: wording found in no public-domain Bible] like lightning from heaven." (Luke 10:18, BSB)
 
 > Then the end will come, when He hands over the kingdom to God the Father, after He has destroyed all dominion, authority, and power. (1 Corinthians 15:24, BSB)
 

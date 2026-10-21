@@ -8,6 +8,7 @@ prompt: "1 Peter 3:18–22 — the spirits in prison: the major interpretations 
 chars: 13536
 seconds: 65.6
 verifyClean: true
+redacted: "Non-public-domain quoted wording removed on 2026-10-21 by LICENSE-SWEEP-1 (356): 13 runs inside quoted Scripture (12 words of 1 Peter 3:18; 6 words of 1 Peter 3:18; 12 words of 1 Peter 3:19; 12 words of 1 Peter 3:20; 13 words of 1 Peter 3:20; 17 words of 1 Peter 3:21; 13 words of 1 Peter 3:22; 6 words of 1 Peter 3:21; 16 words of Genesis 6:4; 17 words of 2 Peter 2:4; 15 words of Jude 1:6; 25 words of 2 Peter 2:5; 9 words of Colossians 2:15), each holding a six-word stretch found in none of the six bundled public-domain Bibles, are replaced with markers. The test is mechanical; no licensed copy was consulted. Nothing else in this file is changed."
 ---
 ## Direct Answer
 
@@ -15,7 +16,7 @@ verifyClean: true
 
 ## Key Passage(s)
 
-> For Christ also suffered once for sins, the righteous for the unrighteous, that He might bring you to God. He was put to death in the body but made alive in the Spirit, in whom also He went and preached to the spirits in prison who disobeyed long ago, when God's patience waited in the days of Noah while the ark was being built. In it only a few, that is, eight souls, were saved through water, and this water symbolizes the baptism that now saves you also—not the removal of dirt from the body, but the pledge of a good conscience toward God. It saves you by the resurrection of Jesus Christ, who has gone into heaven and is at God's right hand—with angels, authorities, and powers subject to Him. (1 Peter 3:18–22, BSB)
+> [12 words of 1 Peter 3:18 redacted: wording found in no public-domain Bible], that He [6 words of 1 Peter 3:18 redacted: wording found in no public-domain Bible] was put to death in the body but made alive [12 words of 1 Peter 3:19 redacted: wording found in no public-domain Bible] spirits in prison [12 words of 1 Peter 3:20 redacted: wording found in no public-domain Bible] Noah while the [13 words of 1 Peter 3:20 redacted: wording found in no public-domain Bible], were saved through water, and this water symbolizes the baptism that now saves you also—not the removal of dirt from the body, [17 words of 1 Peter 3:21 redacted: wording found in no public-domain Bible] Christ, who has gone [13 words of 1 Peter 3:22 redacted: wording found in no public-domain Bible] subject to Him. (1 Peter 3:18–22, BSB)
 
 > For Christ also hath once suffered for sins, the just for the unjust, that he might bring us to God, being put to death in the flesh, but quickened by the Spirit: By which also he went and preached unto the spirits in prison; Which sometime were disobedient, when once the longsuffering of God waited in the days of Noah, while the ark was a preparing, wherein few, that is, eight souls were saved by water. The like figure whereunto even baptism doth also now save us (not the putting away of the filth of the flesh, but the answer of a good conscience toward God,) by the resurrection of Jesus Christ: Who is gone into heaven, and is on the right hand of God; angels and authorities and powers being made subject unto him. (1 Peter 3:18–22, KJV)
 
@@ -80,7 +81,7 @@ Want the word behind "made alive" (ζῳοποιηθείς) or "baptism...saves"
 
 **Geography/cosmology.** The "prison" in ancient Jewish cosmology (reflected in 1 Enoch and later intertestamental literature) was often located in the lower heavens or a subterranean holding place distinct from final Gehenna/judgment — a temporary place of confinement pending the last judgment, as described by George W. E. Nickelsburg (1 Enoch 1, Hermeneia, 2001) in his treatment of the Enochic Watchers tradition.
 
-**Baptism practice.** The comparison to Noah's flood and baptism (v. 21) reflects early Christian catechetical use of Noah typology; the phrase "answer/pledge of a good conscience" (KJV/BSB) uses a term (ἐπερώτημα) with possible legal/covenantal background debated among commentators — some connecting it to baptismal vows or a covenant "pledge," per Achtemeier (Hermeneia, 1996).
+**Baptism practice.** The comparison to Noah's flood and baptism (v. 21) reflects early Christian catechetical use of Noah typology; the phrase "[6 words of 1 Peter 3:21 redacted: wording found in no public-domain Bible]" (KJV/BSB) uses a term (ἐπερώτημα) with possible legal/covenantal background debated among commentators — some connecting it to baptismal vows or a covenant "pledge," per Achtemeier (Hermeneia, 1996).
 
 ## Interpretive Options
 
@@ -97,15 +98,15 @@ Each view carries its own theological freight: view 1 avoids "second chance" the
 
 ## Cross-References
 
-> The sons of God saw that the daughters of men were beautiful, and they took as wives whomever they chose. ... The Nephilim were on the earth in those days—and afterward as well—when the sons of God had relations with the daughters of men, who bore them children. They were the mighty men of old, men of renown. (Genesis 6:2, 4, BSB)
+> The sons of God saw that the daughters of men were beautiful, and they took as wives whomever they chose. ... The Nephilim were on the earth in those days—and afterward as well—when the sons of God had relations [16 words of Genesis 6:4 redacted: wording found in no public-domain Bible], men of renown. (Genesis 6:2, 4, BSB)
 
-> For if God did not spare the angels when they sinned, but cast them into hell, putting them into gloomy chains to be held for judgment... (2 Peter 2:4, BSB)
+> For if God did not spare the angels when [17 words of 2 Peter 2:4 redacted: wording found in no public-domain Bible]... (2 Peter 2:4, BSB)
 
-> And the angels who did not keep their positions of authority but abandoned their proper dwelling, these He has kept in eternal chains under darkness, bound for judgment on that great day. (Jude 1:6, BSB)
+> And [15 words of Jude 1:6 redacted: wording found in no public-domain Bible], these He has kept in eternal chains under darkness, bound for judgment on that great day. (Jude 1:6, BSB)
 
-> ...and did not spare the ancient world, but protected Noah, a preacher of righteousness, and seven others, when He brought the flood upon the world of the ungodly. (2 Peter 2:5, BSB)
+> ...[25 words of 2 Peter 2:5 redacted: wording found in no public-domain Bible] of the ungodly. (2 Peter 2:5, BSB)
 
-> Having disarmed the rulers and authorities, He made a public spectacle of them, triumphing over them by the cross. (Colossians 2:15, BSB)
+> [9 words of Colossians 2:15 redacted: wording found in no public-domain Bible] public spectacle of them, triumphing over them by the cross. (Colossians 2:15, BSB)
 
 ## Sources
 

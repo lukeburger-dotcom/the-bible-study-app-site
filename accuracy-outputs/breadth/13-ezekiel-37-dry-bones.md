@@ -8,6 +8,7 @@ prompt: "Ezekiel 37 — the valley of dry bones: the vision, its meaning for the
 chars: 6737
 seconds: 31.5
 verifyClean: true
+redacted: "Non-public-domain quoted wording removed on 2026-10-21 by LICENSE-SWEEP-1 (356): 5 runs inside quoted Scripture (11 words of Ezekiel 37:12; 8 words of Ezekiel 37:12; 17 words of Ezekiel 36:26; 10 words of Acts 2:2; 9 words of Acts 2:4), each holding a six-word stretch found in none of the six bundled public-domain Bibles, are replaced with markers. The test is mechanical; no licensed copy was consulted. Nothing else in this file is changed."
 ---
 ## Direct Answer
 
@@ -15,7 +16,7 @@ Ezekiel 37:1–14 records a vision given to the prophet Ezekiel during the Babyl
 
 ## Key Passage(s)
 
-> Then He said to me, "Son of man, these bones are the whole house of Israel. Look, they are saying, 'Our bones are dried up, and our hope has perished; we are cut off.' Therefore prophesy and tell them that this is what the Lord GOD says: My people, behold, I will open your graves and bring you up from them; I will bring you into the land of Israel."
+> Then He said to me, "Son of man, these bones are the whole house of Israel. Look, they are saying, 'Our bones are dried up, and our hope has perished; we are cut off.' Therefore prophesy and tell them that this is what [11 words of Ezekiel 37:12 redacted: wording found in no public-domain Bible] graves and bring you [8 words of Ezekiel 37:12 redacted: wording found in no public-domain Bible] the land of Israel."
 > — Ezekiel 37:11–12 (BSB)
 
 > Then said he unto me, Son of man, these bones are the whole house of Israel: behold, they say, Our bones are dried, and our hope is lost: we are cut off for our parts. Therefore prophesy and say unto them, Thus saith the Lord GOD; Behold, O my people, I will open your graves, and cause you to come up out of your graves, and bring you into the land of Israel.
@@ -65,13 +66,13 @@ Ezekiel prophesied among the Judean exiles in Babylon following the deportations
 
 ## Cross-References
 
-> "I will give you a new heart and put a new spirit within you; I will remove the heart of stone from your flesh and give you a heart of flesh. And I will put My Spirit within you and cause you to walk in My statutes."
+> "I will give you a new heart and put a new spirit [17 words of Ezekiel 36:26 redacted: a licensed translation's wording] of flesh. And I will put My Spirit within you and cause you to walk in My statutes."
 > — Ezekiel 36:26–27 (BSB)
 
 > "Many of those who sleep in the dust of the earth will awake, some to everlasting life, and some to shame and everlasting contempt."
 > — Daniel 12:2 (BSB)
 
-> "Suddenly there came a sound from heaven like a mighty rushing wind... All of them were filled with the Holy Spirit."
+> "Suddenly there [10 words of Acts 2:2 redacted: wording found in no public-domain Bible]... [9 words of Acts 2:4 redacted: wording found in no public-domain Bible]."
 > — Acts 2:2, 4 (BSB)
 
 ## Sources

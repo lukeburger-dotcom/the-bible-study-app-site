@@ -8,6 +8,7 @@ prompt: "1 Corinthians 13:8–13 — does \"when the perfect comes\" support ces
 chars: 13306
 seconds: 59.8
 verifyClean: true
+redacted: "Non-public-domain quoted wording removed on 2026-10-21 by LICENSE-SWEEP-1 (356): 8 runs inside quoted Scripture (26 words of 1 Corinthians 13:8; 12 words of 1 Corinthians 13:10; 22 words of 1 Corinthians 13:11–12; 8 words of 1 Corinthians 13:12; 28 words of Ephesians 4:11–12; 14 words of Ephesians 4:13; 9 words of 1 John 4:1; 12 words of 1 Corinthians 13:12), each holding a six-word stretch found in none of the six bundled public-domain Bibles, are replaced with markers. The test is mechanical; no licensed copy was consulted. Nothing else in this file is changed."
 ---
 ## Direct Answer
 
@@ -15,7 +16,7 @@ verifyClean: true
 
 ## Key Passage(s)
 
-> Love never fails. But where there are prophecies, they will pass away; where there are tongues, they will cease; where there is knowledge, it will pass away. For we know in part and we prophesy in part, but when the perfect comes, the partial will pass away. When I was a child, I talked like a child, I thought like a child, I reasoned like a child. When I became a man, I put the ways of childhood behind me. For now we see only a reflection as in a mirror; then we shall see face to face. Now I know in part, but then I shall know fully, even as I am fully known. And now these three remain: faith, hope, and love. But the greatest of these is love.
+> Love never fails. But where [26 words of 1 Corinthians 13:8 redacted: wording found in no public-domain Bible] part and we prophesy in part, but when [12 words of 1 Corinthians 13:10 redacted: wording found in no public-domain Bible] child, I talked like a child, I thought like a child, I reasoned like a child. When I [22 words of 1 Corinthians 13:11–12 redacted: wording found in no public-domain Bible]; then we shall see face to face. Now I know [8 words of 1 Corinthians 13:12 redacted: wording found in no public-domain Bible], even as I am fully known. And now these three remain: faith, hope, and love. But the greatest of these is love.
 > — 1 Corinthians 13:8–13 (BSB)
 
 > Charity never faileth: but whether there be prophecies, they shall fail; whether there be tongues, they shall cease; whether there be knowledge, it shall vanish away. For we know in part, and we prophesy in part. But when that which is perfect is come, then that which is in part shall be done away. When I was a child, I spake as a child, I understood as a child, I thought as a child: but when I became a man, I put away childish things. For now we see through a glass, darkly; but then face to face: now I know in part; but then shall I know even as also I am known. And now abideth faith, hope, charity, these three; but the greatest of these is charity.
@@ -90,13 +91,13 @@ Some interpreters (e.g., certain strands within Thiselton's survey, 2000) note t
 > Now to each one the manifestation of the Spirit is given for the common good.
 > — 1 Corinthians 12:7 (BSB)
 
-> And He Himself gave the apostles, the prophets, the evangelists, the pastors and teachers, to equip the saints for the work of ministry, to build up the body of Christ, until we all reach unity in the faith and in the knowledge of the Son of God, growing into maturity, attaining to the full measure of the stature of Christ.
+> [28 words of Ephesians 4:11–12 redacted: a licensed translation's wording] of Christ, until we all reach unity in the faith and in the knowledge [14 words of Ephesians 4:13 redacted: a licensed translation's wording] the stature of Christ.
 > — Ephesians 4:11–13 (BSB)
 
-> Beloved, do not believe every spirit, but test the spirits to see whether they are from God, because many false prophets have gone out into the world.
+> Beloved, do not believe every spirit, but test the spirits to see [9 words of 1 John 4:1 redacted: a licensed translation's wording] have gone out into the world.
 > — 1 John 4:1 (BSB)
 
-> For now we see but a poor reflection as in a mirror; then we shall see face to face. Now I know in part; then I shall know fully, even as I am fully known.
+> [12 words of 1 Corinthians 13:12 redacted: wording found in no public-domain Bible]; then we shall see face to face. Now I know in part; then I shall know fully, even as I am fully known.
 > — 1 Corinthians 13:12 (BSB, restated for emphasis on the eschatological contrast)
 
 > built on the foundation of the apostles and prophets, with Christ Jesus Himself as the cornerstone.

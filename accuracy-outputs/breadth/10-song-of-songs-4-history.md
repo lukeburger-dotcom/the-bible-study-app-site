@@ -8,6 +8,7 @@ prompt: "Song of Songs 4 — how has this poetry been read across history (alleg
 chars: 11607
 seconds: 55.5
 verifyClean: true
+redacted: "Non-public-domain quoted wording removed on 2026-10-21 by LICENSE-SWEEP-1 (356): 9 runs inside quoted Scripture (16 words of Song of Solomon 4:1; 20 words of Song of Solomon 4:3; 12 words of Song of Solomon 4:7; 17 words of Song of Solomon 4:9; 14 words of Song of Solomon 4:12; 29 words of Song of Solomon 4:16; 8 words of Ephesians 5:32; 10 words of Hosea 2:19; 11 words of Revelation 19:7), each holding a six-word stretch found in none of the six bundled public-domain Bibles, are replaced with markers. The test is mechanical; no licensed copy was consulted. Nothing else in this file is changed."
 ---
 ## Direct Answer
 
@@ -16,12 +17,12 @@ Song of Songs 4 is an extended love poem in which the bridegroom praises his bri
 ## Key Passage(s)
 
 > **BSB — Song of Songs 4:1, 3, 7, 9, 12, 16**
-> "Behold, you are beautiful, my darling! Oh, how beautiful! Your eyes are doves behind your veil...
-> Your lips are like a scarlet cord; your mouth is lovely. Your temples behind your veil are like slices of pomegranate...
-> You are altogether beautiful, my darling, and there is no flaw in you...
-> You have captivated my heart, my sister, my bride; you have captivated my heart with one glance of your eyes...
-> You are a garden locked up, my sister, my bride, a spring enclosed, a fountain sealed...
-> Awake, north wind, and come, south wind! Blow upon my garden, that its fragrance may spread abroad. Let my beloved come into his garden and taste its choice fruits."
+> "[16 words of Song of Solomon 4:1 redacted: wording found in no public-domain Bible]...
+> Your [20 words of Song of Solomon 4:3 redacted: wording found in no public-domain Bible]...
+> You [12 words of Song of Solomon 4:7 redacted: wording found in no public-domain Bible]...
+> [17 words of Song of Solomon 4:9 redacted: wording found in no public-domain Bible] of your eyes...
+> You [14 words of Song of Solomon 4:12 redacted: wording found in no public-domain Bible] sealed...
+> [29 words of Song of Solomon 4:16 redacted: wording found in no public-domain Bible]."
 
 > **KJV — Song of Songs 4:1, 7, 9, 12, 16**
 > "Behold, thou art fair, my love; behold, thou art fair; thou hast doves' eyes within thy locks...
@@ -95,13 +96,13 @@ This view reads Song of Songs 4 as straightforward, unapologetic celebration of 
 > "For this reason a man will leave his father and mother and be united to his wife, and they will become one flesh."
 
 > **BSB — Ephesians 5:25, 32**
-> "Husbands, love your wives, just as Christ loved the church and gave Himself up for her... This is a great mystery, but I am speaking about Christ and the church."
+> "Husbands, love your wives, just as Christ loved the church and gave Himself up for her... This is [8 words of Ephesians 5:32 redacted: wording found in no public-domain Bible] Christ and the church."
 
 > **BSB — Hosea 2:19–20**
-> "I will betroth you to Me forever; I will betroth you in righteousness and justice, in loving devotion and compassion. I will betroth you in faithfulness, and you will know the LORD."
+> "I will betroth you to Me forever; I will betroth you in righteousness and justice, [10 words of Hosea 2:19 redacted: wording found in no public-domain Bible] faithfulness, and you will know the LORD."
 
 > **BSB — Revelation 19:7**
-> "Let us rejoice and be glad and give Him glory! For the wedding of the Lamb has come, and His bride has made herself ready."
+> "Let us rejoice and [11 words of Revelation 19:7 redacted: wording found in no public-domain Bible] Lamb has come, and His bride has made herself ready."
 
 (Verify wording against an authoritative edition.)
 

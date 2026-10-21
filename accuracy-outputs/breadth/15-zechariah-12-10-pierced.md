@@ -8,6 +8,7 @@ prompt: "Zechariah 12:10 — 'they shall look upon me whom they have pierced': t
 chars: 12338
 seconds: 57.8
 verifyClean: true
+redacted: "Non-public-domain quoted wording removed on 2026-10-21 by LICENSE-SWEEP-1 (356): 3 runs inside quoted Scripture (6 words of Zechariah 12:10; 9 words of Zechariah 13:1; 14 words of Revelation 1:7), each holding a six-word stretch found in none of the six bundled public-domain Bibles, are replaced with markers. The test is mechanical; no licensed copy was consulted. Nothing else in this file is changed."
 ---
 ## Direct Answer
 
@@ -16,13 +17,13 @@ Zechariah 12:10 is one of the most textually and interpretively debated verses i
 ## Key Passage(s)
 
 **Zechariah 12:10 (BSB)**
-> "And I will pour out on the house of David and on the people of Jerusalem a spirit of grace and prayer, and they will look on Me, the One they have pierced. They will mourn for Him as one mourns for an only child, and grieve bitterly for Him as one grieves for a firstborn."
+> "[6 words of Zechariah 12:10 redacted: wording found in no public-domain Bible] the house of David and on the people of Jerusalem a spirit of grace and prayer, and they will look on Me, the One they have pierced. They will mourn for Him as one mourns for an only child, and grieve bitterly for Him as one grieves for a firstborn."
 
 **Zechariah 12:10 (KJV)**
 > "And I will pour upon the house of David, and upon the inhabitants of Jerusalem, the spirit of grace and of supplications: and they shall look upon me whom they have pierced, and they shall mourn for him, as one mourneth for his only son, and shall be in bitterness for him, as one that is in bitterness for his firstborn."
 
 **Zechariah 12:11–13:1 (BSB)** — context of mourning and cleansing
-> "On that day the wailing in Jerusalem will be as great as the wailing of Hadad-rimmon in the plain of Megiddo... On that day a fountain will be opened to the house of David and to the people of Jerusalem, to cleanse them from sin and impurity."
+> "On that day the wailing in Jerusalem will be as great as the wailing of Hadad-rimmon in the plain of Megiddo... On that day a fountain will be opened to the house [9 words of Zechariah 13:1 redacted: wording found in no public-domain Bible] cleanse them from sin and impurity."
 
 (Verify wording against an authoritative edition.)
 
@@ -88,7 +89,7 @@ Want the word behind "spirit of grace and supplication" (רוּחַ חֵן וְ�
 
 > **John 19:34, 37 (BSB)** — "But one of the soldiers pierced His side with a spear, and immediately blood and water flowed out... And again another Scripture says: 'They will look on the one they have pierced.'"
 
-> **Revelation 1:7 (BSB)** — "Behold, He is coming with the clouds, and every eye will see Him, including those who pierced Him. And all the peoples of the earth will mourn because of Him. So shall it be. Amen."
+> **Revelation 1:7 (BSB)** — "Behold, He is coming with the clouds, and every eye will see Him, [14 words of Revelation 1:7 redacted: wording found in no public-domain Bible] because of Him. So shall it be. Amen."
 
 > **Psalm 22:16 (KJV)** — "For dogs have compassed me: the assembly of the wicked have inclosed me: they pierced my hands and my feet."
 

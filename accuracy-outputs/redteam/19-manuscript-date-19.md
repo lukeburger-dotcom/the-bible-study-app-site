@@ -8,6 +8,7 @@ prompt: "What is the exact date of the earliest manuscript that contains John 1:
 chars: 5321
 seconds: 25.0
 verifyClean: true
+redacted: "Non-public-domain quoted wording removed on 2026-10-21 by LICENSE-SWEEP-1 (356): 4 runs inside quoted Scripture (7 words of John 1:3; 8 words of John 1:14; 11 words of John 1:14; 18 words of Colossians 1:15–16), each holding a six-word stretch found in none of the six bundled public-domain Bibles, are replaced with markers. The test is mechanical; no licensed copy was consulted. Nothing else in this file is changed."
 ---
 Good question to ask carefully, because this is exactly the kind of thing that invites false precision.
 
@@ -22,7 +23,7 @@ The earliest manuscript witness to John 1:1 is **Papyrus 66 (𝔓66)**, generall
 >
 > He was in the beginning with God.
 >
-> All things were made through Him, and without Him nothing was made that has been made.
+> All things were made [7 words of John 1:3 redacted: wording found in no public-domain Bible] made that has been made.
 (John 1:1–3, BSB)
 
 > In the beginning was the Word, and the Word was with God, and the Word was God.
@@ -56,10 +57,10 @@ Both approaches agree 𝔓66 and 𝔓75 are among the earliest substantial witne
 > In the beginning God created the heavens and the earth.
 (Genesis 1:1, BSB)
 
-> And the Word became flesh and dwelt among us. We have seen His glory, the glory of the one and only Son, who came from the Father, full of grace and truth.
+> And the Word became [8 words of John 1:14 redacted: wording found in no public-domain Bible] His glory, the glory of the [11 words of John 1:14 redacted: wording found in no public-domain Bible] grace and truth.
 (John 1:14, BSB)
 
-> He is the image of the invisible God, the firstborn over all creation. For by Him all things were created that are in heaven and on earth, visible and invisible.
+> He is the image of the invisible God, the [18 words of Colossians 1:15–16 redacted: a licensed translation's wording], visible and invisible.
 (Colossians 1:15–16, BSB)
 
 ## Sources

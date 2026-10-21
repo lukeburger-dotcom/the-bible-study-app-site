@@ -8,6 +8,7 @@ prompt: "Ecclesiastes 3:1–15 — a time for everything: what is Qoheleth actua
 chars: 7022
 seconds: 36.2
 verifyClean: false
+redacted: "Non-public-domain quoted wording removed on 2026-10-21 by LICENSE-SWEEP-1 (356): 5 runs inside quoted Scripture (17 words of Ecclesiastes 3:1; 11 words of Ecclesiastes 3:11; 26 words of Ecclesiastes 3:13; 6 words of Ecclesiastes 3:14; 6 words of Ecclesiastes 1:1), each holding a six-word stretch found in none of the six bundled public-domain Bibles, are replaced with markers. The test is mechanical; no licensed copy was consulted. Nothing else in this file is changed."
 ---
 ## Direct Answer
 
@@ -18,10 +19,10 @@ Qoheleth (the "Teacher" or "Preacher" of Ecclesiastes) is not offering a poem of
 > To every thing there is a season, and a time to every purpose under the heaven: A time to be born, and a time to die; a time to plant, and a time to pluck up that which is planted... He hath made every thing beautiful in his time: also he hath set the world in their heart, so that no man can find out the work that God maketh from the beginning to the end.
 > — Ecclesiastes 3:1–2, 11 (KJV)
 
-> There is a time for everything, and a season for every activity under heaven: a time to be born and a time to die, a time to plant and a time to uproot... He has made everything beautiful in its time. He has also set eternity in the hearts of men, yet they cannot fathom what God has done from beginning to end.
+> [17 words of Ecclesiastes 3:1 redacted: wording found in no public-domain Bible] be born and a time to die, a time to plant and a time to uproot... He has made everything beautiful in its time. He has also set eternity in the hearts of [11 words of Ecclesiastes 3:11 redacted: a licensed translation's wording] to end.
 > — Ecclesiastes 3:1–2, 11 (BSB)
 
-> I know that there is nothing better for them than to rejoice and to do good in their lives. That everyone may eat and drink, and enjoy the good of all his labor, it is the gift of God... And I know that whatsoever God doeth, it shall be for ever: nothing can be put to it, nor any thing taken from it: and God doeth it, that men should fear before him.
+> I know that there is nothing better for them than to rejoice [26 words of Ecclesiastes 3:13 redacted: a licensed translation's wording] God... [6 words of Ecclesiastes 3:14 redacted: a licensed translation's wording] doeth, it shall be for ever: nothing can be put to it, nor any thing taken from it: and God doeth it, that men should fear before him.
 > — Ecclesiastes 3:12–14 (KJV)
 
 (Verify wording against an authoritative edition.)
@@ -58,7 +59,7 @@ Want the word behind "beautiful" (yāphâ) in 3:11, or "fear" (yārēʾ) in 3:14
 
 ## Context & Background
 
-Ecclesiastes is framed as the reflection of "the Preacher, son of David, king in Jerusalem" (1:1), traditionally associated with Solomon, though many modern commentators, including Tremper Longman III (*The Book of Ecclesiastes*, New International Commentary on the Old Testament, 1998), read "Qoheleth" as a literary persona reflecting on wisdom and life's limits, with the book's Hebrew showing linguistic features some date later than Solomon's era. The poem in 3:1–8 uses fourteen pairs of opposites (born/die, plant/uproot, kill/heal, etc.) — a literary device called merism, in which two extremes represent the whole range between them, a technique well attested in ancient Near Eastern wisdom literature (Choon-Leong Seow, *Ecclesiastes*, Anchor Bible, 1997). The structure moves from the poem of times (3:1–8) to theological reflection (3:9–15), asking what profit toil has given humanity in light of this divinely fixed order — a question Qoheleth raises repeatedly throughout the book (cf. 1:3).
+Ecclesiastes is framed as the reflection of "[6 words of Ecclesiastes 1:1 redacted: wording found in no public-domain Bible] in Jerusalem" (1:1), traditionally associated with Solomon, though many modern commentators, including Tremper Longman III (*The Book of Ecclesiastes*, New International Commentary on the Old Testament, 1998), read "Qoheleth" as a literary persona reflecting on wisdom and life's limits, with the book's Hebrew showing linguistic features some date later than Solomon's era. The poem in 3:1–8 uses fourteen pairs of opposites (born/die, plant/uproot, kill/heal, etc.) — a literary device called merism, in which two extremes represent the whole range between them, a technique well attested in ancient Near Eastern wisdom literature (Choon-Leong Seow, *Ecclesiastes*, Anchor Bible, 1997). The structure moves from the poem of times (3:1–8) to theological reflection (3:9–15), asking what profit toil has given humanity in light of this divinely fixed order — a question Qoheleth raises repeatedly throughout the book (cf. 1:3).
 
 ## Interpretive Options
 

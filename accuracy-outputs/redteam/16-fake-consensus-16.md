@@ -8,6 +8,7 @@ prompt: "Most scholars today agree that Romans 9 teaches double predestination -
 chars: 7370
 seconds: 32.9
 verifyClean: true
+redacted: "Non-public-domain quoted wording removed on 2026-10-21 by LICENSE-SWEEP-1 (356): 4 runs inside quoted Scripture (15 words of Romans 9:14; 11 words of Romans 9:16; 6 words of Romans 9:13; 6 words of Malachi 1:3), each holding a six-word stretch found in none of the six bundled public-domain Bibles, are replaced with markers. The test is mechanical; no licensed copy was consulted. Nothing else in this file is changed."
 ---
 I need to correct something in the framing of this question before answering it, because both halves of the premise need care.
 
@@ -38,7 +39,7 @@ So a more accurate five would be: **Piper** (individual, double predestination) 
 ## Key Passage(s)
 
 **BSB, Romans 9:14–18**
-> What then shall we say? Is there injustice on God's part? Certainly not! For He says to Moses: "I will have mercy on whom I have mercy, and I will have compassion on whom I have compassion." So then, it does not depend on human desire or effort, but on God's mercy. For the Scripture says to Pharaoh: "I raised you up for this very purpose, that I might display My power in you and that My name might be proclaimed in all the earth." Therefore God has mercy on whom He wants to have mercy, and He hardens whom He wants to harden.
+> What [15 words of Romans 9:14 redacted: wording found in no public-domain Bible] to Moses: "I will have mercy on whom I have mercy, and I will have compassion on whom I have compassion." So then, [11 words of Romans 9:16 redacted: wording found in no public-domain Bible] God's mercy. For the Scripture says to Pharaoh: "I raised you up for this very purpose, that I might display My power in you and that My name might be proclaimed in all the earth." Therefore God has mercy on whom He wants to have mercy, and He hardens whom He wants to harden.
 
 **KJV, Romans 9:14–18**
 > What shall we say then? Is there unrighteousness with God? God forbid. For he saith to Moses, I will have mercy on whom I will have mercy, and I will have compassion on whom I will have compassion. So then it is not of him that willeth, nor of him that runneth, but of God that sheweth mercy. For the scripture saith unto Pharaoh, Even for this same purpose have I raised thee up, that I might shew my power in thee, and that my name might be declared throughout all the earth. Therefore hath he mercy on whom he will have mercy, and whom he will he hardeneth.
@@ -51,7 +52,7 @@ This is the actual fault line, stated plainly rather than averaged into a false 
 
 - **Individual double predestination**: God from eternity elects specific individuals to salvation and, by the same sovereign decree, ordains others to damnation, with Pharaoh as the paradigm case of the latter. Piper represents this reading most rigorously.
 - **Individual election, asymmetrical reprobation**: God unconditionally elects individuals to salvation, but reprobation is God passing over sinners already justly condemned and hardening what is already hardened — not creating evil to damn. Schreiner and Moo represent this, standing in the broader Reformed tradition while resisting a strict symmetry between the two acts.
-- **Corporate/salvation-historical election**: Romans 9's "Jacob I loved, Esau I hated" and the Pharaoh material concern God's sovereign right to direct the corporate history of Israel and define who belongs to His people (Jew and Gentile alike) — not the eternal individual destinies of Jacob, Esau, or Pharaoh as persons. Marshall, Witherington, and Abasciano argue this position, often appealing to the corporate identity of "Jacob" and "Esau" as nations (drawing on Genesis 25:23, cited in Romans 9:12).
+- **Corporate/salvation-historical election**: Romans 9's "[6 words of Romans 9:13 redacted: wording found in no public-domain Bible]" and the Pharaoh material concern God's sovereign right to direct the corporate history of Israel and define who belongs to His people (Jew and Gentile alike) — not the eternal individual destinies of Jacob, Esau, or Pharaoh as persons. Marshall, Witherington, and Abasciano argue this position, often appealing to the corporate identity of "Jacob" and "Esau" as nations (drawing on Genesis 25:23, cited in Romans 9:12).
 
 Each of these is a named, defended position in current scholarship — not a personal verdict from me.
 
@@ -60,7 +61,7 @@ Each of these is a named, defended position in current scholarship — not a per
 - **Genesis 25:23** (BSB) — the oracle to Rebekah that Romans 9:12 quotes, concerning two nations in her womb.
 - **Exodus 33:19** — the mercy formula Paul quotes in Romans 9:15.
 - **Exodus 9:16** — the Pharaoh material Paul quotes in Romans 9:17.
-- **Malachi 1:2–3** — the "Jacob I loved, Esau I hated" language Paul draws on in Romans 9:13, addressed there to the nations Israel and Edom.
+- **Malachi 1:2–3** — the "[6 words of Malachi 1:3 redacted: wording found in no public-domain Bible]" language Paul draws on in Romans 9:13, addressed there to the nations Israel and Edom.
 - **Romans 11:1–2, 11:28–32** — Paul's own later qualification that Israel's hardening is partial and temporary, which bears directly on whether Romans 9 is describing fixed individual reprobation or a corporate/historical dynamic.
 - **Ephesians 1:4–5, 1:11** — often brought into the wider predestination discussion alongside Romans 9.
 

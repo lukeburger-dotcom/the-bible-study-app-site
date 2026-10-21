@@ -8,7 +8,7 @@ prompt: "Acts 2:38 — 'repent and be baptized… for the remission of sins': wh
 chars: 11359
 seconds: 53.7
 verifyClean: true
-redacted: "Licensed translation wording removed on 2026-10-20: 10 words of Ephesians 2:8 (CSB), in a quoted verse labelled BSB, are replaced with the marker. Each run is in no bundled Bible and matches a licensed translation's wording as recalled, not checked against a licensed copy. Nothing else in this file is changed."
+redacted: "Licensed translation wording removed on 2026-10-20: 10 words of Ephesians 2:8 (CSB), in a quoted verse labelled BSB, are replaced with the marker. Each run is in no bundled Bible and matches a licensed translation's wording as recalled, not checked against a licensed copy. Nothing else in this file is changed. Non-public-domain quoted wording removed on 2026-10-21 by LICENSE-SWEEP-1 (356): 3 runs inside quoted Scripture (23 words of Acts 2:39; 7 words of Matthew 12:41; 18 words of Acts 22:16), each holding a six-word stretch found in none of the six bundled public-domain Bibles, are replaced with markers. The test is mechanical; no licensed copy was consulted. Nothing else in this file is changed."
 ---
 ## Direct Answer
 
@@ -22,7 +22,7 @@ Acts 2:38 is one of the most theologically contested single verses in the New Te
 
 Surrounding context:
 
-> When the people heard this, they were cut to the heart and asked Peter and the other apostles, "Brothers, what shall we do?" Peter replied, "Repent and be baptized, every one of you, in the name of Jesus Christ for the forgiveness of your sins, and you will receive the gift of the Holy Spirit. For the promise is for you and your children, and for all who are far off — for all whom the Lord our God will call." (Acts 2:37–39, BSB)
+> When the people heard this, they were cut to the heart and asked Peter and the other apostles, "Brothers, what shall we do?" Peter replied, "Repent and be baptized, every one of you, in the name of Jesus Christ for the forgiveness of your sins, and you will receive the gift of the Holy [23 words of Acts 2:39 redacted: a licensed translation's wording] God will call." (Acts 2:37–39, BSB)
 
 (Verify wording against an authoritative edition.)
 
@@ -43,7 +43,7 @@ I chose **εἰς** (eis) and **μετανοήσατε** (metanoēsate) — the 
 | Etymology | Eis derives from a common Greek directional preposition; etymology alone cannot settle its function here — usage in context governs meaning, and both purpose and causal uses are attested elsewhere in Koine Greek (fallacy of etymology caution). |
 | Sense here | Disputed — either "resulting in forgiveness" (telic/purpose) or "because of / on the basis of forgiveness already given" (causal) |
 
-This is the crux of the whole verse. BDAG lists both goal-directed and, in some disputed instances, causal-retrospective uses of *eis*, and grammarians disagree on which fits Acts 2:38. Some point to Matthew 12:41 ("repented at [eis] the preaching of Jonah") as a possible causal parallel, though this parallel is itself debated among grammarians.
+This is the crux of the whole verse. BDAG lists both goal-directed and, in some disputed instances, causal-retrospective uses of *eis*, and grammarians disagree on which fits Acts 2:38. Some point to Matthew 12:41 ("[7 words of Matthew 12:41 redacted: wording found in no public-domain Bible]") as a possible causal parallel, though this parallel is itself debated among grammarians.
 
 ### μετανοήσατε (metanoēsate)
 
@@ -88,7 +88,7 @@ Want the word behind "gift" (δωρεά) or "call" (προσκαλέσηται) 
 
 > Repent, then, and turn back, so that your sins may be wiped away, that times of refreshing may come from the presence of the Lord. (Acts 3:19, BSB)
 
-> And now what are you waiting for? Rise and be baptized and wash away your sins, calling on His name. (Acts 22:16, BSB)
+> And now [18 words of Acts 22:16 redacted: a licensed translation's wording]. (Acts 22:16, BSB)
 
 > John the Baptist appeared in the wilderness, preaching a baptism of repentance for the forgiveness of sins. (Mark 1:4, BSB)
 

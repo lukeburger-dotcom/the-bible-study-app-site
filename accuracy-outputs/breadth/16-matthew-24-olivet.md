@@ -8,6 +8,7 @@ prompt: "Matthew 24 — the Olivet Discourse: preterist, futurist, and mixed rea
 chars: 14187
 seconds: 64.0
 verifyClean: true
+redacted: "Non-public-domain quoted wording removed on 2026-10-21 by LICENSE-SWEEP-1 (356): 17 runs inside quoted Scripture (18 words of Matthew 24:1; 11 words of Matthew 24:3; 12 words of Matthew 24:3; 11 words of Matthew 24:34; 7 words of Matthew 24:36; 12 words of Matthew 24:36; 11 words of Luke 21:20; 11 words of Matthew 24:21; 7 words of Matthew 24:21; 6 words of Matthew 24:36; 6 words of Luke 21:20; 22 words of Matthew 24:15; 40 words of Joel 3:15–16; 6 words of Matthew 24:21; 7 words of Matthew 24:21; 12 words of Matthew 24:36; 7 words of Matthew 25:13), each holding a six-word stretch found in none of the six bundled public-domain Bibles, are replaced with markers. The test is mechanical; no licensed copy was consulted. Nothing else in this file is changed."
 ---
 ## Direct Answer
 
@@ -15,19 +16,19 @@ Matthew 24 records Jesus' response to His disciples' questions about the destruc
 
 ## Key Passage(s)
 
-> "As Jesus was leaving the temple courts and walking away, His disciples came up to point out its buildings. 'Do you see all these things?' He replied. 'Truly I tell you, not one stone here will be left on another; every one will be thrown down.' As Jesus was sitting on the Mount of Olives, the disciples came to Him privately and said, 'Tell us, when will these things happen, and what will be the sign of Your coming and of the end of the age?'"
+> "As [18 words of Matthew 24:1 redacted: wording found in no public-domain Bible]. 'Do you see all these things?' He replied. 'Truly I tell you, not one stone here will be left on another; every [11 words of Matthew 24:3 redacted: wording found in no public-domain Bible] Mount of Olives, the [12 words of Matthew 24:3 redacted: wording found in no public-domain Bible] things happen, and what will be the sign of Your coming and of the end of the age?'"
 > — Matthew 24:1–3 (BSB)
 
 > "And Jesus went out, and departed from the temple: and his disciples came to him for to shew him the buildings of the temple. And Jesus said unto them, See ye not all these things? verily I say unto you, There shall not be left here one stone upon another, that shall not be thrown down. And as he sat upon the mount of Olives, the disciples came unto him privately, saying, Tell us, when shall these things be? and what shall be the sign of thy coming, and of the end of the world?"
 > — Matthew 24:1–3 (KJV)
 
-> "Truly I tell you, this generation will certainly not pass away until all these things have happened."
+> "Truly I [11 words of Matthew 24:34 redacted: a licensed translation's wording] these things have happened."
 > — Matthew 24:34 (BSB)
 
 > "Verily I say unto you, This generation shall not pass, till all these things be fulfilled."
 > — Matthew 24:34 (KJV)
 
-> "But concerning that day and hour no one knows, not even the angels of heaven, nor the Son, but the Father alone."
+> "[7 words of Matthew 24:36 redacted: a licensed translation's wording] one knows, not [12 words of Matthew 24:36 redacted: a licensed translation's wording]."
 > — Matthew 24:36 (BSB)
 
 > "But of that day and hour knoweth no man, no, not the angels of heaven, but my Father only."
@@ -77,7 +78,7 @@ Want the word behind "sign" (σημεῖον) in verse 3, or "immediately" (ε�
 
 **Historical background of AD 70.** The Roman siege and destruction of Jerusalem under Titus in AD 70, during the First Jewish-Roman War (AD 66–73), is documented by the Jewish historian Josephus (*The Jewish War*), who was an eyewitness. Josephus describes the temple's burning, the immense loss of life, and conditions of famine and siege matching much of the language in Matthew 24:15–21 (Josephus, *Jewish War*, Books 5–6). This historical event is the anchor point for preterist and mixed readings.
 
-**"Abomination of desolation."** Matthew 24:15 invokes Daniel 9:27; 11:31; 12:11. In Second Temple Jewish memory, this phrase already had a referent: Antiochus IV Epiphanes' desecration of the temple in 167 BC (described in 1 Maccabees 1:54). Luke's parallel account interprets the sign more directly in terms of military siege: "when you see Jerusalem surrounded by armies, know that its desolation is near" (Luke 21:20) — a detail futurists and preterists both must account for in relating Luke's version to Matthew's.
+**"Abomination of desolation."** Matthew 24:15 invokes Daniel 9:27; 11:31; 12:11. In Second Temple Jewish memory, this phrase already had a referent: Antiochus IV Epiphanes' desecration of the temple in 167 BC (described in 1 Maccabees 1:54). Luke's parallel account interprets the sign more directly in terms of military siege: "when you [11 words of Luke 21:20 redacted: a licensed translation's wording]" (Luke 21:20) — a detail futurists and preterists both must account for in relating Luke's version to Matthew's.
 
 **Fig tree and agricultural imagery.** The fig tree parable (24:32–33) draws on a common feature of Judean agriculture: the fig tree, unlike evergreens, visibly loses its leaves in winter and their return signals the nearness of summer — a natural, locally observable sign familiar to Jesus' audience (BDAG; general background in Kenneth Bailey, *Poet and Peasant/Through Peasant Eyes*, combined ed., 1983, on Palestinian agrarian imagery).
 
@@ -91,11 +92,11 @@ Want the word behind "sign" (σημεῖον) in verse 3, or "immediately" (ε�
 - Weakness often raised against it: verses like 24:30–31 (the Son of Man "coming on the clouds," gathering the elect "from the four winds") and 24:36 (no one knows "that day and hour," implying something beyond the predictable countdown to a historical siege) seem to some interpreters to strain against a purely local, historical fulfillment (D.A. Carson, *Matthew*, Expositor's Bible Commentary, 1984).
 
 **2. Full Futurism** — the discourse (at least from v. 15 or so onward) describes end-time events still future to us, often tied to a future "great tribulation," a future antichrist figure, and a visible, cosmic second coming.
-- Strongest argument: the scale of language in 24:21 ("there will be great distress, unequaled from the beginning of the world until now, and never to be equaled again") seems to exceed what happened in AD 70, since Jesus elsewhere anticipates history continuing (the Great Commission, judgment of the nations); and 24:29–31 describes cosmic disturbance and a visible, universal gathering of the elect that did not visibly occur in AD 70.
+- Strongest argument: the scale of language in 24:21 ("[11 words of Matthew 24:21 redacted: wording found in no public-domain Bible] world until [7 words of Matthew 24:21 redacted: wording found in no public-domain Bible]") seems to exceed what happened in AD 70, since Jesus elsewhere anticipates history continuing (the Great Commission, judgment of the nations); and 24:29–31 describes cosmic disturbance and a visible, universal gathering of the elect that did not visibly occur in AD 70.
 - Representative advocates: dispensational futurists such as John Walvoord (*Matthew: Thy Kingdom Come*, 1974) read Matthew 24:15–31 as end-time tribulation events, often correlated with Daniel's seventieth week and Revelation.
 - Weakness often raised against it: it must either read "this generation" (v. 34) as referring to a distant future generation or reinterpret *genea* nonstandardly, which critics like Carson argue strains Matthew's consistent usage of the term elsewhere in his Gospel.
 
-**3. Mixed / Partial-Preterist (transition) reading** — verses 4–35 (or similar range) refer to AD 70, while a transition occurs (commonly located at v. 36, "but concerning that day and hour") shifting to the still-future, final return of Christ.
+**3. Mixed / Partial-Preterist (transition) reading** — verses 4–35 (or similar range) refer to AD 70, while a transition occurs (commonly located at v. 36, "[6 words of Matthew 24:36 redacted: a licensed translation's wording]") shifting to the still-future, final return of Christ.
 - Strongest argument: Jesus' own language shifts noticeably at verse 36 — from datable, observable signs ("when you see," v. 15, 33) to explicit unknowability ("no one knows... not even the Son," v. 36), and from local geographic urgency (v. 16–20, fleeing Judea) to universal, unexpected judgment imagery (Noah, thief in the night, vv. 37–44). This shift is read as marking a genuine subject change.
 - Representative advocates: this is a common reading among commentators including R.T. France (*The Gospel of Matthew*, NICNT, 2007) and, with variations, D.A. Carson (*Matthew*, EBC, 1984), both of whom see verses 4–35 addressed substantially to AD 70 (with Carson allowing some verses to carry double reference) and verses 36 onward turning to the unpredictable, future parousia.
 - Weakness often raised against it: critics on both sides note the transition point is not marked by an explicit textual signal as clean as advocates suggest, and where exactly the shift occurs (v. 22, v. 29, v. 34, or v. 36) is itself disputed among mixed-view interpreters.
@@ -104,22 +105,22 @@ This is a genuinely contested question among careful, Bible-believing interprete
 
 ## Cross-References
 
-> "But when you see Jerusalem surrounded by armies, then know that its desolation is near."
+> "But when you see Jerusalem surrounded by armies, then [6 words of Luke 21:20 redacted: a licensed translation's wording]."
 > — Luke 21:20 (BSB)
 
-> "Therefore, when you see standing in the holy place 'the abomination that causes desolation,' spoken of through the prophet Daniel—let the reader understand—"
+> "[22 words of Matthew 24:15 redacted: wording found in no public-domain Bible] reader understand—"
 > — Matthew 24:15 (BSB)
 
-> "Sun and moon grow dark, and the stars diminish their brightness. The LORD roars from Zion and thunders from Jerusalem, and the heavens and the earth quake. But the LORD is a refuge for His people, a stronghold for the children of Israel."
+> "Sun and moon [40 words of Joel 3:15–16 redacted: wording found in no public-domain Bible]."
 > — Joel 3:15–16 (BSB)
 
-> "For then there will be great tribulation, unmatched from the beginning of the world until now, and never to be equaled again."
+> "For [6 words of Matthew 24:21 redacted: wording found in no public-domain Bible], unmatched from the beginning of the world until [7 words of Matthew 24:21 redacted: wording found in no public-domain Bible]."
 > — Matthew 24:21 (BSB)
 
-> "But of that day and hour no one knows, not even the angels of heaven, nor the Son, but the Father alone."
+> "But of that day and hour no one knows, not [12 words of Matthew 24:36 redacted: a licensed translation's wording]."
 > — Matthew 24:36 (BSB)
 
-> "So then, keep watch, because you do not know the day or the hour."
+> "[7 words of Matthew 25:13 redacted: wording found in no public-domain Bible] not know the day or the hour."
 > — Matthew 25:13 (BSB)
 
 ## Sources

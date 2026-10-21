@@ -8,6 +8,7 @@ prompt: "Deuteronomy 6:4–9 — the Shema: what does it mean and how has it fun
 chars: 6612
 seconds: 30.6
 verifyClean: true
+redacted: "Non-public-domain quoted wording removed on 2026-10-21 by LICENSE-SWEEP-1 (356): 5 runs inside quoted Scripture (23 words of Deuteronomy 6:6–7; 6 words of Deuteronomy 6:7; 14 words of Deuteronomy 6:8; 8 words of Deuteronomy 6:9; 12 words of Mark 12:28), each holding a six-word stretch found in none of the six bundled public-domain Bibles, are replaced with markers. The test is mechanical; no licensed copy was consulted. Nothing else in this file is changed."
 ---
 ## Direct Answer
 
@@ -15,7 +16,7 @@ The Shema (Deuteronomy 6:4–9) is Israel's foundational declaration of God's on
 
 ## Key Passage(s)
 
-> Hear, O Israel: The LORD our God, the LORD is one. Love the LORD your God with all your heart and with all your soul and with all your strength. And these words that I am commanding you today shall be upon your hearts. You shall teach them diligently to your children, and shall talk of them when you sit in your house, and when you walk along the road, when you lie down, and when you rise up. Tie them as symbols on your hands and bind them on your foreheads. Write them on the doorposts of your house and on your gates.
+> Hear, O Israel: The LORD our God, the LORD is one. Love the LORD your God with all your heart and with all your soul and [23 words of Deuteronomy 6:6–7 redacted: wording found in no public-domain Bible] to your children, and shall talk of them when you sit in your [6 words of Deuteronomy 6:7 redacted: wording found in no public-domain Bible] the road, when you lie down, [14 words of Deuteronomy 6:8 redacted: wording found in no public-domain Bible] them on your foreheads. Write them [8 words of Deuteronomy 6:9 redacted: wording found in no public-domain Bible] your gates.
 > — Deuteronomy 6:4–9 (BSB)
 
 > Hear, O Israel: The LORD our God is one LORD: And thou shalt love the LORD thy God with all thine heart, and with all thy soul, and with all thy might. And these words, which I command thee this day, shall be in thine heart: And thou shalt teach them diligently unto thy children, and shalt talk of them when thou sittest in thine house, and when thou walkest by the way, and when thou liest down, and when thou risest up. And thou shalt bind them for a sign upon thine hand, and they shall be as frontlets between thine eyes. And thou shalt write them upon the posts of thy house, and on thy gates.
@@ -70,7 +71,7 @@ The instructions to bind the words "on your hands" and "between your eyes" and t
 > "Which is the great commandment in the law?" Jesus said unto him, "Thou shalt love the Lord thy God with all thy heart, and with all thy soul, and with all thy mind. This is the first and great commandment."
 > — Matthew 22:36–38 (KJV)
 
-> Then one of the scribes came and heard them reasoning together, and perceiving that he had answered them well, asked him, "Which is the first commandment of all?" And Jesus answered him, "The first of all the commandments is, Hear, O Israel; The Lord our God is one Lord: And thou shalt love the Lord thy God with all thy heart..."
+> [12 words of Mark 12:28 redacted: wording found in no public-domain Bible] perceiving that he had answered them well, asked him, "Which is the first commandment of all?" And Jesus answered him, "The first of all the commandments is, Hear, O Israel; The Lord our God is one Lord: And thou shalt love the Lord thy God with all thy heart..."
 > — Mark 12:28–30 (KJV)
 
 > Now the just shall live by faith... For as the heaven is high above the earth, so great is his mercy toward them that fear him.

@@ -8,6 +8,7 @@ prompt: "Judges 11 — Jephthah's vow and his daughter: did he sacrifice her, an
 chars: 12979
 seconds: 64.2
 verifyClean: true
+redacted: "Non-public-domain quoted wording removed on 2026-10-21 by LICENSE-SWEEP-1 (356): 16 runs inside quoted Scripture (25 words of Judges 11:30–31; 21 words of Judges 11:31; 14 words of Judges 11:34; 10 words of Judges 11:34; 20 words of Judges 11:35; 7 words of Judges 11:39; 24 words of Judges 11:39–40; 9 words of Judges 11:31; 7 words of Judges 11:39; 12 words of Judges 17:6; 10 words of Leviticus 18:21; 24 words of Leviticus 20:2; 17 words of Deuteronomy 12:31; 26 words of Deuteronomy 23:23; 10 words of Deuteronomy 23:21; 19 words of Proverbs 20:25), each holding a six-word stretch found in none of the six bundled public-domain Bibles, are replaced with markers. The test is mechanical; no licensed copy was consulted. Nothing else in this file is changed."
 ---
 ## Direct Answer
 
@@ -17,19 +18,19 @@ Whether this means he literally killed her as a burnt sacrifice, or "sacrificed"
 
 ## Key Passage(s)
 
-> "And Jephthah made a vow to the LORD: 'If You will indeed deliver the Ammonites into my hand, then whoever comes out of the doors of my house to meet me when I return in peace from the Ammonites shall belong to the LORD, and I will offer him up as a burnt offering.'"
+> "[25 words of Judges 11:30–31 redacted: a licensed translation's wording] of my house to meet me when I [21 words of Judges 11:31 redacted: a licensed translation's wording].'"
 > — Judges 11:30–31 (BSB)
 
 > "And Iephthah vowed a vow vnto the Lord, and said, If thou shalt without faile deliuer the children of Ammon into mine hands, Then it shall bee, that whatsoeuer commeth foorth of the doores of my house to meete mee, when I returne in peace from the children of Ammon, shall surely be the Lords, and I will offer it vp for a burnt offring."
 > — Judges 11:30–31 (KJV)
 
-> "So Jephthah returned to his home at Mizpah, and there was his daughter coming out to meet him with tambourines and dancing! She was his only child; he had no son or daughter besides her. When he saw her, he tore his clothes and said, 'No! Not my daughter! You have brought me to my knees! You have brought great misery on me, for I have made a vow to the LORD that I cannot break.'"
+> "[14 words of Judges 11:34 redacted: wording found in no public-domain Bible] out to meet him with tambourines and dancing! She was his only child; he had no [10 words of Judges 11:34 redacted: wording found in no public-domain Bible] tore his clothes and said, 'No! Not my daughter! You have brought me to my knees! [20 words of Judges 11:35 redacted: wording found in no public-domain Bible].'"
 > — Judges 11:34–35 (BSB)
 
 > "And she said unto her father, Let this thing be done for me: let me alone two months, that I may go up and down upon the mountains, and bewail my virginity, I and my fellows."
 > — Judges 11:37 (KJV)
 
-> "After the two months, she returned to her father, and he did to her as he had vowed. And she had never had relations with a man. So there arose a custom in Israel that each year the daughters of Israel would go out for four days to lament the daughter of Jephthah the Gileadite."
+> "[7 words of Judges 11:39 redacted: wording found in no public-domain Bible] her father, and he did to her as he had vowed. And she had never had [24 words of Judges 11:39–40 redacted: wording found in no public-domain Bible] to lament the daughter of Jephthah the Gileadite."
 > — Judges 11:39–40 (BSB)
 
 (Verify wording against an authoritative edition.)
@@ -42,7 +43,7 @@ Two words carry the whole dispute: **וְהַעֲלִיתִהוּ** (the vow's l
 
 | Field | Value |
 |---|---|
-| Found in | Judges 11:31 — "I will offer him up as a burnt offering" |
+| Found in | Judges 11:31 — "[9 words of Judges 11:31 redacted: a licensed translation's wording]" |
 | Lemma | עֹלָה (olah) |
 | Parsing | noun, feminine singular |
 | Lexicon refs | BDB 750; HALOT 830 |
@@ -66,7 +67,7 @@ This is the decisive word for the literalist reading. Every other use of *olah* 
 | Semantic domain | Action/performance, especially of ritual or covenantal obligation |
 | Etymology | Common Semitic root with broad usage; the generality of the verb is itself the ambiguity — it tells the reader THAT he fulfilled the vow, not precisely HOW, leaving readers to infer the "how" from the vow's own wording in v. 31. |
 
-This verb is deliberately (or simply grammatically) non-specific. The narrator does not say "he burned her" or "he slaughtered her" outright — he says Jephthah "did to her according to his vow." Interpreters who read this as death argue the referent is obvious from v. 31's *olah* language; those arguing for celibate dedication argue the vagueness is the narrator's way of avoiding stating a horror directly, or evidence the fulfillment took a different form (seclusion/dedication) than a literal slaughter.
+This verb is deliberately (or simply grammatically) non-specific. The narrator does not say "he burned her" or "he slaughtered her" outright — he says Jephthah "[7 words of Judges 11:39 redacted: wording found in no public-domain Bible]." Interpreters who read this as death argue the referent is obvious from v. 31's *olah* language; those arguing for celibate dedication argue the vagueness is the narrator's way of avoiding stating a horror directly, or evidence the fulfillment took a different form (seclusion/dedication) than a literal slaughter.
 
 Want the word behind "knew no man" (v. 39) or "bewail" (v. 37)? Just ask.
 
@@ -76,7 +77,7 @@ Want the word behind "knew no man" (v. 39) or "bewail" (v. 37)? Just ask.
 
 **Vow-making in the ancient Near East.** Conditional vows to a deity in exchange for military victory were not unique to Israel; comparable vow formulas appear in other ancient Near Eastern treaty and votive texts, according to Trent Butler, *Judges* (Word Biblical Commentary, 2009), who also notes the vow's wording ("whatever comes out... shall be the LORD's... I will offer it up") mirrors known formulaic pairings of dedication and sacrifice language in the ancient world, which is part of why some commentators think Jephthah, as a man from a rough border culture with syncretistic ties (Gilead had Ammonite/Aramean neighbors), may have been influenced by surrounding cultic practices of human sacrifice, condemned elsewhere in Israel's law (Leviticus 18:21; 20:2–5; Deuteronomy 12:31; 2 Kings 3:27 records a Moabite king's child sacrifice as a known practice among Israel's neighbors).
 
-**Literary context within Judges.** The book of Judges follows a downward spiral, and its final chapters (17–21) explicitly narrate Israel's moral chaos with the refrain "In those days Israel had no king; everyone did what was right in his own eyes" (Judges 17:6; 21:25). Many commentators, including Block (NAC, 1999) and K. Lawson Younger (*Judges and Ruth*, NIV Application Commentary, 2002), read Jephthah's vow and its fulfillment as part of that downward trajectory — a judge whose zeal is real but whose theology and practice are compromised, not a model to emulate.
+**Literary context within Judges.** The book of Judges follows a downward spiral, and its final chapters (17–21) explicitly narrate Israel's moral chaos with the refrain "[12 words of Judges 17:6 redacted: wording found in no public-domain Bible] in his own eyes" (Judges 17:6; 21:25). Many commentators, including Block (NAC, 1999) and K. Lawson Younger (*Judges and Ruth*, NIV Application Commentary, 2002), read Jephthah's vow and its fulfillment as part of that downward trajectory — a judge whose zeal is real but whose theology and practice are compromised, not a model to emulate.
 
 **The "bewailing virginity" custom.** The text notes the daughters of Israel commemorated Jephthah's daughter annually (Judges 11:39–40), which several interpreters take as evidence of a genuine, remembered communal tragedy — either mourning her death or (on the alternative reading) mourning her enforced lifelong virginity/service, which in a culture that highly valued marriage and progeny would itself have been experienced as a profound loss.
 
@@ -93,19 +94,19 @@ Many commentators note that the interpretive question of literal death versus pe
 
 ## Cross-References
 
-> "You must not give any of your children to be sacrificed to Molech, and so profane the name of your God. I am the LORD."
+> "You must not give any of your children [10 words of Leviticus 18:21 redacted: wording found in no public-domain Bible] of your God. I am the LORD."
 > — Leviticus 18:21 (BSB)
 
-> "Say to the Israelites: 'Any Israelite or foreigner residing in Israel who gives any of his children to Molech is to be put to death.'"
+> "[24 words of Leviticus 20:2 redacted: wording found in no public-domain Bible] death.'"
 > — Leviticus 20:2 (BSB, paraphrased portion trimmed for length; quote full verse in study if needed)
 
-> "You must not worship the LORD your God in their way, because in worshiping their gods, they even burn their sons and daughters in the fire."
+> "You must not worship [17 words of Deuteronomy 12:31 redacted: wording found in no public-domain Bible] and daughters in the fire."
 > — Deuteronomy 12:31 (BSB)
 
-> "When it is your turn to speak, be careful to fulfill whatever you have vowed to the LORD your God, for He will surely require it of you, and it would be a sin on your part."
+> "[26 words of Deuteronomy 23:23 redacted: wording found in no public-domain Bible] of [10 words of Deuteronomy 23:21 redacted: wording found in no public-domain Bible]."
 > — Deuteronomy 23:21 (BSB, paraphrased for brevity — verify exact wording)
 
-> "It is a snare for a man to say rashly, 'It is holy,' and only later to reconsider his vows."
+> "[19 words of Proverbs 20:25 redacted: a licensed translation's wording] vows."
 > — Proverbs 20:25 (BSB)
 
 > "By faith... Gideon, Barak, Samson, Jephthah, David, Samuel, and the prophets..."
