@@ -8,6 +8,7 @@ prompt: "Acts 2:38 — 'repent and be baptized… for the remission of sins': wh
 chars: 11359
 seconds: 53.7
 verifyClean: true
+redacted: "Licensed translation wording removed on 2026-10-20: 10 words of Ephesians 2:8 (CSB), in a quoted verse labelled BSB, are replaced with the marker. Each run is in no bundled Bible and matches a licensed translation's wording as recalled, not checked against a licensed copy. Nothing else in this file is changed."
 ---
 ## Direct Answer
 
@@ -91,7 +92,7 @@ Want the word behind "gift" (δωρεά) or "call" (προσκαλέσηται) 
 
 > John the Baptist appeared in the wilderness, preaching a baptism of repentance for the forgiveness of sins. (Mark 1:4, BSB)
 
-> For it is by grace you have been saved, through faith — and this is not from yourselves, it is the gift of God — not by works, so that no one can boast. (Ephesians 2:8–9, BSB)
+> For it is by grace you have been saved, [10 words of Ephesians 2:8 redacted: a licensed translation's wording] the gift of God — not by works, so that no one can boast. (Ephesians 2:8–9, BSB)
 
 > Whoever believes and is baptized will be saved, but whoever does not believe will be condemned. (Mark 16:16, BSB)
 

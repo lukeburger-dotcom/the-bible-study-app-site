@@ -8,6 +8,7 @@ prompt: "Isaiah 7:14 — the almah/parthenos question: what does the Hebrew say,
 chars: 13205
 seconds: 58.3
 verifyClean: true
+redacted: "Licensed translation wording removed on 2026-10-20: 7 words of Isaiah 7:16 (NASB 1995) and 24 of Isaiah 7:13–14 (CSB), in quoted verses labelled BSB, are replaced with markers. Each run is in no bundled Bible and matches a licensed translation's wording as recalled, not checked against a licensed copy. Nothing else in this file is changed."
 ---
 ## Direct Answer
 
@@ -22,7 +23,7 @@ Isaiah 7:14 uses the Hebrew word עַלְמָה (almah), meaning "young woman of
 > Therefore the Lord himself shall give you a sign; Behold, a virgin shall conceive, and bear a son, and shall call his name Immanuel.
 
 **Isaiah 7:10–16 (BSB)** — surrounding context
-> Once again the LORD spoke to Ahaz: "Ask the LORD your God for a sign, whether from the depths of Sheol or the heights of heaven." But Ahaz replied, "I will not ask; I will not test the LORD." Then Isaiah said, "Hear now, O house of David! Is it not enough to try the patience of men? Will you also try the patience of my God? Therefore the Lord Himself will give you a sign: Behold, the virgin will conceive and bear a son, and will call Him Immanuel. By the time He knows enough to reject evil and choose good, He will be eating curds and honey. For before the boy knows enough to reject evil and choose good, the land of the two kings you dread will be forsaken."
+> Once again the LORD spoke to Ahaz: "Ask the LORD your God for a sign, whether from the depths of Sheol or the heights of heaven." But Ahaz replied, "I will not ask; I will not test the LORD." Then Isaiah said, "Hear now, O house of David! Is it not enough [24 words of Isaiah 7:13–14 redacted: a licensed translation's wording]: Behold, the virgin will conceive and bear a son, and will call Him Immanuel. By the time He knows enough to reject evil and choose good, He will be eating curds and honey. For before the boy knows enough to reject evil and choose good, the land of the [7 words of Isaiah 7:16 redacted: a licensed translation's wording]."
 
 **Matthew 1:22–23 (BSB)**
 > All this took place to fulfill what the Lord had said through the prophet: "Behold, the virgin will be with child and will give birth to a son, and they will call Him Immanuel," which means, "God with us."

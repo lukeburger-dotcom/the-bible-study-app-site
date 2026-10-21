@@ -8,6 +8,7 @@ prompt: "Psalm 23"
 chars: 5842
 seconds: 27.1
 verifyClean: true
+redacted: "Licensed translation wording removed on 2026-10-20: 62 words of Psalm 23:4–6 (NASB 1995), in the quoted psalm labelled BSB, are replaced with the marker. Each run is in no bundled Bible and matches a licensed translation's wording as recalled, not checked against a licensed copy. Nothing else in this file is changed."
 ---
 ## Direct Answer
 
@@ -15,7 +16,7 @@ Psalm 23 is a psalm of trust, portraying the LORD as a shepherd who provides, gu
 
 ## Key Passage(s)
 
-> The LORD is my shepherd; I shall not want. He makes me lie down in green pastures; He leads me beside quiet waters. He restores my soul; He guides me in the paths of righteousness for the sake of His name. Even though I walk through the valley of the shadow of death, I will fear no evil, for You are with me; Your rod and Your staff, they comfort me. You prepare a table before me in the presence of my enemies; You have anointed my head with oil; my cup overflows. Surely goodness and lovingkindness will follow me all the days of my life, and I will dwell in the house of the LORD forever.
+> The LORD is my shepherd; I shall not want. He makes me lie down in green pastures; He leads me beside quiet waters. He restores my soul; He guides me in the paths of righteousness for the sake of His name. Even though I walk through the valley of the shadow of death, I will [62 words of Psalm 23:4–6 redacted: a licensed translation's wording].
 > — Psalm 23:1–6 (BSB)
 
 > The LORD is my shepherd; I shall not want. He maketh me to lie down in green pastures: he leadeth me beside the still waters. He restoreth my soul: he leadeth me in the paths of righteousness for his name's sake. Yea, though I walk through the valley of the shadow of death, I will fear no evil: for thou art with me; thy rod and thy staff they comfort me. Thou preparest a table before me in the presence of mine enemies: thou anointest my head with oil; my cup runneth over. Surely goodness and mercy shall follow me all the days of my life: and I will dwell in the house of the LORD for ever.

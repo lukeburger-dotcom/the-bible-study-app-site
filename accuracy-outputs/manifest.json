@@ -5,6 +5,7 @@
   "localGitSha": "7a50f2edc8a956eb5475f4c7c4368208e89b8e2f",
   "originMainSha": "7a50f2edc8a956eb5475f4c7c4368208e89b8e2f",
   "note": "originMainSha approximates the deployed backend (Railway deploys origin/main on push); confirm against the Railway dashboard if exactness matters.",
+  "redacted": "Licensed translation wording removed on 2026-10-20: in the verify details' before texts, core 09's James 2:24–25 (22 words, NASB 1995), James 2:21 (11, NKJV and NASB 1995), James 2:22 (8, NKJV), Ephesians 2:8 (10, CSB) and Genesis 15:6 (12, CSB); breadth 01's James 2:21 (6, NKJV and NASB 1995); and redteam 17's Isaiah 7:14 (21) and Matthew 1:23 (12), NASB 2020, are replaced with markers. Each run is in no bundled Bible and matches a licensed translation's wording as recalled, not checked against a licensed copy. Nothing else in this file is changed.",
   "modelConfigured": "claude-sonnet-5 (backend ANTHROPIC_MODEL default; prod env may override)",
   "qaBypassUsed": false,
   "groups": {
@@ -315,19 +316,19 @@
         },
         {
           "type": "quote_substituted",
-          "detail": "James 2:24–25 (BSB) — similarity 77% → substituted with bundled text · before: \"You see that a man is justified by works, and not by faith alone. In the same way, was not Rahab the prostitute also justified by works when she welcomed the sp…\" · after: \"As you can see, a man is justified by his deeds and not by faith alone. In the same way, was not even Rahab the prostitute justified by her actions when she wel…\""
+          "detail": "James 2:24–25 (BSB) — similarity 77% → substituted with bundled text · before: \"[22 words of James 2:24–25 redacted: a licensed translation's wording] prostitute also justified by works when she welcomed the sp…\" · after: \"As you can see, a man is justified by his deeds and not by faith alone. In the same way, was not even Rahab the prostitute justified by her actions when she wel…\""
         },
         {
           "type": "quote_substituted",
-          "detail": "Ephesians 2:8–9 (BSB) — similarity 98% → substituted with bundled text · before: \"For it is by grace you have been saved, through faith—and this is not from yourselves, it is the gift of God— not by works, so that no one can boast.\" · after: \"For it is by grace you have been saved through faith, and this not from yourselves; it is the gift of God, not by works, so that no one can boast.\""
+          "detail": "Ephesians 2:8–9 (BSB) — similarity 98% → substituted with bundled text · before: \"For it is by grace you have been saved, [10 words of Ephesians 2:8 redacted: a licensed translation's wording] the gift of God— not by works, so that no one can boast.\" · after: \"For it is by grace you have been saved through faith, and this not from yourselves; it is the gift of God, not by works, so that no one can boast.\""
         },
         {
           "type": "quote_substituted",
-          "detail": "James 2:21–22 (BSB) — similarity 79% → substituted with bundled text · before: \"Was not Abraham our father justified by works when he offered his son Isaac on the altar? You see that his faith was working together with his works, and his fa…\" · after: \"Was not our father Abraham justified by what he did when he offered his son Isaac on the altar? You see that his faith was working with his actions, and his fai…\""
+          "detail": "James 2:21–22 (BSB) — similarity 79% → substituted with bundled text · before: \"[11 words of James 2:21 redacted: a licensed translation's wording] his son Isaac on the altar? You see that his [8 words of James 2:22 redacted: a licensed translation's wording] his fa…\" · after: \"Was not our father Abraham justified by what he did when he offered his son Isaac on the altar? You see that his faith was working with his actions, and his fai…\""
         },
         {
           "type": "quote_substituted",
-          "detail": "Genesis 15:6 (BSB) — similarity 81% → substituted with bundled text · before: \"And Abram believed the LORD, and He credited it to him as righteousness.\" · after: \"Abram believed the LORD, and it was credited to him as righteousness.\""
+          "detail": "Genesis 15:6 (BSB) — similarity 81% → substituted with bundled text · before: \"And [12 words of Genesis 15:6 redacted: a licensed translation's wording].\" · after: \"Abram believed the LORD, and it was credited to him as righteousness.\""
         }
       ],
       "httpStatus": 200
@@ -417,7 +418,7 @@
         },
         {
           "type": "quote_substituted",
-          "detail": "James 2:21–22 (BSB) — similarity 74% → substituted with bundled text · before: \"Was not our father Abraham justified by works when he offered his son Isaac on the altar? You see that his faith and his actions were working together, and his …\" · after: \"Was not our father Abraham justified by what he did when he offered his son Isaac on the altar? You see that his faith was working with his actions, and his fai…\""
+          "detail": "James 2:21–22 (BSB) — similarity 74% → substituted with bundled text · before: \"Was not our father Abraham [6 words of James 2:21 redacted: a licensed translation's wording] his son Isaac on the altar? You see that his faith and his actions were working together, and his …\" · after: \"Was not our father Abraham justified by what he did when he offered his son Isaac on the altar? You see that his faith was working with his actions, and his fai…\""
         },
         {
           "type": "quote_substituted",
@@ -1443,7 +1444,7 @@
         },
         {
           "type": "quote_substituted",
-          "detail": "Isaiah 7:14 (BSB) — similarity 89% → substituted with bundled text · before: \"Therefore the Lord Himself will give you a sign: Behold, the virgin will conceive and give birth to a son, and will call him Immanuel.\" · after: \"Therefore the Lord Himself will give you a sign: Behold, the virgin will be with child and will give birth to a son, and will call Him Immanuel.\""
+          "detail": "Isaiah 7:14 (BSB) — similarity 89% → substituted with bundled text · before: \"[21 words of Isaiah 7:14 redacted: a licensed translation's wording] will call him Immanuel.\" · after: \"Therefore the Lord Himself will give you a sign: Behold, the virgin will be with child and will give birth to a son, and will call Him Immanuel.\""
         },
         {
           "type": "quote_substituted",
@@ -1451,7 +1452,7 @@
         },
         {
           "type": "quote_substituted",
-          "detail": "Matthew 1:22–23 (BSB) — similarity 82% → substituted with bundled text · before: \"Now all this happened to fulfill what the Lord had said through the prophet: \"The virgin will conceive and give birth to a son, and they will call Him Immanuel,…\" · after: \"All this took place to fulfill what the Lord had said through the prophet: “Behold, the virgin will be with child and will give birth to a son, and they will ca…\""
+          "detail": "Matthew 1:22–23 (BSB) — similarity 82% → substituted with bundled text · before: \"Now all this happened to fulfill what the Lord had said through the prophet: \"[12 words of Matthew 1:23 redacted: a licensed translation's wording] will call Him Immanuel,…\" · after: \"All this took place to fulfill what the Lord had said through the prophet: “Behold, the virgin will be with child and will give birth to a son, and they will ca…\""
         },
         {
           "type": "quote_substituted",

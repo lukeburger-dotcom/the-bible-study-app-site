@@ -8,6 +8,7 @@ prompt: "James 2:14–26 — faith and works, and how does this square with Paul
 chars: 7719
 seconds: 37.8
 verifyClean: true
+redacted: "Licensed translation wording removed on 2026-10-20: 22 words of James 2:24–25 (NASB 1995), 11 of James 2:21 (NKJV, NASB 1995), 8 of James 2:22 (NKJV), 10 of Ephesians 2:8 (CSB) and 12 of Genesis 15:6 (CSB), all in quoted verses labelled BSB, are replaced with markers. Each run is in no bundled Bible and matches a licensed translation's wording as recalled, not checked against a licensed copy. Nothing else in this file is changed."
 ---
 ## Direct Answer
 
@@ -21,7 +22,7 @@ James 2:14–26 argues that genuine faith inevitably produces works, and that a 
 > Yea, a man may say, Thou hast faith, and I have works: shew me thy faith without thy works, and I will shew thee my faith by my works.
 > — James 2:18 (KJV)
 
-> You see that a man is justified by works, and not by faith alone. In the same way, was not Rahab the prostitute also justified by works when she welcomed the spies and sent them off on a different road?
+> [22 words of James 2:24–25 redacted: a licensed translation's wording] prostitute also justified by works when she welcomed the spies and sent them off on a different road?
 > — James 2:24–25 (BSB)
 
 (Verify wording against an authoritative edition.)
@@ -75,13 +76,13 @@ Whether James is written before, during, or in response to a distorted version o
 > For we maintain that a man is justified by faith apart from works of the law.
 > — Romans 3:28 (BSB)
 
-> For it is by grace you have been saved, through faith—and this is not from yourselves, it is the gift of God— not by works, so that no one can boast.
+> For it is by grace you have been saved, [10 words of Ephesians 2:8 redacted: a licensed translation's wording] the gift of God— not by works, so that no one can boast.
 > — Ephesians 2:8–9 (BSB)
 
-> Was not Abraham our father justified by works when he offered his son Isaac on the altar? You see that his faith was working together with his works, and his faith was perfected by what he did.
+> [11 words of James 2:21 redacted: a licensed translation's wording] his son Isaac on the altar? You see that his [8 words of James 2:22 redacted: a licensed translation's wording] his faith was perfected by what he did.
 > — James 2:21–22 (BSB)
 
-> And Abram believed the LORD, and He credited it to him as righteousness.
+> And [12 words of Genesis 15:6 redacted: a licensed translation's wording].
 > — Genesis 15:6 (BSB)
 
 ## Sources

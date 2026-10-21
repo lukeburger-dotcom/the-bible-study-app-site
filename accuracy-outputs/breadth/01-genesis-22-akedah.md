@@ -8,6 +8,7 @@ prompt: "Genesis 22 — the binding of Isaac (the Akedah): what is God doing in 
 chars: 14100
 seconds: 67.6
 verifyClean: true
+redacted: "Licensed translation wording removed on 2026-10-20: 6 words of James 2:21 (NKJV, NASB 1995), in a quoted verse labelled BSB, are replaced with the marker. Each run is in no bundled Bible and matches a licensed translation's wording as recalled, not checked against a licensed copy. Nothing else in this file is changed."
 ---
 ## Direct Answer
 
@@ -108,7 +109,7 @@ Want the word behind "burnt offering" (olah) or "provide" (yireh, behind the pla
 >
 > — Hebrews 11:17–19 (BSB)
 
-> Was not our father Abraham justified by works when he offered his son Isaac on the altar? You see that his faith and his actions were working together, and his faith was made complete by what he did.
+> Was not our father Abraham [6 words of James 2:21 redacted: a licensed translation's wording] his son Isaac on the altar? You see that his faith and his actions were working together, and his faith was made complete by what he did.
 >
 > — James 2:21–22 (BSB)
 
